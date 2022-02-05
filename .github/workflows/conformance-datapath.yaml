@@ -313,7 +313,7 @@ jobs:
           # here. masq is off due to https://github.com/cilium/cilium/issues/23283
           EGRESS_GATEWAY="--helm-set=bpf.masquerade=false"
           if [ "${{ matrix.egress-gateway }}" == "true" ]; then
-            EGRESS_GATEWAY="--helm-set=bpf.masquerade=true --helm-set=enableIPv6Masquerade=false"
+            EGRESS_GATEWAY="--helm-set=bpf.masquerade=true"
             # Force legacy host routing to work around #23283 with masq on.
             EGRESS_GATEWAY+=" --helm-set=bpf.hostLegacyRouting=true"
             EGRESS_GATEWAY+=" --helm-set=egressGateway.enabled=true"
