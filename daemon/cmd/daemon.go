@@ -21,7 +21,7 @@ import (
 	"golang.org/x/sync/semaphore"
 
 	"github.com/go-faster/cilium/api/v1/models"
-	health "github.com/go-faster/cilium/cilium-health/launch"
+	health "github.com/go-faster/go-faster/cilium-health/launch"
 	"github.com/go-faster/cilium/pkg/auth"
 	"github.com/go-faster/cilium/pkg/bandwidth"
 	"github.com/go-faster/cilium/pkg/bgp/speaker"

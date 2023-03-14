@@ -113,7 +113,7 @@ rollOutCiliumPods: false
 # -- Agent container image.
 image:
   override: ~
-  repository: "quay.io/go-faster/cilium-ci"
+  repository: "ghcr.io/go-faster/cilium-ci"
   tag: "latest"
   pullPolicy: "Always"
   # cilium-digest
@@ -835,7 +835,7 @@ socketLB:
 certgen:
   image:
     override: ~
-    repository: "quay.io/cilium/certgen"
+    repository: "ghcr.io/cilium/certgen"
     tag: "v0.1.8"
     digest: "sha256:4a456552a5f192992a6edcec2febb1c54870d665173a33dc7d876129b199ddbd"
     useDigest: true
@@ -1026,7 +1026,7 @@ hubble:
     # -- Hubble-relay container image.
     image:
       override: ~
-      repository: "quay.io/cilium/hubble-relay-ci"
+      repository: "ghcr.io/cilium/hubble-relay-ci"
       tag: "latest"
        # hubble-relay-digest
       digest: ""
@@ -1244,7 +1244,7 @@ hubble:
       # -- Hubble-ui backend image.
       image:
         override: ~
-        repository: "quay.io/cilium/hubble-ui-backend"
+        repository: "ghcr.io/cilium/hubble-ui-backend"
         tag: "v0.10.0"
         digest: "sha256:cc5e2730b3be6f117b22176e25875f2308834ced7c3aa34fb598aa87a2c0a6a4"
         useDigest: true
@@ -1275,7 +1275,7 @@ hubble:
       # -- Hubble-ui frontend image.
       image:
         override: ~
-        repository: "quay.io/cilium/hubble-ui"
+        repository: "ghcr.io/cilium/hubble-ui"
         tag: "v0.10.0"
         digest: "sha256:118ad2fcfd07fabcae4dde35ec88d33564c9ca7abe520aa45b1eb13ba36c6e0a"
         useDigest: true
@@ -1804,7 +1804,7 @@ etcd:
   # -- cilium-etcd-operator image.
   image:
     override: ~
-    repository: "quay.io/go-faster/cilium-etcd-operator"
+    repository: "ghcr.io/go-faster/cilium-etcd-operator"
     tag: "v2.0.7"
     digest: "sha256:04b8327f7f992693c2cb483b999041ed8f92efc8e14f2a5f3ab95574a65ea2dc"
     useDigest: true
@@ -1909,7 +1909,7 @@ operator:
   # -- cilium-operator image.
   image:
     override: ~
-    repository: "quay.io/cilium/operator"
+    repository: "ghcr.io/cilium/operator"
     tag: "latest"
     # operator-generic-digest
     genericDigest: ""
@@ -2102,7 +2102,7 @@ nodeinit:
   # -- node-init image.
   image:
     override: ~
-    repository: "quay.io/cilium/startup-script"
+    repository: "ghcr.io/cilium/startup-script"
     tag: "d69851597ea019af980891a4628fb36b7880ec26"
     pullPolicy: "Always"
 
@@ -2176,7 +2176,7 @@ preflight:
   # -- Cilium pre-flight image.
   image:
     override: ~
-    repository: "quay.io/go-faster/cilium-ci"
+    repository: "ghcr.io/go-faster/cilium-ci"
     tag: "latest"
     # cilium-digest
     digest: ""
@@ -2326,7 +2326,7 @@ clustermesh:
     # -- Clustermesh API server image.
     image:
       override: ~
-      repository: "quay.io/cilium/clustermesh-apiserver-ci"
+      repository: "ghcr.io/cilium/clustermesh-apiserver-ci"
       tag: "latest"
       # clustermesh-apiserver-digest
       digest: ""
@@ -2337,7 +2337,7 @@ clustermesh:
       # -- Clustermesh API server etcd image.
       image:
         override: ~
-        repository: "quay.io/coreos/etcd"
+        repository: "ghcr.io/coreos/etcd"
         tag: "v3.5.4"
         digest: "sha256:795d8660c48c439a7c3764c2330ed9222ab5db5bb524d8d0607cac76f7ba82a3"
         useDigest: true

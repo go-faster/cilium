@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"time"
 
-	health "github.com/go-faster/cilium/cilium-health/launch"
+	health "github.com/go-faster/go-faster/cilium-health/launch"
 	"github.com/go-faster/cilium/pkg/controller"
 	"github.com/go-faster/cilium/pkg/endpoint"
 	"github.com/go-faster/cilium/pkg/health/defaults"

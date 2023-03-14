@@ -7,7 +7,7 @@
 
 package main
 
-import "github.com/go-faster/cilium/cilium-health/cmd"
+import "github.com/go-faster/go-faster/cilium-health/cmd"
 
 func main() {
 	cmd.Execute()

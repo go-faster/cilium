@@ -8,7 +8,7 @@
 package main
 
 import (
-	"github.com/go-faster/cilium/cilium/cmd"
+	"github.com/go-faster/go-faster/cilium/cmd"
 )
 
 func main() {
