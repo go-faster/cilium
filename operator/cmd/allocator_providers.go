@@ -4,7 +4,7 @@
 package cmd
 
 import (
-	"github.com/cilium/cilium/pkg/ipam/allocator"
+	"github.com/go-faster/cilium/pkg/ipam/allocator"
 )
 
 var (

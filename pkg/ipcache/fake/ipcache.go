@@ -6,8 +6,8 @@ package fake
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/ipcache"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 const (

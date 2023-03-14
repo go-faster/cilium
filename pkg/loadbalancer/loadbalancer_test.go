@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/check.v1"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
 )
 
 // Hook up gocheck into the "go test" runner.

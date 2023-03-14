@@ -9,7 +9,7 @@
 package v1
 
 import (
-	corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 )
 

@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/cgroups"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/cgroups"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 )
 
 var (

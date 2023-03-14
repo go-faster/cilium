@@ -17,15 +17,15 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"k8s.io/client-go/tools/cache"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	"github.com/cilium/cilium/pkg/hubble/container"
-	"github.com/cilium/cilium/pkg/hubble/observer/observeroption"
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/hubble/parser"
-	"github.com/cilium/cilium/pkg/hubble/testutils"
-	"github.com/cilium/cilium/pkg/monitor"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	"github.com/go-faster/cilium/pkg/hubble/container"
+	"github.com/go-faster/cilium/pkg/hubble/observer/observeroption"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/hubble/parser"
+	"github.com/go-faster/cilium/pkg/hubble/testutils"
+	"github.com/go-faster/cilium/pkg/monitor"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 var log *logrus.Logger

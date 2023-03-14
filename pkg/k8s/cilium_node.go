@@ -4,8 +4,8 @@
 package k8s
 
 import (
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // IsLocalCiliumNode returns true if the given CiliumNode object refers to the

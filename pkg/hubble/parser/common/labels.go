@@ -10,7 +10,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity"
 )
 
 func FilterCIDRLabels(log logrus.FieldLogger, labels []string) []string {

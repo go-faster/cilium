@@ -17,17 +17,17 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	recorderpb "github.com/cilium/cilium/api/v1/recorder"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/hubble/recorder/pcap"
-	"github.com/cilium/cilium/pkg/hubble/recorder/recorderoption"
-	"github.com/cilium/cilium/pkg/hubble/recorder/sink"
-	"github.com/cilium/cilium/pkg/idpool"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/recorder"
-	"github.com/cilium/cilium/pkg/u8proto"
+	recorderpb "github.com/go-faster/cilium/api/v1/recorder"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/hubble/recorder/pcap"
+	"github.com/go-faster/cilium/pkg/hubble/recorder/recorderoption"
+	"github.com/go-faster/cilium/pkg/hubble/recorder/sink"
+	"github.com/go-faster/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/recorder"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "hubble-recorder")

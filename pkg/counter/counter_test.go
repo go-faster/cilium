@@ -7,7 +7,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/checker"
 
 	. "gopkg.in/check.v1"
 )

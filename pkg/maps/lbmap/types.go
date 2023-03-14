@@ -6,9 +6,9 @@ package lbmap
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/bpf"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
 )
 
 // ServiceKey is the interface describing protocol independent key for services map v2.

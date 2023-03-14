@@ -6,10 +6,10 @@ package endpoint
 import (
 	"context"
 
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/endpoint/regeneration"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/revert"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/endpoint/regeneration"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/revert"
 )
 
 // RegenerationContext provides context to regenerate() calls to determine

@@ -15,9 +15,9 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/parser/agent"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/parser/agent"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 type mockEndpoint struct {

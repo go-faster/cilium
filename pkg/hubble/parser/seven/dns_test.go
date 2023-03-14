@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/testutils"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
-	"github.com/cilium/cilium/pkg/u8proto"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/testutils"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 func TestDecodeL7DNSRecord(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/hubble/defaults"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/hubble/defaults"
 )
 
 func TestFromChangeNotification(t *testing.T) {

@@ -69,7 +69,7 @@ When implementing ClusterIP, Cilium acts on the same principles as kube-proxy,
 it watches for services addition or removal, but instead of doing the
 enforcement on the iptables, it updates eBPF map entries on each node. For more
 information, see the `Pull Request
-<https://github.com/cilium/cilium/pull/109>`__.
+<https://github.com/go-faster/cilium/pull/109>`__.
 
 Further Reading
 ===============

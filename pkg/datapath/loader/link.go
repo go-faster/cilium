@@ -6,7 +6,7 @@ package loader
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 func SetXDPMode(mode string) error {

@@ -8,9 +8,9 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 type IdentityAllocatorOwnerMock struct{}

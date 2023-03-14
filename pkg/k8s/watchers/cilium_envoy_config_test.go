@@ -12,8 +12,8 @@ import (
 	envoy_config_http "github.com/cilium/proxy/go/envoy/extensions/filters/network/http_connection_manager/v3"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cilium/cilium/pkg/envoy"
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/envoy"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 
 	. "gopkg.in/check.v1"
 )

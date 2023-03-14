@@ -4,10 +4,10 @@
 package test
 
 import (
-	"github.com/cilium/cilium/pkg/fqdn/restore"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/fqdn/restore"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 type ProxyUpdaterMock struct {

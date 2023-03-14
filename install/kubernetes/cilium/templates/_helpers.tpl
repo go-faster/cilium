@@ -9,13 +9,13 @@ Create chart name and version as used by the chart label.
 Render full image name from given values, e.g:
 ```
 image:
-  repository: quay.io/cilium/cilium
+  repository: quay.io/go-faster/cilium
   tag: v1.10.1
   useDigest: true
   digest: abcdefgh
 ```
 then `include "cilium.image" .Values.image`
-will return `quay.io/cilium/cilium:v1.10.1@abcdefgh`
+will return `quay.io/go-faster/cilium:v1.10.1@abcdefgh`
 */}}
 {{- define "cilium.image" -}}
 {{- $digest := (.useDigest | default false) | ternary (printf "@%s" .digest) "" -}}

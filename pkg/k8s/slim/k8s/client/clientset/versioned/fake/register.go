@@ -6,10 +6,10 @@
 package fake
 
 import (
-	corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	discoveryv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
-	discoveryv1beta1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
-	networkingv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1"
+	corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	discoveryv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
+	discoveryv1beta1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
+	networkingv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

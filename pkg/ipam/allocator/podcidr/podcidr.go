@@ -10,23 +10,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
 
 	"github.com/sirupsen/logrus"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/controller"
-	ipPkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/ipam"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/revert"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/controller"
+	ipPkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ipam"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/revert"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 type allocatorType string

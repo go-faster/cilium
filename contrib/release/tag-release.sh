@@ -9,7 +9,7 @@ source $DIR/../backporting/common.sh
 REMOTE="$(get_remote)"
 CHARTS_PATH="${CHARTS_PATH:-$GOPATH/src/github.com/cilium/charts}"
 CHARTS_TOOL="prepare_artifacts.sh"
-RELEASES_URL="https://github.com/cilium/cilium/releases"
+RELEASES_URL="https://github.com/go-faster/cilium/releases"
 VERSION=""
 
 usage() {

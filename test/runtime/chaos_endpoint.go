@@ -10,8 +10,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var endpointChaosTest = func() {
@@ -29,7 +29,7 @@ var endpointChaosTest = func() {
 		hasher := md5.New()
 
 		originalIps := vm.Exec(`
-		curl -s --unix-socket /var/run/cilium/cilium.sock \
+		curl -s --unix-socket /var/run/go-faster/cilium.sock \
 		http://localhost/v1beta/healthz/ | jq ".ipam.ipv4|length"`)
 
 		// List the endpoints, but skip the reserved:health endpoint
@@ -59,7 +59,7 @@ var endpointChaosTest = func() {
 		Expect(err).Should(BeNil(), "restarting Cilium failed")
 
 		ips := vm.Exec(`
-		curl -s --unix-socket /var/run/cilium/cilium.sock \
+		curl -s --unix-socket /var/run/go-faster/cilium.sock \
 		http://localhost/v1beta/healthz/ | jq ".ipam.ipv4|length"`)
 		Expect(originalIps.Stdout()).To(Equal(ips.Stdout()))
 

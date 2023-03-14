@@ -6,7 +6,7 @@ package debug
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // StatusFunc is a function returning the debug status of a subsytem. It is

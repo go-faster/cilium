@@ -9,8 +9,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	. "gopkg.in/check.v1"
 
-	healthModels "github.com/cilium/cilium/api/v1/health/models"
-	"github.com/cilium/cilium/pkg/metrics"
+	healthModels "github.com/go-faster/cilium/api/v1/health/models"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 type ServerTestSuite struct{}

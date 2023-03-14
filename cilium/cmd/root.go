@@ -12,8 +12,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	clientPkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/components"
+	clientPkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/components"
 )
 
 var (

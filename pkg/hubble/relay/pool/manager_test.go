@@ -19,11 +19,11 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/hubble/defaults"
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/hubble/testutils"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/hubble/defaults"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/hubble/testutils"
 )
 
 type onClientFunc = func(string) (peerTypes.Client, error)

@@ -10,7 +10,7 @@ package main
 import (
 	"os"
 
-	"github.com/cilium/cilium/hubble-relay/cmd"
+	"github.com/go-faster/cilium/hubble-relay/cmd"
 )
 
 func main() {

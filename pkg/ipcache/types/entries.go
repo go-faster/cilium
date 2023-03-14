@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"net"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 type IPListEntrySlice []*models.IPListEntry

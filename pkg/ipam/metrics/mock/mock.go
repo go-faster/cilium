@@ -6,8 +6,8 @@ package mock
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 type mockMetrics struct {

@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // MetricsObserver is the interface a metrics collector has to implement in

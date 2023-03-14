@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	datapathchecker "github.com/cilium/cilium/pkg/datapath/alignchecker"
-	monitorchecker "github.com/cilium/cilium/pkg/monitor/alignchecker"
+	datapathchecker "github.com/go-faster/cilium/pkg/datapath/alignchecker"
+	monitorchecker "github.com/go-faster/cilium/pkg/monitor/alignchecker"
 )
 
 func main() {

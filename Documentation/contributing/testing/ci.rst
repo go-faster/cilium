@@ -229,7 +229,7 @@ new builds of the image will be pushed to  `Vagrant Cloud
 the `BUILD_ID <https://wiki.jenkins.io/display/JENKINS/Building+a+software+project#Buildingasoftwareproject-below>`_
 environment variable in the Jenkins job. That version ID will be used in Cilium
 `Vagrantfiles
-<https://github.com/cilium/cilium/blob/master/test/Vagrantfile#L10>`_.
+<https://github.com/go-faster/cilium/blob/master/test/Vagrantfile#L10>`_.
 
 Changes to this image are made via contributions to the packer-ci-build
 repository. Authorized GitHub users can trigger builds with a GitHub comment on
@@ -243,11 +243,11 @@ that is not installed in the current version of the box, or if a dependency that
 is cached within the box becomes stale.
 
 Make sure that you update vagrant box versions in `vagrant_box_defaults.rb
-<https://github.com/cilium/cilium/blob/master/vagrant_box_defaults.rb>`__ after
+<https://github.com/go-faster/cilium/blob/master/vagrant_box_defaults.rb>`__ after
 new box is built and tested.
 
 Once you change the image versions locally, create a branch named
-``pr/update-packer-ci-build`` and open a PR ``github.com/cilium/cilium``.
+``pr/update-packer-ci-build`` and open a PR ``github.com/go-faster/cilium``.
 It is important that you use that branch name so the VM images are cached into
 packet.net before the branch is merged.
 
@@ -337,7 +337,7 @@ Triage process
 #. Investigate the failure you are interested in and determine if it is a
    CI-Bug, Flake, or a Regression as defined in the table above.
 
-   #. Search `GitHub issues <https://github.com/cilium/cilium/issues?utf8=%E2%9C%93&q=is%3Aissue+>`_
+   #. Search `GitHub issues <https://github.com/go-faster/cilium/issues?utf8=%E2%9C%93&q=is%3Aissue+>`_
       to see if bug is already filed. Make sure to also include closed issues in
       your search as a CI issue can be considered solved and then re-appears.
       Good search terms are:
@@ -350,7 +350,7 @@ Triage process
       - The line on which the test failed, e.g.
         ::
 
-            github.com/cilium/cilium/test/k8s/kafka_policies.go:202
+            github.com/go-faster/cilium/test/k8s/kafka_policies.go:202
 
       - The error message, e.g.
         ::
@@ -364,7 +364,7 @@ Triage process
    #. Attach the zipfile downloaded from Jenkins with logs from the failing
       tests. A zipfile for all tests is also available.
 
-#. If no existing GitHub issue was found, file a `new GitHub issue <https://github.com/cilium/cilium/issues/new>`_:
+#. If no existing GitHub issue was found, file a `new GitHub issue <https://github.com/go-faster/cilium/issues/new>`_:
 
    #. Attach zipfile downloaded from Jenkins with logs from failing test
    #. If the failure is a new regression or a real bug:

@@ -14,16 +14,16 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/identity"
-	identitymodel "github.com/cilium/cilium/pkg/identity/model"
-	"github.com/cilium/cilium/pkg/maps/policymap"
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/identity"
+	identitymodel "github.com/go-faster/cilium/pkg/identity/model"
+	"github.com/go-faster/cilium/pkg/maps/policymap"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 var (

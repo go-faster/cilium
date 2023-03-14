@@ -14,12 +14,12 @@ import (
 	. "github.com/onsi/gomega"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	"github.com/cilium/cilium/pkg/annotation"
-	"github.com/cilium/cilium/pkg/hubble/defaults"
-	"github.com/cilium/cilium/pkg/identity"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	"github.com/go-faster/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/hubble/defaults"
+	"github.com/go-faster/cilium/pkg/identity"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var _ = Describe("K8sAgentHubbleTest", func() {

@@ -6,7 +6,7 @@ package allocator
 import (
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/idpool"
 )
 
 func (s *AllocatorSuite) TestLocalKeys(c *C) {

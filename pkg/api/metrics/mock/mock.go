@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // MockMetrics is a mock implementation of pkg/api/metrics

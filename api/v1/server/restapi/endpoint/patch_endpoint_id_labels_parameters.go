@@ -18,7 +18,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // NewPatchEndpointIDLabelsParams creates a new PatchEndpointIDLabelsParams object

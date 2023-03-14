@@ -6,7 +6,7 @@
 package fake
 
 import (
-	v2alpha1 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
+	v2alpha1 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

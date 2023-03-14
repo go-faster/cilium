@@ -8,8 +8,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/monitor/agent/listener"
-	"github.com/cilium/cilium/pkg/monitor/payload"
+	"github.com/go-faster/cilium/pkg/monitor/agent/listener"
+	"github.com/go-faster/cilium/pkg/monitor/payload"
 )
 
 // listenerv1_2 implements the cilium-node-monitor API protocol compatible with

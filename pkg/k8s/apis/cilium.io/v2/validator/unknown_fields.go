@@ -15,8 +15,8 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // detectUnknownFields will check the given policy against the expected policy
@@ -32,7 +32,7 @@ import (
 // returns ErrTopLevelDescriptionFound if so. This is likely to be the most
 // common path of this function as we can usually rely on the validation of the
 // CRDs themselves, however the top-level description field has been widely
-// used incorrectly (see https://github.com/cilium/cilium/issues/13155).
+// used incorrectly (see https://github.com/go-faster/cilium/issues/13155).
 //
 // This function returns the following possible errors:
 //   - ErrTopLevelDescriptionFound

@@ -15,10 +15,10 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/kube-openapi/pkg/validation/validate"
 
-	"github.com/cilium/cilium/pkg/k8s/apis/cilium.io/client"
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/client"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // NPValidator is a validator structure used to validate CNP and CCNP.
@@ -113,7 +113,7 @@ var (
 		"instead of acting as a truly empty endpoint selector allowing all traffic. To " +
 		"ensure that the policy behavior does not affect your workloads, consider adding " +
 		"another policy that allows traffic to/from world and cluster entities. For a more " +
-		"detailed discussion on the topic, see https://github.com/cilium/cilium/issues/12844"
+		"detailed discussion on the topic, see https://github.com/go-faster/cilium/issues/12844"
 
 	logOnce sync.Once
 )
@@ -181,7 +181,7 @@ func checkWildCardToFromEndpoint(ccnp *unstructured.Unstructured) error {
 
 // containsWildcardToFromEndpoint returns true if a CCNP contains an empty endpoint selector
 // in ingress/egress rules.
-// For more information - https://github.com/cilium/cilium/issues/12844#issuecomment-672074170
+// For more information - https://github.com/go-faster/cilium/issues/12844#issuecomment-672074170
 func containsWildcardToFromEndpoint(rule *api.Rule) bool {
 	if len(rule.Ingress) > 0 {
 		for _, r := range rule.Ingress {

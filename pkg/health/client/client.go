@@ -17,9 +17,9 @@ import (
 	runtime_client "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	clientapi "github.com/cilium/cilium/api/v1/health/client"
-	"github.com/cilium/cilium/api/v1/health/models"
-	"github.com/cilium/cilium/pkg/health/defaults"
+	clientapi "github.com/go-faster/cilium/api/v1/health/client"
+	"github.com/go-faster/cilium/api/v1/health/models"
+	"github.com/go-faster/cilium/pkg/health/defaults"
 )
 
 type ConnectivityStatusType int

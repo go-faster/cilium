@@ -13,16 +13,16 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/hubble/parser/common"
-	"github.com/cilium/cilium/pkg/hubble/parser/errors"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
-	ippkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/monitor"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/option"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/hubble/parser/common"
+	"github.com/go-faster/cilium/pkg/hubble/parser/errors"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/monitor"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // Parser is a parser for SockTraceNotify payloads

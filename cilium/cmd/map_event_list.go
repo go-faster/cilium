@@ -20,11 +20,11 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/spf13/cobra"
 
-	clientapi "github.com/cilium/cilium/api/v1/client"
-	daemonAPI "github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	clientPkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
+	clientapi "github.com/go-faster/cilium/api/v1/client"
+	daemonAPI "github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	clientPkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 var followMapEvents bool

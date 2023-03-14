@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/cilium/cilium/api/v1/health/models"
+	"github.com/go-faster/cilium/api/v1/health/models"
 )
 
 // PutStatusProbeReader is a Reader for the PutStatusProbe structure.

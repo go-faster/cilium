@@ -10,8 +10,8 @@ import (
 	"golang.org/x/sync/errgroup"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // Resources maps resource names to channels that are closed upon initial

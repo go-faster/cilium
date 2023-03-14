@@ -6,8 +6,8 @@ package eni
 import (
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/aws/eni/types"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/aws/eni/types"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func (e *ENISuite) TestGetMaximumAllocatableIPv4(c *check.C) {

@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 // policyGetCmd represents the policy_get command

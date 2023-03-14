@@ -7,16 +7,16 @@ import (
 	"context"
 	"fmt"
 
-	operatorMetrics "github.com/cilium/cilium/operator/metrics"
-	operatorOption "github.com/cilium/cilium/operator/option"
-	apiMetrics "github.com/cilium/cilium/pkg/api/metrics"
-	azureAPI "github.com/cilium/cilium/pkg/azure/api"
-	azureIPAM "github.com/cilium/cilium/pkg/azure/ipam"
-	"github.com/cilium/cilium/pkg/ipam"
-	"github.com/cilium/cilium/pkg/ipam/allocator"
-	ipamMetrics "github.com/cilium/cilium/pkg/ipam/metrics"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	operatorMetrics "github.com/go-faster/cilium/operator/metrics"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	apiMetrics "github.com/go-faster/cilium/pkg/api/metrics"
+	azureAPI "github.com/go-faster/cilium/pkg/azure/api"
+	azureIPAM "github.com/go-faster/cilium/pkg/azure/ipam"
+	"github.com/go-faster/cilium/pkg/ipam"
+	"github.com/go-faster/cilium/pkg/ipam/allocator"
+	ipamMetrics "github.com/go-faster/cilium/pkg/ipam/metrics"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "ipam-allocator-azure")

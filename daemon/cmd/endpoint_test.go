@@ -13,15 +13,15 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	apiEndpoint "github.com/cilium/cilium/api/v1/server/restapi/endpoint"
-	"github.com/cilium/cilium/pkg/checker"
-	endpointid "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/ipam"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/api/v1/models"
+	apiEndpoint "github.com/go-faster/cilium/api/v1/server/restapi/endpoint"
+	"github.com/go-faster/cilium/pkg/checker"
+	endpointid "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/ipam"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func getEPTemplate(c *C, d *Daemon) *models.EndpointChangeRequest {

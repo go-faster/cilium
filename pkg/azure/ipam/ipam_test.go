@@ -12,15 +12,15 @@ import (
 	"gopkg.in/check.v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	apimock "github.com/cilium/cilium/pkg/azure/api/mock"
-	"github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/ipam"
-	metricsmock "github.com/cilium/cilium/pkg/ipam/metrics/mock"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/testutils"
+	apimock "github.com/go-faster/cilium/pkg/azure/api/mock"
+	"github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/ipam"
+	metricsmock "github.com/go-faster/cilium/pkg/ipam/metrics/mock"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func Test(t *testing.T) {

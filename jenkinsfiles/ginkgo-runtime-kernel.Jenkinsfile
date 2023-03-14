@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        PROJ_PATH = "src/github.com/cilium/cilium"
+        PROJ_PATH = "src/github.com/go-faster/cilium"
         VM_MEMORY = "8192"
         VM_CPUS = "4"
         GINKGO_TIMEOUT="150m"
@@ -34,7 +34,7 @@ pipeline {
             )}"""
         BASE_IMAGE="""${sh(
                 returnStdout: true,
-                script: 'if [ "${run_with_race_detection}" = "" ]; then echo -n "scratch"; else echo -n "quay.io/cilium/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142"; fi'
+                script: 'if [ "${run_with_race_detection}" = "" ]; then echo -n "scratch"; else echo -n "quay.io/go-faster/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142"; fi'
             )}"""
     }
 
@@ -146,7 +146,7 @@ pipeline {
                     sh 'cd ${TESTDIR}; mv *.xml ${WORKSPACE}/${PROJ_PATH}/test || true'
                     sh 'cd ${TESTDIR}; ./vagrant_cleanup.sh || true'
                     archiveArtifacts artifacts: '*.zip'
-                    junit testDataPublishers: [[$class: 'AttachmentPublisher']], testResults: 'src/github.com/cilium/cilium/test/*.xml'
+                    junit testDataPublishers: [[$class: 'AttachmentPublisher']], testResults: 'src/github.com/go-faster/cilium/test/*.xml'
                 }
                 unsuccessful {
                     script {

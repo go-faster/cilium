@@ -165,7 +165,7 @@ resolve this issue. Pick one of the options below:
 
         .. code-block:: shell-session
 
-            $ helm install cilium cilium/cilium \
+            $ helm install cilium go-faster/cilium \
                 --set hubble.tls.enabled=false \
                 ...
 
@@ -173,7 +173,7 @@ resolve this issue. Pick one of the options below:
 
         .. code-block:: shell-session
 
-            $ helm install cilium cilium/cilium --set hubble.tls.enabled=true
+            $ helm install cilium go-faster/cilium --set hubble.tls.enabled=true
 
     .. group-tab:: Disable webhook
 

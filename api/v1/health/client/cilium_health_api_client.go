@@ -13,8 +13,8 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/cilium/cilium/api/v1/health/client/connectivity"
-	"github.com/cilium/cilium/api/v1/health/client/restapi"
+	"github.com/go-faster/cilium/api/v1/health/client/connectivity"
+	"github.com/go-faster/cilium/api/v1/health/client/restapi"
 )
 
 // Default cilium health API HTTP client.

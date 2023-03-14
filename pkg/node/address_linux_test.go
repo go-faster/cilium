@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 
 	"github.com/vishvananda/netlink"
 	. "gopkg.in/check.v1"

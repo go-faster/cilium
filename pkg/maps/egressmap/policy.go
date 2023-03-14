@@ -8,8 +8,8 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/ebpf"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (

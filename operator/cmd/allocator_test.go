@@ -15,13 +15,13 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
-	"github.com/cilium/cilium/pkg/ipam/allocator/podcidr"
-	"github.com/cilium/cilium/pkg/ipam/types"
-	cilium_api_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	cilium_fake "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/fake"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/podcidr"
+	"github.com/go-faster/cilium/pkg/ipam/types"
+	cilium_api_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	cilium_fake "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/fake"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 // TestPodCIDRAllocatorOverlap tests that, on startup all nodes with assigned podCIDRs are processed so that nodes

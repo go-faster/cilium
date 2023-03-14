@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 const gcENIControllerName = "ipam-eni-gc"

@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 func Test_decodeKafka(t *testing.T) {

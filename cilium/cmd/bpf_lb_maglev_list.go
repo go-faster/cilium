@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/lbmap"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/lbmap"
 )
 
 // bpfMaglevListCmd represents the bpf lb maglev list command

@@ -10,12 +10,12 @@ import (
 	"github.com/cilium/ebpf/rlimit"
 	. "gopkg.in/check.v1"
 
-	datapathTypes "github.com/cilium/cilium/pkg/datapath/types"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/testutils"
-	"github.com/cilium/cilium/pkg/version"
-	"github.com/cilium/cilium/pkg/versioncheck"
+	datapathTypes "github.com/go-faster/cilium/pkg/datapath/types"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/versioncheck"
 )
 
 func Test(t *testing.T) {

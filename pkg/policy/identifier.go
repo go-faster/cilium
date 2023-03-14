@@ -6,8 +6,8 @@ package policy
 import (
 	"sync"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // Endpoint refers to any structure which has the following properties:

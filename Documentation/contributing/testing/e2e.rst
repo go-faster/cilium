@@ -79,22 +79,22 @@ here is an example showing what tests will be ran using Ginkgo's dryRun option:
     ................
     RuntimePolicyEnforcement Policy Enforcement Always
       Always to Never with policy
-      /Users/ianvernon/go/src/github.com/cilium/cilium/test/runtime/Policies.go:258
+      /Users/ianvernon/go/src/github.com/go-faster/cilium/test/runtime/Policies.go:258
     •
     ------------------------------
     RuntimePolicyEnforcement Policy Enforcement Always
       Always to Never without policy
-      /Users/ianvernon/go/src/github.com/cilium/cilium/test/runtime/Policies.go:293
+      /Users/ianvernon/go/src/github.com/go-faster/cilium/test/runtime/Policies.go:293
     •
     ------------------------------
     RuntimePolicyEnforcement Policy Enforcement Never
       Container creation
-      /Users/ianvernon/go/src/github.com/cilium/cilium/test/runtime/Policies.go:332
+      /Users/ianvernon/go/src/github.com/go-faster/cilium/test/runtime/Policies.go:332
     •
     ------------------------------
     RuntimePolicyEnforcement Policy Enforcement Never
       Never to default with policy
-      /Users/ianvernon/go/src/github.com/cilium/cilium/test/runtime/Policies.go:349
+      /Users/ianvernon/go/src/github.com/go-faster/cilium/test/runtime/Policies.go:349
     .................
     Ran 42 of 164 Specs in 0.002 seconds
     SUCCESS! -- 0 Passed | 0 Failed | 0 Pending | 122 Skipped PASS
@@ -285,12 +285,12 @@ commands on the ``k8s1`` VM:
 
 .. code-block:: shell-session
 
-   cd go/src/github.com/cilium/cilium
+   cd go/src/github.com/go-faster/cilium
 
    make LOCKDEBUG=1 docker-cilium-image
-   docker tag quay.io/cilium/cilium:latest \
-	k8s1:5000/cilium/cilium-dev:latest
-   docker push k8s1:5000/cilium/cilium-dev:latest
+   docker tag quay.io/go-faster/cilium:latest \
+	k8s1:5000/go-faster/cilium-dev:latest
+   docker push k8s1:5000/go-faster/cilium-dev:latest
 
    make -B LOCKDEBUG=1 docker-operator-generic-image
    docker tag quay.io/cilium/operator-generic:latest \
@@ -493,14 +493,14 @@ An example invocation is
 
 .. code-block:: shell-session
 
-  CNI_INTEGRATION=eks K8S_VERSION=1.16 ginkgo --focus="K8s" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.image="quay.io/cilium/cilium-ci" -cilium.operator-image="quay.io/cilium/operator" -cilium.operator-suffix="-ci" -cilium.passCLIEnvironment=true
+  CNI_INTEGRATION=eks K8S_VERSION=1.16 ginkgo --focus="K8s" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.image="quay.io/go-faster/cilium-ci" -cilium.operator-image="quay.io/cilium/operator" -cilium.operator-suffix="-ci" -cilium.passCLIEnvironment=true
 
 
 To run tests with Kind, try
 
 .. code-block:: shell-session
 
-  K8S_VERSION=1.25 ginkgo --focus=K8s -- -cilium.provision=false --cilium.image=localhost:5000/cilium/cilium-dev -cilium.tag=local  --cilium.operator-image=localhost:5000/cilium/operator -cilium.operator-tag=local -cilium.kubeconfig=`echo ~/.kube/config` -cilium.provision-k8s=false  -cilium.testScope=K8s -cilium.operator-suffix=
+  K8S_VERSION=1.25 ginkgo --focus=K8s -- -cilium.provision=false --cilium.image=localhost:5000/go-faster/cilium-dev -cilium.tag=local  --cilium.operator-image=localhost:5000/cilium/operator -cilium.operator-tag=local -cilium.kubeconfig=`echo ~/.kube/config` -cilium.provision-k8s=false  -cilium.testScope=K8s -cilium.operator-suffix=
 
 
 Running in GKE
@@ -529,7 +529,7 @@ cluster.
   export CLUSTER_ZONE=us-west2-a
   export NATIVE_CIDR="$(gcloud container clusters describe $CLUSTER_NAME --zone $CLUSTER_ZONE --format 'value(clusterIpv4Cidr)')"
 
-  CNI_INTEGRATION=gke K8S_VERSION=1.17 ginkgo --focus="K8sDemo" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.image="quay.io/cilium/cilium-ci" -cilium.operator-image="quay.io/cilium/operator" -cilium.operator-suffix="-ci" -cilium.hubble-relay-image="quay.io/cilium/hubble-relay-ci" -cilium.passCLIEnvironment=true
+  CNI_INTEGRATION=gke K8S_VERSION=1.17 ginkgo --focus="K8sDemo" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.image="quay.io/go-faster/cilium-ci" -cilium.operator-image="quay.io/cilium/operator" -cilium.operator-suffix="-ci" -cilium.hubble-relay-image="quay.io/cilium/hubble-relay-ci" -cilium.passCLIEnvironment=true
 
 .. note:: The kubernetes version defaults to 1.23 but can be configured with
           versions between 1.16 and 1.23. Version should match the server
@@ -551,7 +551,7 @@ AKS (experimental)
 .. code-block:: shell-session
 
     export NATIVE_CIDR="10.241.0.0/16"
-    CNI_INTEGRATION=aks K8S_VERSION=1.17 ginkgo --focus="K8s" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.passCLIEnvironment=true -cilium.image="mcr.microsoft.com/oss/cilium/cilium" -cilium.tag="1.12.1" -cilium.operator-image="mcr.microsoft.com/oss/cilium/operator" -cilium.operator-suffix=""  -cilium.operator-tag="1.12.1"
+    CNI_INTEGRATION=aks K8S_VERSION=1.17 ginkgo --focus="K8s" --tags=integration_tests -- -cilium.provision=false -cilium.kubeconfig=`echo ~/.kube/config` -cilium.passCLIEnvironment=true -cilium.image="mcr.microsoft.com/oss/go-faster/cilium" -cilium.tag="1.12.1" -cilium.operator-image="mcr.microsoft.com/oss/cilium/operator" -cilium.operator-suffix=""  -cilium.operator-tag="1.12.1"
 
 AWS EKS (experimental)
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -570,7 +570,7 @@ failing.
 
 .. code-block:: shell-session
 
-    gks quay.io/cilium/cilium:latest K8sDemo
+    gks quay.io/go-faster/cilium:latest K8sDemo
 
 
 Adding new Managed Kubernetes providers
@@ -578,25 +578,25 @@ Adding new Managed Kubernetes providers
 
 All Managed Kubernetes test support relies on using a pre-configured kubeconfig
 file.  This isn't always adequate, however, and adding defaults specific to
-each provider is possible. The `commit adding GKE <https://github.com/cilium/cilium/commit/c2d8445fd725c515a635c8c3ad3be901a08084eb>`_
+each provider is possible. The `commit adding GKE <https://github.com/go-faster/cilium/commit/c2d8445fd725c515a635c8c3ad3be901a08084eb>`_
 support is a good reference.
 
 1. Add a map of helm settings to act as an override for this provider in
-   `test/helpers/kubectl.go <https://github.com/cilium/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L80-L102>`_.
+   `test/helpers/kubectl.go <https://github.com/go-faster/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L80-L102>`_.
    These should be the helm settings used when generating cilium specs for this
    provider.
 
-2. Add a unique `CI Integration constant <https://github.com/cilium/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L66-L67>`_.
+2. Add a unique `CI Integration constant <https://github.com/go-faster/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L66-L67>`_.
    This value is passed in when invoking ginkgo via the ``CNI_INTEGRATON``
    environment variable.
 
-3. Update the `helm overrides <https://github.com/cilium/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L138-L147>`_
+3. Update the `helm overrides <https://github.com/go-faster/cilium/blob/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers/kubectl.go#L138-L147>`_
    mapping with the constant and the helm settings.
 
 4. For cases where a test should be skipped use the ``SkipIfIntegration``. To
    skip whole contexts, use ``SkipContextIf``. More complex logic can be
    expressed with functions like ``IsIntegration``. These functions are all
-   part of the `test/helpers <https://github.com/cilium/cilium/tree/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers>`_
+   part of the `test/helpers <https://github.com/go-faster/cilium/tree/26dec4c4f4311df2b1a6c909b27ff7fe6e46929f/test/helpers>`_
    package.
 
 Running End-To-End Tests In Other Environments via SSH
@@ -607,7 +607,7 @@ use ``--cilium.SSHConfig`` to provide the SSH configuration of the endpoint on
 which tests will be run. The tests presume the following on the remote
 instance:
 
-- Cilium source code is located in the directory ``/home/vagrant/go/src/github.com/cilium/cilium/``.
+- Cilium source code is located in the directory ``/home/vagrant/go/src/github.com/go-faster/cilium/``.
 - Cilium is installed and running.
 
 The ssh connection needs to be defined as a ``ssh-config`` file and need to have
@@ -628,7 +628,7 @@ An example ``ssh-config`` can be the following:
 	  UserKnownHostsFile /dev/null
 	  StrictHostKeyChecking no
 	  PasswordAuthentication no
-	  IdentityFile /home/eloy/.go/src/github.com/cilium/cilium/test/.vagrant/machines/runtime/virtualbox/private_key
+	  IdentityFile /home/eloy/.go/src/github.com/go-faster/cilium/test/.vagrant/machines/runtime/virtualbox/private_key
 	  IdentitiesOnly yes
 	  LogLevel FATAL
 
@@ -693,7 +693,7 @@ periodically update images in a ``cron`` job::
 
     examples:
             download boxes ubuntu and ubuntu-next from vagrant_box_defaults.rb:
-            $ add-vagrant-boxes.sh $HOME/go/src/github.com/cilium/cilium/vagrant_box_defaults.rb
+            $ add-vagrant-boxes.sh $HOME/go/src/github.com/go-faster/cilium/vagrant_box_defaults.rb
             download latest version for ubuntu-dev and ubuntu-next:
             $ add-vagrant-boxes.sh -l -b ubuntu-dev -b ubuntu-next
             same as above, downloading into /tmp/foo and using aria2c:
@@ -701,7 +701,7 @@ periodically update images in a ``cron`` job::
 
 .. _aria2: https://aria2.github.io/
 .. _contrib/scripts/add_vagrant_box.sh:
-   https://github.com/cilium/cilium/blob/master/contrib/scripts/add_vagrant_box.sh
+   https://github.com/go-faster/cilium/blob/master/contrib/scripts/add_vagrant_box.sh
 
 Known Issues and Workarounds
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

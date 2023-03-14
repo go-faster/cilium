@@ -11,13 +11,13 @@ import (
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/cilium/cilium/pkg/comparator"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	"github.com/cilium/cilium/pkg/k8s/watchers/resources"
-	"github.com/cilium/cilium/pkg/k8s/watchers/subscriber"
-	"github.com/cilium/cilium/pkg/lock"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/comparator"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/resources"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/subscriber"
+	"github.com/go-faster/cilium/pkg/lock"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // RegisterNodeSubscriber allows registration of subscriber.Node implementations.
@@ -132,8 +132,8 @@ func (u *ciliumNodeUpdater) OnAddNode(newNode *v1.Node, swg *lock.StoppableWaitG
 	// We don't need to run OnAddNode because Cilium will fetch the state from
 	// k8s upon initialization and will populate the KVStore [1] node with this
 	// information or create a Cilium Node CR [2].
-	// [1] https://github.com/cilium/cilium/blob/2bea69a54a00f10bec093347900cc66395269154/daemon/cmd/daemon.go#L1102
-	// [2] https://github.com/cilium/cilium/blob/2bea69a54a00f10bec093347900cc66395269154/daemon/cmd/daemon.go#L864-L868
+	// [1] https://github.com/go-faster/cilium/blob/2bea69a54a00f10bec093347900cc66395269154/daemon/cmd/daemon.go#L1102
+	// [2] https://github.com/go-faster/cilium/blob/2bea69a54a00f10bec093347900cc66395269154/daemon/cmd/daemon.go#L864-L868
 	return nil
 }
 

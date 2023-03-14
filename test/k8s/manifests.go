@@ -4,7 +4,7 @@
 package k8sTest
 
 import (
-	"github.com/cilium/cilium/test/helpers"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
+	pb "github.com/go-faster/cilium/api/v1/flow"
 )
 
 func mustGetLabelValues(opts *ContextOptions, flow *pb.Flow) []string {

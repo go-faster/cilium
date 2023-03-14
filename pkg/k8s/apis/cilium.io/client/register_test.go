@@ -18,9 +18,9 @@ import (
 	"k8s.io/apimachinery/pkg/version"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sversion "github.com/cilium/cilium/pkg/k8s/version"
-	"github.com/cilium/cilium/pkg/policy/api"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sversion "github.com/go-faster/cilium/pkg/k8s/version"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // Hook up gocheck into the "go test" runner.

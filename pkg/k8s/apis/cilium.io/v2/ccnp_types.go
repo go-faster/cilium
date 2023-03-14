@@ -9,8 +9,8 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	k8sCiliumUtils "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/utils"
-	"github.com/cilium/cilium/pkg/policy/api"
+	k8sCiliumUtils "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/utils"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // +genclient

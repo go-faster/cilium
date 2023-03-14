@@ -6,7 +6,7 @@ package api
 import (
 	"context"
 
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
 )
 
 // EgressCommonRule is a rule that shares some of its fields across the
@@ -101,7 +101,7 @@ type EgressCommonRule struct {
 	ToGroups []ToGroups `json:"toGroups,omitempty"`
 
 	// TODO: Move this to the policy package
-	// (https://github.com/cilium/cilium/issues/8353)
+	// (https://github.com/go-faster/cilium/issues/8353)
 	aggregatedSelectors EndpointSelectorSlice `json:"-"`
 }
 

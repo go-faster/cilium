@@ -6,8 +6,8 @@ package api
 import (
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/metrics"
-	opMetrics "github.com/cilium/cilium/operator/metrics"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/metrics"
+	opMetrics "github.com/go-faster/cilium/operator/metrics"
 )
 
 type getMetrics struct {

@@ -9,8 +9,8 @@
 package types
 
 import (
-	models "github.com/cilium/cilium/api/v1/models"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	models "github.com/go-faster/cilium/api/v1/models"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 )
 

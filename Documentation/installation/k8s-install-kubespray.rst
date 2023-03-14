@@ -148,7 +148,7 @@ For example, you could add the following flag to the command below: ``-e cilium_
 
   $ ansible-playbook -i ./inventory/hosts ./cluster.yml -e ansible_user=core -e bootstrap_os=coreos -e kube_network_plugin=cilium -b --become-user=root --flush-cache  -e ansible_ssh_private_key_file=<path to EC2 SSH private key file>
 
-.. _latest released Cilium version: https://github.com/cilium/cilium/releases
+.. _latest released Cilium version: https://github.com/go-faster/cilium/releases
 
 If you are interested in configuring your Kubernetes cluster setup, you should consider copying the sample inventory. Then, you can edit the variables in the relevant file in the ``group_vars`` directory.
 

@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	ciliumClient "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
+	ciliumClient "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 // healthGetCmd represents the get command

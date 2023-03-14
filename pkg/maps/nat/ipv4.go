@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/tuple"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/tuple"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 // NatEntry4 represents an IPv4 entry in the NAT table.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type NatEntry4 struct {
 	Created   uint64     `align:"created"`
 	HostLocal uint64     `align:"host_local"`

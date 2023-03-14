@@ -4,7 +4,7 @@
 package k8s
 
 import (
-	"github.com/cilium/cilium/pkg/k8s/types"
+	"github.com/go-faster/cilium/pkg/k8s/types"
 )
 
 // Export for testing.

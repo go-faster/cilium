@@ -11,7 +11,7 @@ from functools import cmp_to_key
 import argparse
 
 
-cilium_source = '/go/src/github.com/cilium/cilium/'
+cilium_source = '/go/src/github.com/go-faster/cilium/'
 
 
 def get_stacks(f):

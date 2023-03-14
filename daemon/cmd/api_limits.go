@@ -6,8 +6,8 @@ package cmd
 import (
 	"time"
 
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/rate"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/rate"
 )
 
 const (

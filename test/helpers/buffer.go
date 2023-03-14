@@ -6,7 +6,7 @@ package helpers
 import (
 	"bytes"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // A Buffer is a variable-sized buffer of bytes with Read and Write methods.

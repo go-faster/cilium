@@ -12,9 +12,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/utils/strings/slices"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	ciliumLabels "github.com/cilium/cilium/pkg/labels"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	ciliumLabels "github.com/go-faster/cilium/pkg/labels"
 )
 
 // ContextIdentifier describes the identification method of a transmission or

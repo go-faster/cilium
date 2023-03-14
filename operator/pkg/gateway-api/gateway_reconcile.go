@@ -19,11 +19,11 @@ import (
 	gatewayv1alpha2 "sigs.k8s.io/gateway-api/apis/v1alpha2"
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	"github.com/cilium/cilium/operator/pkg/model"
-	"github.com/cilium/cilium/operator/pkg/model/ingestion"
-	translation "github.com/cilium/cilium/operator/pkg/model/translation/gateway-api"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model/ingestion"
+	translation "github.com/go-faster/cilium/operator/pkg/model/translation/gateway-api"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to

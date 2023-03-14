@@ -13,13 +13,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/cilium/cilium/pkg/k8s"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/k8s"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // OnAddService handles an add event for services. It implements
-// github.com/cilium/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
+// github.com/go-faster/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
 func (m *Manager) OnAddService(obj *slim_corev1.Service) error {
 	var (
 		svcName = obj.Name
@@ -39,7 +39,7 @@ func (m *Manager) OnAddService(obj *slim_corev1.Service) error {
 }
 
 // OnUpdateService handles an update event for services. It implements
-// github.com/cilium/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
+// github.com/go-faster/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
 func (m *Manager) OnUpdateService(oldObj, newObj *slim_corev1.Service) error {
 	var (
 		svcName = newObj.Name
@@ -59,7 +59,7 @@ func (m *Manager) OnUpdateService(oldObj, newObj *slim_corev1.Service) error {
 }
 
 // OnDeleteService handles a delete event for services. It implements
-// github.com/cilium/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
+// github.com/go-faster/cilium/pkg/k8s/watchers/subscriber.ServiceHandler.
 func (m *Manager) OnDeleteService(obj *slim_corev1.Service) error {
 	var (
 		svcName = obj.Name

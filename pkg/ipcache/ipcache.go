@@ -11,19 +11,19 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	ipcacheTypes "github.com/cilium/cilium/pkg/ipcache/types"
-	"github.com/cilium/cilium/pkg/k8s"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
-	"github.com/cilium/cilium/pkg/types"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	ipcacheTypes "github.com/go-faster/cilium/pkg/ipcache/types"
+	"github.com/go-faster/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 // Identity is the identity representation of an IP<->Identity cache.
@@ -48,7 +48,7 @@ type Identity struct {
 	// createdFromMetadata indicates that this entry was created via the new
 	// metadata API. This is needed to know if it is safe to delete
 	// an IPCache entry when no further metadata is associated with its prefix.
-	// This field is intended to be removed once cilium/cilium#21142 has been
+	// This field is intended to be removed once go-faster/cilium#21142 has been
 	// fully implemented and all entries are created via the new metadata API
 	createdFromMetadata bool
 }

@@ -16,7 +16,7 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/cilium/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model"
 )
 
 const (

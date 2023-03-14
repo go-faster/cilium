@@ -10,15 +10,15 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/operator/metrics"
-	"github.com/cilium/cilium/pkg/allocator"
-	ciliumIdentity "github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/idpool"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/kvstore"
-	kvstoreallocator "github.com/cilium/cilium/pkg/kvstore/allocator"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/operator/metrics"
+	"github.com/go-faster/cilium/pkg/allocator"
+	ciliumIdentity "github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	kvstoreallocator "github.com/go-faster/cilium/pkg/kvstore/allocator"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 func (igc *GC) startKVStoreModeGC(ctx context.Context) error {

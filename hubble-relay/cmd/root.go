@@ -7,12 +7,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cilium/cilium/hubble-relay/cmd/completion"
-	"github.com/cilium/cilium/hubble-relay/cmd/serve"
-	"github.com/cilium/cilium/hubble-relay/cmd/version"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	v "github.com/cilium/cilium/pkg/version"
+	"github.com/go-faster/cilium/hubble-relay/cmd/completion"
+	"github.com/go-faster/cilium/hubble-relay/cmd/serve"
+	"github.com/go-faster/cilium/hubble-relay/cmd/version"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	v "github.com/go-faster/cilium/pkg/version"
 )
 
 // configFilePath defines where the hubble-relay config file should be found.

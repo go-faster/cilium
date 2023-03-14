@@ -9,12 +9,12 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/models"
-	. "github.com/cilium/cilium/api/v1/server/restapi/service"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/service"
+	"github.com/go-faster/cilium/api/v1/models"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/service"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/service"
 )
 
 var warnIdTypeDeprecationOnce sync.Once

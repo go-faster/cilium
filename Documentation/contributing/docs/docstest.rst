@@ -43,7 +43,7 @@ Navigate to the root of the folder where you cloned the project.
 
 .. code-block:: shell-session
     
-    $ cd "${GOPATH}/src/github.com/cilium/cilium"
+    $ cd "${GOPATH}/src/github.com/go-faster/cilium"
 
 Run the code below in your terminal:
 

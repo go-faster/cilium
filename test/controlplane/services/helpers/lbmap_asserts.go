@@ -6,8 +6,8 @@ package helpers
 import (
 	"fmt"
 
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
 )
 
 //

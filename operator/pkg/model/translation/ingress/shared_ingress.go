@@ -4,7 +4,7 @@
 package ingress
 
 import (
-	"github.com/cilium/cilium/operator/pkg/model/translation"
+	"github.com/go-faster/cilium/operator/pkg/model/translation"
 )
 
 // NewSharedIngressTranslator returns a new translator for shared ingress mode.

@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/nat"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/nat"
 )
 
 // bpfNatFlushCmd represents the bpf_nat_flush command

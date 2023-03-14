@@ -10,11 +10,11 @@ import (
 	"golang.org/x/sys/unix"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
-	"github.com/cilium/cilium/pkg/testutils"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/u8proto"
 
 	"github.com/cilium/ebpf/rlimit"
 )

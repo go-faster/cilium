@@ -9,11 +9,11 @@ import (
 
 	"gopkg.in/check.v1"
 
-	apimock "github.com/cilium/cilium/pkg/alibabacloud/api/mock"
-	eniTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	"github.com/cilium/cilium/pkg/alibabacloud/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	apimock "github.com/go-faster/cilium/pkg/alibabacloud/api/mock"
+	eniTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	"github.com/go-faster/cilium/pkg/alibabacloud/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func Test(t *testing.T) {

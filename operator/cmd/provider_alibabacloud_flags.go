@@ -6,8 +6,8 @@
 package cmd
 
 import (
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/option"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 func init() {

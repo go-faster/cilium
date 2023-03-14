@@ -6,8 +6,8 @@ package policy
 import (
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // getPrefixesFromCIDR fetches all CIDRs referred to by the specified slice

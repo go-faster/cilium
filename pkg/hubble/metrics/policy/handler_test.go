@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
-	"github.com/cilium/cilium/pkg/identity"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
+	"github.com/go-faster/cilium/pkg/identity"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/testutil"

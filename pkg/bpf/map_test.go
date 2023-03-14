@@ -10,7 +10,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/byteorder"
 )
 
 func (s *BPFTestSuite) TestExtractCommonName(c *C) {

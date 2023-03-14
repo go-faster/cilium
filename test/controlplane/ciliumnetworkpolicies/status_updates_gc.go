@@ -16,14 +16,14 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	k8sTypes "k8s.io/apimachinery/pkg/types"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/cidr"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/test/controlplane"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/cidr"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/test/controlplane"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 var (

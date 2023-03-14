@@ -13,7 +13,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/cilium/cilium/api/v1/health/models"
+	"github.com/go-faster/cilium/api/v1/health/models"
 )
 
 // PutStatusProbeOKCode is the HTTP code returned for type PutStatusProbeOK

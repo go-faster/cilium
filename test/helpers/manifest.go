@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cilium/cilium/test/config"
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/config"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
 )
 
 // NamespaceName represents a Kubernetes namespace name

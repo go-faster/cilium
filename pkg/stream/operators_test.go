@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/cilium/cilium/pkg/stream"
+	. "github.com/go-faster/cilium/pkg/stream"
 )
 
 func TestMap(t *testing.T) {

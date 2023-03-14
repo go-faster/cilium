@@ -18,7 +18,7 @@ import (
 	"github.com/onsi/gomega/types"
 	"k8s.io/client-go/util/jsonpath"
 
-	"github.com/cilium/cilium/test/logger"
+	"github.com/go-faster/cilium/test/logger"
 )
 
 // CmdStreamBuffer is a buffer that buffers the stream output of a command.

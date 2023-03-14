@@ -12,8 +12,8 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/pkg/endpoint"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 func Test_updateCEPUID(t *testing.T) {

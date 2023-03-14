@@ -12,11 +12,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/fqdn/matchpattern"
-	"github.com/cilium/cilium/pkg/fqdn/re"
-	ippkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/fqdn/matchpattern"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // cacheEntry objects hold data passed in via DNSCache.Update, nominally

@@ -8,9 +8,9 @@ import (
 	"net"
 	"unsafe"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	ippkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/types"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 // Must be in sync with ENDPOINT_KEY_* in <bpf/lib/common.h>

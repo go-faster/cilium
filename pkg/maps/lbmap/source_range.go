@@ -8,11 +8,11 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (
@@ -38,7 +38,7 @@ var _ SourceRangeKey = (*SourceRangeKey4)(nil)
 var _ SourceRangeKey = (*SourceRangeKey6)(nil)
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type SourceRangeKey4 struct {
 	PrefixLen uint32     `align:"lpm_key"`
 	RevNATID  uint16     `align:"rev_nat_id"`
@@ -82,7 +82,7 @@ func (k *SourceRangeKey4) GetRevNATID() uint16 {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type SourceRangeKey6 struct {
 	PrefixLen uint32     `align:"lpm_key"`
 	RevNATID  uint16     `align:"rev_nat_id"`
@@ -126,7 +126,7 @@ func (k *SourceRangeKey6) GetRevNATID() uint16 {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type SourceRangeValue struct {
 	Pad uint8 // not used
 }

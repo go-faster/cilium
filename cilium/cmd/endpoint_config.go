@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/command"
-	endpointid "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/command"
+	endpointid "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var listOptions bool

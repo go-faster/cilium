@@ -6,11 +6,11 @@ package mockmaps
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	datapathTypes "github.com/cilium/cilium/pkg/datapath/types"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/cidr"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	datapathTypes "github.com/go-faster/cilium/pkg/datapath/types"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type LBMockMap struct {

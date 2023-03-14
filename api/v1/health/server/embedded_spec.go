@@ -257,7 +257,7 @@ func init() {
         },
         "import": {
           "alias": "ciliumModels",
-          "package": "github.com/cilium/cilium/api/v1/models"
+          "package": "github.com/go-faster/cilium/api/v1/models"
         },
         "type": "StatusResponse"
       }
@@ -504,7 +504,7 @@ func init() {
         },
         "import": {
           "alias": "ciliumModels",
-          "package": "github.com/cilium/cilium/api/v1/models"
+          "package": "github.com/go-faster/cilium/api/v1/models"
         },
         "type": "StatusResponse"
       }

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // maskedIPToLabelString is the base method for serializing an IP + prefix into

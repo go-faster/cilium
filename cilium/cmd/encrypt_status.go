@@ -14,10 +14,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/common"
+	"github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/common"
 )
 
 const (

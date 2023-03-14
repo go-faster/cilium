@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
 )
 
 // Peer is like hubblePeer.Peer but includes a Conn attribute to reach the

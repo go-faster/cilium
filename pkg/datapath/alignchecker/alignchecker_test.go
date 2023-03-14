@@ -6,7 +6,7 @@ package alignchecker
 import (
 	"testing"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func TestCheckStructAlignments(t *testing.T) {

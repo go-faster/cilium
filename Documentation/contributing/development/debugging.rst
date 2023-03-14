@@ -380,7 +380,7 @@ To compile a Cilium binary with race detection, you can do:
 .. Note::
 
     For building the Operator with race detection, you must also provide
-    ``BASE_IMAGE`` which can be the ``cilium/cilium-runtime`` image from the
+    ``BASE_IMAGE`` which can be the ``go-faster/cilium-runtime`` image from the
     root Dockerfile found in the Cilium repository.
 
 To run integration tests with race detection, you can do:

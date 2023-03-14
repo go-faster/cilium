@@ -10,10 +10,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	endpointid "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/labels/model"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	endpointid "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels/model"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

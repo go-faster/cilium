@@ -10,17 +10,17 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/callsmap"
-	"github.com/cilium/cilium/pkg/maps/cidrmap"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/maps/ipmasq"
-	"github.com/cilium/cilium/pkg/maps/lbmap"
-	"github.com/cilium/cilium/pkg/maps/policymap"
-	"github.com/cilium/cilium/pkg/maps/recorder"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/callsmap"
+	"github.com/go-faster/cilium/pkg/maps/cidrmap"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/maps/ipmasq"
+	"github.com/go-faster/cilium/pkg/maps/lbmap"
+	"github.com/go-faster/cilium/pkg/maps/policymap"
+	"github.com/go-faster/cilium/pkg/maps/recorder"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

@@ -11,7 +11,7 @@ export HELM_VERSION="3.7.0"
 export TOKEN="258062.5d84c017c9b2796c"
 export CILIUM_CONFIG_DIR="/opt/cilium"
 export PROVISIONSRC="/tmp/provision/"
-export SRC_FOLDER="/home/vagrant/go/src/github.com/cilium/cilium"
+export SRC_FOLDER="/home/vagrant/go/src/github.com/go-faster/cilium"
 export SYSTEMD_SERVICES="$SRC_FOLDER/contrib/systemd"
 
 NODE=$1

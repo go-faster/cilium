@@ -6,8 +6,8 @@ package kafka
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
-	api "github.com/cilium/cilium/pkg/policy/api/kafka"
+	"github.com/go-faster/cilium/pkg/flowdebug"
+	api "github.com/go-faster/cilium/pkg/policy/api/kafka"
 )
 
 type Rule struct {

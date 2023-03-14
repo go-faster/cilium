@@ -12,12 +12,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	apiTypes "k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/pkg/endpoint"
-	cilium_v2a1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/types"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	cilium_v2a1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/types"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/node"
 )
 
 type localEndpointCache interface {

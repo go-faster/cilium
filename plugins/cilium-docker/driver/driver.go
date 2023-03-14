@@ -23,17 +23,17 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/datapath/connector"
-	"github.com/cilium/cilium/pkg/datapath/link"
-	"github.com/cilium/cilium/pkg/datapath/linux/route"
-	datapathOption "github.com/cilium/cilium/pkg/datapath/option"
-	endpointIDPkg "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/datapath/connector"
+	"github.com/go-faster/cilium/pkg/datapath/link"
+	"github.com/go-faster/cilium/pkg/datapath/linux/route"
+	datapathOption "github.com/go-faster/cilium/pkg/datapath/option"
+	endpointIDPkg "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "cilium-docker-driver")

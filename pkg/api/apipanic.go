@@ -10,7 +10,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 // APIPanicHandler recovers from API panics and logs encountered panics

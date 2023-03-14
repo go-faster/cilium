@@ -4,8 +4,8 @@
 package mockmaps
 
 import (
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/nat"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/nat"
 )
 
 // NatMockMap implements the NatMap interface and can be used for unit tests.

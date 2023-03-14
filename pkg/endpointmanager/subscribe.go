@@ -3,7 +3,7 @@
 
 package endpointmanager
 
-import "github.com/cilium/cilium/pkg/endpoint"
+import "github.com/go-faster/cilium/pkg/endpoint"
 
 // Subscribers may register via Subscribe() to be notified when events occur.
 type Subscriber interface {

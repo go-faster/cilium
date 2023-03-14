@@ -10,16 +10,16 @@ import (
 	"github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/route"
-	"github.com/cilium/cilium/pkg/ip"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sLabels "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/datapath/linux/route"
+	"github.com/go-faster/cilium/pkg/ip"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sLabels "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // policyGatewayConfig is the internal representation of an egress gateway,

@@ -6,9 +6,9 @@ package ctmap
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/nat"
-	"github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/nat"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 type gcStats struct {

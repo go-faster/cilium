@@ -4,8 +4,8 @@
 package cmd
 
 import (
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/proxy/logger"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/proxy/logger"
 )
 
 // NewProxyLogRecord is invoked by the proxy accesslog on each new access log entry

@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"net/http"
 
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
-	ciliumv2alpha1 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
+	ciliumv2alpha1 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

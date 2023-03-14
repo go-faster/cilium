@@ -9,11 +9,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	restapi "github.com/cilium/cilium/api/v1/server/restapi/metrics"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/spanstat"
+	restapi "github.com/go-faster/cilium/api/v1/server/restapi/metrics"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/spanstat"
 )
 
 type getMetrics struct {

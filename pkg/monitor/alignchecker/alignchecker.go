@@ -6,8 +6,8 @@ package alignchecker
 import (
 	"reflect"
 
-	check "github.com/cilium/cilium/pkg/alignchecker"
-	"github.com/cilium/cilium/pkg/monitor"
+	check "github.com/go-faster/cilium/pkg/alignchecker"
+	"github.com/go-faster/cilium/pkg/monitor"
 )
 
 // See pkg/datapath/alignchecker/alignchecker.go:CheckStructAlignments()

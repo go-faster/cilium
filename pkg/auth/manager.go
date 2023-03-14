@@ -8,10 +8,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/monitor"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/monitor"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 type authManager struct {

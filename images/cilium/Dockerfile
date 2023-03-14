@@ -1,12 +1,12 @@
 # Copyright Authors of Cilium
 # SPDX-License-Identifier: Apache-2.0
 
-ARG CILIUM_BUILDER_IMAGE=quay.io/cilium/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
-ARG CILIUM_RUNTIME_IMAGE=quay.io/cilium/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142
+ARG CILIUM_BUILDER_IMAGE=quay.io/go-faster/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
+ARG CILIUM_RUNTIME_IMAGE=quay.io/go-faster/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142
 
 # cilium-envoy from github.com/cilium/proxy
 #
-FROM quay.io/cilium/cilium-envoy:b218e4dd49048afd03984963f832fe4a80f8e26f@sha256:78828f19e90d16ccd25c9f461e86d3d08b8f1e2b347f997501b59e30fc3d6b1e as cilium-envoy
+FROM quay.io/go-faster/cilium-envoy:b218e4dd49048afd03984963f832fe4a80f8e26f@sha256:78828f19e90d16ccd25c9f461e86d3d08b8f1e2b347f997501b59e30fc3d6b1e as cilium-envoy
 
 #
 # Hubble CLI
@@ -44,12 +44,12 @@ ARG LIBNETWORK_PLUGIN
 # Please do not add any dependency updates before the 'make install' here,
 # as that will mess with caching for incremental builds!
 #
-WORKDIR /go/src/github.com/cilium/cilium
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
+WORKDIR /go/src/github.com/go-faster/cilium
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
     make GOARCH=${TARGETARCH} RACE=${RACE} NOSTRIP=${NOSTRIP} NOOPT=${NOOPT} LOCKDEBUG=${LOCKDEBUG} PKG_BUILD=1 V=${V} LIBNETWORK_PLUGIN=${LIBNETWORK_PLUGIN} \
     DESTDIR=/tmp/install/${TARGETOS}/${TARGETARCH} build-container install-container-binary
 
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
     # install-bash-completion will execute the bash_completion script. It is
     # fine to run this with same architecture as BUILDARCH since the output of
     # bash_completion is the same for both architectures.

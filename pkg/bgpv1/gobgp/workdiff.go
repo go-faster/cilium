@@ -6,8 +6,8 @@ package gobgp
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
 )
 
 // reconcileDiff is a helper structure which provides fields and a method set

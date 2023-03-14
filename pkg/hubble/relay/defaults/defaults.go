@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	ciliumDefaults "github.com/cilium/cilium/pkg/defaults"
-	hubbledefaults "github.com/cilium/cilium/pkg/hubble/defaults"
+	ciliumDefaults "github.com/go-faster/cilium/pkg/defaults"
+	hubbledefaults "github.com/go-faster/cilium/pkg/hubble/defaults"
 )
 
 const (

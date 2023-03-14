@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/goleak"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 var goleakOptions = []goleak.Option{
@@ -20,8 +20,8 @@ var goleakOptions = []goleak.Option{
 	// client-go logger).
 	goleak.IgnoreCurrent(),
 	// Ignore goroutines started by the policy trifecta, see [newPolicyTrifecta].
-	goleak.IgnoreTopFunction("github.com/cilium/cilium/pkg/identity/cache.(*identityWatcher).watch.func1"),
-	goleak.IgnoreTopFunction("github.com/cilium/cilium/pkg/trigger.(*Trigger).waiter"),
+	goleak.IgnoreTopFunction("github.com/go-faster/cilium/pkg/identity/cache.(*identityWatcher).watch.func1"),
+	goleak.IgnoreTopFunction("github.com/go-faster/cilium/pkg/trigger.(*Trigger).waiter"),
 }
 
 // TestAgentCell verifies that the Agent hive can be instantiated with

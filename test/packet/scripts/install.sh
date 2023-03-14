@@ -41,7 +41,7 @@ dpkg -i vagrant_*.deb
 cp /provision/add_vagrant_box.sh /usr/local/bin/
 chmod 755 /usr/local/bin/add_vagrant_box.sh
 
-curl -s https://raw.githubusercontent.com/cilium/cilium/master/vagrant_box_defaults.rb > defaults.rb
+curl -s https://raw.githubusercontent.com/go-faster/cilium/master/vagrant_box_defaults.rb > defaults.rb
 /usr/local/bin/add_vagrant_box.sh defaults.rb
 
 wget https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip
@@ -68,4 +68,4 @@ go install github.com/google/gops@eebecad9f8eb8eab9cb9da639f1dd7942272c7d5 # v0.
 go install github.com/onsi/ginkgo/ginkgo@d38b9d946d52cd175495d30143fbecc5aff98f13 # v1.16.5
 sudo ln -sf /go/bin/* /usr/local/bin/
 
-echo 'cd /root/go/src/github.com/cilium/cilium' >> /root/.bashrc
+echo 'cd /root/go/src/github.com/go-faster/cilium' >> /root/.bashrc

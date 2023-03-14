@@ -9,12 +9,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/bandwidth"
-	"github.com/cilium/cilium/pkg/eventqueue"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/bwmap"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/bandwidth"
+	"github.com/go-faster/cilium/pkg/eventqueue"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/bwmap"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 // EndpointRegenerationEvent contains all fields necessary to regenerate an endpoint.

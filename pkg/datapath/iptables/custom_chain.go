@@ -9,7 +9,7 @@ import (
 
 	"github.com/mattn/go-shellwords"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 type customChain struct {

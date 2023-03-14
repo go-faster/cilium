@@ -6,8 +6,8 @@ package seven
 import (
 	"fmt"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 func decodeKafka(flowType accesslog.FlowType, kafka *accesslog.LogRecordKafka) *flowpb.Layer7_Kafka {

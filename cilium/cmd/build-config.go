@@ -12,11 +12,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	k8sConsts "github.com/cilium/cilium/pkg/k8s/constants"
-	"github.com/cilium/cilium/pkg/option/resolver"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	k8sConsts "github.com/go-faster/cilium/pkg/k8s/constants"
+	"github.com/go-faster/cilium/pkg/option/resolver"
 )
 
 var buildConfigCell = cell.Module(

@@ -10,9 +10,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/endpoint"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
 )
 
 // fakeCheck detects endpoints as unhealthy if they have an even EndpointID.

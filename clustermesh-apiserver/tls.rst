@@ -222,7 +222,7 @@ externally accessible service IP from your cluster:
 Starting Cilium in a Container in a VM
 ======================================
 
-$ docker run -d --name cilium --restart always --privileged --cap-add ALL --log-driver syslog cilium/cilium-dev:testing  
+$ docker run -d --name cilium --restart always --privileged --cap-add ALL --log-driver syslog go-faster/cilium-dev:testing  
 
 
 --volume /home/vagrant/cilium/etcd:/var/lib/cilium/etcd

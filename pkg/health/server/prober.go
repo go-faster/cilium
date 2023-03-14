@@ -12,11 +12,11 @@ import (
 	"github.com/servak/go-fastping"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/api/v1/health/models"
-	ciliumModels "github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/health/probe"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/api/v1/health/models"
+	ciliumModels "github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/health/probe"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // healthReport is a snapshot of the health of the cluster.

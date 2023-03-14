@@ -183,7 +183,7 @@ func (TraceObservationPoint) EnumDescriptor() ([]byte, []int) {
 
 // This enum corresponds to Cilium's L7 accesslog FlowType:
 //
-//	https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L26
+//	https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L26
 type L7FlowType int32
 
 const (
@@ -1233,7 +1233,7 @@ type Flow struct {
 	// traffic_direction of the connection, e.g. ingress or egress
 	TrafficDirection TrafficDirection `protobuf:"varint,22,opt,name=traffic_direction,json=trafficDirection,proto3,enum=flow.TrafficDirection" json:"traffic_direction,omitempty"`
 	// policy_match_type is only applicable to the cilium event type PolicyVerdict
-	// https://github.com/cilium/cilium/blob/e831859b5cc336c6d964a6d35bbd34d1840e21b9/pkg/monitor/datapath_policy.go#L50
+	// https://github.com/go-faster/cilium/blob/e831859b5cc336c6d964a6d35bbd34d1840e21b9/pkg/monitor/datapath_policy.go#L50
 	PolicyMatchType uint32 `protobuf:"varint,23,opt,name=policy_match_type,json=policyMatchType,proto3" json:"policy_match_type,omitempty"`
 	// Only applicable to cilium trace notifications, blank for other types.
 	TraceObservationPoint TraceObservationPoint `protobuf:"varint,24,opt,name=trace_observation_point,json=traceObservationPoint,proto3,enum=flow.TraceObservationPoint" json:"trace_observation_point,omitempty"`
@@ -1647,7 +1647,7 @@ func (*Layer4_SCTP) isLayer4_Protocol() {}
 
 // Message for L7 flow, which roughly corresponds to Cilium's accesslog LogRecord:
 //
-//	https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L141
+//	https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L141
 type Layer7 struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -2079,7 +2079,7 @@ type IP struct {
 	Destination string    `protobuf:"bytes,2,opt,name=destination,proto3" json:"destination,omitempty"`
 	IpVersion   IPVersion `protobuf:"varint,3,opt,name=ipVersion,proto3,enum=flow.IPVersion" json:"ipVersion,omitempty"`
 	// This field indicates whether the TraceReasonEncryptMask is set or not.
-	// https://github.com/cilium/cilium/blob/ba0ed147bd5bb342f67b1794c2ad13c6e99d5236/pkg/monitor/datapath_trace.go#L27
+	// https://github.com/go-faster/cilium/blob/ba0ed147bd5bb342f67b1794c2ad13c6e99d5236/pkg/monitor/datapath_trace.go#L27
 	Encrypted bool `protobuf:"varint,4,opt,name=encrypted,proto3" json:"encrypted,omitempty"`
 }
 
@@ -2536,13 +2536,13 @@ type EventTypeFilter struct {
 	unknownFields protoimpl.UnknownFields
 
 	// type is the primary flow type as defined by:
-	// github.com/cilium/cilium/pkg/monitor/api.MessageType*
+	// github.com/go-faster/cilium/pkg/monitor/api.MessageType*
 	Type int32 `protobuf:"varint,1,opt,name=type,proto3" json:"type,omitempty"`
 	// match_sub_type is set to true when matching on the sub_type should
 	// be done. This flag is required as 0 is a valid sub_type.
 	MatchSubType bool `protobuf:"varint,2,opt,name=match_sub_type,json=matchSubType,proto3" json:"match_sub_type,omitempty"`
 	// sub_type is the secondary type, e.g.
-	// - github.com/cilium/cilium/pkg/monitor/api.Trace*
+	// - github.com/go-faster/cilium/pkg/monitor/api.Trace*
 	SubType int32 `protobuf:"varint,3,opt,name=sub_type,json=subType,proto3" json:"sub_type,omitempty"`
 }
 
@@ -2606,12 +2606,12 @@ type CiliumEventType struct {
 	unknownFields protoimpl.UnknownFields
 
 	// type of event the flow originated from, i.e.
-	// github.com/cilium/cilium/pkg/monitor/api.MessageType*
+	// github.com/go-faster/cilium/pkg/monitor/api.MessageType*
 	Type int32 `protobuf:"varint,1,opt,name=type,proto3" json:"type,omitempty"`
 	// sub_type may indicate more details depending on type, e.g.
-	// - github.com/cilium/cilium/pkg/monitor/api.Trace*
-	// - github.com/cilium/cilium/pkg/monitor/api.Drop*
-	// - github.com/cilium/cilium/pkg/monitor/api.DbgCapture*
+	// - github.com/go-faster/cilium/pkg/monitor/api.Trace*
+	// - github.com/go-faster/cilium/pkg/monitor/api.Drop*
+	// - github.com/go-faster/cilium/pkg/monitor/api.DbgCapture*
 	SubType int32 `protobuf:"varint,2,opt,name=sub_type,json=subType,proto3" json:"sub_type,omitempty"`
 }
 
@@ -2987,7 +2987,7 @@ func (x *FlowFilter) GetTraceId() []string {
 
 // DNS flow. This is basically directly mapped from Cilium's LogRecordDNS:
 //
-//	https://github.com/cilium/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L264
+//	https://github.com/go-faster/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L264
 type DNS struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -3003,7 +3003,7 @@ type DNS struct {
 	Cnames []string `protobuf:"bytes,4,rep,name=cnames,proto3" json:"cnames,omitempty"`
 	// Corresponds to DNSDataSource defined in:
 	//
-	//	https://github.com/cilium/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L253
+	//	https://github.com/go-faster/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L253
 	ObservationSource string `protobuf:"bytes,5,opt,name=observation_source,json=observationSource,proto3" json:"observation_source,omitempty"`
 	// Return code of the DNS request defined in:
 	//
@@ -3163,7 +3163,7 @@ func (x *HTTPHeader) GetValue() string {
 
 // L7 information for HTTP flows. It corresponds to Cilium's accesslog.LogRecordHTTP type.
 //
-//	https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L206
+//	https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L206
 type HTTP struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -3245,7 +3245,7 @@ func (x *HTTP) GetHeaders() []*HTTPHeader {
 
 // L7 information for Kafka flows. It corresponds to Cilium's accesslog.LogRecordKafka type.
 //
-//	https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L229
+//	https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L229
 type Kafka struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

@@ -22,12 +22,12 @@
 ###############################################################################
 GHCURL="curl -s --fail --retry 10 -u x-access-token:${GITHUB_TOKEN:-$FLAGS_github_token}"
 JCURL="curl -g -s --fail --retry 10"
-CILIUM_GITHUB_API='https://api.github.com/repos/cilium/cilium'
+CILIUM_GITHUB_API='https://api.github.com/repos/go-faster/cilium'
 CILIUM_GITHUB_RAW_ORG='https://raw.githubusercontent.com/cilium'
 
-CILIUM_GITHUB_SEARCHAPI='https://api.github.com/search/issues?per_page=100&q=is:pr%20is:merged%20repo:cilium/cilium%20'
-CILIUM_GITHUB_URL='https://github.com/cilium/cilium'
-CILIUM_GITHUB_SSH='git@github.com:cilium/cilium.git'
+CILIUM_GITHUB_SEARCHAPI='https://api.github.com/search/issues?per_page=100&q=is:pr%20is:merged%20repo:go-faster/cilium%20'
+CILIUM_GITHUB_URL='https://github.com/go-faster/cilium'
+CILIUM_GITHUB_SSH='git@github.com:go-faster/cilium.git'
 
 # Regular expressions for bash regex matching
 # 0=entire branch name

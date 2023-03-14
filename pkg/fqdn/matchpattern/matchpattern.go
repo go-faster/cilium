@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/fqdn/dns"
-	"github.com/cilium/cilium/pkg/fqdn/re"
+	"github.com/go-faster/cilium/pkg/fqdn/dns"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
 )
 
 const allowedDNSCharsREGroup = "[-a-zA-Z0-9_]"

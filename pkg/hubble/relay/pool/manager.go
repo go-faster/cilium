@@ -12,11 +12,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc/connectivity"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/lock"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type peer struct {

@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"strings"
 
-	k8sLbls "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	validation "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1/validation"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/metrics"
+	k8sLbls "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	validation "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1/validation"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "policy-api")

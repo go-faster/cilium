@@ -121,7 +121,7 @@ jobs:
       max-parallel: 8
       matrix:
         include:
-          # See https://github.com/cilium/cilium/issues/20606 for configuration table
+          # See https://github.com/go-faster/cilium/issues/20606 for configuration table
 
           - name: '1'
             kernel: '4.19-main'
@@ -190,7 +190,7 @@ jobs:
             tunnel: 'vxlan'
             encryption: 'ipsec'
             encryption-node: 'false'
-            ipv6: 'false' # until https://github.com/cilium/cilium/issues/23461 has been fixed
+            ipv6: 'false' # until https://github.com/go-faster/cilium/issues/23461 has been fixed
 
           - name: '10'
             kernel: '5.4-main'
@@ -227,7 +227,7 @@ jobs:
             tunnel: 'disabled'
             encryption: 'wireguard'
             encryption-node: 'false'
-            lb-mode: 'snat' # https://github.com/cilium/cilium/issues/23328
+            lb-mode: 'snat' # https://github.com/go-faster/cilium/issues/23328
             endpoint-routes: 'true'
             egress-gateway: 'true'
 
@@ -238,7 +238,7 @@ jobs:
             tunnel: 'vxlan'
             encryption: 'wireguard'
             encryption-node: 'true'
-            lb-mode: 'snat' # https://github.com/cilium/cilium/issues/23328
+            lb-mode: 'snat' # https://github.com/go-faster/cilium/issues/23328
             egress-gateway: 'true'
 
           - name: '15'
@@ -310,7 +310,7 @@ jobs:
             IPV6="--helm-set=ipv6.enabled=true"
           fi
           # We need to enable BPF masquerading for EGW so we keep the default
-          # here. masq is off due to https://github.com/cilium/cilium/issues/23283
+          # here. masq is off due to https://github.com/go-faster/cilium/issues/23283
           EGRESS_GATEWAY="--helm-set=bpf.masquerade=false"
           if [ "${{ matrix.egress-gateway }}" == "true" ]; then
             EGRESS_GATEWAY="--helm-set=bpf.masquerade=true --helm-set=enableIPv6Masquerade=false"
@@ -349,7 +349,7 @@ jobs:
       - name: Install cilium-cli
         shell: bash
         run: |
-          cid=$(docker create quay.io/cilium/cilium-cli-ci:latest ls)
+          cid=$(docker create quay.io/go-faster/cilium-cli-ci:latest ls)
           docker cp $cid:/usr/local/bin/cilium ./cilium-cli
           docker rm $cid
 

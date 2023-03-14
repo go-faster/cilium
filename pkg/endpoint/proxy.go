@@ -7,10 +7,10 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/proxy/logger"
-	"github.com/cilium/cilium/pkg/revert"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/proxy/logger"
+	"github.com/go-faster/cilium/pkg/revert"
 )
 
 // EndpointProxy defines any L7 proxy with which an Endpoint must interact.

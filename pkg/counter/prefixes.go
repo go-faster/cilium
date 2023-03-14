@@ -8,7 +8,7 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // PrefixLengthCounter tracks references to prefix lengths, limited by the

@@ -73,7 +73,7 @@ of all nodes in the cluster:
 
 .. code-block:: shell-session
 
-   curl -sLO https://raw.githubusercontent.com/cilium/cilium/master/contrib/k8s/k8s-cilium-exec.sh
+   curl -sLO https://raw.githubusercontent.com/go-faster/cilium/master/contrib/k8s/k8s-cilium-exec.sh
    chmod +x ./k8s-cilium-exec.sh
 
 ... and run ``cilium status`` on all nodes:
@@ -445,7 +445,7 @@ selecting the respective pods will not be applied. See the section
 :ref:`network_policy` for more details.
 
 For a quick assessment of whether any pods are not managed by Cilium, the
-`Cilium CLI <https://github.com/cilium/cilium-cli>`_ will print the number
+`Cilium CLI <https://github.com/go-faster/cilium-cli>`_ will print the number
 of managed pods. If this prints that all of the pods are managed by Cilium,
 then there is no problem:
 
@@ -475,7 +475,7 @@ Cilium:
 
 .. code-block:: shell-session
 
-   $ curl -sLO https://raw.githubusercontent.com/cilium/cilium/master/contrib/k8s/k8s-unmanaged.sh
+   $ curl -sLO https://raw.githubusercontent.com/go-faster/cilium/master/contrib/k8s/k8s-unmanaged.sh
    $ chmod +x k8s-unmanaged.sh
    $ ./k8s-unmanaged.sh
    kube-system/cilium-hqpk7
@@ -623,7 +623,7 @@ functional.
 In addition, Cilium performs a background check in an interval to determine
 etcd health and potentially take action. The interval depends on the overall
 cluster size. The larger the cluster, the longer the `interval
-<https://pkg.go.dev/github.com/cilium/cilium/pkg/kvstore?tab=doc#ExtraOptions.StatusCheckInterval>`_:
+<https://pkg.go.dev/github.com/go-faster/cilium/pkg/kvstore?tab=doc#ExtraOptions.StatusCheckInterval>`_:
 
  * If no etcd endpoints can be reached, Cilium will report failure in ``cilium
    status``. This will cause the liveness and readiness probe of Kubernetes to
@@ -723,7 +723,7 @@ Identifies the Cilium pod that is managing a particular pod in a namespace:
 
 .. code-block:: shell-session
 
-    $ curl -sLO https://raw.githubusercontent.com/cilium/cilium/master/contrib/k8s/k8s-get-cilium-pod.sh
+    $ curl -sLO https://raw.githubusercontent.com/go-faster/cilium/master/contrib/k8s/k8s-get-cilium-pod.sh
     $ chmod +x k8s-get-cilium-pod.sh
     $ ./k8s-get-cilium-pod.sh luke-pod default
     cilium-zmjj9
@@ -743,7 +743,7 @@ Run a command within all Cilium pods of a cluster
 
 .. code-block:: shell-session
 
-    $ curl -sLO https://raw.githubusercontent.com/cilium/cilium/master/contrib/k8s/k8s-cilium-exec.sh
+    $ curl -sLO https://raw.githubusercontent.com/go-faster/cilium/master/contrib/k8s/k8s-cilium-exec.sh
     $ chmod +x k8s-cilium-exec.sh
     $ ./k8s-cilium-exec.sh uptime
      10:15:16 up 6 days,  7:37,  0 users,  load average: 0.00, 0.02, 0.00
@@ -766,7 +766,7 @@ were started before Cilium was deployed.
 
 .. code-block:: shell-session
 
-   $ curl -sLO https://raw.githubusercontent.com/cilium/cilium/master/contrib/k8s/k8s-unmanaged.sh
+   $ curl -sLO https://raw.githubusercontent.com/go-faster/cilium/master/contrib/k8s/k8s-unmanaged.sh
    $ chmod +x k8s-unmanaged.sh
    $ ./k8s-unmanaged.sh
    kube-system/cilium-hqpk7
@@ -938,7 +938,7 @@ ensure that developers have the best chance to reproduce the issue.
 .. _CNI: https://github.com/containernetworking/cni
 .. _Volumes: https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/
 
-.. _Cilium Frequently Asked Questions (FAQ): https://github.com/cilium/cilium/issues?utf8=%E2%9C%93&q=label%3Akind%2Fquestion%20
+.. _Cilium Frequently Asked Questions (FAQ): https://github.com/go-faster/cilium/issues?utf8=%E2%9C%93&q=label%3Akind%2Fquestion%20
 
-.. _issue tracker: https://github.com/cilium/cilium/issues
+.. _issue tracker: https://github.com/go-faster/cilium/issues
 .. _GitHub issue: `issue tracker`_

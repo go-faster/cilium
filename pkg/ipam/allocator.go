@@ -13,7 +13,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 const (

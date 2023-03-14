@@ -4,9 +4,9 @@
 package proxy
 
 import (
-	"github.com/cilium/cilium/pkg/endpoint"
-	"github.com/cilium/cilium/pkg/fqdn/restore"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	"github.com/go-faster/cilium/pkg/fqdn/restore"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 type DNSProxier interface {

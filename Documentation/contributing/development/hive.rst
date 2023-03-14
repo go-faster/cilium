@@ -165,8 +165,8 @@ The Hive API
 With the example hopefully having now whetted the appetite, we'll take a proper look at
 the hive API. 
 
-`pkg/hive <https://pkg.go.dev/github.com/cilium/cilium/pkg/hive>`_ provides the Hive type and 
-`hive.New <https://pkg.go.dev/github.com/cilium/cilium/pkg/hive#New>`_ constructor. 
+`pkg/hive <https://pkg.go.dev/github.com/go-faster/cilium/pkg/hive>`_ provides the Hive type and 
+`hive.New <https://pkg.go.dev/github.com/go-faster/cilium/pkg/hive#New>`_ constructor. 
 The ``hive.Hive`` type can be thought of as an application container, composed from cells:
 
 .. code-block:: go
@@ -186,7 +186,7 @@ The ``hive.Hive`` type can be thought of as an application container, composed f
     // Hive also provides a sub-command for inspecting it:
     cmd.AddCommand(hive.Command())
 
-`pkg/hive/cell <https://pkg.go.dev/github.com/cilium/cilium/pkg/hive/cell>`_ defines the Cell interface that 
+`pkg/hive/cell <https://pkg.go.dev/github.com/go-faster/cilium/pkg/hive/cell>`_ defines the Cell interface that 
 ``hive.New()`` consumes and the following functions for creating cells:
 
 - :ref:`api_module`: A named set of cells.
@@ -554,7 +554,7 @@ started, Run() waits for SIGTERM and SIGINT signals and upon receiving one
 will execute the stop hooks in reverse order to bring the hive down.
 
 Now would be a good time to try this out in practice. You'll find a small example
-application in `pkg/hive/example <https://github.com/cilium/cilium/tree/master/pkg/hive/example>`_.
+application in `pkg/hive/example <https://github.com/go-faster/cilium/tree/master/pkg/hive/example>`_.
 Try running it with ``go run .`` and exploring the implementation (try what happens if a provider is commented out!).
 
 Inspecting a hive
@@ -755,7 +755,7 @@ Logging is provided to all cells by default with the ``logrus.FieldLogger`` inte
 Kubernetes client
 ^^^^^^^^^^^^^^^^^
 
-The `client package <https://pkg.go.dev/github.com/cilium/cilium/pkg/k8s/client>`_ provides the ``Clientset`` API 
+The `client package <https://pkg.go.dev/github.com/go-faster/cilium/pkg/k8s/client>`_ provides the ``Clientset`` API 
 that combines the different clientsets used by Cilium into one composite value. Also provides ``FakeClientCell``
 for writing integration tests for cells that interact with the K8s api-server.
 
@@ -778,7 +778,7 @@ only be used for creating and updating objects.
 Kubernetes Resource and Store
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-While not a cell by itself, `pkg/k8s/resource <https://pkg.go.dev/github.com/cilium/cilium/pkg/k8s/resource>`_ 
+While not a cell by itself, `pkg/k8s/resource <https://pkg.go.dev/github.com/go-faster/cilium/pkg/k8s/resource>`_ 
 provides an useful abstraction for providing shared event-driven access
 to Kubernetes objects. Implemented on top of the client-go informer,
 ``workqueue`` and store to codify the suggested pattern for controllers in a
@@ -787,12 +787,12 @@ test against and allows central control over what data (and at what rate)
 is pulled from the api-server and how it’s stored (in-memory or persisted).
 
 The resources are usually made available centrally for the application,
-e.g. in cilium-agent they’re provided from `pkg/k8s/shared_resources.go <https://github.com/cilium/cilium/blob/master/pkg/k8s/shared_resources.go>`_.
-See also the runnable example in `pkg/k8s/resource/example <https://github.com/cilium/cilium/tree/master/pkg/k8s/resource/example>`_.
+e.g. in cilium-agent they’re provided from `pkg/k8s/shared_resources.go <https://github.com/go-faster/cilium/blob/master/pkg/k8s/shared_resources.go>`_.
+See also the runnable example in `pkg/k8s/resource/example <https://github.com/go-faster/cilium/tree/master/pkg/k8s/resource/example>`_.
 
 .. code-block:: go
 
-    import "github.com/cilium/cilium/pkg/k8s/resource"
+    import "github.com/go-faster/cilium/pkg/k8s/resource"
 
     var nodesCell = cell.Provide(
         func(lc hive.Lifecycle, cs client.Clientset) resource.Resource[v1.Node] {

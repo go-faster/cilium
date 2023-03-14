@@ -7,7 +7,7 @@
 
 package main
 
-import "github.com/cilium/cilium/operator/cmd"
+import "github.com/go-faster/cilium/operator/cmd"
 
 func main() {
 	cmd.Execute()

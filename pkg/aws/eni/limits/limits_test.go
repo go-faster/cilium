@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/operator/option"
+	"github.com/go-faster/cilium/operator/option"
 )
 
 func Test(t *testing.T) {

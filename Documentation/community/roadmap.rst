@@ -200,15 +200,15 @@ usual way, but the Cilium committers_ should be consulted beforehand about
 anything other than trivial fixes. 
 
 
-.. _committers: https://raw.githubusercontent.com/cilium/cilium/master/MAINTAINERS.md
-.. _GitHub issues: https://github.com/cilium/cilium/issues
+.. _committers: https://raw.githubusercontent.com/go-faster/cilium/master/MAINTAINERS.md
+.. _GitHub issues: https://github.com/go-faster/cilium/issues
 .. _point releases: https://cilium.io/blog/categories/release/
 .. _Get Involved: https://cilium.io/get-involved
 .. _CNCF Graduation: https://github.com/cncf/toc/pull/952
 .. _Hubble OpenTelemetry collector: https://github.com/cilium/hubble-otel
-.. _CI improvements: https://github.com/cilium/cilium/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2FCI-improvement
-.. _good-first-issue: https://github.com/cilium/cilium/labels/good-first-issue
+.. _CI improvements: https://github.com/go-faster/cilium/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2FCI-improvement
+.. _good-first-issue: https://github.com/go-faster/cilium/labels/good-first-issue
 .. _slack: https://cilium.io/slack
 .. _enterprise: https://cilium.io/enterprise
 .. _CFP design doc: https://github.com/cilium/design-cfps/tree/main
-.. _modularization-issue: https://github.com/cilium/cilium/issues/23425
+.. _modularization-issue: https://github.com/go-faster/cilium/issues/23425

@@ -4,7 +4,7 @@
 package metrics
 
 import (
-	"github.com/cilium/cilium/pkg/spanstat"
+	"github.com/go-faster/cilium/pkg/spanstat"
 )
 
 // SpanStat is a statistics structure for storing metrics related to datapath

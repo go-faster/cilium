@@ -7,7 +7,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // AuthType is a string identifying a supported authentication type

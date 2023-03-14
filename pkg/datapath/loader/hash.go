@@ -10,7 +10,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/cilium/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/datapath"
 )
 
 var (

@@ -13,8 +13,8 @@ import (
 	"go.universe.tf/metallb/pkg/k8s/types"
 	metallbspr "go.universe.tf/metallb/pkg/speaker"
 
-	"github.com/cilium/cilium/pkg/bgp/fence"
-	"github.com/cilium/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/bgp/fence"
+	"github.com/go-faster/cilium/pkg/k8s"
 )
 
 // Op enumerates the operation an event

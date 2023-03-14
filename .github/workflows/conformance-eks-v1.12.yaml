@@ -64,7 +64,7 @@ env:
   clusterName: ${{ github.repository_owner }}-${{ github.event.repository.name }}-${{ github.run_id }}
   region: us-east-2
   k8s_version: 1.24
-  # renovate: datasource=github-releases depName=cilium/cilium-cli
+  # renovate: datasource=github-releases depName=go-faster/cilium-cli
   cilium_cli_version: v0.13.0
   check_url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
   eksctl_version: v0.122.0
@@ -187,7 +187,7 @@ jobs:
 
       - name: Install Cilium CLI
         run: |
-          curl -sSL --remote-name-all https://github.com/cilium/cilium-cli/releases/download/${{ env.cilium_cli_version }}/cilium-linux-amd64.tar.gz{,.sha256sum}
+          curl -sSL --remote-name-all https://github.com/go-faster/cilium-cli/releases/download/${{ env.cilium_cli_version }}/cilium-linux-amd64.tar.gz{,.sha256sum}
           sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
           sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
           rm cilium-linux-amd64.tar.gz{,.sha256sum}
@@ -273,7 +273,7 @@ jobs:
       - name: Enable Relay
         run: |
           cilium hubble enable ${{ steps.vars.outputs.hubble_enable_defaults }}
-          # NB: necessary to work against occassional flakes due to https://github.com/cilium/cilium-cli/issues/918
+          # NB: necessary to work against occassional flakes due to https://github.com/go-faster/cilium-cli/issues/918
           cilium status --wait
 
       - name: Port forward Relay
@@ -303,7 +303,7 @@ jobs:
       - name: Enable Relay
         run: |
           cilium hubble enable ${{ steps.vars.outputs.hubble_enable_defaults }}
-          # NB: necessary to work against occassional flakes due to https://github.com/cilium/cilium-cli/issues/918
+          # NB: necessary to work against occassional flakes due to https://github.com/go-faster/cilium-cli/issues/918
           cilium status --wait
 
       - name: Port forward Relay

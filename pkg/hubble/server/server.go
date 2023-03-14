@@ -14,10 +14,10 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	recorderpb "github.com/cilium/cilium/api/v1/recorder"
-	"github.com/cilium/cilium/pkg/hubble/server/serveroption"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	recorderpb "github.com/go-faster/cilium/api/v1/recorder"
+	"github.com/go-faster/cilium/pkg/hubble/server/serveroption"
 )
 
 var (

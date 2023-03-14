@@ -3,7 +3,7 @@
 # Copyright Authors of Cilium
 
 # Make sure pkg/rand is used instead of math/rand, see
-# https://github.com/cilium/cilium/issues/10988. It's fine to use math/rand in
+# https://github.com/go-faster/cilium/issues/10988. It's fine to use math/rand in
 # tests though.
 for l in rand\.NewSource; do
   m=$(find . -name "*.go" \

@@ -22,8 +22,8 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/metrics"
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/operator"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/metrics"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/operator"
 )
 
 // NewCiliumOperatorAPI creates a new CiliumOperator instance

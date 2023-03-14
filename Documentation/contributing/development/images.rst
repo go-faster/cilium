@@ -127,11 +127,11 @@ on GH actions.
 |                               |                                             |                                               +-----------+-------------+                   |
 |                               |                                             |                                               | **amd64** | **aarch64** |                   |
 +-------------------------------+---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-| github.com/cilium/cilium      | images/runtime/Dockerfile                   | quay.io/cilium/cilium-runtime                 |     Y     |      Y      |     GH Action     |
+| github.com/go-faster/cilium      | images/runtime/Dockerfile                   | quay.io/go-faster/cilium-runtime                 |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | images/builder/Dockerfile                   | quay.io/cilium/cilium-builder                 |     Y     |      Y      |     GH Action     |
+|                               | images/builder/Dockerfile                   | quay.io/go-faster/cilium-builder                 |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | images/cilium/Dockerfile                    | [docker|quay].io/cilium/cilium                |     Y     |      Y      |     GH Action     |
+|                               | images/cilium/Dockerfile                    | [docker|quay].io/go-faster/cilium                |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
 |                               | images/cilium-docker-plugin/Dockerfile      | [docker|quay].io/cilium/docker-plugin         |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
@@ -147,15 +147,15 @@ on GH actions.
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
 |                               | images/clustermesh-apiserver/Dockerfile     | [docker|quay].io/cilium/clustermesh-apiserver |     Y     |      Y      |     GH Action     |
 +-------------------------------+---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-| github.com/cilium/proxy       | Dockerfile.builder                          | quay.io/cilium/cilium-envoy-builder           |     Y     |      Y      |     GH Action     |
+| github.com/cilium/proxy       | Dockerfile.builder                          | quay.io/go-faster/cilium-envoy-builder           |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | Dockerfile                                  | quay.io/cilium/cilium-envoy                   |     Y     |      Y      |     GH Action     |
+|                               | Dockerfile                                  | quay.io/go-faster/cilium-envoy                   |     Y     |      Y      |     GH Action     |
 +-------------------------------+---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | images/bpftool/Dockerfile                   | docker.io/cilium/cilium-bpftool               |     Y     |      Y      |     GH Action     |
+|                               | images/bpftool/Dockerfile                   | docker.io/go-faster/cilium-bpftool               |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | images/iproute2/Dockerfile                  | docker.io/cilium/cilium-iproute2              |     Y     |      Y      |     GH Action     |
+|                               | images/iproute2/Dockerfile                  | docker.io/go-faster/cilium-iproute2              |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
-|                               | images/llvm/Dockerfile                      | docker.io/cilium/cilium-llvm                  |     Y     |      Y      |     GH Action     |
+|                               | images/llvm/Dockerfile                      | docker.io/go-faster/cilium-llvm                  |     Y     |      Y      |     GH Action     |
 | github.com/cilium/image-tools +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
 |                               | images/compilers/Dockerfile                 | docker.io/cilium/image-compilers              |     Y     |      Y      |     GH Action     |
 |                               +---------------------------------------------+-----------------------------------------------+-----------+-------------+-------------------+
@@ -168,26 +168,26 @@ Image dependency:
 
 ::
 
-    [docker|quay].io/cilium/cilium
+    [docker|quay].io/go-faster/cilium
      depends on:
-      quay.io/cilium/cilium-builder
+      quay.io/go-faster/cilium-builder
        depends on:
-        quay.io/cilium/cilium-runtime
+        quay.io/go-faster/cilium-runtime
          depends on:
-          docker.io/cilium/cilium-iproute2
-          docker.io/cilium/cilium-bpftool
-          docker.io/cilium/cilium-llvm
-      quay.io/cilium/cilium-envoy
+          docker.io/go-faster/cilium-iproute2
+          docker.io/go-faster/cilium-bpftool
+          docker.io/go-faster/cilium-llvm
+      quay.io/go-faster/cilium-envoy
        depends on:
-        quay.io/cilium/cilium-envoy-builder
+        quay.io/go-faster/cilium-envoy-builder
          depends on:
-          quay.io/cilium/cilium-builder
+          quay.io/go-faster/cilium-builder
            depends on:
-            quay.io/cilium/cilium-runtime
+            quay.io/go-faster/cilium-runtime
              depends on:
-              docker.io/cilium/cilium-iproute2
-              docker.io/cilium/cilium-bpftool
-              docker.io/cilium/cilium-llvm
+              docker.io/go-faster/cilium-iproute2
+              docker.io/go-faster/cilium-bpftool
+              docker.io/go-faster/cilium-llvm
 
 
 
@@ -201,24 +201,24 @@ versions, build the necessary images and update all the appropriate
 locations in the Cilium codebase. Hence, before executing the following steps,
 the user should have such a commit (e.g., see
 `this commit
-<https://github.com/cilium/cilium/pull/17713/commits/b7a37ff80df8681d25a24fd5b464082d360fc6e2>`__)
+<https://github.com/go-faster/cilium/pull/17713/commits/b7a37ff80df8681d25a24fd5b464082d360fc6e2>`__)
 in their local tree. After following the steps below, the result would be another
 commit with the image updates (e.g,. see `this commit
-<https://github.com/cilium/cilium/pull/17713/commits/bd3357704647117fa9ef4839b9f603cd0435b7cc>`__).
+<https://github.com/go-faster/cilium/pull/17713/commits/bd3357704647117fa9ef4839b9f603cd0435b7cc>`__).
 Please keep the two commits separate to ease backporting.
 
 If you only wish to update the packages in these images, then you can manually
 update the ``FORCE_BUILD`` variable in ``images/runtime/Dockerfile`` to have a
 different value and then proceed with the steps below.
 
-#. Commit your changes and create a PR in cilium/cilium.
+#. Commit your changes and create a PR in go-faster/cilium.
 
    .. code-block:: shell-session
 
        $ git commit -sam "images: update cilium-{runtime,builder}"
 
 #. Ping one of the members of `team/build <https://github.com/orgs/cilium/teams/build/members>`__
-   to approve the build that was created by GitHub Actions `here <https://github.com/cilium/cilium/actions?query=workflow:%22Base+Image+Release+Build%22>`__.
+   to approve the build that was created by GitHub Actions `here <https://github.com/go-faster/cilium/actions?query=workflow:%22Base+Image+Release+Build%22>`__.
    Note that at this step cilium-builder build failure is expected since we have yet to update the runtime digest.
 
 #. Wait for build to complete. If the PR was opened from an external fork the

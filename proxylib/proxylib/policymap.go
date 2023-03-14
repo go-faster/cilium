@@ -12,7 +12,7 @@ import (
 	core "github.com/cilium/proxy/go/envoy/config/core/v3"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/flowdebug"
 )
 
 // Each L7 rule implements this interface

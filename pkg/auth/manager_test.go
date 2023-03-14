@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/monitor"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/monitor"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 func Test_newAuthManager_clashingAuthHandlers(t *testing.T) {

@@ -4,8 +4,8 @@
 package testutils
 
 import (
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 // FakeAcknowledgeReleaseIps Fake acknowledge IPs marked for release like cilium agent would.

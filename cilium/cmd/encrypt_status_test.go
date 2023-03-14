@@ -8,7 +8,7 @@ import (
 	"net"
 	"runtime"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 
 	"github.com/vishvananda/netlink"
 	"github.com/vishvananda/netns"

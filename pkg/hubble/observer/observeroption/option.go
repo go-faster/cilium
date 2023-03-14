@@ -8,13 +8,13 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/api/v1/observer"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/hubble/container"
-	"github.com/cilium/cilium/pkg/hubble/filters"
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/api/v1/observer"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/hubble/container"
+	"github.com/go-faster/cilium/pkg/hubble/filters"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
 )
 
 // CiliumDaemon is a reference to the Cilium's Daemon when running inside Cilium

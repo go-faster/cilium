@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/hubble/peer/serviceoption"
-	"github.com/cilium/cilium/pkg/node/addressing"
-	"github.com/cilium/cilium/pkg/node/types"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/hubble/peer/serviceoption"
+	"github.com/go-faster/cilium/pkg/node/addressing"
+	"github.com/go-faster/cilium/pkg/node/types"
 )
 
 func TestNodeAdd(t *testing.T) {

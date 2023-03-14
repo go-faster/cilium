@@ -18,8 +18,8 @@ ARG NOOPT
 ARG LOCKDEBUG
 ARG RACE
 
-WORKDIR /go/src/github.com/cilium/cilium/plugins/cilium-docker
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
+WORKDIR /go/src/github.com/go-faster/cilium/plugins/cilium-docker
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium --mount=target=/root/.cache,type=cache --mount=target=/go/pkg,type=cache \
     make GOARCH=${TARGETARCH} RACE=${RACE} NOSTRIP=${NOSTRIP} NOOPT=${NOOPT} LOCKDEBUG=${LOCKDEBUG} \
     && mkdir -p /out/${TARGETOS}/${TARGETARCH}/usr/bin && mv cilium-docker /out/${TARGETOS}/${TARGETARCH}/usr/bin
 

@@ -8,7 +8,7 @@ package mountinfo
 import (
 	"os"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 
 	"golang.org/x/sys/unix"
 	. "gopkg.in/check.v1"

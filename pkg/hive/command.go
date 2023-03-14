@@ -7,7 +7,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 // Command constructs the cobra command for hive. The hive

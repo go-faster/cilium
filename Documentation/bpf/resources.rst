@@ -147,7 +147,7 @@ legacy cBPF:
   such as Kubernetes. BPF is the foundational part of Cilium that operates in
   the kernel's networking data path.
 
-  https://github.com/cilium/cilium
+  https://github.com/go-faster/cilium
 
 ..
 

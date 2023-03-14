@@ -12,16 +12,16 @@ import (
 	"gopkg.in/check.v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	ec2mock "github.com/cilium/cilium/pkg/aws/ec2/mock"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/aws/types"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/ipam"
-	metricsmock "github.com/cilium/cilium/pkg/ipam/metrics/mock"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/testutils"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	ec2mock "github.com/go-faster/cilium/pkg/aws/ec2/mock"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/aws/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/ipam"
+	metricsmock "github.com/go-faster/cilium/pkg/ipam/metrics/mock"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 var (
@@ -653,7 +653,7 @@ type nodeState struct {
 // - PreAllocate 1
 // - FirstInterfaceIndex 1
 func (e *ENISuite) TestNodeManagerManyNodes(c *check.C) {
-	c.Skip("This test is flaky, see https://github.com/cilium/cilium/issues/11560")
+	c.Skip("This test is flaky, see https://github.com/go-faster/cilium/issues/11560")
 
 	const (
 		numNodes    = 100

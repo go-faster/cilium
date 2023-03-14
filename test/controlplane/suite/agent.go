@@ -9,16 +9,16 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cilium/cilium/daemon/cmd"
-	"github.com/cilium/cilium/pkg/datapath"
-	fakeDatapath "github.com/cilium/cilium/pkg/datapath/fake"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
-	agentOption "github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/promise"
+	"github.com/go-faster/cilium/daemon/cmd"
+	"github.com/go-faster/cilium/pkg/datapath"
+	fakeDatapath "github.com/go-faster/cilium/pkg/datapath/fake"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
+	agentOption "github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/promise"
 )
 
 type agentHandle struct {

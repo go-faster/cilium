@@ -6,11 +6,11 @@
 package fake
 
 import (
-	clientset "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
-	fakeciliumv2 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2/fake"
-	ciliumv2alpha1 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
-	fakeciliumv2alpha1 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1/fake"
+	clientset "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
+	fakeciliumv2 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2/fake"
+	ciliumv2alpha1 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
+	fakeciliumv2alpha1 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

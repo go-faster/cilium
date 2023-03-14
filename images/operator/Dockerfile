@@ -4,7 +4,7 @@
 ARG BASE_IMAGE=scratch
 ARG GOLANG_IMAGE=docker.io/library/golang:1.20.1@sha256:52921e63cc544c79c111db1d8461d8ab9070992d9c636e1573176642690c14b5
 ARG ALPINE_IMAGE=docker.io/library/alpine:3.17.2@sha256:69665d02cb32192e52e07644d76bc6f25abeb5410edc1c7a81a10ba3f0efb90a
-ARG CILIUM_BUILDER_IMAGE=quay.io/cilium/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
+ARG CILIUM_BUILDER_IMAGE=quay.io/go-faster/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
 
 # BUILDPLATFORM is an automatic platform ARG enabled by Docker BuildKit.
 # Represents the plataform where the build is happening, do not mix with
@@ -21,18 +21,18 @@ ARG LOCKDEBUG
 ARG RACE
 ARG OPERATOR_VARIANT
 
-WORKDIR /go/src/github.com/cilium/cilium/operator
+WORKDIR /go/src/github.com/go-faster/cilium/operator
 
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium \
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium \
     --mount=type=cache,target=/root/.cache \
     --mount=type=cache,target=/go/pkg \
     make GOARCH=${TARGETARCH} RACE=${RACE} NOSTRIP=${NOSTRIP} NOOPT=${NOOPT} LOCKDEBUG=${LOCKDEBUG} cilium-${OPERATOR_VARIANT} \
     && mkdir -p /out/${TARGETOS}/${TARGETARCH}/usr/bin && mv cilium-${OPERATOR_VARIANT} /out/${TARGETOS}/${TARGETARCH}/usr/bin
 
-WORKDIR /go/src/github.com/cilium/cilium
+WORKDIR /go/src/github.com/go-faster/cilium
 # licenses-all is a "script" that executes "go run" so its ARCH should be set
 # to the same ARCH specified in the base image of this Docker stage (BUILDARCH)
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium \
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium \
     --mount=type=cache,target=/root/.cache \
     --mount=type=cache,target=/go/pkg \
     make GOARCH=${BUILDARCH} licenses-all && mv LICENSE.all /out/${TARGETOS}/${TARGETARCH}
@@ -49,9 +49,9 @@ RUN apk --update add ca-certificates
 FROM --platform=${BUILDPLATFORM} ${GOLANG_IMAGE} as gops
 
 # build-gops.sh will build both archs at the same time
-WORKDIR /go/src/github.com/cilium/cilium/images/runtime
+WORKDIR /go/src/github.com/go-faster/cilium/images/runtime
 RUN apt-get update && apt-get install -y binutils-aarch64-linux-gnu binutils-x86-64-linux-gnu
-RUN --mount=type=bind,readwrite,target=/go/src/github.com/cilium/cilium \
+RUN --mount=type=bind,readwrite,target=/go/src/github.com/go-faster/cilium \
     --mount=type=cache,target=/root/.cache \
     --mount=type=cache,target=/go/pkg \
     ./build-gops.sh

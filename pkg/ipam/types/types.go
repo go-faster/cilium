@@ -6,8 +6,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // Limits specifies the IPAM relevant instance limits

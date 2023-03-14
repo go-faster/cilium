@@ -32,10 +32,10 @@ import (
 	"golang.org/x/tools/cover"
 	"google.golang.org/protobuf/encoding/protowire"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/datapath/link"
-	"github.com/cilium/cilium/pkg/monitor"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/datapath/link"
+	"github.com/go-faster/cilium/pkg/monitor"
 )
 
 var (

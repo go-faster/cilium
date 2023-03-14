@@ -8,11 +8,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/models"
-	. "github.com/cilium/cilium/api/v1/server/restapi/policy"
-	"github.com/cilium/cilium/pkg/api"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/api/v1/models"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/policy"
+	"github.com/go-faster/cilium/pkg/api"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/ipcache"
 )
 
 type getIP struct {

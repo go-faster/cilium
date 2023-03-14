@@ -22,13 +22,13 @@ import (
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/hubble/peer"
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
-	"github.com/cilium/cilium/pkg/hubble/relay/defaults"
-	"github.com/cilium/cilium/pkg/hubble/relay/observer"
-	"github.com/cilium/cilium/pkg/hubble/relay/pool"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/hubble/peer"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
+	"github.com/go-faster/cilium/pkg/hubble/relay/defaults"
+	"github.com/go-faster/cilium/pkg/hubble/relay/observer"
+	"github.com/go-faster/cilium/pkg/hubble/relay/pool"
 )
 
 var (

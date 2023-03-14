@@ -10,9 +10,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/hubble/peer/serviceoption"
-	"github.com/cilium/cilium/pkg/node/manager"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/hubble/peer/serviceoption"
+	"github.com/go-faster/cilium/pkg/node/manager"
 )
 
 // ErrStreamSendBlocked is returned by Notify when the send operation is

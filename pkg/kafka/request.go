@@ -13,7 +13,7 @@ import (
 	"github.com/cilium/kafka/proto"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/flowdebug"
 )
 
 // RequestMessage represents a Kafka request message

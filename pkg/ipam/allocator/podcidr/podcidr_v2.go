@@ -8,15 +8,15 @@ import (
 	"net"
 	"sort"
 
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
 
 	"github.com/sirupsen/logrus"
 	"go.uber.org/multierr"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	ipPkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipPkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 type specPodCIDRs []*net.IPNet

@@ -15,7 +15,7 @@ structure. It is useful to get an initial overview on where to find what.
 High-level
 ----------
 
-Top-level directories `github.com/cilium/cilium <https://github.com/cilium/cilium>`_:
+Top-level directories `github.com/go-faster/cilium <https://github.com/go-faster/cilium>`_:
 
 api
   The Cilium & Hubble API definition.

@@ -29,7 +29,7 @@ dap.configurations.go = {
         substitutePath = {
             {
                 from = "${workspaceFolder}",
-                to = "/go/src/github.com/cilium/cilium"
+                to = "/go/src/github.com/go-faster/cilium"
             }
         }
     },
@@ -41,7 +41,7 @@ dap.configurations.go = {
         substitutePath = {
             {
                 from = "${workspaceFolder}",
-                to = "/go/src/github.com/cilium/cilium"
+                to = "/go/src/github.com/go-faster/cilium"
             }
         }
     },
@@ -53,7 +53,7 @@ dap.configurations.go = {
         substitutePath = {
             {
                 from = "${workspaceFolder}",
-                to = "/go/src/github.com/cilium/cilium"
+                to = "/go/src/github.com/go-faster/cilium"
             }
         }
     },
@@ -65,7 +65,7 @@ dap.configurations.go = {
         substitutePath = {
             {
                 from = "${workspaceFolder}",
-                to = "/go/src/github.com/cilium/cilium"
+                to = "/go/src/github.com/go-faster/cilium"
             }
         }
     }

@@ -6,8 +6,8 @@
 package cmd
 
 import (
-	"github.com/cilium/cilium/pkg/ipam/allocator/alibabacloud"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/alibabacloud"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
 )
 
 func init() {

@@ -6,13 +6,13 @@ package controlplane_test
 import (
 	"testing"
 
-	_ "github.com/cilium/cilium/test/controlplane/ciliumnetworkpolicies"
-	_ "github.com/cilium/cilium/test/controlplane/node"
-	_ "github.com/cilium/cilium/test/controlplane/node/ciliumnodes"
-	_ "github.com/cilium/cilium/test/controlplane/services/dualstack"
-	_ "github.com/cilium/cilium/test/controlplane/services/graceful-termination"
-	_ "github.com/cilium/cilium/test/controlplane/services/nodeport"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	_ "github.com/go-faster/cilium/test/controlplane/ciliumnetworkpolicies"
+	_ "github.com/go-faster/cilium/test/controlplane/node"
+	_ "github.com/go-faster/cilium/test/controlplane/node/ciliumnodes"
+	_ "github.com/go-faster/cilium/test/controlplane/services/dualstack"
+	_ "github.com/go-faster/cilium/test/controlplane/services/graceful-termination"
+	_ "github.com/go-faster/cilium/test/controlplane/services/nodeport"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 func TestControlPlane(t *testing.T) {

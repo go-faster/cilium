@@ -16,14 +16,14 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	linuxDatapath "github.com/cilium/cilium/pkg/datapath/linux"
-	"github.com/cilium/cilium/pkg/endpoint/regeneration"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/mac"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/pkg/checker"
+	linuxDatapath "github.com/go-faster/cilium/pkg/datapath/linux"
+	"github.com/go-faster/cilium/pkg/endpoint/regeneration"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/mac"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
 )
 
 func (ds *EndpointSuite) createEndpoints() ([]*Endpoint, map[uint16]*Endpoint) {

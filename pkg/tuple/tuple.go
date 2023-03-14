@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/bpf"
 )
 
 const (
@@ -44,7 +44,7 @@ func (in *buff256uint8) DeepCopyInto(out *buff256uint8) {
 
 // TupleValStub is a dummy, unused.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type TupleValStub struct {
 	buff buff256uint8
 }

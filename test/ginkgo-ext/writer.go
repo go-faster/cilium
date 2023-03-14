@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // A Writer is a struct that has a variable-sized `bytes.Buffer` and one

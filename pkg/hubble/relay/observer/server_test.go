@@ -21,13 +21,13 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	relaypb "github.com/cilium/cilium/api/v1/relay"
-	"github.com/cilium/cilium/pkg/hubble/defaults"
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/hubble/testutils"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	relaypb "github.com/go-faster/cilium/api/v1/relay"
+	"github.com/go-faster/cilium/pkg/hubble/defaults"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/hubble/testutils"
 )
 
 func TestGetFlows(t *testing.T) {

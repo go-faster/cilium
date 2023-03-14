@@ -4,7 +4,7 @@
 package types
 
 import (
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 // Spec is the ENI specification of a node. This specification is considered

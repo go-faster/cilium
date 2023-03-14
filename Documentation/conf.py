@@ -91,11 +91,11 @@ if not branch or branch == 'latest':
 elif branch == 'stable':
     branch = release
     archive_name = release
-    chart_release = 'cilium/cilium --version ' + release
+    chart_release = 'go-faster/cilium --version ' + release
     tags.add('stable')
 else:
     archive_name = branch
-    chart_release = 'cilium/cilium --version ' + release
+    chart_release = 'go-faster/cilium --version ' + release
     tags.add('stable')
 relinfo = semver.parse_version_info(release)
 current_release = '%d.%d' % (relinfo.major, relinfo.minor)
@@ -105,10 +105,10 @@ if relinfo.patch == 90:
 else:
     next_release = current_release
     prev_release = '%d.%d' % (relinfo.major, relinfo.minor - 1)
-githubusercontent = 'https://raw.githubusercontent.com/cilium/cilium/'
+githubusercontent = 'https://raw.githubusercontent.com/go-faster/cilium/'
 scm_web = githubusercontent + branch
 jenkins_branch = 'https://jenkins.cilium.io/view/Cilium-v' + current_release
-github_repo = 'https://github.com/cilium/cilium/'
+github_repo = 'https://github.com/go-faster/cilium/'
 archive_filename = archive_name + '.tar.gz'
 archive_link = github_repo + 'archive/' + archive_filename
 archive_name = 'cilium-' + archive_name.strip('v')

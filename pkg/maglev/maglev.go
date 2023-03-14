@@ -13,8 +13,8 @@ import (
 	"github.com/cilium/workerpool"
 	"github.com/shirou/gopsutil/v3/mem"
 
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/murmur3"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/murmur3"
 )
 
 const (

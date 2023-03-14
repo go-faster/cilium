@@ -22,14 +22,14 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/api/v1/server/restapi/endpoint"
-	"github.com/cilium/cilium/api/v1/server/restapi/ipam"
-	"github.com/cilium/cilium/api/v1/server/restapi/metrics"
-	"github.com/cilium/cilium/api/v1/server/restapi/policy"
-	"github.com/cilium/cilium/api/v1/server/restapi/prefilter"
-	"github.com/cilium/cilium/api/v1/server/restapi/recorder"
-	"github.com/cilium/cilium/api/v1/server/restapi/service"
+	"github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/api/v1/server/restapi/endpoint"
+	"github.com/go-faster/cilium/api/v1/server/restapi/ipam"
+	"github.com/go-faster/cilium/api/v1/server/restapi/metrics"
+	"github.com/go-faster/cilium/api/v1/server/restapi/policy"
+	"github.com/go-faster/cilium/api/v1/server/restapi/prefilter"
+	"github.com/go-faster/cilium/api/v1/server/restapi/recorder"
+	"github.com/go-faster/cilium/api/v1/server/restapi/service"
 )
 
 // NewCiliumAPIAPI creates a new CiliumAPI instance

@@ -9,16 +9,16 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	. "github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/mtu"
-	"github.com/cilium/cilium/pkg/node/manager"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/nodediscovery"
-	"github.com/cilium/cilium/pkg/option"
-	fakeConfig "github.com/cilium/cilium/pkg/option/fake"
-	cnitypes "github.com/cilium/cilium/plugins/cilium-cni/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/mtu"
+	"github.com/go-faster/cilium/pkg/node/manager"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/nodediscovery"
+	"github.com/go-faster/cilium/pkg/option"
+	fakeConfig "github.com/go-faster/cilium/pkg/option/fake"
+	cnitypes "github.com/go-faster/cilium/plugins/cilium-cni/types"
 )
 
 type GetNodesSuite struct {

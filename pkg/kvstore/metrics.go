@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const (

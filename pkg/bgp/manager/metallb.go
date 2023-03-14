@@ -16,11 +16,11 @@ import (
 	"go.universe.tf/metallb/pkg/k8s/types"
 	v1 "k8s.io/api/core/v1"
 
-	bgpconfig "github.com/cilium/cilium/pkg/bgp/config"
-	bgpk8s "github.com/cilium/cilium/pkg/bgp/k8s"
-	bgplog "github.com/cilium/cilium/pkg/bgp/log"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/option"
+	bgpconfig "github.com/go-faster/cilium/pkg/bgp/config"
+	bgpk8s "github.com/go-faster/cilium/pkg/bgp/k8s"
+	bgplog "github.com/go-faster/cilium/pkg/bgp/log"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // Controller provides a method set for interfacing with a BGP Controller.

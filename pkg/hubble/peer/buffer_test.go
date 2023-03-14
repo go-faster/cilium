@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
 )
 
 func TestBufferPush(t *testing.T) {

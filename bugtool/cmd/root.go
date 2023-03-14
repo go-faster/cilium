@@ -22,11 +22,11 @@ import (
 	"github.com/cilium/workerpool"
 	"github.com/spf13/cobra"
 
-	apiserverOption "github.com/cilium/cilium/clustermesh-apiserver/option"
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/components"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/option"
+	apiserverOption "github.com/go-faster/cilium/clustermesh-apiserver/option"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/components"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // BugtoolRootCmd is the top level command for the bugtool.

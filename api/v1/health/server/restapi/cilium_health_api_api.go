@@ -22,7 +22,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/cilium/cilium/api/v1/health/server/restapi/connectivity"
+	"github.com/go-faster/cilium/api/v1/health/server/restapi/connectivity"
 )
 
 // NewCiliumHealthAPIAPI creates a new CiliumHealthAPI instance

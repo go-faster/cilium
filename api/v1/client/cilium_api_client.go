@@ -13,14 +13,14 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/client/endpoint"
-	"github.com/cilium/cilium/api/v1/client/ipam"
-	"github.com/cilium/cilium/api/v1/client/metrics"
-	"github.com/cilium/cilium/api/v1/client/policy"
-	"github.com/cilium/cilium/api/v1/client/prefilter"
-	"github.com/cilium/cilium/api/v1/client/recorder"
-	"github.com/cilium/cilium/api/v1/client/service"
+	"github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/client/endpoint"
+	"github.com/go-faster/cilium/api/v1/client/ipam"
+	"github.com/go-faster/cilium/api/v1/client/metrics"
+	"github.com/go-faster/cilium/api/v1/client/policy"
+	"github.com/go-faster/cilium/api/v1/client/prefilter"
+	"github.com/go-faster/cilium/api/v1/client/recorder"
+	"github.com/go-faster/cilium/api/v1/client/service"
 )
 
 // Default cilium API HTTP client.

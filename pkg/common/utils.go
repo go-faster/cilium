@@ -12,7 +12,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 // C2GoArray transforms an hexadecimal string representation into a byte slice.

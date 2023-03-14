@@ -14,5 +14,5 @@ go run launch.go --kubeConfig $HOME/.kube/config
 for fp in $(ls -1 ./results_netperf-latest/*.csv);
 do
     cat ${fp}
-    python3 $GOPATH/src/github.com/cilium/cilium/contrib/scripts/netperf_reporter.py ${fp}
+    python3 $GOPATH/src/github.com/go-faster/cilium/contrib/scripts/netperf_reporter.py ${fp}
 done

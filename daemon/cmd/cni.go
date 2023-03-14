@@ -13,8 +13,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/option"
 
 	"github.com/google/renameio/v2"
 	"github.com/tidwall/sjson"

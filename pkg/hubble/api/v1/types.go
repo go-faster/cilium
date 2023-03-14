@@ -6,7 +6,7 @@ package v1
 import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
+	pb "github.com/go-faster/cilium/api/v1/flow"
 )
 
 // Event represents a single event observed and stored by Hubble

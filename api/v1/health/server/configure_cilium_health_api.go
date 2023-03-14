@@ -13,8 +13,8 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/health/server/restapi"
-	"github.com/cilium/cilium/api/v1/health/server/restapi/connectivity"
+	"github.com/go-faster/cilium/api/v1/health/server/restapi"
+	"github.com/go-faster/cilium/api/v1/health/server/restapi/connectivity"
 )
 
 //go:generate swagger generate server --target ../../health --name CiliumHealthAPI --spec ../openapi.yaml --api-package restapi --server-package server --principal interface{} --default-scheme unix

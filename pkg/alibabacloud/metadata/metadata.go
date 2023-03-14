@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 const (

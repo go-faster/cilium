@@ -97,7 +97,7 @@ Release Management     None                                  #launchpad    Relea
 How to create a SIG
 -------------------
 
-1. Open a new `GitHub issue <https://github.com/cilium/cilium/issues>`_
+1. Open a new `GitHub issue <https://github.com/go-faster/cilium/issues>`_
 2. Specify the title "SIG-Request: <Name>"
 3. Provide a description
 4. Find two Cilium committers to support the SIG.

@@ -10,12 +10,12 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/cidr"
-	fakeDatapath "github.com/cilium/cilium/pkg/datapath/fake"
-	agentOption "github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/test/controlplane"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/cidr"
+	fakeDatapath "github.com/go-faster/cilium/pkg/datapath/fake"
+	agentOption "github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/test/controlplane"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 var (

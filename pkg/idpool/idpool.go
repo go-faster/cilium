@@ -6,7 +6,7 @@ package idpool
 import (
 	"strconv"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // ID is a numeric identifier

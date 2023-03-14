@@ -11,10 +11,10 @@ import (
 	cnitypes "github.com/containernetworking/cni/pkg/types"
 	"gopkg.in/check.v1"
 
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	azureTypes "github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/checker"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	azureTypes "github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func Test(t *testing.T) {

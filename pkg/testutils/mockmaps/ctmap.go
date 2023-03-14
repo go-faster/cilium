@@ -4,8 +4,8 @@
 package mockmaps
 
 import (
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
 )
 
 // CtMockMap implements the CtMap interface and can be used for unit tests.

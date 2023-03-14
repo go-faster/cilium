@@ -6,7 +6,7 @@
 package scheme
 
 import (
-	apiextensionsv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1"
+	apiextensionsv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

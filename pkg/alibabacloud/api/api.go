@@ -16,12 +16,12 @@ import (
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/vpc"
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	eniTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	"github.com/cilium/cilium/pkg/alibabacloud/types"
-	"github.com/cilium/cilium/pkg/api/helpers"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/spanstat"
+	eniTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	"github.com/go-faster/cilium/pkg/alibabacloud/types"
+	"github.com/go-faster/cilium/pkg/api/helpers"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/spanstat"
 )
 
 const (

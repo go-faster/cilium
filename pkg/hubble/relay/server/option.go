@@ -11,11 +11,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	"github.com/cilium/cilium/pkg/crypto/certloader"
-	"github.com/cilium/cilium/pkg/hubble/relay/defaults"
-	"github.com/cilium/cilium/pkg/hubble/relay/observer"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/crypto/certloader"
+	"github.com/go-faster/cilium/pkg/hubble/relay/defaults"
+	"github.com/go-faster/cilium/pkg/hubble/relay/observer"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // MinTLSVersion defines the minimum TLS version clients are expected to

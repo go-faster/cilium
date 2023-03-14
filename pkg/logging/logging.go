@@ -16,7 +16,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"k8s.io/klog/v2"
 
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 type LogFormat string

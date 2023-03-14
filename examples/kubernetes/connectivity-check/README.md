@@ -38,7 +38,7 @@ multiple files per the following logic:
   definitions used above. For more information, run `make help` in this
   directory.
 
-For more information, see https://github.com/cilium/cilium/pull/12599 .
+For more information, see https://github.com/go-faster/cilium/pull/12599 .
 
 ## Listing and generating connectivity checks
 

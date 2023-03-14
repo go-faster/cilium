@@ -14,5 +14,5 @@ To validate that Cilium has been properly installed, you can run
    Deployment        cilium-operator    Desired: 2, Ready: 2/2, Available: 2/2
    Containers:       cilium-operator    Running: 2
                      cilium             Running: 2
-   Image versions    cilium             quay.io/cilium/cilium:v1.9.5: 2
+   Image versions    cilium             quay.io/go-faster/cilium:v1.9.5: 2
                      cilium-operator    quay.io/cilium/operator-generic:v1.9.5: 2

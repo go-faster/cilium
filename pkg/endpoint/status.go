@@ -8,8 +8,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type StatusCode int

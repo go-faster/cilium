@@ -91,5 +91,5 @@ Upgrade your Argo CD and check if ``helm template`` with ``serviceMonitor`` enab
     By specifying ``--api-versions=monitoring.coreos.com/v1`` you should be able to pass validation with ``helm template``.
 
     
-If you have an issue with Argo CD that's not outlined above, check this `list of Argo CD related issues on GitHub <https://github.com/cilium/cilium/issues?q=is%3Aissue+argocd>`__.
+If you have an issue with Argo CD that's not outlined above, check this `list of Argo CD related issues on GitHub <https://github.com/go-faster/cilium/issues?q=is%3Aissue+argocd>`__.
 If you can't find an issue that relates to yours, create one and/or seek help on the :term:`Slack channel`.

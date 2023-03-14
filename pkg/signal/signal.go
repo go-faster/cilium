@@ -14,12 +14,12 @@ import (
 	"github.com/cilium/ebpf/perf"
 	"github.com/sirupsen/logrus"
 
-	oldBPF "github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/signalmap"
-	"github.com/cilium/cilium/pkg/metrics"
+	oldBPF "github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/signalmap"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 const (

@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	baseNameRegex = regexp.MustCompile(`^github\.com/cilium/cilium/[\w\/]+/`)
+	baseNameRegex = regexp.MustCompile(`^github\.com/go-faster/cilium/[\w\/]+/`)
 )
 
 func TrimName(name string) string {

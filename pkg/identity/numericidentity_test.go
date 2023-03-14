@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cilium/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/clustermesh/types"
 )
 
 func (s *IdentityTestSuite) TestLocalIdentity(c *C) {

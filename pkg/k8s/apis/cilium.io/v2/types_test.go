@@ -13,13 +13,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/checker"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/utils"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/policy/api"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/utils"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // Hook up gocheck into the "go test" runner.

@@ -10,9 +10,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/sysctl"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/sysctl"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 type NodePortSuite struct {

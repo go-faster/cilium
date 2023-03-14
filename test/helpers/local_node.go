@@ -15,7 +15,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
 )
 
 var (

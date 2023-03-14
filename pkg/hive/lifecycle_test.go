@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cilium/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive"
 )
 
 var (

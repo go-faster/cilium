@@ -7,8 +7,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	clientPkg "github.com/cilium/cilium/pkg/client"
-	healthClientPkg "github.com/cilium/cilium/pkg/health/client"
+	clientPkg "github.com/go-faster/cilium/pkg/client"
+	healthClientPkg "github.com/go-faster/cilium/pkg/health/client"
 )
 
 type statusCollector struct {

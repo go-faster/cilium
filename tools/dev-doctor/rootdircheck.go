@@ -57,5 +57,5 @@ func (c rootDirCheck) Run() (checkResult, string) {
 }
 
 func (c rootDirCheck) Hint() string {
-	return fmt.Sprintf("run git clone https://github.com/cilium/cilium.git %s && cd %s", c.rootDir, c.rootDir)
+	return fmt.Sprintf("run git clone https://github.com/go-faster/cilium.git %s && cd %s", c.rootDir, c.rootDir)
 }

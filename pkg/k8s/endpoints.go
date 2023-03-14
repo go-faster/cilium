@@ -14,15 +14,15 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_discovery_v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
-	slim_discovery_v1beta1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
-	"github.com/cilium/cilium/pkg/k8s/version"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
-	serviceStore "github.com/cilium/cilium/pkg/service/store"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_discovery_v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
+	slim_discovery_v1beta1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
+	"github.com/go-faster/cilium/pkg/k8s/version"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
+	serviceStore "github.com/go-faster/cilium/pkg/service/store"
 )
 
 // Endpoints is an abstraction for the Kubernetes endpoints object. Endpoints

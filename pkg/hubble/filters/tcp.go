@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
 )
 
 func filterByTCPFlags(flags []*flowpb.TCPFlags) (FilterFunc, error) {

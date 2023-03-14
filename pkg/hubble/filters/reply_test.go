@@ -9,9 +9,9 @@ import (
 
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 func Test_filterByReplyField(t *testing.T) {

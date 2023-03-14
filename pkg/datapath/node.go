@@ -7,10 +7,10 @@ import (
 	"context"
 	"net"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/mtu"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/mtu"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // LocalNodeConfiguration represents the configuration of the local node

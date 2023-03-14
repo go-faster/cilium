@@ -16,13 +16,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/datapath/link"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/monitor"
-	"github.com/cilium/cilium/pkg/monitor/agent/listener"
-	"github.com/cilium/cilium/pkg/monitor/format"
-	"github.com/cilium/cilium/pkg/monitor/payload"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/datapath/link"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/monitor"
+	"github.com/go-faster/cilium/pkg/monitor/agent/listener"
+	"github.com/go-faster/cilium/pkg/monitor/format"
+	"github.com/go-faster/cilium/pkg/monitor/payload"
 )
 
 const (

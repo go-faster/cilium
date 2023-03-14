@@ -9,9 +9,9 @@
 package v2
 
 import (
-	models "github.com/cilium/cilium/api/v1/models"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	api "github.com/cilium/cilium/pkg/policy/api"
+	models "github.com/go-faster/cilium/api/v1/models"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	api "github.com/go-faster/cilium/pkg/policy/api"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 )
 

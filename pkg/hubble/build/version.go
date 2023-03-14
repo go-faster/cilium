@@ -6,7 +6,7 @@ package build
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/version"
 )
 
 var (

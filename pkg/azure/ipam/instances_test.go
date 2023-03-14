@@ -8,10 +8,10 @@ import (
 
 	"gopkg.in/check.v1"
 
-	apimock "github.com/cilium/cilium/pkg/azure/api/mock"
-	"github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	apimock "github.com/go-faster/cilium/pkg/azure/api/mock"
+	"github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 var (

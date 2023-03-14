@@ -8,12 +8,12 @@ syntax = "proto2";
 
 package github.com.cilium.cilium.pkg.k8s.slim.k8s.api.core.v1;
 
-import "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1/generated.proto";
+import "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1/generated.proto";
 import "k8s.io/apimachinery/pkg/runtime/generated.proto";
 import "k8s.io/apimachinery/pkg/runtime/schema/generated.proto";
 
 // Package-wide variables from generator "generated".
-option go_package = "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1";
+option go_package = "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1";
 
 // ClientIPConfig represents the configurations of Client IP based session affinity.
 message ClientIPConfig {

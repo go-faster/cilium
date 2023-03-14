@@ -17,8 +17,8 @@ import (
 	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/core/v1"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 func getHTTPLink(host string, port int32) string {
@@ -860,7 +860,7 @@ func testExternalTrafficPolicyLocal(kubectl *helpers.Kubectl, ni *helpers.NodesI
 		httpURL = getHTTPLink(node.node1IP, data.Spec.Ports[0].NodePort)
 		tftpURL = getTFTPLink(node.node1IP, data.Spec.Ports[1].NodePort)
 
-		// Until https://github.com/cilium/cilium/issues/23481 has been fixed
+		// Until https://github.com/go-faster/cilium/issues/23481 has been fixed
 		if !ipsec {
 			// Local requests should be load-balanced on kube-proxy 1.15+.
 			// See kubernetes/kubernetes#77523 for the PR which introduced this

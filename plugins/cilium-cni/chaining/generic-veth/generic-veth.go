@@ -15,11 +15,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/api/v1/models"
-	endpointid "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	chainingapi "github.com/cilium/cilium/plugins/cilium-cni/chaining/api"
-	"github.com/cilium/cilium/plugins/cilium-cni/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	endpointid "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	chainingapi "github.com/go-faster/cilium/plugins/cilium-cni/chaining/api"
+	"github.com/go-faster/cilium/plugins/cilium-cni/types"
 )
 
 type GenericVethChainer struct{}

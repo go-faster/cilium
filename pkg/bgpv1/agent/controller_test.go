@@ -9,12 +9,12 @@ import (
 	"net"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	"github.com/cilium/cilium/pkg/bgpv1/mock"
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	nodeaddr "github.com/cilium/cilium/pkg/node"
-	nodetypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	"github.com/go-faster/cilium/pkg/bgpv1/mock"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	nodeaddr "github.com/go-faster/cilium/pkg/node"
+	nodetypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 var (

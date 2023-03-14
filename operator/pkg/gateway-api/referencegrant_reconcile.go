@@ -9,7 +9,7 @@ import (
 	"github.com/sirupsen/logrus"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to

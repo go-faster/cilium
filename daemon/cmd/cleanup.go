@@ -6,8 +6,8 @@ package cmd
 import (
 	gops "github.com/google/gops/agent"
 
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/pidfile"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/pidfile"
 )
 
 type daemonCleanup struct {

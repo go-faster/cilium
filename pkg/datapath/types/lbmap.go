@@ -7,8 +7,8 @@ import (
 	"net"
 	"sort"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
 )
 
 // LBMap is the interface describing methods for manipulating service maps.

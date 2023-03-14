@@ -21,7 +21,7 @@ If you intent to release a new feature release, see the
 GitHub template process
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-#. File a `new release issue <https://github.com/cilium/cilium/issues/new?assignees=&labels=kind%2Frelease&template=release_template.md&title=vX.Y.Z+release>`_
+#. File a `new release issue <https://github.com/go-faster/cilium/issues/new?assignees=&labels=kind%2Frelease&template=release_template.md&title=vX.Y.Z+release>`_
    on GitHub, updating the title to reflect the version that will be released.
 
 #. Follow the steps in the issue template to prepare the release.
@@ -123,7 +123,7 @@ Reference steps for the template
        ``x.y.z`` For more information about how ReadTheDocs does versioning, you can
        read their `Versions Documentation <https://docs.readthedocs.io/en/latest/versions.html>`_.
 
-#. Approve the release from the `Release Image build UI <https://github.com/cilium/cilium/actions?query=workflow:%22Image+Release+Build%22>`_.
+#. Approve the release from the `Release Image build UI <https://github.com/go-faster/cilium/actions?query=workflow:%22Image+Release+Build%22>`_.
 
 #. Once the release images are pushed, fetch the digests from the workflow.
 
@@ -138,7 +138,7 @@ Reference steps for the template
 #. Wait for the `Cilium Helm Charts Workflow <https://github.com/cilium/charts/actions>`__
    to successfully deploy a cluster using the new Helm charts.
 
-#. `Publish a GitHub release <https://github.com/cilium/cilium/releases/>`_:
+#. `Publish a GitHub release <https://github.com/go-faster/cilium/releases/>`_:
 
    Following the steps above, the release draft will already be prepared.
 
@@ -152,7 +152,7 @@ Reference steps for the template
    ::
 
       :cilium-new: Cilium release candidate vX.Y.Z-rcN has been released:
-      https://github.com/cilium/cilium/releases/tag/vX.Y.Z-rcN
+      https://github.com/go-faster/cilium/releases/tag/vX.Y.Z-rcN
 
       This release is not recommended for use in production clusters, but if
       you're in a position to pull it and try it out in staging / testing

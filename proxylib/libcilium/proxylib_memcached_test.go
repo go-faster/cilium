@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"testing"
 
-	_ "github.com/cilium/cilium/proxylib/memcached"
-	binarymemcache "github.com/cilium/cilium/proxylib/memcached/binary"
-	textmemcache "github.com/cilium/cilium/proxylib/memcached/text"
-	"github.com/cilium/cilium/proxylib/proxylib"
-	"github.com/cilium/cilium/proxylib/test"
+	_ "github.com/go-faster/cilium/proxylib/memcached"
+	binarymemcache "github.com/go-faster/cilium/proxylib/memcached/binary"
+	textmemcache "github.com/go-faster/cilium/proxylib/memcached/text"
+	"github.com/go-faster/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/proxylib/test"
 )
 
 var setHelloText = []byte("set key 0 0 5\r\nhello\r\n")

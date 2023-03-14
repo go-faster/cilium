@@ -18,9 +18,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/defaults"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/defaults"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
 )
 
 func (s *OptionSuite) TestValidateIPv6ClusterAllocCIDR(c *C) {

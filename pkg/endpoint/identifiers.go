@@ -6,8 +6,8 @@ package endpoint
 import (
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // GetContainerName returns the name of the container for the endpoint.

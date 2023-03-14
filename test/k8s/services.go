@@ -13,8 +13,8 @@ import (
 	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/core/v1"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 const (
@@ -125,7 +125,7 @@ var _ = SkipDescribeIf(helpers.RunsOn54Kernel, "K8sDatapathServicesTest", func()
 		SkipItIf(helpers.RunsWithKubeProxyReplacement, "Checks service accessing itself (hairpin flow)", func() {
 			serviceNames := []string{echoServiceName}
 			// Hairpin flow mode is currently not supported for IPv6.
-			// TODO: Uncomment after https://github.com/cilium/cilium/pull/14138 is merged
+			// TODO: Uncomment after https://github.com/go-faster/cilium/pull/14138 is merged
 			// if helpers.DualStackSupported() {
 			// }
 			// 	serviceNames = append(serviceNames, // )
@@ -151,7 +151,7 @@ var _ = SkipDescribeIf(helpers.RunsOn54Kernel, "K8sDatapathServicesTest", func()
 				deploymentManager.Deploy(helpers.CiliumNamespace, IPSecSecret)
 				DeployCiliumOptionsAndDNS(kubectl, ciliumFilename, map[string]string{
 					"encryption.enabled": "true",
-					// Until https://github.com/cilium/cilium/issues/23461
+					// Until https://github.com/go-faster/cilium/issues/23461
 					// has been fixed, we need to disable IPv6 masq
 					"enableIPv6Masquerade": "false",
 				})

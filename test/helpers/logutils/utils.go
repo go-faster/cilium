@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	selfishThresholdMsg = "Goroutine took lock for more than" // from https://github.com/cilium/cilium/pull/5268
+	selfishThresholdMsg = "Goroutine took lock for more than" // from https://github.com/go-faster/cilium/pull/5268
 
 	contextDeadlineExceeded = "context deadline exceeded"
 	errorLogs               = "level=error"

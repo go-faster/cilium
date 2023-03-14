@@ -11,7 +11,7 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/api/metrics/mock"
+	"github.com/go-faster/cilium/pkg/api/metrics/mock"
 )
 
 // How to run these tests:

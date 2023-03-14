@@ -13,9 +13,9 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/insecure"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/crypto/certloader"
-	hubbleopts "github.com/cilium/cilium/pkg/hubble/server/serveroption"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/crypto/certloader"
+	hubbleopts "github.com/go-faster/cilium/pkg/hubble/server/serveroption"
 )
 
 // Client defines an interface that Peer service client should implement.

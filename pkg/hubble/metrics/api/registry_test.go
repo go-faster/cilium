@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 type testPlugin struct {

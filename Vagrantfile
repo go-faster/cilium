@@ -37,7 +37,7 @@ END
 end
 
 # Workaround issue as described here:
-# https://github.com/cilium/cilium/pull/12520
+# https://github.com/go-faster/cilium/pull/12520
 class VagrantPlugins::ProviderVirtualBox::Action::Network
   def dhcp_server_matches_config?(dhcp_server, config)
     true
@@ -64,10 +64,10 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-if [ -x /home/vagrant/go/src/github.com/cilium/cilium/.devvmrc ] ; then
+if [ -x /home/vagrant/go/src/github.com/go-faster/cilium/.devvmrc ] ; then
    echo "----------------------------------------------------------------"
    echo "Executing .devvmrc"
-   /home/vagrant/go/src/github.com/cilium/cilium/.devvmrc || true
+   /home/vagrant/go/src/github.com/go-faster/cilium/.devvmrc || true
 fi
 
 echo "----------------------------------------------------------------"
@@ -83,7 +83,7 @@ service systemd-journald status
 echo "done configuring journald"
 
 service docker restart
-echo 'cd ~/go/src/github.com/cilium/cilium' >> /home/vagrant/.bashrc
+echo 'cd ~/go/src/github.com/go-faster/cilium' >> /home/vagrant/.bashrc
 echo 'export GOPATH=$(go env GOPATH)' >> /home/vagrant/.bashrc
 chown -R vagrant:vagrant /home/vagrant 2>/dev/null || true
 curl -SsL https://github.com/cilium/bpf-map/releases/download/v1.0/bpf-map -o bpf-map
@@ -99,7 +99,7 @@ set -o pipefail
 
 export PATH=/home/vagrant/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 #{$makeclean}
-~/go/src/github.com/cilium/cilium/contrib/vagrant/build.sh
+~/go/src/github.com/go-faster/cilium/contrib/vagrant/build.sh
 rm -fr ~/go/bin/cilium*
 SCRIPT
 
@@ -109,19 +109,19 @@ set -o nounset
 set -o pipefail
 
 # Add an exception for the cilium repo for the root user to fix the
-# "fatal: unsafe repository ('/home/vagrant/go/src/github.com/cilium/cilium' is owned by someone else)"
+# "fatal: unsafe repository ('/home/vagrant/go/src/github.com/go-faster/cilium' is owned by someone else)"
 # error condition when running `sudo make install`
-git config --global --add safe.directory /home/vagrant/go/src/github.com/cilium/cilium
+git config --global --add safe.directory /home/vagrant/go/src/github.com/go-faster/cilium
 
-sudo -E make -C /home/vagrant/go/src/github.com/cilium/cilium/ install
+sudo -E make -C /home/vagrant/go/src/github.com/go-faster/cilium/ install
 
 sudo mkdir -p /etc/sysconfig
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium-consul.service /lib/systemd/system
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium-docker.service /lib/systemd/system
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium-etcd.service /lib/systemd/system
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium.service /lib/systemd/system
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium-operator.service /lib/systemd/system
-sudo cp /home/vagrant/go/src/github.com/cilium/cilium/contrib/systemd/cilium /etc/sysconfig
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium-consul.service /lib/systemd/system
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium-docker.service /lib/systemd/system
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium-etcd.service /lib/systemd/system
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium.service /lib/systemd/system
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium-operator.service /lib/systemd/system
+sudo cp /home/vagrant/go/src/github.com/go-faster/cilium/contrib/systemd/cilium /etc/sysconfig
 
 getent group cilium >/dev/null || sudo groupadd -r cilium
 sudo usermod -a -G cilium vagrant
@@ -323,7 +323,7 @@ Vagrant.configure(2) do |config|
         end
     end
     cilium_dir = '.'
-    cilium_path = '/home/vagrant/go/src/github.com/cilium/cilium'
+    cilium_path = '/home/vagrant/go/src/github.com/go-faster/cilium'
     if ENV["SHARE_PARENT"] == "2" then
       cilium_dir = '../..'
       cilium_path = '/home/vagrant/go/src/github.com'

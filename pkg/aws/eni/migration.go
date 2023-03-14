@@ -9,10 +9,10 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	enitypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	nodetypes "github.com/cilium/cilium/pkg/node/types"
+	enitypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	nodetypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // GetInterfaceNumberByMAC implements the linuxrouting.interfaceDB interface.
@@ -93,7 +93,7 @@ func (in *InterfaceDB) fetchFromK8s(name string) (*v2.CiliumNode, error) {
 
 // InterfaceDB contains all the ENIs on a given node. It is used to convert ENI
 // MAC addrs from interface numbers and vice versa, needed for the ENI
-// migration. See https://github.com/cilium/cilium/issues/14336.
+// migration. See https://github.com/go-faster/cilium/issues/14336.
 type InterfaceDB struct {
 	cache     enitypes.ENIStatus
 	Clientset client.Clientset

@@ -10,7 +10,7 @@ import (
 
 	"go.uber.org/dig"
 
-	"github.com/cilium/cilium/pkg/hive/internal"
+	"github.com/go-faster/cilium/pkg/hive/internal"
 )
 
 // provider is a set of constructors

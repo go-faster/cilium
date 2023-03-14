@@ -7,8 +7,8 @@ package cmd
 
 import (
 	// These dependencies should be included only when this file is included in the build.
-	allocatorAzure "github.com/cilium/cilium/pkg/ipam/allocator/azure" // Azure allocator task.
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
+	allocatorAzure "github.com/go-faster/cilium/pkg/ipam/allocator/azure" // Azure allocator task.
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
 )
 
 func init() {

@@ -20,7 +20,7 @@ import (
 	"golang.org/x/net/ipv6"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // This is the required size of the OOB buffer to pass to ReadMsgUDP.

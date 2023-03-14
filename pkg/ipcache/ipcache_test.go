@@ -13,13 +13,13 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	identityPkg "github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/source"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	"github.com/cilium/cilium/pkg/types"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/checker"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	identityPkg "github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/source"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	"github.com/go-faster/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 // Hook up gocheck into the "go test" runner.

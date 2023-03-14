@@ -212,7 +212,7 @@ If you want to connect to the Kubernetes cluster running inside the developer VM
 
 .. code-block:: shell-session
 
-    $ export KUBECONFIG=$KUBECONFIG:$GOPATH/src/github.com/cilium/cilium/vagrant.kubeconfig
+    $ export KUBECONFIG=$KUBECONFIG:$GOPATH/src/github.com/go-faster/cilium/vagrant.kubeconfig
 
 and add ``127.0.0.1 k8s1`` to your hosts file.
 
@@ -271,8 +271,8 @@ directly and manually install Cilium:
         $ vagrant init cilium/ubuntu
         $ vagrant up
         $ vagrant ssh [...]
-        $ go get github.com/cilium/cilium
-        $ cd go/src/github.com/cilium/cilium/
+        $ go get github.com/go-faster/cilium
+        $ cd go/src/github.com/go-faster/cilium/
         $ make
         $ sudo make install
         $ sudo mkdir -p /etc/sysconfig/
@@ -382,7 +382,7 @@ See :ref:`dev_env` for information on how to setup the development environment.
 When the development VM is provisioned, it builds and installs Cilium.  After
 the initial build and install you can do further building and testing
 incrementally inside the VM. ``vagrant ssh`` takes you to the Cilium source
-tree directory (``/home/vagrant/go/src/github.com/cilium/cilium``) by default,
+tree directory (``/home/vagrant/go/src/github.com/go-faster/cilium``) by default,
 and the following commands assume that you are working within that directory.
 
 Build Cilium

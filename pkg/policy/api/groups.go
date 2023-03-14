@@ -9,7 +9,7 @@ import (
 	"net/netip"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ip"
 )
 
 const (

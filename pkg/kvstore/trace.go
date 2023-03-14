@@ -8,12 +8,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 var (
 	// Debugging can be enabled at compile with:
-	// -ldflags "-X "github.com/cilium/cilium/pkg/kvstore".Debug=true"
+	// -ldflags "-X "github.com/go-faster/cilium/pkg/kvstore".Debug=true"
 	Debug string
 
 	traceEnabled bool

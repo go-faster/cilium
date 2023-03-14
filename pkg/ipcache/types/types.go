@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/identity/cache"
 )
 
 // PolicyHandler is responsible for handling identity updates into the core

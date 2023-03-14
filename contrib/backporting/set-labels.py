@@ -31,7 +31,7 @@ action = args.action
 version = args.version
 
 g = Github(token)
-cilium = g.get_repo("cilium/cilium")
+cilium = g.get_repo("go-faster/cilium")
 pr = cilium.get_pull(pr_number)
 pr_labels = list(pr.get_labels())
 old_label_len = len(pr_labels)

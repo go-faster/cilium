@@ -8,12 +8,12 @@ import (
 	"path"
 	"testing"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	agentOption "github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/test/controlplane"
-	"github.com/cilium/cilium/test/controlplane/services/helpers"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	agentOption "github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/test/controlplane"
+	"github.com/go-faster/cilium/test/controlplane/services/helpers"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 func init() {

@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/iana"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/iana"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const (

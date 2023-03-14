@@ -3,7 +3,7 @@
 
 package policy
 
-import "github.com/cilium/cilium/pkg/labels"
+import "github.com/go-faster/cilium/pkg/labels"
 
 // JoinPath returns a joined path from a and b.
 func JoinPath(a, b string) string {

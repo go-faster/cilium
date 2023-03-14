@@ -15,12 +15,12 @@ import (
 
 	"github.com/cilium/ebpf"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/maps/tunnel"
-	"github.com/cilium/cilium/pkg/netns"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/maps/tunnel"
+	"github.com/go-faster/cilium/pkg/netns"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // cleanupCmd represents the cleanup command

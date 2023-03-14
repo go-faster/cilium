@@ -113,7 +113,7 @@ rollOutCiliumPods: false
 # -- Agent container image.
 image:
   override: ~
-  repository: "quay.io/cilium/cilium-ci"
+  repository: "quay.io/go-faster/cilium-ci"
   tag: "latest"
   pullPolicy: "Always"
   # cilium-digest
@@ -461,7 +461,7 @@ cleanState: false
 # -- Wait for KUBE-PROXY-CANARY iptables rule to appear in "wait-for-kube-proxy"
 # init container before launching cilium-agent.
 # More context can be found in the commit message of below PR
-# https://github.com/cilium/cilium/pull/20123
+# https://github.com/go-faster/cilium/pull/20123
 waitForKubeProxy: false
 
 cni:
@@ -490,7 +490,7 @@ cni:
 
   # -- Configure the log file for CNI logging with retention policy of 7 days.
   # Disable CNI file logging by setting this field to empty explicitly.
-  logFile: /var/run/cilium/cilium-cni.log
+  logFile: /var/run/go-faster/cilium-cni.log
 
   # -- Skip writing of the CNI configuration. This can be used if
   # writing of the CNI configuration is performed by external automation.
@@ -773,7 +773,7 @@ eni:
   gcInterval: ""
   # -- Additional tags attached to ENIs created by Cilium.
   # Dangling ENIs with this tag will be garbage collected
-  # @default -- `{"io.cilium/cilium-managed":"true,"io.cilium/cluster-name":"<auto-detected>"}`
+  # @default -- `{"io.go-faster/cilium-managed":"true,"io.cilium/cluster-name":"<auto-detected>"}`
   gcTags: {}
   # -- If using IAM role for Service Accounts will not try to
   # inject identity values from cilium-aws kubernetes secret.
@@ -1804,7 +1804,7 @@ etcd:
   # -- cilium-etcd-operator image.
   image:
     override: ~
-    repository: "quay.io/cilium/cilium-etcd-operator"
+    repository: "quay.io/go-faster/cilium-etcd-operator"
     tag: "v2.0.7"
     digest: "sha256:04b8327f7f992693c2cb483b999041ed8f92efc8e14f2a5f3ab95574a65ea2dc"
     useDigest: true
@@ -2176,7 +2176,7 @@ preflight:
   # -- Cilium pre-flight image.
   image:
     override: ~
-    repository: "quay.io/cilium/cilium-ci"
+    repository: "quay.io/go-faster/cilium-ci"
     tag: "latest"
     # cilium-digest
     digest: ""

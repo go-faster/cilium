@@ -6,7 +6,7 @@ package allocator
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 // Allocator provides an IP allocator based on a list of Pools

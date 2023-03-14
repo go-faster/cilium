@@ -11,10 +11,10 @@ import (
 	"github.com/cilium/ipam/service/ipallocator"
 	"github.com/google/uuid"
 
-	eniTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	"github.com/cilium/cilium/pkg/alibabacloud/types"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/lock"
+	eniTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	"github.com/go-faster/cilium/pkg/alibabacloud/types"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // ENIMap is a map of ENI interfaced indexed by ENI ID

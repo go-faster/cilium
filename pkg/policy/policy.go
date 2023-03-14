@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 type Tracing int
@@ -80,7 +80,7 @@ func (s *SearchContext) String() string {
 	// We should avoid to use `fmt.Sprintf()` since
 	// it is well-known for not being opimal in terms of
 	// CPU and memory allocations.
-	// See https://github.com/cilium/cilium/issues/19571
+	// See https://github.com/go-faster/cilium/issues/19571
 	for _, dport := range s.DPorts {
 		dportStr := dport.Name
 		if dportStr == "" {

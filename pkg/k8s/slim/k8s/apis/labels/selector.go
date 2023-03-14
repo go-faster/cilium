@@ -17,7 +17,7 @@ import (
 	"k8s.io/klog/v2"
 	stringslices "k8s.io/utils/strings/slices"
 
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/selection"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/selection"
 )
 
 var (

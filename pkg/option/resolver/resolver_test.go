@@ -15,8 +15,8 @@ import (
 
 	"github.com/onsi/gomega"
 
-	ciliumv2alpha1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
+	ciliumv2alpha1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
 )
 
 func TestWriteConfigurations(t *testing.T) {

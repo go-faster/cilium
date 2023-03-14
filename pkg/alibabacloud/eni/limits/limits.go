@@ -6,9 +6,9 @@ package limits
 import (
 	"context"
 
-	openapi "github.com/cilium/cilium/pkg/alibabacloud/api"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/lock"
+	openapi "github.com/go-faster/cilium/pkg/alibabacloud/api"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // limits contains limits for adapter count and addresses. The mappings will be

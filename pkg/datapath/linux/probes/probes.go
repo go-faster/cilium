@@ -20,10 +20,10 @@ import (
 	"github.com/cilium/ebpf/features"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/command/exec"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/command/exec"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

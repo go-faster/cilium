@@ -129,7 +129,7 @@ must perform two tasks:
 
 * Update the ``Makefile`` to copy your generated CRD from a ``tmp`` directory to 
   the correct location in Cilium repository. Edit the following 
-  `location <https://github.com/cilium/cilium/blob/89ca3eddf3dae9ac5fc6c343a2cd26cf3aa405fa/Makefile#L303-L311>`__
+  `location <https://github.com/go-faster/cilium/blob/89ca3eddf3dae9ac5fc6c343a2cd26cf3aa405fa/Makefile#L303-L311>`__
 * Run ``make manifests``
 
 This will generate your Golang structs into CRD manifests and copy them
@@ -224,7 +224,7 @@ You should also bump the ``CustomResourceDefinitionSchemaVersion``
 variable in the correct ``{api_version}/register.go`` to instruct Cilium
 that new CRDs have been added to the system. For example, bump this line if
 adding a CRD to the ``v2`` group:
-`register.go <https://github.com/cilium/cilium/blob/ea9fd6f97b6e7b0d115067dc9f69ba461055530f/pkg/k8s/apis/cilium.io/v2/register.go#L21-L27>`__
+`register.go <https://github.com/go-faster/cilium/blob/ea9fd6f97b6e7b0d115067dc9f69ba461055530f/pkg/k8s/apis/cilium.io/v2/register.go#L21-L27>`__
 
 Register With Client
 ~~~~~~~~~~~~~~~~~~~~
@@ -407,7 +407,7 @@ A convenient script for this follows:
    CILIUM_CI_TAG="${1}"
    helm template cilium ./cilium \
      --namespace kube-system \
-     --set image.repository=quay.io/cilium/cilium-ci \
+     --set image.repository=quay.io/go-faster/cilium-ci \
      --set image.tag=$CILIUM_CI_TAG \
      --set operator.image.repository=quay.io/cilium/operator \
      --set operator.image.suffix=-ci \

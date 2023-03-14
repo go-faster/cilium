@@ -79,7 +79,7 @@ Then, install Cilium release via Helm:
    should be 5.14 or more recent to include this `fix
    <https://github.com/torvalds/linux/commit/8520e224f547cd070c7c8f97b1fc6d58cff7ccaa>`__.
 
-   See the `Pull Request <https://github.com/cilium/cilium/pull/16259>`__ for more details.
+   See the `Pull Request <https://github.com/go-faster/cilium/pull/16259>`__ for more details.
 
 .. include:: k8s-install-validate.rst
 
@@ -114,7 +114,7 @@ have other overlapping BPF ``cgroup`` type programs attached to the parent ``cgr
 hierarchy of the kind container nodes. In such cases, either tear down Cilium, or manually
 detach the overlapping BPF ``cgroup`` programs running in the parent ``cgroup`` hierarchy
 by following the `bpftool documentation <https://manpages.ubuntu.com/manpages/focal/man8/bpftool-cgroup.8.html>`_.
-For more information, see the `Pull Request <https://github.com/cilium/cilium/pull/16259>`__.
+For more information, see the `Pull Request <https://github.com/go-faster/cilium/pull/16259>`__.
 
 ::
 

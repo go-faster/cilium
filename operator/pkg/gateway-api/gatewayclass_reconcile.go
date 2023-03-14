@@ -12,7 +12,7 @@ import (
 
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to

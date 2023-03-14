@@ -49,7 +49,7 @@ You may change the configuration of a running installation in three ways:
 
 #. Via ``cilium config set``
 
-   The `Cilium CLI <https://github.com/cilium/cilium-cli/>`_ has the ability
+   The `Cilium CLI <https://github.com/go-faster/cilium-cli/>`_ has the ability
    to update individual values in the ``cilium-config`` ConfigMap. This will
    not affect running pods; pods must be deleted manually to pick up any changes.
 

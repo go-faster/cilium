@@ -12,7 +12,7 @@ import (
 	http_connection_manager_v3 "github.com/cilium/proxy/go/envoy/extensions/filters/network/http_connection_manager/v3"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/annotation"
 )
 
 const (

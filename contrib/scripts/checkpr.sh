@@ -82,14 +82,14 @@ check_smoke_test() {
 	PR_ID=$1
 
 	# Get branch (HEAD) for PR
-	BRANCH=$(curl -s "https://api.github.com/repos/cilium/cilium/pulls/$PR_ID" | jq -r '.head.ref')
+	BRANCH=$(curl -s "https://api.github.com/repos/go-faster/cilium/pulls/$PR_ID" | jq -r '.head.ref')
 
 	# Get workflow ID for latest Smoke tests run for that branch
-	ID=$(curl -s "https://api.github.com/repos/cilium/cilium/actions/workflows/smoke-test.yaml/runs?branch=$BRANCH&per_page=1" | jq '.workflow_runs[].id');
+	ID=$(curl -s "https://api.github.com/repos/go-faster/cilium/actions/workflows/smoke-test.yaml/runs?branch=$BRANCH&per_page=1" | jq '.workflow_runs[].id');
 
 	while true; do
 		# Get info for jobs in the Smoke tests workflow run
-		OVERVIEW=$(curl -s "https://api.github.com/repos/cilium/cilium/actions/runs/$ID/jobs" | jq '[.jobs[]|{name: .name, status: .status, conclusion: .conclusion}]')
+		OVERVIEW=$(curl -s "https://api.github.com/repos/go-faster/cilium/actions/runs/$ID/jobs" | jq '[.jobs[]|{name: .name, status: .status, conclusion: .conclusion}]')
 		date
 		echo $OVERVIEW | jq
 
@@ -101,7 +101,7 @@ check_smoke_test() {
 			else
 				RESULT="FAIL ❌"
 			fi
-			notify "Smoke tests for #$PR_ID finished" "Result: $RESULT\nhttps://github.com/cilium/cilium/pull/$PR_ID"
+			notify "Smoke tests for #$PR_ID finished" "Result: $RESULT\nhttps://github.com/go-faster/cilium/pull/$PR_ID"
 			break
 		fi
 		sleep 60
@@ -110,7 +110,7 @@ check_smoke_test() {
 
 check_jenkins() {
 	PR_ID=$1
-	statuses=$(curl -s https://api.github.com/repos/cilium/cilium/pulls/${PR_ID} | jq -r '._links.statuses.href')
+	statuses=$(curl -s https://api.github.com/repos/go-faster/cilium/pulls/${PR_ID} | jq -r '._links.statuses.href')
 	jenkins_urls=($(curl -s $statuses | jq -r '.[] | select(.target_url != null) | select(.target_url | contains("jenkins")) | .target_url' | sort | uniq))
 
 	for base_url in "${jenkins_urls[@]}"; do

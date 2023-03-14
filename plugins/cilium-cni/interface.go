@@ -9,9 +9,9 @@ import (
 
 	current "github.com/containernetworking/cni/pkg/types/100"
 
-	"github.com/cilium/cilium/api/v1/models"
-	linuxrouting "github.com/cilium/cilium/pkg/datapath/linux/routing"
-	"github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/api/v1/models"
+	linuxrouting "github.com/go-faster/cilium/pkg/datapath/linux/routing"
+	"github.com/go-faster/cilium/pkg/ip"
 )
 
 func interfaceAdd(ipConfig *current.IPConfig, ipam *models.IPAMAddressResponse, conf *models.DaemonConfigurationStatus) error {

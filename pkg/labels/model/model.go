@@ -4,8 +4,8 @@
 package model
 
 import (
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // NewOplabelsFromModel creates new label from the model.

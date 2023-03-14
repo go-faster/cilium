@@ -8,7 +8,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/cilium/cilium/operator/metrics"
+	"github.com/go-faster/cilium/operator/metrics"
 )
 
 // PrometheusMetrics is an implementation of Prometheus metrics for external

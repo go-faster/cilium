@@ -4,7 +4,7 @@
 package client
 
 import (
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // GetLRPs returns a list of all local redirect policies.

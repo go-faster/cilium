@@ -9,8 +9,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/components"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/components"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // LoggingHook is a hook for logrus which counts error and warning messages as a

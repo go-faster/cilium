@@ -10,9 +10,9 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/eppolicymap"
-	"github.com/cilium/cilium/pkg/maps/sockmap"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/eppolicymap"
+	"github.com/go-faster/cilium/pkg/maps/sockmap"
 )
 
 type mapCreationFunc func(string) error

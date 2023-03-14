@@ -7,8 +7,8 @@ package cmd
 
 import (
 	// These dependencies should be included only when this file is included in the build.
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
 )
 
 func init() {

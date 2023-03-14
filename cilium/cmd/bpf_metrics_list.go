@@ -12,10 +12,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/metricsmap"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/metricsmap"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 const (

@@ -1253,7 +1253,7 @@ endpoints.
 For users who run with kube-proxy (i.e. with Cilium's kube-proxy replacement
 disabled), the ClusterIP service loadbalancing when a request is sent from a pod
 running in a non-host network namespace is still performed at the pod network
-interface (until `GH#16197 <https://github.com/cilium/cilium/issues/16197>`__ is
+interface (until `GH#16197 <https://github.com/go-faster/cilium/issues/16197>`__ is
 fixed).  For this case the session affinity support is disabled by default. To
 enable the feature, set ``config.sessionAffinity=true``.
 
@@ -1516,7 +1516,7 @@ kubernetes node where the pod is running. If the container runtime in your clust
 is running in the cgroup namespace mode, Cilium agent pod can attach BPF ``cgroup``
 programs to the ``virtualized cgroup root``. In such cases, Cilium kube-proxy replacement
 based load-balancing may not be effective leading to connectivity issues.
-For more information, ensure that you have the fix `Pull Request <https://github.com/cilium/cilium/pull/16259>`__.
+For more information, ensure that you have the fix `Pull Request <https://github.com/go-faster/cilium/pull/16259>`__.
 
 .. code-block:: shell-session
 

@@ -8,12 +8,12 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/types"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 const (
@@ -67,7 +67,7 @@ var _ BackendValue = (*Backend6Value)(nil)
 var _ Backend = (*Backend6)(nil)
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type RevNat6Key struct {
 	Key uint16
 }
@@ -97,7 +97,7 @@ func (v *RevNat6Key) ToHost() RevNatKey {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type RevNat6Value struct {
 	Address types.IPv6 `align:"address"`
 	Port    uint16     `align:"port"`
@@ -126,7 +126,7 @@ func (v *RevNat6Value) ToHost() RevNatValue {
 
 // Service6Key must match 'struct lb6_key' in "bpf/lib/common.h".
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Service6Key struct {
 	Address     types.IPv6 `align:"address"`
 	Port        uint16     `align:"dport"`
@@ -193,7 +193,7 @@ func (k *Service6Key) ToHost() ServiceKey {
 
 // Service6Value must match 'struct lb6_service_v2' in "bpf/lib/common.h".
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type Service6Value struct {
 	BackendID uint32    `align:"backend_id"`
 	Count     uint16    `align:"count"`
@@ -256,7 +256,7 @@ func (s *Service6Value) ToHost() ServiceValue {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Backend6KeyV3 struct {
 	ID loadbalancer.BackendID
 }
@@ -273,7 +273,7 @@ func (k *Backend6KeyV3) SetID(id loadbalancer.BackendID) { k.ID = id }
 func (k *Backend6KeyV3) GetID() loadbalancer.BackendID   { return k.ID }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Backend6Key struct {
 	ID uint16
 }
@@ -287,7 +287,7 @@ func (k *Backend6Key) GetID() loadbalancer.BackendID   { return loadbalancer.Bac
 
 // Backend6Value must match 'struct lb6_backend' in "bpf/lib/common.h".
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type Backend6Value struct {
 	Address types.IPv6      `align:"address"`
 	Port    uint16          `align:"port"`
@@ -340,7 +340,7 @@ func (v *Backend6Value) ToHost() BackendValue {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type Backend6ValueV3 struct {
 	Address   types.IPv6      `align:"address"`
 	Port      uint16          `align:"port"`
@@ -459,7 +459,7 @@ func (b *Backend6) GetValue() BackendValue { return b.Value }
 // SockRevNat6Key is the tuple with address, port and cookie used as key in
 // the reverse NAT sock map.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type SockRevNat6Key struct {
 	cookie  uint64     `align:"cookie"`
 	address types.IPv6 `align:"address"`
@@ -472,7 +472,7 @@ const SizeofSockRevNat6Key = int(unsafe.Sizeof(SockRevNat6Key{}))
 
 // SockRevNat6Value is an entry in the reverse NAT sock map.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type SockRevNat6Value struct {
 	address     types.IPv6 `align:"address"`
 	port        int16      `align:"port"`

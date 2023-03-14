@@ -9,7 +9,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/cilium/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/mac"
 )
 
 // RoutingInfo represents information that's required to enable

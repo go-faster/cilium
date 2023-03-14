@@ -11,16 +11,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/cidr"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	datapathOpt "github.com/cilium/cilium/pkg/datapath/option"
-	datapathTypes "github.com/cilium/cilium/pkg/datapath/types"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/service/healthserver"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/cidr"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	datapathOpt "github.com/go-faster/cilium/pkg/datapath/option"
+	datapathTypes "github.com/go-faster/cilium/pkg/datapath/types"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/service/healthserver"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
 )
 
 func TestLocalRedirectServiceExistsError(t *testing.T) {

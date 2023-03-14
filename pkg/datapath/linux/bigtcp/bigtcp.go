@@ -8,9 +8,9 @@ import (
 	"github.com/cilium/ebpf/asm"
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/probes"
-	datapathOption "github.com/cilium/cilium/pkg/datapath/option"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/datapath/linux/probes"
+	datapathOption "github.com/go-faster/cilium/pkg/datapath/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const (

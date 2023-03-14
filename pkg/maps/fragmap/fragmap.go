@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (
@@ -20,7 +20,7 @@ const (
 
 // FragmentKey must match 'struct ipv4_frag_id' in "bpf/lib/ipv4.h".
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type FragmentKey struct {
 	destAddr   types.IPv4 `align:"daddr"`
 	sourceAddr types.IPv4 `align:"saddr"`
@@ -31,7 +31,7 @@ type FragmentKey struct {
 
 // FragmentValue must match 'struct ipv4_frag_l4ports' in "bpf/lib/ipv4.h".
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type FragmentValue struct {
 	sourcePort uint16 `align:"sport"`
 	destPort   uint16 `align:"dport"`

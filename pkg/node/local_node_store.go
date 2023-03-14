@@ -7,11 +7,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/stream"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/stream"
 )
 
 type LocalNode struct {

@@ -151,7 +151,7 @@ else
 fi
 
 # TODO: Fix broken links and re-enable this
-# (https://github.com/cilium/cilium/issues/10601)
+# (https://github.com/go-faster/cilium/issues/10601)
 # echo "Checking links..."
 # if ! build_with_linkchecker ; then
 #     echo "Link check failed!"

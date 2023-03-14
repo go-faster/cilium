@@ -7,12 +7,12 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/ipcache"
-	ipcacheTypes "github.com/cilium/cilium/pkg/ipcache/types"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/source"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	ipcacheTypes "github.com/go-faster/cilium/pkg/ipcache/types"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 type MockIPCache struct{}

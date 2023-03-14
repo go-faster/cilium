@@ -29,7 +29,7 @@ Mar 05 07:51:17 runtime cilium-agent[11336]: level=error msg="error while receiv
 Mar 05 07:51:17 runtime cilium-agent[11336]: level=error msg="xDS stream context canceled" error="context canceled" subsys=xds xdsStreamID=1
 Mar 05 07:51:17 runtime cilium-agent[11336]: level=error msg="xDS stream context canceled" error="context canceled" subsys=xds xdsStreamID=1
 Mar 05 07:51:17 runtime cilium-agent[11336]: level=error msg="error while receiving request from xDS stream" error="rpc error: code = Canceled desc = context canceled" subsys=xds xdsStreamID=1
-2019-03-11T11:42:29.197427096Z level=error msg=k8sError error="github.com/cilium/cilium/daemon/k8s_watcher.go:847: expected type *v1.Node, but watch event object had type *v1.Namespace" subsys=k8s`
+2019-03-11T11:42:29.197427096Z level=error msg=k8sError error="github.com/go-faster/cilium/daemon/k8s_watcher.go:847: expected type *v1.Node, but watch event object had type *v1.Namespace" subsys=k8s`
 
 	output := LogErrorsSummary(log)
 
@@ -41,7 +41,7 @@ Number of "Goroutine took lock for more than" in logs: 0
 Top 4 errors/warnings:
 xDS stream context canceled
 error while receiving request from xDS stream
-github.com/cilium/cilium/daemon/k8s_watcher.go:847: expected type *v1.Node, but watch event object had type *v1.Namespace
+github.com/go-faster/cilium/daemon/k8s_watcher.go:847: expected type *v1.Node, but watch event object had type *v1.Namespace
 Error while running monitor
 `
 

@@ -20,7 +20,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/cilium/cilium/pkg/envoy/xds"
+	"github.com/go-faster/cilium/pkg/envoy/xds"
 )
 
 var (
@@ -38,7 +38,7 @@ func startXDSGRPCServer(listener net.Listener, config map[string]*xds.ResourceTy
 	xdsServer := xds.NewServer(config, resourceAccessTimeout)
 	dsServer := (*xdsGRPCServer)(xdsServer)
 
-	// TODO: https://github.com/cilium/cilium/issues/5051
+	// TODO: https://github.com/go-faster/cilium/issues/5051
 	// Implement IncrementalAggregatedResources to support Incremental xDS.
 	//envoy_service_discovery_v3.RegisterAggregatedDiscoveryServiceServer(grpcServer, dsServer)
 	envoy_service_secret.RegisterSecretDiscoveryServiceServer(grpcServer, dsServer)
@@ -65,7 +65,7 @@ func startXDSGRPCServer(listener net.Listener, config map[string]*xds.ResourceTy
 // resource types supported by Cilium.
 type xdsGRPCServer xds.Server
 
-// TODO: https://github.com/cilium/cilium/issues/5051
+// TODO: https://github.com/go-faster/cilium/issues/5051
 // Implement IncrementalAggregatedResources also to support Incremental xDS.
 //func (s *xdsGRPCServer) StreamAggregatedResources(stream envoy_service_discovery_v3.AggregatedDiscoveryService_StreamAggregatedResourcesServer) error {
 //	return (*xds.Server)(s).HandleRequestStream(stream.Context(), stream, xds.AnyTypeURL)

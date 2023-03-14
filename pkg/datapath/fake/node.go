@@ -7,10 +7,10 @@ import (
 	"context"
 	"net"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/lock"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/lock"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 type FakeNodeHandler struct {

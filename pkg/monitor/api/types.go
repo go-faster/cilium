@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cilium/cilium/pkg/monitor/notifications"
+	"github.com/go-faster/cilium/pkg/monitor/notifications"
 )
 
 // Must be synchronized with <bpf/lib/common.h>

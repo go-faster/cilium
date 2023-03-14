@@ -169,10 +169,10 @@ Check the progress of the deployment (every service should have an
    kubectl exec -it $(kubectl get pod -l app=productpage -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- ls -la /sys/fs/bpf/tc/globals
    - Upgrade cilium to a local image (after setting image pull policy to never):
    export CILIUM_TAG=my-test-tag
-   docker save cilium/cilium:${CILIUM_TAG} -o cilium-${CILIUM_TAG}.tar
+   docker save go-faster/cilium:${CILIUM_TAG} -o cilium-${CILIUM_TAG}.tar
    scp -i $(minikube ssh-key) cilium-${CILIUM_TAG}.tar docker@$(minikube ip):.
    minikube ssh "docker image load -i cilium-${CILIUM_TAG}.tar"
-   kubectl -n kube-system set image daemonset/cilium cilium-agent=docker.io/cilium/cilium:${CILIUM_TAG}
+   kubectl -n kube-system set image daemonset/cilium cilium-agent=docker.io/go-faster/cilium:${CILIUM_TAG}
 
 Create an Istio ingress gateway for the productpage service:
 

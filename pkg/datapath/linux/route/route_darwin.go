@@ -10,7 +10,7 @@ import (
 
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/pkg/mtu"
+	"github.com/go-faster/cilium/pkg/mtu"
 )
 
 // errUnsupportedOp is a common error

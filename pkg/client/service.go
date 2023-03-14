@@ -4,9 +4,9 @@
 package client
 
 import (
-	"github.com/cilium/cilium/api/v1/client/service"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
+	"github.com/go-faster/cilium/api/v1/client/service"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
 )
 
 // GetServices returns a list of all services.

@@ -8,7 +8,7 @@ import (
 
 	cniTypesVer "github.com/containernetworking/cni/pkg/types/100"
 
-	chainingapi "github.com/cilium/cilium/plugins/cilium-cni/chaining/api"
+	chainingapi "github.com/go-faster/cilium/plugins/cilium-cni/chaining/api"
 )
 
 type portmapChainer struct{}

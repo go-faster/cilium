@@ -4,8 +4,8 @@
 package api
 
 import (
-	k8sapi "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	"github.com/cilium/cilium/pkg/labels"
+	k8sapi "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // Entity specifies the class of receiver/sender endpoints that do not have

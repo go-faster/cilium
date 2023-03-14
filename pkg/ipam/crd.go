@@ -21,20 +21,20 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 
-	alibabaCloud "github.com/cilium/cilium/pkg/alibabacloud/utils"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/ip"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/trigger"
+	alibabaCloud "github.com/go-faster/cilium/pkg/alibabacloud/utils"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/ip"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 var (
@@ -711,9 +711,9 @@ func (a *crdAllocator) buildAllocationResult(ip net.IP, ipInfo *ipamTypes.Alloca
 				// that the CNI will not use the interface number when creating
 				// the pod rules and routes. We are hardcoding simply to bypass
 				// the parsing errors when InterfaceNumber is empty. See
-				// https://github.com/cilium/cilium/issues/15496.
+				// https://github.com/go-faster/cilium/issues/15496.
 				//
-				// TODO: Once https://github.com/cilium/cilium/issues/14705 is
+				// TODO: Once https://github.com/go-faster/cilium/issues/14705 is
 				// resolved, then we don't need to hardcode this anymore.
 				result.InterfaceNumber = "0"
 				return

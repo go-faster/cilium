@@ -3,7 +3,7 @@
 
 package ciliumendpointslice
 
-import "github.com/cilium/cilium/pkg/lock"
+import "github.com/go-faster/cilium/pkg/lock"
 
 type CEPName string
 type CESName string

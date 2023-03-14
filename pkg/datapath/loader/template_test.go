@@ -8,9 +8,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/datapath/linux/config"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/datapath/linux/config"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func (s *LoaderTestSuite) TestWrap(c *C) {

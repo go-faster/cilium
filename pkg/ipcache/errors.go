@@ -6,7 +6,7 @@ package ipcache
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 // ErrOverwrite represents an overwrite error where functions return the error

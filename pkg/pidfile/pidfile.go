@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/cleanup"
+	"github.com/go-faster/cilium/pkg/cleanup"
 )
 
 var (

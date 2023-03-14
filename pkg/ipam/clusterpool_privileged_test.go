@@ -12,9 +12,9 @@ import (
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/route"
-	"github.com/cilium/cilium/pkg/netns"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/datapath/linux/route"
+	"github.com/go-faster/cilium/pkg/netns"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func Test_cleanupUnreachableRoutes(t *testing.T) {

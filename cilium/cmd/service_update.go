@@ -12,10 +12,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/models"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	datapathOption "github.com/cilium/cilium/pkg/datapath/option"
-	"github.com/cilium/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/api/v1/models"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	datapathOption "github.com/go-faster/cilium/pkg/datapath/option"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
 )
 
 var (

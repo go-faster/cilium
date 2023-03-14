@@ -9,12 +9,12 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/models"
-	restapi "github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/api/v1/server/restapi/endpoint"
-	"github.com/cilium/cilium/pkg/debug"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/version"
+	"github.com/go-faster/cilium/api/v1/models"
+	restapi "github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/api/v1/server/restapi/endpoint"
+	"github.com/go-faster/cilium/pkg/debug"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/version"
 )
 
 type getDebugInfo struct {

@@ -7,8 +7,8 @@ import (
 	"context"
 	"sync"
 
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/lock"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // RingReader is a reader for a Ring container.

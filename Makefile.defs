@@ -100,7 +100,7 @@ else
     GIT_VERSION = $(shell cat $(ROOT_DIR)/GIT_VERSION)
 endif
 FULL_BUILD_VERSION = $(VERSION) $(GIT_VERSION)
-GO_BUILD_LDFLAGS += -X "github.com/cilium/cilium/pkg/version.ciliumVersion=$(FULL_BUILD_VERSION)"
+GO_BUILD_LDFLAGS += -X "github.com/go-faster/cilium/pkg/version.ciliumVersion=$(FULL_BUILD_VERSION)"
 
 ifeq ($(NOSTRIP),)
     # Note: these options will not remove annotations needed for stack
@@ -114,7 +114,7 @@ endif
 ifneq ($(wildcard $(dir $(lastword $(MAKEFILE_LIST)))/images/cilium/Dockerfile),)
     CILIUM_ENVOY_REF=$(shell sed -E -e 's/^FROM (--[^ ]* )*([^ ]*) as cilium-envoy/\2/p;d' < $(ROOT_DIR)/images/cilium/Dockerfile)
     CILIUM_ENVOY_SHA=$(shell echo $(CILIUM_ENVOY_REF) | sed -E -e 's/[^/]*\/[^:]*:([^:@-]*).*/\1/p;d')
-    GO_BUILD_LDFLAGS += -X "github.com/cilium/cilium/pkg/envoy.RequiredEnvoyVersionSHA=$(CILIUM_ENVOY_SHA)"
+    GO_BUILD_LDFLAGS += -X "github.com/go-faster/cilium/pkg/envoy.RequiredEnvoyVersionSHA=$(CILIUM_ENVOY_SHA)"
 endif
 
 # Use git only if in a Git repo, otherwise find the files from the file system
@@ -130,7 +130,7 @@ endif
 # ROOT_DIR can be either `../` or absolute path, each of these need to be stripped
 BPF_SRCFILES := $(filter-out $(BPF_SRCFILES_IGNORE),$(subst ../,,$(subst $(ROOT_DIR)/,,$(BPF_SRCFILES))))
 CILIUM_DATAPATH_SHA256=$(shell cd $(ROOT_DIR); cat $(BPF_SRCFILES) | sha256sum | awk '{print $$1}')
-GO_BUILD_LDFLAGS += -X "github.com/cilium/cilium/pkg/datapath/loader.DatapathSHA256=$(CILIUM_DATAPATH_SHA256)"
+GO_BUILD_LDFLAGS += -X "github.com/go-faster/cilium/pkg/datapath/loader.DatapathSHA256=$(CILIUM_DATAPATH_SHA256)"
 
 # Set -mod=vendor if running >= go 1.13 or if GO111MODULE is set.
 # A go build is being executed with go modules if:
@@ -215,7 +215,7 @@ define print_help_from_makefile
 endef
 
 # Use to ensure the CWD, or any child of it, belongs to Cilium's go module.
-CILIUM_GO_MODULE = github.com/cilium/cilium
+CILIUM_GO_MODULE = github.com/go-faster/cilium
 CURRENT_GO_MODULE = $(shell go list -m)
 define ASSERT_CILIUM_MODULE
 	$(if $(filter $(CILIUM_GO_MODULE), $(CURRENT_GO_MODULE)) ,, $(error "Could not locate Cilium's go.mod file, are you in Cilium's repository?"))

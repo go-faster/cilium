@@ -12,7 +12,7 @@ import (
 
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/linux_defaults"
+	"github.com/go-faster/cilium/pkg/datapath/linux/linux_defaults"
 )
 
 const (

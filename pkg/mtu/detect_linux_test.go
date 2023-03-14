@@ -4,7 +4,7 @@
 package mtu
 
 import (
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 
 	. "gopkg.in/check.v1"
 )

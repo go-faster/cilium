@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/bpf"
 )
 
 // PolicyPlumbingMap maps endpoint IDs to the fd for the program which
@@ -17,13 +17,13 @@ type PolicyPlumbingMap struct {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type PlumbingKey struct {
 	key uint32
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type PlumbingValue struct {
 	fd uint32
 }

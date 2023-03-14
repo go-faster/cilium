@@ -20,8 +20,8 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/completion"
 )
 
 // Hook up gocheck into the "go test" runner.

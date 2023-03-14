@@ -8,13 +8,13 @@ import (
 	"net"
 	"strings"
 
-	"github.com/cilium/cilium/api/v1/models"
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/datapath"
-	ciliumDefaults "github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/hubble/defaults"
-	"github.com/cilium/cilium/pkg/hubble/peer/serviceoption"
-	"github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/datapath"
+	ciliumDefaults "github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/hubble/defaults"
+	"github.com/go-faster/cilium/pkg/hubble/peer/serviceoption"
+	"github.com/go-faster/cilium/pkg/node/types"
 )
 
 // handler implements the datapath.NodeHandler interface so that it can be
