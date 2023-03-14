@@ -20,7 +20,7 @@ on:
   #   will disappear from the PR checks: please provide a direct link to the
   #   successful workflow run (can be found from Actions tab) in a comment.
   #
-  # pull_request: {}
+  pull_request: {}
   ###
 
 # By specifying the access of one of the scopes, all of those that are not
@@ -125,6 +125,9 @@ jobs:
           cmd: |
             git config --global --add safe.directory /host
             go install github.com/mfridman/tparse@a20c511a88b880dc2544d77d8bc2cc66a8dec507 # v0.10.3
+            ip a
+            ip r
+            ip route get 1.1.1.1
 
       - name: Run privileged unit tests
         uses: cilium/little-vm-helper@0b7d7157dae56a44dc531c852e7756dc671071af # v0.0.3

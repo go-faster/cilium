@@ -51,6 +51,11 @@ func autoDetect() (int, error) {
 		}
 	}
 
+	fmt.Println("Got routes:")
+	for i, r := range routes {
+		fmt.Printf("%d: %+v\n", i, r)
+	}
+
 	if routes[0].Gw == nil {
 		return 0, fmt.Errorf("unable to find default gateway from the routes: %s", routes)
 	}
