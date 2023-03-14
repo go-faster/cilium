@@ -4,7 +4,7 @@
 package flows_to_world
 
 import (
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
 )
 
 type flowsToWorldPlugin struct{}

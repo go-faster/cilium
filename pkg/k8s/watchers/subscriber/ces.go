@@ -4,7 +4,7 @@
 package subscriber
 
 import (
-	cilium_v2a1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	cilium_v2a1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
 )
 
 // NewCES creates a new ces subscriber list.

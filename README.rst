@@ -1,8 +1,8 @@
 .. raw:: html
 
    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/cilium/cilium@master/Documentation/images/logo.png" width="350" alt="Cilium Logo">
-      <img src="https://cdn.jsdelivr.net/gh/cilium/cilium@master/Documentation/images/logo-dark.png" width="350" alt="Cilium Logo">
+      <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/go-faster/cilium@master/Documentation/images/logo.png" width="350" alt="Cilium Logo">
+      <img src="https://cdn.jsdelivr.net/gh/go-faster/cilium@master/Documentation/images/logo-dark.png" width="350" alt="Cilium Logo">
    </picture>
 
 |cii| |go-report| |clomonitor| |artifacthub| |slack| |go-doc| |rtd| |apache| |bsd| |gpl| |fossa| |codespaces|
@@ -42,11 +42,11 @@ Listed below are the actively maintained release branches along with their lates
 minor release, corresponding image pull tags and their release notes:
 
 +---------------------------------------------------------+------------+------------------------------------+----------------------------------------------------------------------------+
-| `v1.13 <https://github.com/cilium/cilium/tree/v1.13>`__ | 2023-02-15 | ``quay.io/cilium/cilium:v1.13.0``  | `Release Notes <https://github.com/cilium/cilium/releases/tag/v1.13.0>`__  |
+| `v1.13 <https://github.com/go-faster/cilium/tree/v1.13>`__ | 2023-02-15 | ``quay.io/go-faster/cilium:v1.13.0``  | `Release Notes <https://github.com/go-faster/cilium/releases/tag/v1.13.0>`__  |
 +---------------------------------------------------------+------------+------------------------------------+----------------------------------------------------------------------------+
-| `v1.12 <https://github.com/cilium/cilium/tree/v1.12>`__ | 2023-02-13 | ``quay.io/cilium/cilium:v1.12.7``  | `Release Notes <https://github.com/cilium/cilium/releases/tag/v1.12.7>`__  |
+| `v1.12 <https://github.com/go-faster/cilium/tree/v1.12>`__ | 2023-02-13 | ``quay.io/go-faster/cilium:v1.12.7``  | `Release Notes <https://github.com/go-faster/cilium/releases/tag/v1.12.7>`__  |
 +---------------------------------------------------------+------------+------------------------------------+----------------------------------------------------------------------------+
-| `v1.11 <https://github.com/cilium/cilium/tree/v1.11>`__ | 2023-02-13 | ``quay.io/cilium/cilium:v1.11.14`` | `Release Notes <https://github.com/cilium/cilium/releases/tag/v1.11.14>`__ |
+| `v1.11 <https://github.com/go-faster/cilium/tree/v1.11>`__ | 2023-02-13 | ``quay.io/go-faster/cilium:v1.11.14`` | `Release Notes <https://github.com/go-faster/cilium/releases/tag/v1.11.14>`__ |
 +---------------------------------------------------------+------------+------------------------------------+----------------------------------------------------------------------------+
 
 Software Bill of Materials
@@ -232,7 +232,7 @@ Linux kernel 4.9.x or later.
 To read up on the necessary kernel versions to run the BPF runtime, see the
 section Prerequisites_.
 
-.. image:: https://cdn.jsdelivr.net/gh/cilium/cilium@master/Documentation/images/bpf-overview.png
+.. image:: https://cdn.jsdelivr.net/gh/go-faster/cilium@master/Documentation/images/bpf-overview.png
     :align: center
 
 XDP is a further step in evolution and enables to run a specific flavor of BPF
@@ -276,13 +276,13 @@ We host a weekly community `YouTube livestream called eCHO <https://www.youtube.
 
 Governance
 ----------
-The Cilium project is governed by a group of `Maintainers and Committers <https://raw.githubusercontent.com/cilium/cilium/master/MAINTAINERS.md>`__.
+The Cilium project is governed by a group of `Maintainers and Committers <https://raw.githubusercontent.com/go-faster/cilium/master/MAINTAINERS.md>`__.
 How they are selected and govern is outlined in our `governance document <https://docs.cilium.io/en/latest/community/governance/commit_access/>`__.
 
 Adopters
 --------
 A list of adopters of the Cilium project who are deploying it in production, and of their use cases,
-can be found in file `USERS.md <https://raw.githubusercontent.com/cilium/cilium/master/USERS.md>`__.
+can be found in file `USERS.md <https://raw.githubusercontent.com/go-faster/cilium/master/USERS.md>`__.
 
 Roadmap
 -------
@@ -306,20 +306,20 @@ and the `2-Clause BSD License <bsd-license_>`__
 .. _`Getting Started`: https://docs.cilium.io/en/stable/#getting-started
 .. _`Architecture and Concepts`: https://docs.cilium.io/en/stable/overview/component-overview/
 .. _`Installing Cilium`: https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/
-.. _`Frequently Asked Questions`: https://github.com/cilium/cilium/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Akind%2Fquestion+
+.. _`Frequently Asked Questions`: https://github.com/go-faster/cilium/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Akind%2Fquestion+
 .. _Contributing: https://docs.cilium.io/en/stable/contributing/development/
 .. _Prerequisites: https://docs.cilium.io/en/stable/operations/system_requirements/
 .. _`BPF and XDP Reference Guide`: https://docs.cilium.io/en/stable/bpf/
 .. _`eBPF`: https://ebpf.io
 .. _`eBPF.io`: https://ebpf.io
 
-.. |go-report| image:: https://goreportcard.com/badge/github.com/cilium/cilium
+.. |go-report| image:: https://goreportcard.com/badge/github.com/go-faster/cilium
     :alt: Go Report Card
-    :target: https://goreportcard.com/report/github.com/cilium/cilium
+    :target: https://goreportcard.com/report/github.com/go-faster/cilium
 
-.. |go-doc| image:: https://godoc.org/github.com/cilium/cilium?status.svg
+.. |go-doc| image:: https://godoc.org/github.com/go-faster/cilium?status.svg
     :alt: GoDoc
-    :target: https://godoc.org/github.com/cilium/cilium
+    :target: https://godoc.org/github.com/go-faster/cilium
 
 .. |rtd| image:: https://readthedocs.org/projects/docs/badge/?version=latest
     :alt: Read the Docs
@@ -351,7 +351,7 @@ and the `2-Clause BSD License <bsd-license_>`__
 
 .. |artifacthub| image:: https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/cilium
     :alt: Artifact Hub
-    :target: https://artifacthub.io/packages/helm/cilium/cilium
+    :target: https://artifacthub.io/packages/helm/go-faster/cilium
 
 .. |fossa| image:: https://app.fossa.com/api/projects/custom%2B162%2Fgit%40github.com%3Acilium%2Fcilium.git.svg?type=shield
     :alt: FOSSA Status

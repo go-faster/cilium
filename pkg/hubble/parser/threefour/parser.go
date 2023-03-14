@@ -15,15 +15,15 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/hubble/parser/common"
-	"github.com/cilium/cilium/pkg/hubble/parser/errors"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
-	ippkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/monitor"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/hubble/parser/common"
+	"github.com/go-faster/cilium/pkg/hubble/parser/errors"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/monitor"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 // Parser is a parser for L3/L4 payloads

@@ -14,10 +14,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/plugins/cilium-docker/driver"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/plugins/cilium-docker/driver"
 )
 
 var (

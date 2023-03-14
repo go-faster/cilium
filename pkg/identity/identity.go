@@ -7,7 +7,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 const (

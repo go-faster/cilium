@@ -12,13 +12,13 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/monitor/agent"
-	"github.com/cilium/cilium/pkg/monitor/agent/listener"
-	"github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/monitor/payload"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/monitor/agent"
+	"github.com/go-faster/cilium/pkg/monitor/agent/listener"
+	"github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/monitor/payload"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/u8proto"
 
 	"github.com/miekg/dns"
 )

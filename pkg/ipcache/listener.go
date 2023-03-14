@@ -6,7 +6,7 @@ package ipcache
 import (
 	"net"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
 )
 
 // CacheModification represents the type of operation performed upon IPCache.

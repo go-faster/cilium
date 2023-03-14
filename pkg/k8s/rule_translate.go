@@ -8,9 +8,9 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 var _ policy.Translator = RuleTranslator{}

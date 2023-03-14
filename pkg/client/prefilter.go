@@ -4,9 +4,9 @@
 package client
 
 import (
-	"github.com/cilium/cilium/api/v1/client/prefilter"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
+	"github.com/go-faster/cilium/api/v1/client/prefilter"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
 )
 
 // GetPrefilter returns a list of all CIDR prefixes

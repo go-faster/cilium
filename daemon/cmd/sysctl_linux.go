@@ -4,8 +4,8 @@
 package cmd
 
 import (
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/sysctl"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/sysctl"
 )
 
 func enableIPForwarding() error {

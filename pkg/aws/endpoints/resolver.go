@@ -6,9 +6,9 @@ package endpoints
 import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

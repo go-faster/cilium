@@ -378,7 +378,7 @@ const (
 	ENIDisableNodeLevelPD = false
 
 	// ENIGarbageCollectionTagManagedName is part of the ENIGarbageCollectionTags default tag set
-	ENIGarbageCollectionTagManagedName = "io.cilium/cilium-managed"
+	ENIGarbageCollectionTagManagedName = "io.go-faster/cilium-managed"
 
 	// ENIGarbageCollectionTagManagedValue is part of the ENIGarbageCollectionTags default tag set
 	ENIGarbageCollectionTagManagedValue = "true"

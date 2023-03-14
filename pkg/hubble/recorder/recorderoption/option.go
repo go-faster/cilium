@@ -4,7 +4,7 @@
 package recorderoption
 
 import (
-	"github.com/cilium/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/defaults"
 )
 
 // Options stores all the configuration values for the Hubble recorder.

@@ -11,11 +11,11 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	slimclientset "github.com/cilium/cilium/pkg/k8s/slim/k8s/client/clientset/versioned"
-	"github.com/cilium/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	slimclientset "github.com/go-faster/cilium/pkg/k8s/slim/k8s/client/clientset/versioned"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
 )
 
 var (

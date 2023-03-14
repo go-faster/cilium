@@ -9,12 +9,12 @@ import (
 	"net"
 	"path"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/cidrmap"
-	"github.com/cilium/cilium/pkg/probe"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/cidrmap"
+	"github.com/go-faster/cilium/pkg/probe"
 )
 
 type preFilterMapType int

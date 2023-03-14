@@ -14,17 +14,17 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/datapath/fake"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/ipcache"
-	ipcacheTypes "github.com/cilium/cilium/pkg/ipcache/types"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/node/addressing"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/datapath/fake"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	ipcacheTypes "github.com/go-faster/cilium/pkg/ipcache/types"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/node/addressing"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 func Test(t *testing.T) {

@@ -14,16 +14,16 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/mac"
-	"github.com/cilium/cilium/pkg/option"
-	wgTypes "github.com/cilium/cilium/pkg/wireguard/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/option"
+	wgTypes "github.com/go-faster/cilium/pkg/wireguard/types"
 )
 
 const preferPublicIP bool = true

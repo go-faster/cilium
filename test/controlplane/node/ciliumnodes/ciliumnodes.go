@@ -14,11 +14,11 @@ import (
 	v1 "k8s.io/api/core/v1" // nolint: golint
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2" // nolint: golint
-	agentOption "github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/test/controlplane"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2" // nolint: golint
+	agentOption "github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/test/controlplane"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 type step struct {

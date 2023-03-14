@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cilium/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/hive/cell"
 )
 
 var eventsHandlerCell = cell.Module(

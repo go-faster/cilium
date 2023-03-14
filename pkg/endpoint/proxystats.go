@@ -6,7 +6,7 @@ package endpoint
 import (
 	"sort"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // sortProxyStats sorts the given slice of ProxyStatistics.

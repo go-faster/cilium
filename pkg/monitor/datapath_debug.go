@@ -12,9 +12,9 @@ import (
 	//       which reuses syscall.Errno similarly to how we do below.
 	"syscall"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
-	"github.com/cilium/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
+	"github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 // must be in sync with <bpf/lib/dbg.h>

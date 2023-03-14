@@ -6,9 +6,9 @@ package testidentity
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 type DummyIdentityNotifier struct {

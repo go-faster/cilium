@@ -215,7 +215,7 @@ kubectl config set-context default \
 kubectl config use-context default \
     --kubeconfig=cilium.kubeconfig
 
-sudo cp ./cilium.kubeconfig /var/lib/cilium/cilium.kubeconfig
+sudo cp ./cilium.kubeconfig /var/lib/go-faster/cilium.kubeconfig
 
 
 # Create dedicated kube-config file for nginx

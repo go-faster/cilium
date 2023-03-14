@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/version"
 )
 
 const notResponding = "Not responding"

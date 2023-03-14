@@ -6,7 +6,7 @@ package rand
 import (
 	"math/rand"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // safeRand is a concurrency-safe source of pseudo-random numbers. The Go
@@ -14,7 +14,7 @@ import (
 // math/rand would be concurrency safe (due to its internal use of
 // lockedSource), but it is prone to inter-package interference with the PRNG
 // state.
-// Also see https://github.com/cilium/cilium/issues/10988
+// Also see https://github.com/go-faster/cilium/issues/10988
 type safeRand struct {
 	mu lock.Mutex
 	r  *rand.Rand

@@ -4,8 +4,8 @@
 package cmd
 
 import (
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
 )
 
 // LeaderLifecycle is the inner lifecycle of the operator that is started when this

@@ -4,8 +4,8 @@
 package v1
 
 import (
-	"github.com/cilium/cilium/pkg/identity"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/identity"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 )
 
 // EndpointInfo defines readable fields of a Cilium endpoint.

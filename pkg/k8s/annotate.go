@@ -17,10 +17,10 @@ import (
 	k8sTypes "k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/cilium/cilium/pkg/annotation"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 type nodeAnnotation = map[string]string

@@ -9,9 +9,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/cidr"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/cidr"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
 )
 
 // SVCType is a type of a service.

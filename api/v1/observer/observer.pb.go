@@ -10,8 +10,8 @@
 package observer
 
 import (
-	flow "github.com/cilium/cilium/api/v1/flow"
-	relay "github.com/cilium/cilium/api/v1/relay"
+	flow "github.com/go-faster/cilium/api/v1/flow"
+	relay "github.com/go-faster/cilium/api/v1/relay"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"

@@ -6,7 +6,7 @@ package RuntimeTest
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 var log = logging.DefaultLogger

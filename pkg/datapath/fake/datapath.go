@@ -7,10 +7,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/datapath/loader/metrics"
-	"github.com/cilium/cilium/pkg/datapath/types"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/datapath/loader/metrics"
+	"github.com/go-faster/cilium/pkg/datapath/types"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
 )
 
 var _ datapath.Datapath = (*FakeDatapath)(nil)

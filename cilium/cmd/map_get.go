@@ -10,10 +10,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	daemonAPI "github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/command"
+	daemonAPI "github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 // mapGetCmd represents the map_get command

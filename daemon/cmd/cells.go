@@ -4,21 +4,21 @@
 package cmd
 
 import (
-	"github.com/cilium/cilium/pkg/auth"
-	"github.com/cilium/cilium/pkg/bgpv1"
-	"github.com/cilium/cilium/pkg/crypto/certificatemanager"
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/endpointmanager"
-	"github.com/cilium/cilium/pkg/gops"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	ipcacheTypes "github.com/cilium/cilium/pkg/ipcache/types"
-	"github.com/cilium/cilium/pkg/k8s"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/node"
-	nodeManager "github.com/cilium/cilium/pkg/node/manager"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/pprof"
+	"github.com/go-faster/cilium/pkg/auth"
+	"github.com/go-faster/cilium/pkg/bgpv1"
+	"github.com/go-faster/cilium/pkg/crypto/certificatemanager"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/endpointmanager"
+	"github.com/go-faster/cilium/pkg/gops"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	ipcacheTypes "github.com/go-faster/cilium/pkg/ipcache/types"
+	"github.com/go-faster/cilium/pkg/k8s"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/node"
+	nodeManager "github.com/go-faster/cilium/pkg/node/manager"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/pprof"
 )
 
 var (

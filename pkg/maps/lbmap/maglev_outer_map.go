@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/ebpf"
 )
 
 // MaglevOuterMap represents a Maglev outer map.

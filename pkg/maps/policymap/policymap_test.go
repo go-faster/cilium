@@ -8,7 +8,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
 )
 
 func Test(t *testing.T) {

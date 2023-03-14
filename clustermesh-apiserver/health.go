@@ -9,11 +9,11 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 type HealthAPIServerConfig struct {

@@ -36,7 +36,7 @@ body:
       label: Stack Trace
       description: Stack trace for the failure, as reported by Jenkins. This will be automatically formatted into code, so no need for backticks.
       placeholder: |
-        /home/jenkins/workspace/Cilium-PR-K8s-1.22-kernel-4.19/src/github.com/cilium/cilium/test/ginkgo-ext/scopes.go:527
+        /home/jenkins/workspace/Cilium-PR-K8s-1.22-kernel-4.19/src/github.com/go-faster/cilium/test/ginkgo-ext/scopes.go:527
         Can't connect to to a valid target when it should work
         Expected command: kubectl exec -n default app2-58757b7dd5-pvvvw -- curl --path-as-is -s -D /dev/stderr --fail --connect-timeout 5 --max-time 20 --retry 5 http://vagrant-cache.ci.cilium.io -w "time-> DNS: '%{time_namelookup}(%{remote_ip})', Connect: '%{time_connect}',Transfer '%{time_starttransfer}', total '%{time_total}'"
         To succeed, but it failed:
@@ -98,7 +98,7 @@ body:
       placeholder: |
         - Jenkins URL: https://jenkins.cilium.io/job/Cilium-PR-K8s-1.22-kernel-4.19/92/
         - ZIP file(s):
-            - [test_results.zip](https://github.com/cilium/cilium/files/1234567/7fcfe7ee_K8sUpdates_Tests_upgrade_and_downgrade_from_a_Cilium_stable_image_to_master.zip)
+            - [test_results.zip](https://github.com/go-faster/cilium/files/1234567/7fcfe7ee_K8sUpdates_Tests_upgrade_and_downgrade_from_a_Cilium_stable_image_to_master.zip)
       value: |
         - Jenkins URL: 
         - ZIP file(s): 

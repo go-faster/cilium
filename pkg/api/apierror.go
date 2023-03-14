@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // APIError is the error representation for the API.

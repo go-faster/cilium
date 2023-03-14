@@ -24,7 +24,7 @@ spec:
       type: DirectoryOrCreate
     name: bpf-maps
   - hostPath:
-      path: /home/vagrant/go/src/github.com/cilium/cilium
+      path: /home/vagrant/go/src/github.com/go-faster/cilium
       type: Directory
     name: cilium-src
   # We need the following toleration overwrite because K8sVerifier runs with

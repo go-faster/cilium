@@ -9,7 +9,7 @@ import (
 
 	"github.com/onsi/ginkgo"
 
-	"github.com/cilium/cilium/test/helpers/constants"
+	"github.com/go-faster/cilium/test/helpers/constants"
 )
 
 // ContainerExec executes cmd in the container with the provided name along with

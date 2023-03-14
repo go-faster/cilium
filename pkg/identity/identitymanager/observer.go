@@ -4,7 +4,7 @@
 package identitymanager
 
 import (
-	"github.com/cilium/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity"
 )
 
 // Observer can sign up to receive events whenever local identities are removed.

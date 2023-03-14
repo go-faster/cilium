@@ -9,17 +9,17 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	operatorMetrics "github.com/cilium/cilium/operator/metrics"
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/ipam"
-	"github.com/cilium/cilium/pkg/ipam/allocator"
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
-	"github.com/cilium/cilium/pkg/ipam/allocator/podcidr"
-	ipamMetrics "github.com/cilium/cilium/pkg/ipam/metrics"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/trigger"
+	operatorMetrics "github.com/go-faster/cilium/operator/metrics"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/ipam"
+	"github.com/go-faster/cilium/pkg/ipam/allocator"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/podcidr"
+	ipamMetrics "github.com/go-faster/cilium/pkg/ipam/metrics"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "ipam-allocator-clusterpool")

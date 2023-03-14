@@ -16,12 +16,12 @@ import (
 	"github.com/vishvananda/netlink"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/probes"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/version"
-	"github.com/cilium/cilium/pkg/versioncheck"
+	"github.com/go-faster/cilium/pkg/datapath/linux/probes"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/versioncheck"
 )
 
 const (

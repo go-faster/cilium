@@ -16,7 +16,7 @@ Cilium Feature Proposals
 Before you start working on a significant code change, it's a good idea to make sure
 that your approach is likely to be accepted. The best way to do this is to
 create a `Cilium issue of type "Feature Request" in 
-GitHub <https://github.com/cilium/cilium/issues/new?assignees=&labels=kind%2Ffeature&template=feature_template.md&title=CFP%3A+>`_
+GitHub <https://github.com/go-faster/cilium/issues/new?assignees=&labels=kind%2Ffeature&template=feature_template.md&title=CFP%3A+>`_
 where you describe your plans.
 
 For longer proposals, you might like to include a link to an external doc (e.g.
@@ -43,11 +43,11 @@ Clone and Provision Environment
       cd "${GOPATH}/src/github.com/cilium"
       git clone https://github.com/${YOUR_GITHUB_USERNAME_OR_ORG}/cilium.git
       cd cilium
-      git remote add upstream https://github.com/cilium/cilium.git
+      git remote add upstream https://github.com/go-faster/cilium.git
 
 #. Set up your :ref:`dev_env`.
 #. Check the GitHub issues for `good tasks to get started
-   <https://github.com/cilium/cilium/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue>`_.
+   <https://github.com/go-faster/cilium/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue>`_.
 #. Follow the steps in :ref:`making_changes` to start contributing :)
 
 .. _submit_pr:
@@ -56,11 +56,11 @@ Submitting a pull request
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Contributions must be submitted in the form of pull requests against the
-upstream GitHub repository at https://github.com/cilium/cilium.
+upstream GitHub repository at https://github.com/go-faster/cilium.
 
 #. Fork the Cilium repository.
 #. Push your changes to the topic branch in your fork of the repository.
-#. Submit a pull request on https://github.com/cilium/cilium.
+#. Submit a pull request on https://github.com/go-faster/cilium.
 
 Before hitting the submit button, please make sure that the following
 requirements have been met:
@@ -90,7 +90,7 @@ requirements have been met:
         because only a single line like the following was printed:
 
         level=warning msg="Cilium API handler panicked" client=@ method=GET
-        panic_message="write unix /var/run/cilium/cilium.sock->@: write: broken
+        panic_message="write unix /var/run/go-faster/cilium.sock->@: write: broken
         pipe"
 
         This patch logs the stack at this point at debug level so that it can at
@@ -324,7 +324,7 @@ of the `maintainers <https://github.com/orgs/cilium/teams/cilium-maintainers/mem
 Once a PR is opened by a contributor, GitHub will automatically pick which `teams <https://github.com/orgs/cilium/teams/team/teams>`_
 should review the PR using the ``CODEOWNERS`` file. Each committer can see
 the PRs they need to review by filtering by reviews requested.
-A good filter is provided in this `link <https://github.com/cilium/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+user-review-requested%3A%40me+sort%3Aupdated-asc>`_
+A good filter is provided in this `link <https://github.com/go-faster/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+user-review-requested%3A%40me+sort%3Aupdated-asc>`_
 so make sure to bookmark it.
 
 Reviewers are expected to focus their review on the areas of the code where
@@ -342,7 +342,7 @@ needed, you should re-request a review from the appropriate team. In the
 example below, the committer belonging to the CI team is re-requesting a
 review for other team members to review the PR. This allows other team
 members belonging to the CI team to see the PR as part of the PRs that
-require review in the `filter <https://github.com/cilium/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+review-requested%3A%40me+sort%3Aupdated-asc>`_.
+require review in the `filter <https://github.com/go-faster/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+review-requested%3A%40me+sort%3Aupdated-asc>`_.
 
 .. image:: ../../images/re-request-review.png
    :align: center
@@ -388,7 +388,7 @@ Pull request review process
 Dedicated expectation time for review duties: Follow the next steps 1 to 2
 times per day.
 
-#. Review all PRs needing a review `from you <https://github.com/cilium/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+team-review-requested%3Acilium%2Ftophat+sort%3Aupdated-asc>`_;
+#. Review all PRs needing a review `from you <https://github.com/go-faster/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+team-review-requested%3Acilium%2Ftophat+sort%3Aupdated-asc>`_;
 
 #. If this PR was opened by a non-committer (e.g. external contributor) please
    assign yourself to that PR and make sure to keep track the PR gets reviewed
@@ -467,7 +467,7 @@ times per day.
    passed, and all reviewers have approved the requested changes, merge the PR
    by clicking in the "Rebase and merge" button.
 
-#. Merge PRs with the ``ready-to-merge`` label set `here <https://github.com/cilium/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+sort%3Aupdated-asc+label%3Aready-to-merge+>`_
+#. Merge PRs with the ``ready-to-merge`` label set `here <https://github.com/go-faster/cilium/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+sort%3Aupdated-asc+label%3Aready-to-merge+>`_
 
 #. If the PR is a backport PR, update the labels of cherry-picked PRs with the command included at the end of the original post. For example:
 
@@ -483,7 +483,7 @@ day. Works best if done first thing in the working day.
 
 #. Ensure that:
 
-   #. `Issues opened by community users are tracked down <https://github.com/cilium/cilium/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+sort%3Aupdated-desc>`_:
+   #. `Issues opened by community users are tracked down <https://github.com/go-faster/cilium/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+sort%3Aupdated-desc>`_:
 
        #. Add the label ``kind/community-report``;
        #. If feasible, try to reproduce the issue described;
@@ -497,7 +497,7 @@ day. Works best if done first thing in the working day.
           * The issue needs additional attention from core contributors to
             confirm the resolution is the right path.
 
-   #. `Issues recently commented are not left out unanswered <https://github.com/cilium/cilium/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Akind%2Fcommunity-report>`_:
+   #. `Issues recently commented are not left out unanswered <https://github.com/go-faster/cilium/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Akind%2Fcommunity-report>`_:
 
        #. If there is someone already assigned to that GitHub issue and that
           committer hasn't provided an answer to that user for a while, ping

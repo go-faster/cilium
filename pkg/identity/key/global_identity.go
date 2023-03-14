@@ -6,8 +6,8 @@ package key
 import (
 	"strings"
 
-	"github.com/cilium/cilium/pkg/allocator"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/allocator"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // GlobalIdentity is the structure used to store an identity

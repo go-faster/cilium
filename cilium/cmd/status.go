@@ -11,12 +11,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	pkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
-	healthPkg "github.com/cilium/cilium/pkg/health/client"
-	"github.com/cilium/cilium/pkg/health/defaults"
+	"github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	pkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
+	healthPkg "github.com/go-faster/cilium/pkg/health/client"
+	"github.com/go-faster/cilium/pkg/health/defaults"
 )
 
 // statusCmd represents the daemon_status command

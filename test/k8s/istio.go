@@ -10,8 +10,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 // This tests the Istio integration, following the configuration
@@ -79,7 +79,7 @@ var _ = SkipDescribeIf(helpers.RunsOn54Kernel, "K8sAgentIstioTest", func() {
 		if helpers.SkipK8sVersions("<1.17.0") {
 			Skip(fmt.Sprintf("Istio %s requires at least K8s version 1.17", istioVersion))
 		}
-		// See https://github.com/cilium/cilium/issues/21082
+		// See https://github.com/go-faster/cilium/issues/21082
 		if helpers.SkipK8sVersions(">1.24.99") {
 			Skip(fmt.Sprintf("Istio %s only has support up to K8s version 1.24", istioVersion))
 		}
@@ -151,7 +151,7 @@ var _ = SkipDescribeIf(helpers.RunsOn54Kernel, "K8sAgentIstioTest", func() {
 
 	// This is defined as a separate function to be called from the test below
 	// so that we properly capture test artifacts if any of the assertions fail
-	// (see https://github.com/cilium/cilium/pull/8508).
+	// (see https://github.com/go-faster/cilium/pull/8508).
 	waitIstioReady := func() {
 		// Ignore one-time jobs and Prometheus. All other pods in the
 		// namespaces have an "istio" label.

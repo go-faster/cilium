@@ -8,7 +8,7 @@ package server
 import (
 	"errors"
 
-	healthModels "github.com/cilium/cilium/api/v1/health/models"
+	healthModels "github.com/go-faster/cilium/api/v1/health/models"
 )
 
 func dumpLoad() (*healthModels.LoadResponse, error) {

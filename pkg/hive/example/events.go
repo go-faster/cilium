@@ -11,9 +11,9 @@ import (
 
 	"github.com/cilium/workerpool"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	"github.com/cilium/cilium/pkg/stream"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/stream"
 )
 
 // eventsCell provides the ExampleEvents API for subscribing

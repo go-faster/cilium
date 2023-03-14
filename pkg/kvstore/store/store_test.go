@@ -14,11 +14,11 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/rand"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/rand"
 )
 
 const (

@@ -6,9 +6,9 @@
 package fake
 
 import (
-	clientset "github.com/cilium/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned"
-	apiextensionsv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/typed/apiextensions/v1"
-	fakeapiextensionsv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/typed/apiextensions/v1/fake"
+	clientset "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned"
+	apiextensionsv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/typed/apiextensions/v1"
+	fakeapiextensionsv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/typed/apiextensions/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

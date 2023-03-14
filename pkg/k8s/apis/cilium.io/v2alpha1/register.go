@@ -8,7 +8,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	k8sconst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
+	k8sconst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
 )
 
 const (

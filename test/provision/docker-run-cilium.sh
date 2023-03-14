@@ -7,7 +7,7 @@ if [[ "${CILIUM_OPTS}" != *--kvstore* ]]; then
     CILIUM_OPTS+=" --kvstore consul --kvstore-opt consul.address=127.0.0.1:8500"
 fi
 
-CILIUM_IMAGE=${CILIUM_IMAGE:-cilium/cilium:latest}
+CILIUM_IMAGE=${CILIUM_IMAGE:-go-faster/cilium:latest}
 
 set -e
 shopt -s extglob
@@ -36,7 +36,7 @@ DOCKER_OPTS=" -d --log-driver local --restart always"
 DOCKER_OPTS+=" --privileged --network host --cap-add NET_ADMIN --cap-add SYS_MODULE"
 # Run cilium agent in the host's cgroup namespace so that
 # socket-based load balancing works as expected.
-# See https://github.com/cilium/cilium/pull/16259 for more details.
+# See https://github.com/go-faster/cilium/pull/16259 for more details.
 DOCKER_OPTS+=" --cgroupns=host"
 DOCKER_OPTS+=" --volume /var/lib/cilium/etcd:/var/lib/cilium/etcd"
 DOCKER_OPTS+=" --volume /var/run/cilium:/var/run/cilium"

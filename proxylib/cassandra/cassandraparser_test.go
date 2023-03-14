@@ -9,9 +9,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/proxylib/accesslog"
-	"github.com/cilium/cilium/proxylib/proxylib"
-	"github.com/cilium/cilium/proxylib/test"
+	"github.com/go-faster/cilium/proxylib/accesslog"
+	"github.com/go-faster/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/proxylib/test"
 )
 
 // Hook up gocheck into the "go test" runner.

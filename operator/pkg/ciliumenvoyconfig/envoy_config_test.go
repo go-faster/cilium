@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
 )
 
 func Test_getClusterResources(t *testing.T) {

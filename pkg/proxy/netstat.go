@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

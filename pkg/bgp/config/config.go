@@ -10,7 +10,7 @@ import (
 
 	metallbcfg "go.universe.tf/metallb/pkg/config"
 
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 // Parse parses and validates the BGP configuration for use with MetalLB. It

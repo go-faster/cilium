@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/components"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/mountinfo"
+	"github.com/go-faster/cilium/pkg/components"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/mountinfo"
 )
 
 // BugtoolConfiguration creates and loads the configuration file used to run
@@ -273,7 +273,7 @@ func catCommands() []string {
 		"/var/log/docker.log",
 		"/var/log/daemon.log",
 		"/var/log/messages",
-		"/var/run/cilium/cilium-cni.log",
+		"/var/run/go-faster/cilium-cni.log",
 	}
 	// Only print the files that do exist to reduce number of errors in
 	// archive

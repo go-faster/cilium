@@ -7,7 +7,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // A promise for a future value.

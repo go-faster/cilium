@@ -8,8 +8,8 @@ package externalversions
 import (
 	"fmt"
 
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	v2alpha1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	v2alpha1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

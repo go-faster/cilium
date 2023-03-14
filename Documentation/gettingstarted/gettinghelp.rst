@@ -17,7 +17,7 @@ FAQ
 ===
 
 **Cilium Frequently Asked Questions (FAQ)**: Cilium uses `GitHub
-tags <https://github.com/cilium/cilium/issues?utf8=%E2%9C%93&q=label%3Akind%2Fquestion%20>`_
+tags <https://github.com/go-faster/cilium/issues?utf8=%E2%9C%93&q=label%3Akind%2Fquestion%20>`_
 to maintain a list of questions asked by users. We suggest checking to see if
 your question is already answered.
 
@@ -34,9 +34,9 @@ GitHub
 ======
 
 **Bug Tracker**: All the issues are addressed in the `GitHub issue tracker
-<https://github.com/cilium/cilium/issues>`_.  If you want to report a bug or a
+<https://github.com/go-faster/cilium/issues>`_.  If you want to report a bug or a
 new feature please file the issue according to the `GitHub template
-<https://github.com/cilium/cilium/issues/new/choose>`_.
+<https://github.com/go-faster/cilium/issues/new/choose>`_.
 
 **Contributing**: If you want to contribute, reading the :ref:`dev_guide` should
 help you.
@@ -47,14 +47,14 @@ Training
 **Training courses**: Our website lists `training courses
 <https://cilium.io/enterprise>`__ that have been
 `approved
-<https://github.com/cilium/cilium.io/blob/main/CONTRIBUTING.md#listing-cilium-training>`__
+<https://github.com/go-faster/cilium.io/blob/main/CONTRIBUTING.md#listing-cilium-training>`__
 by the Cilium project. 
 
 Enterprise support
 ==================
 
 **Distributions**: Enterprise-ready, supported and `approved
-<https://github.com/cilium/cilium.io/blob/main/CONTRIBUTING.md#listing-cilium-distributions>`__
+<https://github.com/go-faster/cilium.io/blob/main/CONTRIBUTING.md#listing-cilium-distributions>`__
 Cilium distributions are
 listed on the `Cilium website <https://cilium.io/enterprise>`__.
 

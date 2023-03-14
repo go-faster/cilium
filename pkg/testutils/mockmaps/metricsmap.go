@@ -4,7 +4,7 @@
 package mockmaps
 
 import (
-	"github.com/cilium/cilium/pkg/maps/metricsmap"
+	"github.com/go-faster/cilium/pkg/maps/metricsmap"
 )
 
 // MetricsRecord designates a map entry (key + value).

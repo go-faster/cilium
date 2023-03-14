@@ -40,7 +40,7 @@ func rootCmdRun(cmd *cobra.Command, args []string) {
 		osArchCheck{},
 		unameCheck{},
 		rootDirCheck{
-			rootDir: goPath() + "/src/github.com/cilium/cilium",
+			rootDir: goPath() + "/src/github.com/go-faster/cilium",
 		},
 		&binaryCheck{
 			name:          "make",

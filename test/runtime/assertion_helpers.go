@@ -6,8 +6,8 @@ package RuntimeTest
 import (
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 // ExpectPolicyEnforcementUpdated sets PolicyEnforcement mode on the provided vm

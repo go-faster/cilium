@@ -6,7 +6,7 @@
 package fuzz
 
 import (
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 func Fuzz(data []byte) int {

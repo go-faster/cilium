@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 var (

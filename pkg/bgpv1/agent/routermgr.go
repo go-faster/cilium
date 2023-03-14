@@ -6,7 +6,7 @@ package agent
 import (
 	"context"
 
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
 )
 
 // BGPRouterManager provides a declarative API for defining

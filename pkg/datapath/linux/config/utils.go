@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/common"
 )
 
 // FmtDefineAddress returns the a define string from the given name and addr.

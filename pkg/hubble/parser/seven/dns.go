@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/gopacket/layers"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 func decodeDNS(flowType accesslog.FlowType, dns *accesslog.LogRecordDNS) *flowpb.Layer7_Dns {

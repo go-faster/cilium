@@ -12,10 +12,10 @@ BUILD_NUM="${BUILD_NUMBER:-0}"
 JOB_BASE="${JOB_BASE_NAME:-local}"
 BUILD_ID="${JOB_BASE}-${BUILD_NUM}"
 
-AGENT_SOCK_PATH=/var/run/cilium/cilium.sock
+AGENT_SOCK_PATH=/var/run/go-faster/cilium.sock
 
 # Prefer local build if binary file detected.
-for bin in "../cilium/cilium" \
+for bin in "../go-faster/cilium" \
   "../daemon/cilium-agent" \
   "../plugins/cilium-docker/cilium-docker"; do
         if [ -f $bin ]; then
@@ -523,7 +523,7 @@ function gather_files {
   local TEST_NAME=$1
   local TEST_SUITE=$2
   log "gathering files for test $TEST_NAME in test suite $TEST_SUITE"
-  local CILIUM_ROOT="src/github.com/cilium/cilium"
+  local CILIUM_ROOT="src/github.com/go-faster/cilium"
   if [ -z "${TEST_SUITE}" ]; then
     TEST_SUITE="runtime-tests"
   fi
@@ -828,14 +828,14 @@ function copy_files_vm {
   PORT=$(get_vm_ssh_port $VM_NAME)
 
   log "getting cilium logs from $VM_NAME"
-  vagrant ssh $VM_NAME -c 'sudo -E bash -c "journalctl --no-pager -u cilium > /home/vagrant/go/src/github.com/cilium/cilium/test/envoy/cilium-files/cilium-logs && chmod a+r /home/vagrant/go/src/github.com/cilium/cilium/test/envoy/cilium-files/cilium-logs"'
-  vagrant ssh $VM_NAME -c 'sudo -E bash -c "journalctl --no-pager -u cilium-docker > /home/vagrant/go/src/github.com/cilium/cilium/test/envoy/cilium-files/cilium-docker-logs && chmod a+r /home/vagrant/go/src/github.com/cilium/cilium/test/envoy/cilium-files/cilium-docker-logs"'
+  vagrant ssh $VM_NAME -c 'sudo -E bash -c "journalctl --no-pager -u cilium > /home/vagrant/go/src/github.com/go-faster/cilium/test/envoy/cilium-files/cilium-logs && chmod a+r /home/vagrant/go/src/github.com/go-faster/cilium/test/envoy/cilium-files/cilium-logs"'
+  vagrant ssh $VM_NAME -c 'sudo -E bash -c "journalctl --no-pager -u cilium-docker > /home/vagrant/go/src/github.com/go-faster/cilium/test/envoy/cilium-files/cilium-docker-logs && chmod a+r /home/vagrant/go/src/github.com/go-faster/cilium/test/envoy/cilium-files/cilium-docker-logs"'
 
   log "listing all logs that will be gathered from $VM_NAME"
-  vagrant ssh $VM_NAME -c 'ls -altr /home/vagrant/go/src/github.com/cilium/cilium/test/envoy/cilium-files'
+  vagrant ssh $VM_NAME -c 'ls -altr /home/vagrant/go/src/github.com/go-faster/cilium/test/envoy/cilium-files'
 
   log "copying logs from $VM_NAME onto VM host for accessibility after VM is destroyed"
-  scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r -P ${PORT} -i ${ID_FILE} vagrant@127.0.0.1:/home/vagrant/go/src/github.com/cilium/cilium/${FILES_DIR} ${WORKSPACE}/cilium-files-${VM_NAME}
+  scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r -P ${PORT} -i ${ID_FILE} vagrant@127.0.0.1:/home/vagrant/go/src/github.com/go-faster/cilium/${FILES_DIR} ${WORKSPACE}/cilium-files-${VM_NAME}
 }
 
 function get_k8s_vm_name {

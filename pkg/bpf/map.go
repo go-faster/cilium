@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/cilium/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/controller"
 )
 
 // MapType is an enumeration for valid BPF map types

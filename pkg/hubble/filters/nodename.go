@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	ciliumDefaults "github.com/cilium/cilium/pkg/defaults"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	ciliumDefaults "github.com/go-faster/cilium/pkg/defaults"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
 )
 
 // filterByNodeNames returns a function that filters flow events based on the

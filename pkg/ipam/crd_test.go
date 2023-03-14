@@ -14,12 +14,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/datapath/fake"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/datapath/fake"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 func TestIPNotAvailableInPoolError(t *testing.T) {

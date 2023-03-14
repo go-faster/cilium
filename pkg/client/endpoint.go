@@ -4,11 +4,11 @@
 package client
 
 import (
-	"github.com/cilium/cilium/api/v1/client/endpoint"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	pkgEndpointID "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/api/v1/client/endpoint"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	pkgEndpointID "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // EndpointList returns a list of all endpoints

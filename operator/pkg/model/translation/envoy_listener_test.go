@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/cilium/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model"
 )
 
 func TestNewListener(t *testing.T) {

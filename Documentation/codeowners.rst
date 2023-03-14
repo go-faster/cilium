@@ -101,9 +101,9 @@ they can assist with configuring GitHub repository settings, secrets, and
 related processes. For the full codeowners for individual repositories, see
 the CODEOWNERS file in the corresponding repository.
 
-- `@cilium/cilium-cli-maintainers <https://github.com/orgs/cilium/teams/cilium-cli-maintainers>`__
-- `@cilium/cilium-maintainers <https://github.com/orgs/cilium/teams/cilium-maintainers>`__
-- `@cilium/cilium-packer-ci-build-maintainers <https://github.com/orgs/cilium/teams/cilium-packer-ci-build-maintainers>`__
+- `@go-faster/cilium-cli-maintainers <https://github.com/orgs/cilium/teams/cilium-cli-maintainers>`__
+- `@go-faster/cilium-maintainers <https://github.com/orgs/cilium/teams/cilium-maintainers>`__
+- `@go-faster/cilium-packer-ci-build-maintainers <https://github.com/orgs/cilium/teams/cilium-packer-ci-build-maintainers>`__
 - `@cilium/ebpf-lib-maintainers <https://github.com/orgs/cilium/teams/ebpf-lib-maintainers>`__
 - `@cilium/hubble-maintainers <https://github.com/orgs/cilium/teams/hubble-maintainers>`__
 - `@cilium/image-tools-maintainers <https://github.com/orgs/cilium/teams/image-tools-maintainers>`__

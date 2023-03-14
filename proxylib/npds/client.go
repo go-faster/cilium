@@ -17,9 +17,9 @@ import (
 	"google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc"
 
-	"github.com/cilium/cilium/pkg/backoff"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/pkg/backoff"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/proxylib/proxylib"
 )
 
 const (

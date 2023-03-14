@@ -13,13 +13,13 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
 )
 
 // ConfigReconciler is a interface for reconciling a particular aspect

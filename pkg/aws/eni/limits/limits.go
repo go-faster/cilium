@@ -14,9 +14,9 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 
-	ec2shim "github.com/cilium/cilium/pkg/aws/ec2"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/lock"
+	ec2shim "github.com/go-faster/cilium/pkg/aws/ec2"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 var limitsOnce sync.Once

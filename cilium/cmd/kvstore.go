@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

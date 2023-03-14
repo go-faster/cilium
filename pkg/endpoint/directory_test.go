@@ -11,7 +11,7 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/checker"
 )
 
 func (s *EndpointSuite) TestMoveNewFilesTo(c *check.C) {

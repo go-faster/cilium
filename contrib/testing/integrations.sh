@@ -25,7 +25,7 @@ gct()
         set -o pipefail
 
         if [ ! -e $PWD/test_suite_test.go ]; then
-            CILIUM_DIR="${CILIUM_DIR:-"$GOPATH/src/github.com/cilium/cilium/test"}"
+            CILIUM_DIR="${CILIUM_DIR:-"$GOPATH/src/github.com/go-faster/cilium/test"}"
             >&2 echo "Switching to $CILIUM_DIR..."
             cd "$CILIUM_DIR"
         fi
@@ -103,7 +103,7 @@ gkm()
         >&2 echo "usage: gkm [FOCUS] [ARGS]"
         return 1
     fi
-    IMAGE="${CILIUM_IMAGE:-"localhost:32000/cilium/cilium:local"}"
+    IMAGE="${CILIUM_IMAGE:-"localhost:32000/go-faster/cilium:local"}"
     FOCUS="$1"; shift
     gct "microk8s" "$IMAGE" "$FOCUS" "$@"
 }

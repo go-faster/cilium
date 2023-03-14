@@ -9,10 +9,10 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/health/client/connectivity"
-	healthModels "github.com/cilium/cilium/api/v1/health/models"
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/health/client/connectivity"
+	healthModels "github.com/go-faster/cilium/api/v1/health/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 type StatusCollectorTest struct{}

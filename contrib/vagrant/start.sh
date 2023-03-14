@@ -213,7 +213,7 @@ function write_k8s_install() {
 
     cat <<EOF >> "${filename}"
 # K8s
-k8s_path="/home/vagrant/go/src/github.com/cilium/cilium/contrib/vagrant/scripts"
+k8s_path="/home/vagrant/go/src/github.com/go-faster/cilium/contrib/vagrant/scripts"
 export IPV6_EXT="${IPV6_EXT}"
 export K8S_CLUSTER_CIDR="${k8s_cluster_cidr}"
 export K8S_NODE_CIDR_MASK_SIZE="${k8s_node_cidr_mask_size}"
@@ -262,7 +262,7 @@ set -o nounset
 set -o pipefail
 
 # K8s installation 2nd half
-k8s_path="/home/vagrant/go/src/github.com/cilium/cilium/contrib/vagrant/scripts"
+k8s_path="/home/vagrant/go/src/github.com/go-faster/cilium/contrib/vagrant/scripts"
 export IPV6_EXT="${IPV6_EXT}"
 export K8S_CLUSTER_CIDR="${k8s_cluster_cidr}"
 export K8S_NODE_CIDR_MASK_SIZE="${k8s_node_cidr_mask_size}"
@@ -325,10 +325,10 @@ function write_cilium_cfg() {
 
     if [ -n "${K8S}" ]; then
         cilium_kvstore_options="--kvstore etcd --kvstore-opt etcd.config=/var/lib/cilium/etcd-config.yml"
-        cilium_options+=" --k8s-kubeconfig-path /var/lib/cilium/cilium.kubeconfig"
+        cilium_options+=" --k8s-kubeconfig-path /var/lib/go-faster/cilium.kubeconfig"
         cilium_options_with_kvstore="${cilium_options} ${cilium_kvstore_options}"
         cilium_options+=" --identity-allocation-mode=crd --enable-k8s-event-handover=false"
-        cilium_operator_options+=" --k8s-kubeconfig-path /var/lib/cilium/cilium.kubeconfig"
+        cilium_operator_options+=" --k8s-kubeconfig-path /var/lib/go-faster/cilium.kubeconfig"
         cilium_operator_options+=" --cluster-pool-ipv4-cidr=10.${master_ipv4_suffix}.0.0/20"
         cilium_operator_options+=" --cluster-pool-ipv6-cidr=fd04::/96"
         cilium_operator_options_with_kvstore="${cilium_operator_options} ${cilium_kvstore_options}"
@@ -380,7 +380,7 @@ fi
 
 systemctl daemon-reload
 service cilium restart
-/home/vagrant/go/src/github.com/cilium/cilium/test/provision/wait-cilium.sh
+/home/vagrant/go/src/github.com/go-faster/cilium/test/provision/wait-cilium.sh
 EOF
 }
 

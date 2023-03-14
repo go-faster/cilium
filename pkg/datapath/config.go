@@ -7,11 +7,11 @@ import (
 	"io"
 	"net/netip"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/mac"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // DeviceConfiguration is an interface for injecting configuration of datapath

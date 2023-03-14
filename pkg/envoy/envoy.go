@@ -18,11 +18,11 @@ import (
 	"github.com/cilium/lumberjack/v2"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "envoy-manager")

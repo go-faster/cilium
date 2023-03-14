@@ -10,8 +10,8 @@ import (
 
 	"go.uber.org/multierr"
 
-	"github.com/cilium/cilium/pkg/hive/internal"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/hive/internal"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // HookContext is a context passed to a lifecycle hook that is cancelled

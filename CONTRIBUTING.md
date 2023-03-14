@@ -8,7 +8,7 @@ how to contribute, get started and find good first issues.
 
 ## To the cilium.io website
 
-Please see the [cilium.io website contributing guide](https://github.com/cilium/cilium.io/blob/main/CONTRIBUTING.md) for detailed
+Please see the [cilium.io website contributing guide](https://github.com/go-faster/cilium.io/blob/main/CONTRIBUTING.md) for detailed
 information on how to add blogs, trainings, and other resources.
 
 ## To the Cilium documentation

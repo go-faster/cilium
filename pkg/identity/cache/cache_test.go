@@ -11,9 +11,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/labels"
-	fakeConfig "github.com/cilium/cilium/pkg/option/fake"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/labels"
+	fakeConfig "github.com/go-faster/cilium/pkg/option/fake"
 )
 
 var (

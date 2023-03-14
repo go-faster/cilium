@@ -6,7 +6,7 @@ package types
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/cidr"
 )
 
 // NodeAddressingFamily is the node addressing information for a particular

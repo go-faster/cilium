@@ -8,7 +8,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/cilium/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/byteorder"
 )
 
 // Datalink defines the type of the first layer of the captured packet

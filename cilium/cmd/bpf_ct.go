@@ -6,8 +6,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // bpfCtCmd represents the bpf_ct command

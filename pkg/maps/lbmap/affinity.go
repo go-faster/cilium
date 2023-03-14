@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (
@@ -76,7 +76,7 @@ func initAffinity(params InitParams) {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type AffinityMatchKey struct {
 	BackendID loadbalancer.BackendID `align:"backend_id"`
 	RevNATID  uint16                 `align:"rev_nat_id"`
@@ -84,7 +84,7 @@ type AffinityMatchKey struct {
 }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type AffinityMatchValue struct {
 	Pad uint8 `align:"pad"`
 }
@@ -134,7 +134,7 @@ func (k *AffinityMatchKey) ToHost() *AffinityMatchKey {
 
 // Affinity4Key is the Go representation of lb4_affinity_key
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Affinity4Key struct {
 	ClientID    uint64 `align:"client_id"`
 	RevNATID    uint16 `align:"rev_nat_id"`
@@ -145,7 +145,7 @@ type Affinity4Key struct {
 
 // Affinity6Key is the Go representation of lb6_affinity_key
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Affinity6Key struct {
 	ClientID    types.IPv6 `align:"client_id"`
 	RevNATID    uint16     `align:"rev_nat_id"`
@@ -156,7 +156,7 @@ type Affinity6Key struct {
 
 // AffinityValue is the Go representing of lb_affinity_value
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type AffinityValue struct {
 	LastUsed  uint64 `align:"last_used"`
 	BackendID uint32 `align:"backend_id"`

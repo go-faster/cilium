@@ -26,12 +26,12 @@ import (
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	cnpv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/synced"
-	"github.com/cilium/cilium/test/config"
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers/logutils"
+	"github.com/go-faster/cilium/api/v1/models"
+	cnpv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/synced"
+	"github.com/go-faster/cilium/test/config"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers/logutils"
 )
 
 const (
@@ -83,10 +83,10 @@ var (
 	// below. These overrides represent a desire to set the default for all
 	// tests, instead of test-specific variations.
 	defaultHelmOptions = map[string]string{
-		"image.repository":           "k8s1:5000/cilium/cilium-dev",
+		"image.repository":           "k8s1:5000/go-faster/cilium-dev",
 		"image.tag":                  "latest",
 		"image.useDigest":            "false",
-		"preflight.image.repository": "k8s1:5000/cilium/cilium-dev", // Set again in init to match agent.image!
+		"preflight.image.repository": "k8s1:5000/go-faster/cilium-dev", // Set again in init to match agent.image!
 		"preflight.image.tag":        "latest",
 		"preflight.image.useDigest":  "false",
 		"operator.image.repository":  "k8s1:5000/cilium/operator",
@@ -2868,7 +2868,7 @@ func (kub *Kubectl) CiliumExecContext(ctx context.Context, pod string, cmd strin
 	// killed by a signal [1]), where the same command succeeds in a
 	// forthcoming sysdump. Keep trying also in this case until the
 	// 'limitTimes' retries has been exhausted.
-	// https://github.com/cilium/cilium/issues/22476
+	// https://github.com/go-faster/cilium/issues/22476
 	// [1]: https://github.com/golang/go/blob/go1.20rc1/src/os/exec_posix.go#L128-L130
 	for i := 0; i < limitTimes; i++ {
 		res = execute()

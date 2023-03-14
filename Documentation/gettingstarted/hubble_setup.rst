@@ -76,7 +76,7 @@ Enable Hubble in Cilium
                               hubble-relay             Running: 1
             Image versions    cilium-operator          quay.io/cilium/operator-generic:v1.9.5: 1
                               hubble-relay             quay.io/cilium/hubble-relay:v1.9.5: 1
-                              cilium                   quay.io/cilium/cilium:v1.9.5: 3
+                              cilium                   quay.io/go-faster/cilium:v1.9.5: 3
 
     .. group-tab:: Helm
 

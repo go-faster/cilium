@@ -22,11 +22,11 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	"github.com/cilium/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
 )
 
 const testTimeout = time.Minute

@@ -12,7 +12,7 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/client"
 )
 
 // New creates a new BGP MetalLB manager. It contains the MetalLB service IP
@@ -43,7 +43,7 @@ func New(ctx context.Context, clientset client.Clientset, indexer cache.Store) (
 // watcher and pushes them into a queue. From the queue, they are processed by
 // the reconciliation logic of MetalLB for LB IP allocation. To do this,
 // Manager implements
-// github.com/cilium/cilium/pkg/k8s/watchers/subscriber.Service and
+// github.com/go-faster/cilium/pkg/k8s/watchers/subscriber.Service and
 // therefore is registered as a subscriber to the subscriber package to be
 // called from the K8s watcher.
 //

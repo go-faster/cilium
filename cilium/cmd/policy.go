@@ -16,10 +16,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/fqdn/re"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 // policyCmd represents the policy command

@@ -6,9 +6,9 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/vtep"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/vtep"
 )
 
 const (

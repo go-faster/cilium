@@ -12,8 +12,8 @@ import (
 	"github.com/vishvananda/netlink"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/linux_defaults"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/datapath/linux/linux_defaults"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 var _ = Suite(&MigrateSuite{})
@@ -441,7 +441,7 @@ func setUpRoutingTable(c *C, ifindex, tableID, priority int) (map[string]int, ma
 		// }), IsNil)
 
 		// TODO(christarazi): Must shell out here due to netlink request (above)
-		// resulting in EINVAL. See https://github.com/cilium/cilium/issues/14383.
+		// resulting in EINVAL. See https://github.com/go-faster/cilium/issues/14383.
 		err = exec.Command("ip", "rule", "add",
 			"from", linkCIDR.String(),
 			"to", "all",

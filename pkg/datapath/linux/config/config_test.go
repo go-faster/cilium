@@ -17,12 +17,12 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/datapath/loader"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/datapath/loader"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 type ConfigSuite struct{}

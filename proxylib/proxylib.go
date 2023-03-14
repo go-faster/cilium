@@ -14,7 +14,7 @@ import "C"
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/proxylib/libcilium"
+	"github.com/go-faster/cilium/proxylib/libcilium"
 )
 
 func init() {

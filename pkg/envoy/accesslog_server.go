@@ -17,12 +17,12 @@ import (
 	"golang.org/x/sys/unix"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/option"
-	kafka_api "github.com/cilium/cilium/pkg/policy/api/kafka"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
-	"github.com/cilium/cilium/pkg/proxy/logger"
+	"github.com/go-faster/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/option"
+	kafka_api "github.com/go-faster/cilium/pkg/policy/api/kafka"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/proxy/logger"
 )
 
 func getAccessLogPath(stateDir string) string {

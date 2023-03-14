@@ -6,12 +6,12 @@ package regeneration
 import (
 	"context"
 
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/fqdn/restore"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/lock"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/fqdn/restore"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/lock"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 // Owner is the interface defines the requirements for anybody owning policies.

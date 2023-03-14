@@ -9,7 +9,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 // Service translation event point in socket trace event messages

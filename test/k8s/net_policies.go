@@ -16,11 +16,11 @@ import (
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/annotation"
-	"github.com/cilium/cilium/pkg/policy"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/policy"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var _ = SkipDescribeIf(func() bool {
@@ -1532,8 +1532,8 @@ var _ = SkipDescribeIf(helpers.DoesNotRunOn54OrLaterKernel,
 				By("Redeploying Cilium with tunnel disabled and KPR enabled")
 				RedeployCiliumWithMerge(kubectl, ciliumFilename, daemonCfg, map[string]string{
 					// The following are needed because of
-					// https://github.com/cilium/cilium/issues/17962 &&
-					// https://github.com/cilium/cilium/issues/16197.
+					// https://github.com/go-faster/cilium/issues/17962 &&
+					// https://github.com/go-faster/cilium/issues/16197.
 					"tunnel":               "disabled",
 					"autoDirectNodeRoutes": "true",
 					"kubeProxyReplacement": "strict",

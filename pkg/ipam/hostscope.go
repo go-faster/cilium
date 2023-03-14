@@ -10,7 +10,7 @@ import (
 
 	"github.com/cilium/ipam/service/ipallocator"
 
-	"github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ip"
 )
 
 type hostScopeAllocator struct {

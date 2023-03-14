@@ -18,15 +18,15 @@ import (
 	"github.com/Azure/go-autorest/autorest/azure/auth"
 	"github.com/Azure/go-autorest/autorest/to"
 
-	"github.com/cilium/cilium/pkg/api/helpers"
-	"github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/rand"
-	"github.com/cilium/cilium/pkg/spanstat"
-	"github.com/cilium/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/api/helpers"
+	"github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/rand"
+	"github.com/go-faster/cilium/pkg/spanstat"
+	"github.com/go-faster/cilium/pkg/version"
 )
 
 var (

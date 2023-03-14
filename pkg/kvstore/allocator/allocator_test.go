@@ -15,12 +15,12 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/allocator"
-	"github.com/cilium/cilium/pkg/idpool"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/rand"
-	"github.com/cilium/cilium/pkg/rate"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/allocator"
+	"github.com/go-faster/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/rand"
+	"github.com/go-faster/cilium/pkg/rate"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 const (

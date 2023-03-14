@@ -8,7 +8,7 @@ import (
 
 	fuzz "github.com/AdaLogics/go-fuzz-headers"
 
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 func FuzzMapSelectorsToIPsLocked(f *testing.F) {

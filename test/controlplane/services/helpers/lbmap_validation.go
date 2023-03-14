@@ -17,10 +17,10 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	fakeDatapath "github.com/cilium/cilium/pkg/datapath/fake"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
-	"github.com/cilium/cilium/test/controlplane/suite"
+	fakeDatapath "github.com/go-faster/cilium/pkg/datapath/fake"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
+	"github.com/go-faster/cilium/test/controlplane/suite"
 )
 
 func ValidateLBMapGoldenFile(file string, datapath *fakeDatapath.FakeDatapath) error {

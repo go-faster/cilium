@@ -10,9 +10,9 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 func (s *IdentityCacheTestSuite) TestBumpNextNumericIdentity(c *C) {

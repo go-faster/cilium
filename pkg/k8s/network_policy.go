@@ -6,16 +6,16 @@ package k8s
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/annotation"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	k8sCiliumUtils "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/utils"
-	slim_networkingv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/annotation"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	k8sCiliumUtils "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/utils"
+	slim_networkingv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 const (

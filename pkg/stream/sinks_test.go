@@ -9,7 +9,7 @@ import (
 	"io"
 	"testing"
 
-	. "github.com/cilium/cilium/pkg/stream"
+	. "github.com/go-faster/cilium/pkg/stream"
 )
 
 func TestFirst(t *testing.T) {

@@ -7,7 +7,7 @@
 package v1beta1
 
 import (
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
 )
 
 // PartialObjectMetadata is a generic representation of any object with ObjectMeta. It allows clients

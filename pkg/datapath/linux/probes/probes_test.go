@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func TestSystemConfigProbes(t *testing.T) {

@@ -13,9 +13,9 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/operator/server/restapi"
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/metrics"
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/operator"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/metrics"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/operator"
 )
 
 //go:generate swagger generate server --target ../../operator --name CiliumOperator --spec ../openapi.yaml --api-package restapi --server-package server --principal interface{}

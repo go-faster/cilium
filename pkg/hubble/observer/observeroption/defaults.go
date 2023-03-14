@@ -3,7 +3,7 @@
 
 package observeroption
 
-import "github.com/cilium/cilium/pkg/hubble/container"
+import "github.com/go-faster/cilium/pkg/hubble/container"
 
 // Default serves only as reference point for default values. Very useful for
 // the CLI to pick these up instead of defining own defaults that need to be

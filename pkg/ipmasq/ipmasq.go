@@ -14,9 +14,9 @@ import (
 	"github.com/fsnotify/fsnotify"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/ipmasq"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/ipmasq"
 )
 
 var (

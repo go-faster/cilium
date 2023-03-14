@@ -19,17 +19,17 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/defaults"
-	endpointid "github.com/cilium/cilium/pkg/endpoint/id"
-	"github.com/cilium/cilium/pkg/iana"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/maps/policymap"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/defaults"
+	endpointid "github.com/go-faster/cilium/pkg/endpoint/id"
+	"github.com/go-faster/cilium/pkg/iana"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/maps/policymap"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 // Fatalf prints the Printf formatted message to stderr and exits the program

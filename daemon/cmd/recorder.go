@@ -8,11 +8,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/models"
-	. "github.com/cilium/cilium/api/v1/server/restapi/recorder"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/recorder"
+	"github.com/go-faster/cilium/api/v1/models"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/recorder"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/recorder"
 )
 
 type putRecorderID struct {

@@ -19,16 +19,16 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/k8s"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	pkgOption "github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/k8s"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	pkgOption "github.com/go-faster/cilium/pkg/option"
 )
 
 const (

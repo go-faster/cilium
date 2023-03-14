@@ -13,9 +13,9 @@ import (
 	k8stesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/util/workqueue"
 
-	capi_v2a1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	fake "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/fake"
-	clientset "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
+	capi_v2a1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	fake "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/fake"
+	clientset "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2alpha1"
 )
 
 const (

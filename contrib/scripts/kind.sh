@@ -81,7 +81,7 @@ node_config() {
 
     echo "  extraMounts:"
     echo "  - hostPath: $CILIUM_ROOT"
-    echo "    containerPath: /home/vagrant/go/src/github.com/cilium/cilium"
+    echo "    containerPath: /home/vagrant/go/src/github.com/go-faster/cilium"
     if [[ "${max}" -lt 10 ]]; then
         echo "  extraPortMappings:"
         echo "  - containerPort: 2345"

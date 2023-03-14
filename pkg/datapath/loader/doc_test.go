@@ -6,9 +6,9 @@ package loader
 import (
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 func (s *LoaderTestSuite) SetUpTest(c *C) {

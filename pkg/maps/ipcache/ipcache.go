@@ -13,12 +13,12 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "map-ipcache")
@@ -36,7 +36,7 @@ const (
 //
 // Must be in sync with struct ipcache_key in <bpf/lib/maps.h>
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Key struct {
 	Prefixlen uint32 `align:"lpm_key"`
 	Pad1      uint16 `align:"pad1"`
@@ -148,7 +148,7 @@ func NewKey(ip net.IP, mask net.IPMask, clusterID uint8) Key {
 // RemoteEndpointInfo implements the bpf.MapValue interface. It contains the
 // security identity of a remote endpoint.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type RemoteEndpointInfo struct {
 	SecurityIdentity uint32     `align:"sec_label"`
 	TunnelEndpoint   types.IPv4 `align:"tunnel_endpoint"`

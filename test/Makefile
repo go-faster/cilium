@@ -58,7 +58,7 @@ k8s-kind:
 			-cilium.provision=false \
 			-cilium.kubeconfig=$$(echo ~/.kube/config) \
 			-cilium.passCLIEnvironment=true \
-			-cilium.image="$(DOCKER_REGISTRY)/cilium/cilium-dev" \
+			-cilium.image="$(DOCKER_REGISTRY)/go-faster/cilium-dev" \
 			-cilium.tag="local" \
 			-cilium.operator-image="quay.io/cilium/operator" \
 			-cilium.operator-suffix="-ci" \

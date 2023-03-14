@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
 )
 
 func Test_httpHandler_Status(t *testing.T) {

@@ -9,12 +9,12 @@ import (
 	"path"
 	"time"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/kvstore/store"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/kvstore/store"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 var (

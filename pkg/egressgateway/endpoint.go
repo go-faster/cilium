@@ -9,8 +9,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/types"
 
-	k8sTypes "github.com/cilium/cilium/pkg/k8s/types"
-	"github.com/cilium/cilium/pkg/labels"
+	k8sTypes "github.com/go-faster/cilium/pkg/k8s/types"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // endpointMetadata stores relevant metadata associated with a endpoint that's updated during endpoint

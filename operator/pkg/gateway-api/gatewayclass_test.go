@@ -10,7 +10,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 )
 
 func Test_matchesControllerName(t *testing.T) {

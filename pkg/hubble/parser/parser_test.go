@@ -14,14 +14,14 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/hubble/parser/errors"
-	"github.com/cilium/cilium/pkg/hubble/testutils"
-	"github.com/cilium/cilium/pkg/monitor"
-	"github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/hubble/parser/errors"
+	"github.com/go-faster/cilium/pkg/hubble/testutils"
+	"github.com/go-faster/cilium/pkg/monitor"
+	"github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 var log *logrus.Logger

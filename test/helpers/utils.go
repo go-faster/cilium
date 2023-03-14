@@ -20,10 +20,10 @@ import (
 	. "github.com/onsi/gomega"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/rand"
-	"github.com/cilium/cilium/pkg/versioncheck"
-	"github.com/cilium/cilium/test/config"
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/pkg/rand"
+	"github.com/go-faster/cilium/pkg/versioncheck"
+	"github.com/go-faster/cilium/test/config"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
 )
 
 // ensure that our random numbers are seeded differently on each run

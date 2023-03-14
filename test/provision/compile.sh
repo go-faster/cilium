@@ -9,7 +9,7 @@ export PROVISIONSRC="/tmp/provision"
 export GOPATH="/home/${VMUSER}/go"
 export REGISTRY="k8s1:5000"
 export DOCKER_REGISTRY="docker.io"
-export CILIUM_TAG="cilium/cilium-dev"
+export CILIUM_TAG="go-faster/cilium-dev"
 export CILIUM_OPERATOR_TAG="cilium/operator"
 export CILIUM_OPERATOR_GENERIC_TAG="cilium/operator-generic"
 export CILIUM_OPERATOR_AWS_TAG="cilium/operator-aws"
@@ -26,7 +26,7 @@ function delete_cilium_pods {
 }
 
 
-cd ${GOPATH}/src/github.com/cilium/cilium
+cd ${GOPATH}/src/github.com/go-faster/cilium
 
 
 if echo $(hostname) | grep "k8s" -q;
@@ -39,11 +39,11 @@ then
         echo "building cilium container image..."
         make LOCKDEBUG=1 docker-cilium-image
         echo "tagging cilium image..."
-        docker tag cilium/cilium "${REGISTRY}/${CILIUM_TAG}"
+        docker tag go-faster/cilium "${REGISTRY}/${CILIUM_TAG}"
         echo "pushing cilium image to ${REGISTRY}/${CILIUM_TAG}..."
         docker push "${REGISTRY}/${CILIUM_TAG}"
         echo "removing local cilium image..."
-        docker rmi cilium/cilium:latest
+        docker rmi go-faster/cilium:latest
       else
         pull_image_and_push_to_local_registry "${CILIUM_IMAGE}" "${REGISTRY}" "${CILIUM_TAG}"
       fi
@@ -121,7 +121,7 @@ else
     make -C plugins/cilium-docker install
     
     if [[ "${CILIUM_IMAGE}" == "" ]]; then
-	export CILIUM_IMAGE=cilium/cilium:latest
+	export CILIUM_IMAGE=go-faster/cilium:latest
 	echo "Building Cilium..."
 	make docker-cilium-image LOCKDEBUG=1
     fi

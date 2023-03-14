@@ -13,10 +13,10 @@ import (
 	. "github.com/onsi/gomega"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/ipam/types"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/watchers/subscriber"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/ipam/types"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/subscriber"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type fakeK8sCiliumNodeAPI struct {

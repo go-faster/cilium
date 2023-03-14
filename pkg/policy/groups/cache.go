@@ -6,7 +6,7 @@ package groups
 import (
 	"sync"
 
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 var groupsCNPCache = groupsCNPCacheMap{}

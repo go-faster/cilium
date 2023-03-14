@@ -6,7 +6,7 @@ package cell
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/hive/internal"
+	"github.com/go-faster/cilium/pkg/hive/internal"
 )
 
 // Decorate takes a decorator function and a set of cells and returns

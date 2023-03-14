@@ -9,14 +9,14 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/models"
-	. "github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/eventqueue"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/api/v1/models"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/eventqueue"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 // ConfigModifyEvent is a wrapper around the parameters for configModify.

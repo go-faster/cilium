@@ -50,7 +50,7 @@ elsif ENV['KERNEL'] != nil && ENV['KERNEL'] != "" then
 end
 
 # Workaround issue as described here:
-# https://github.com/cilium/cilium/pull/12520
+# https://github.com/go-faster/cilium/pull/12520
 class VagrantPlugins::ProviderVirtualBox::Action::Network
   def dhcp_server_matches_config?(dhcp_server, config)
     true
@@ -81,14 +81,14 @@ set -o nounset
 set -o pipefail
 
 # Add an exception for the cilium repo for the root user to fix the
-# "fatal: unsafe repository ('/home/vagrant/go/src/github.com/cilium/cilium' is owned by someone else)"
+# "fatal: unsafe repository ('/home/vagrant/go/src/github.com/go-faster/cilium' is owned by someone else)"
 # error condition when running `sudo make install`
-git config --global --add safe.directory /home/vagrant/go/src/github.com/cilium/cilium
+git config --global --add safe.directory /home/vagrant/go/src/github.com/go-faster/cilium
 
-if [ -x /home/vagrant/go/src/github.com/cilium/cilium/.devvmrc ] ; then
+if [ -x /home/vagrant/go/src/github.com/go-faster/cilium/.devvmrc ] ; then
    echo "----------------------------------------------------------------"
    echo "Executing .devvmrc"
-   /home/vagrant/go/src/github.com/cilium/cilium/.devvmrc || true
+   /home/vagrant/go/src/github.com/go-faster/cilium/.devvmrc || true
 fi
 echo "----------------------------------------------------------------"
 sudo sed -i 's/^mesg n$/tty -s \\&\\& mesg n/g' /root/.profile
@@ -97,7 +97,7 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
     cilium_dir = '../'
-    cilium_path = '/home/vagrant/go/src/github.com/cilium/cilium'
+    cilium_path = '/home/vagrant/go/src/github.com/go-faster/cilium'
     if ENV["SHARE_PARENT"] == "2" then
         cilium_dir = '../../..'
         cilium_path = '/home/vagrant/go/src/github.com'

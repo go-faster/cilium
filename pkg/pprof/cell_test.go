@@ -12,8 +12,8 @@ import (
 
 	"go.uber.org/goleak"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
 )
 
 func TestPprofDisabled(t *testing.T) {

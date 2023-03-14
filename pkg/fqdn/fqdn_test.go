@@ -8,8 +8,8 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/fqdn/re"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
 )
 
 // Hook up gocheck into the "go test" runner.

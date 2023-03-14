@@ -17,14 +17,14 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/config"
-	"github.com/cilium/cilium/pkg/datapath/loader/metrics"
-	"github.com/cilium/cilium/pkg/elf"
-	"github.com/cilium/cilium/pkg/maps/callsmap"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/maps/policymap"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/datapath/linux/config"
+	"github.com/go-faster/cilium/pkg/datapath/loader/metrics"
+	"github.com/go-faster/cilium/pkg/elf"
+	"github.com/go-faster/cilium/pkg/maps/callsmap"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/maps/policymap"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 // Hook up gocheck into the "go test" runner.

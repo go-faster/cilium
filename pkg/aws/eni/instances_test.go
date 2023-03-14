@@ -8,11 +8,11 @@ import (
 
 	"gopkg.in/check.v1"
 
-	ec2mock "github.com/cilium/cilium/pkg/aws/ec2/mock"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/aws/types"
-	"github.com/cilium/cilium/pkg/checker"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	ec2mock "github.com/go-faster/cilium/pkg/aws/ec2/mock"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/aws/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 var (

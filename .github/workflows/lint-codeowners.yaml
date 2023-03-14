@@ -46,7 +46,7 @@ jobs:
           persist-credentials: false
           # Hard-code the path instead of using ${{ github.repository }}
           # to make sure it works for forked repo as well.
-          path: src/github.com/cilium/cilium
+          path: src/github.com/go-faster/cilium
 
       - name: Check if all files have attributed code owners
         if: ${{ needs.check_changes.outputs.codeowners-changed == 'true' || needs.check_changes.outputs.added-files == 'true' }}
@@ -55,7 +55,7 @@ jobs:
           # To check if all files are covered by patterns other than the
           # catch-all '*', we turn the file into a .gitignore and list
           # unmatched files.
-          cd src/github.com/cilium/cilium
+          cd src/github.com/go-faster/cilium
           # Copy all patterns from CODEOWNERS, but skipping the comments
           # ('^[^#]') and the catch-all '*' rule (the only one with a single
           # character, we skip it with '^.[^ ]').
@@ -72,7 +72,7 @@ jobs:
       - name: Check if CODEOWNERS has stale entries
         if: ${{ needs.check_changes.outputs.codeowners-changed == 'true' || needs.check_changes.outputs.deleted-files == 'true' }}
         run: |
-          cd src/github.com/cilium/cilium
+          cd src/github.com/go-faster/cilium
           EXIT_STATUS=0
           # We go through the patterns in CODEOWNERS, and for each of them we
           # search for corresponding files in the repo.
@@ -115,7 +115,7 @@ jobs:
           # rules, split the list of teams by replacing spaces with line
           # breaks, sort the results. Then grep for each team name among
           # CODEOWNERS's comments.
-          cd src/github.com/cilium/cilium
+          cd src/github.com/go-faster/cilium
           for team in $(sed -e '/^\(#\|$\)/d' -e '/^[^ ]*$/d' -e 's/^[^ #]\+ //' -e 's/ /\n/g' CODEOWNERS | sort -u); do
               if ! grep -q "^#[^@]*${team}" CODEOWNERS; then
                   echo "${team}";

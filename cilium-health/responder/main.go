@@ -16,9 +16,9 @@ import (
 	flag "github.com/spf13/pflag"
 	"golang.org/x/sys/unix"
 
-	healthDefaults "github.com/cilium/cilium/pkg/health/defaults"
-	"github.com/cilium/cilium/pkg/health/probe/responder"
-	"github.com/cilium/cilium/pkg/pidfile"
+	healthDefaults "github.com/go-faster/cilium/pkg/health/defaults"
+	"github.com/go-faster/cilium/pkg/health/probe/responder"
+	"github.com/go-faster/cilium/pkg/pidfile"
 )
 
 func main() {

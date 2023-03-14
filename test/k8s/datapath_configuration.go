@@ -14,9 +14,9 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/cilium/cilium/test/config"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	"github.com/go-faster/cilium/test/config"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var _ = Describe("K8sDatapathConfig", func() {

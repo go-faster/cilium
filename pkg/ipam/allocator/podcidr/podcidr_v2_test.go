@@ -6,14 +6,14 @@ package podcidr
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
 
 	. "gopkg.in/check.v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/checker"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 func (s *PodCIDRSuite) TestNodesPodCIDRManager_allocateNodeV2(c *C) {

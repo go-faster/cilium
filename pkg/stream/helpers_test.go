@@ -10,7 +10,7 @@ import (
 
 	"go.uber.org/goleak"
 
-	. "github.com/cilium/cilium/pkg/stream"
+	. "github.com/go-faster/cilium/pkg/stream"
 )
 
 func TestMain(m *testing.M) {

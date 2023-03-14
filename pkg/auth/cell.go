@@ -8,11 +8,11 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/cilium/cilium/pkg/auth/monitor"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	"github.com/cilium/cilium/pkg/ipcache"
-	"github.com/cilium/cilium/pkg/monitor/agent/consumer"
+	"github.com/go-faster/cilium/pkg/auth/monitor"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/pkg/monitor/agent/consumer"
 )
 
 // Cell provides the auth.Manager which is responsible for request authentication.

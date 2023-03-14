@@ -8,10 +8,10 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/datapath/types"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/datapath/types"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // AllocationResult is the result of an allocation

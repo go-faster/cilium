@@ -13,17 +13,17 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/ipcache"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	ipcacheMap "github.com/cilium/cilium/pkg/maps/ipcache"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/bpf"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	ipcacheMap "github.com/go-faster/cilium/pkg/maps/ipcache"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 var log = logging.DefaultLogger.WithField(logfields.LogSubsys, "datapath-ipcache")

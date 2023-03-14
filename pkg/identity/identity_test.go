@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/labels/cidr"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels/cidr"
 )
 
 // Hook up gocheck into the "go test" runner.

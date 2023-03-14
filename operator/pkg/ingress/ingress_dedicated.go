@@ -11,9 +11,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	slim_networkingv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	slim_networkingv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 func (ic *Controller) createLoadBalancer(svc *corev1.Service) error {

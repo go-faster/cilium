@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        PROJ_PATH = "src/github.com/cilium/cilium"
+        PROJ_PATH = "src/github.com/go-faster/cilium"
         VM_MEMORY = "8192"
         VM_CPUS = "3"
         GOPATH="${WORKSPACE}"
@@ -97,7 +97,7 @@ pipeline {
                         env.DOCKER_TAG = env.DOCKER_TAG + "-race"
                         env.RACE = 1
                         env.LOCKDEBUG = 1
-                        env.BASE_IMAGE = "quay.io/cilium/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142"
+                        env.BASE_IMAGE = "quay.io/go-faster/cilium-runtime:49121a5f24ce22664d867a3ea10745b71e10f4b0@sha256:f79fa6ee23248a1d380495c6badfabcd5090f1543b27be4f2ebbe9e011cc4142"
                     }
                 }
             }
@@ -248,7 +248,7 @@ pipeline {
                     sh 'cd ${TESTDIR}; mv *.xml ${WORKSPACE}/${PROJ_PATH}/test || true'
                     sh 'cd ${TESTDIR}; ./vagrant_cleanup.sh || true'
                     archiveArtifacts artifacts: '*.zip'
-                    junit testDataPublishers: [[$class: 'AttachmentPublisher']], testResults: 'src/github.com/cilium/cilium/test/*.xml'
+                    junit testDataPublishers: [[$class: 'AttachmentPublisher']], testResults: 'src/github.com/go-faster/cilium/test/*.xml'
                 }
                 unsuccessful {
                     script {

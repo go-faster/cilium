@@ -9,8 +9,8 @@ import (
 	"context"
 	"time"
 
-	v2alpha1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	scheme "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/scheme"
+	v2alpha1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	scheme "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

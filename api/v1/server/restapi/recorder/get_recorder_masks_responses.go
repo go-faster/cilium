@@ -13,7 +13,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // GetRecorderMasksOKCode is the HTTP code returned for type GetRecorderMasksOK

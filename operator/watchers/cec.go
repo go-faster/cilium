@@ -6,10 +6,10 @@ package watchers
 import (
 	"context"
 
-	"github.com/cilium/cilium/operator/pkg/ciliumenvoyconfig"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/operator/pkg/ciliumenvoyconfig"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 )
 
 // StartCECController starts the service watcher if it hasn't already and looks

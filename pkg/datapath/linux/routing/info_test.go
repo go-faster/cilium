@@ -8,9 +8,9 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	"github.com/cilium/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/checker"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/mac"
 )
 
 func (e *LinuxRoutingSuite) TestParse(c *check.C) {

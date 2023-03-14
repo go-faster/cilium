@@ -9,10 +9,10 @@ import (
 
 	"gopkg.in/check.v1"
 
-	ec2mock "github.com/cilium/cilium/pkg/aws/ec2/mock"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/logging"
+	ec2mock "github.com/go-faster/cilium/pkg/aws/ec2/mock"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 func waitForControllerRun(c *check.C, controller *controller.Manager, name string, expectedCount int64) {

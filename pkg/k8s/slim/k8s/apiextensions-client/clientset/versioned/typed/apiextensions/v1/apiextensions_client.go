@@ -8,8 +8,8 @@ package v1
 import (
 	"net/http"
 
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/scheme"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apiextensions-client/clientset/versioned/scheme"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1"
 	rest "k8s.io/client-go/rest"
 )
 

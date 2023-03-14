@@ -12,7 +12,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 const bpffsPending = ":pending"

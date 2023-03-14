@@ -15,16 +15,16 @@ import (
 	"github.com/vishvananda/netlink"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/endpoint"
-	"github.com/cilium/cilium/pkg/ipam"
-	"github.com/cilium/cilium/pkg/k8s/watchers/resources"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/maps/lxcmap"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	"github.com/go-faster/cilium/pkg/ipam"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/resources"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/maps/lxcmap"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 type endpointRestoreState struct {
@@ -359,7 +359,7 @@ func (d *Daemon) allocateIPsLocked(ep *endpoint.Endpoint) error {
 		// such as ENI.
 		//
 		// Additionally, only check for a specific error which can be caused by
-		// https://github.com/cilium/cilium/pull/15453. Other errors are not
+		// https://github.com/go-faster/cilium/pull/15453. Other errors are not
 		// bypassed.
 		case err != nil &&
 			errors.Is(err, ipam.NewIPNotAvailableInPoolError(ep.IPv4.AsSlice())) &&

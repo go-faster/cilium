@@ -4,7 +4,7 @@
 package synced
 
 import (
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // APIGroups is a lockable map to hold which k8s API Groups we have

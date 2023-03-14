@@ -13,10 +13,10 @@ import (
 	current "github.com/containernetworking/cni/pkg/types/100"
 	"github.com/containernetworking/cni/pkg/version"
 
-	alibabaCloudTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	azureTypes "github.com/cilium/cilium/pkg/azure/types"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	alibabaCloudTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	azureTypes "github.com/go-faster/cilium/pkg/azure/types"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 // NetConf is the Cilium specific CNI network configuration

@@ -6,7 +6,7 @@ package suite
 import (
 	"flag"
 
-	"github.com/cilium/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging"
 )
 
 // Flags common to controlplane tests.

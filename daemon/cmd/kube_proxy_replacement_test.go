@@ -8,7 +8,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 type KPRSuite struct{}

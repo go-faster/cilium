@@ -8,10 +8,10 @@ import (
 
 	fuzz "github.com/AdaLogics/go-fuzz-headers"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
 )
 
 func FuzzResolveEgressPolicy(f *testing.F) {

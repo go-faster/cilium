@@ -6,9 +6,9 @@ package modules
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/command/exec"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/set"
+	"github.com/go-faster/cilium/pkg/command/exec"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/set"
 )
 
 // ModulesManager is a manager which stores information about loaded modules

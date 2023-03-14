@@ -7,9 +7,9 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/tuple"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/tuple"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 type NatKey interface {
@@ -33,7 +33,7 @@ type NatKey interface {
 
 // NatKey4 is needed to provide NatEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type NatKey4 struct {
 	tuple.TupleKey4Global
 }
@@ -75,7 +75,7 @@ func (k *NatKey4) GetNextHeader() u8proto.U8proto {
 
 // NatKey6 is needed to provide NatEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type NatKey6 struct {
 	tuple.TupleKey6Global
 }

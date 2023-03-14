@@ -19,8 +19,8 @@ import (
 	"github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/config"
 
-	"github.com/cilium/cilium/pkg/lock"
-	ciliumTestConfig "github.com/cilium/cilium/test/config"
+	"github.com/go-faster/cilium/pkg/lock"
+	ciliumTestConfig "github.com/go-faster/cilium/test/config"
 )
 
 type scope struct {

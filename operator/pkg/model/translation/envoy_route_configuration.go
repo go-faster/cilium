@@ -8,8 +8,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/cilium/cilium/pkg/envoy"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/envoy"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 type RouteConfigurationMutator func(*envoy_config_route_v3.RouteConfiguration) *envoy_config_route_v3.RouteConfiguration

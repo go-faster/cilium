@@ -13,9 +13,9 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/api/v1/operator/client"
-	"github.com/cilium/cilium/api/v1/operator/models"
-	"github.com/cilium/cilium/pkg/command"
+	"github.com/go-faster/cilium/api/v1/operator/client"
+	"github.com/go-faster/cilium/api/v1/operator/models"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 var matchPattern string

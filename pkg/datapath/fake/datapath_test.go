@@ -8,8 +8,8 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/datapath"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/datapath"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 func Test(t *testing.T) {

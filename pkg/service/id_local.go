@@ -6,8 +6,8 @@ package service
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // IDAllocator contains an internal state of the ID allocator.

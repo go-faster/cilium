@@ -8,9 +8,9 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/bpf"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 type PerClusterCTMapPrivilegedTestSuite struct{}

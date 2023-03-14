@@ -9,15 +9,15 @@ import (
 	. "gopkg.in/check.v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/cilium/cilium/pkg/checker"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/k8s"
-	slimcorev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/checker"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/k8s"
+	slimcorev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 // Hook up gocheck into the "go test" runner.

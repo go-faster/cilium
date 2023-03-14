@@ -12,7 +12,7 @@ package libcilium
 import (
 	"testing"
 
-	. "github.com/cilium/cilium/proxylib/proxylib"
+	. "github.com/go-faster/cilium/proxylib/proxylib"
 )
 
 func numConnections() int {

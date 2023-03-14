@@ -53,7 +53,7 @@ existing set of committers.
 
 For the list of current committers, see MAINTAINERS.md_.
 
-.. _MAINTAINERS.md: https://raw.githubusercontent.com/cilium/cilium/master/MAINTAINERS.md
+.. _MAINTAINERS.md: https://raw.githubusercontent.com/go-faster/cilium/master/MAINTAINERS.md
 
 Expectations for Developers with commit access
 ----------------------------------------------
@@ -119,7 +119,7 @@ syntax.
 Use Reported-by: and Tested-by: tags in commit messages to indicate the
 source of a bug report.
 
-Keep the `AUTHORS <https://github.com/cilium/cilium/blob/master/AUTHORS>`__ file up to date.
+Keep the `AUTHORS <https://github.com/go-faster/cilium/blob/master/AUTHORS>`__ file up to date.
 
 CNCF Resources
 ~~~~~~~~~~~~~~
@@ -131,7 +131,7 @@ The Maintainers may also choose to delegate working with the CNCF to non-Maintai
 Code of Conduct
 ~~~~~~~~~~~~~~~
 
-`Code of Conduct <https://github.com/cilium/cilium/blob/master/CODE_OF_CONDUCT.md>`__
+`Code of Conduct <https://github.com/go-faster/cilium/blob/master/CODE_OF_CONDUCT.md>`__
 violations by community members will be discussed and resolved on the private
 committers Slack channel. If the reported Code of Conduct violator is a Maintainer, the 
 Maintainers will instead designate two Maintainers to work with the

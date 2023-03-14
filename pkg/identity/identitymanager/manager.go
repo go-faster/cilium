@@ -6,11 +6,11 @@ package identitymanager
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/model"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/model"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

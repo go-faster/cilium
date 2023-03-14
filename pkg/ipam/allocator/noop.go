@@ -7,7 +7,7 @@ import (
 	"errors"
 	"net"
 
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 var errNotSupported = errors.New("Operation not supported")

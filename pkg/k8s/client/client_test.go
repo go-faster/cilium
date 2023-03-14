@@ -16,13 +16,13 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8smetrics "github.com/cilium/cilium/pkg/k8s/metrics"
-	k8sversion "github.com/cilium/cilium/pkg/k8s/version"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8smetrics "github.com/go-faster/cilium/pkg/k8s/metrics"
+	k8sversion "github.com/go-faster/cilium/pkg/k8s/version"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 // Hook up gocheck into the "go test" runner.

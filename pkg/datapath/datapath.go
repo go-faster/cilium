@@ -4,7 +4,7 @@
 package datapath
 
 import (
-	"github.com/cilium/cilium/pkg/datapath/types"
+	"github.com/go-faster/cilium/pkg/datapath/types"
 )
 
 // Datapath is the interface to abstract all datapath interactions. The

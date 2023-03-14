@@ -9,15 +9,15 @@ import (
 
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/cilium/cilium/pkg/k8s"
-	"github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	cilium_v2a1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/k8s/watchers/subscriber"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	cilium_v2a1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/subscriber"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/node"
 )
 
 var (

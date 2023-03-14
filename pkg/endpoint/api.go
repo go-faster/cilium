@@ -13,17 +13,17 @@ import (
 	"net/netip"
 	"sort"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/endpoint/regeneration"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	identitymodel "github.com/cilium/cilium/pkg/identity/model"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/labels/model"
-	"github.com/cilium/cilium/pkg/labelsfilter"
-	"github.com/cilium/cilium/pkg/mac"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/endpoint/regeneration"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	identitymodel "github.com/go-faster/cilium/pkg/identity/model"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labels/model"
+	"github.com/go-faster/cilium/pkg/labelsfilter"
+	"github.com/go-faster/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 // GetLabelsModel returns the labels of the endpoint in their representation

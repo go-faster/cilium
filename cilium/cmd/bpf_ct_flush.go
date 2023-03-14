@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
 )
 
 // bpfCtFlushCmd represents the bpf_ct_flush command

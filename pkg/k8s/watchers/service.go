@@ -7,12 +7,12 @@ import (
 	"context"
 	"sync/atomic"
 
-	"github.com/cilium/cilium/pkg/k8s"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/k8s/watchers/resources"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/resources"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 func (k *K8sWatcher) servicesInit() {

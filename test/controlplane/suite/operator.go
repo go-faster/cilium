@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive"
 )
 
 type operatorHandle struct {

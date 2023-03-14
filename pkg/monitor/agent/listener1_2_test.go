@@ -9,7 +9,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/monitor/agent/listener"
+	"github.com/go-faster/cilium/pkg/monitor/agent/listener"
 )
 
 func Test(t *testing.T) { TestingT(t) }

@@ -39,7 +39,7 @@ Example
 
 .. code-block:: shell-session
 
-    $ cilium -H unix:///var/run/cilium/cilium.sock
+    $ cilium -H unix:///var/run/go-faster/cilium.sock
     [...]
 
 
@@ -66,7 +66,7 @@ The full example can be found in the `cilium/client-example`_ repository.
     import (
             "fmt"
 
-            "github.com/cilium/cilium/pkg/client"
+            "github.com/go-faster/cilium/pkg/client"
     )
 
     func main() {
@@ -97,6 +97,6 @@ API Reference
 
 .. openapi:: ../api/v1/openapi.yaml
 
-.. _pkg/client: https://godoc.org/github.com/cilium/cilium/pkg/client
-.. _api/v1/models: https://godoc.org/github.com/cilium/cilium/api/v1/models
+.. _pkg/client: https://godoc.org/github.com/go-faster/cilium/pkg/client
+.. _api/v1/models: https://godoc.org/github.com/go-faster/cilium/api/v1/models
 .. _cilium/client-example: https://github.com/cilium/client-example

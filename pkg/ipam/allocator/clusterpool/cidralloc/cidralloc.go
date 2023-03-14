@@ -9,7 +9,7 @@ import (
 
 	"github.com/cilium/ipam/cidrset"
 
-	"github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ip"
 )
 
 type CIDRAllocator interface {

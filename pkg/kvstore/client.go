@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

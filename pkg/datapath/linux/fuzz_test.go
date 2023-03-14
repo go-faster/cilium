@@ -9,8 +9,8 @@ import (
 
 	fuzz "github.com/AdaLogics/go-fuzz-headers"
 
-	"github.com/cilium/cilium/pkg/datapath/fake"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/datapath/fake"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 func FuzzNodeHandler(f *testing.F) {

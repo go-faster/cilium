@@ -10,9 +10,9 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/ebpf"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (

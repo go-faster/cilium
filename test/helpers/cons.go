@@ -9,9 +9,9 @@ import (
 	"os"
 	"time"
 
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	"github.com/cilium/cilium/pkg/versioncheck"
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	"github.com/go-faster/cilium/pkg/versioncheck"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
 )
 
 var (
@@ -38,7 +38,7 @@ var (
 const (
 
 	// CiliumPath is the path where cilium test code is located.
-	CiliumPath = "/src/github.com/cilium/cilium/test"
+	CiliumPath = "/src/github.com/go-faster/cilium/test"
 
 	// K8sManifestBase tells ginkgo suite where to look for manifests
 	K8sManifestBase = "k8s/manifests"
@@ -215,32 +215,32 @@ const (
 	// Logs messages that should not be in the cilium logs...
 	panicMessage        = "panic:"
 	deadLockHeader      = "POTENTIAL DEADLOCK:"                                      // from github.com/sasha-s/go-deadlock/deadlock.go:header
-	segmentationFault   = "segmentation fault"                                       // from https://github.com/cilium/cilium/issues/3233
-	NACKreceived        = "NACK received for version"                                // from https://github.com/cilium/cilium/issues/4003
-	RunInitFailed       = "JoinEP: "                                                 // from https://github.com/cilium/cilium/pull/5052
-	sizeMismatch        = "size mismatch for BPF map"                                // from https://github.com/cilium/cilium/issues/7851
-	emptyBPFInitArg     = "empty argument passed to bpf/init.sh"                     // from https://github.com/cilium/cilium/issues/10228
-	RemovingMapMsg      = "Removing map to allow for property upgrade"               // from https://github.com/cilium/cilium/pull/10626
-	logBufferMessage    = "Log buffer too small to dump verifier log"                // from https://github.com/cilium/cilium/issues/10517
-	ClangErrorsMsg      = " errors generated."                                       // from https://github.com/cilium/cilium/issues/10857
-	ClangErrorMsg       = "1 error generated."                                       // from https://github.com/cilium/cilium/issues/10857
+	segmentationFault   = "segmentation fault"                                       // from https://github.com/go-faster/cilium/issues/3233
+	NACKreceived        = "NACK received for version"                                // from https://github.com/go-faster/cilium/issues/4003
+	RunInitFailed       = "JoinEP: "                                                 // from https://github.com/go-faster/cilium/pull/5052
+	sizeMismatch        = "size mismatch for BPF map"                                // from https://github.com/go-faster/cilium/issues/7851
+	emptyBPFInitArg     = "empty argument passed to bpf/init.sh"                     // from https://github.com/go-faster/cilium/issues/10228
+	RemovingMapMsg      = "Removing map to allow for property upgrade"               // from https://github.com/go-faster/cilium/pull/10626
+	logBufferMessage    = "Log buffer too small to dump verifier log"                // from https://github.com/go-faster/cilium/issues/10517
+	ClangErrorsMsg      = " errors generated."                                       // from https://github.com/go-faster/cilium/issues/10857
+	ClangErrorMsg       = "1 error generated."                                       // from https://github.com/go-faster/cilium/issues/10857
 	symbolSubstitution  = "Skipping symbol substitution"                             //
-	uninitializedRegen  = "Uninitialized regeneration level"                         // from https://github.com/cilium/cilium/pull/10949
-	unstableStat        = "BUG: stat() has unstable behavior"                        // from https://github.com/cilium/cilium/pull/11028
-	removeTransientRule = "Unable to process chain CILIUM_TRANSIENT_FORWARD with ip" // from https://github.com/cilium/cilium/issues/11276
+	uninitializedRegen  = "Uninitialized regeneration level"                         // from https://github.com/go-faster/cilium/pull/10949
+	unstableStat        = "BUG: stat() has unstable behavior"                        // from https://github.com/go-faster/cilium/pull/11028
+	removeTransientRule = "Unable to process chain CILIUM_TRANSIENT_FORWARD with ip" // from https://github.com/go-faster/cilium/issues/11276
 	missingIptablesWait = "Missing iptables wait arg (-w):"
-	localIDRestoreFail  = "Could not restore all CIDR identities" // from https://github.com/cilium/cilium/pull/19556
+	localIDRestoreFail  = "Could not restore all CIDR identities" // from https://github.com/go-faster/cilium/pull/19556
 	routerIPMismatch    = "Mismatch of router IPs found during restoration"
 	emptyIPNodeIDAlloc  = "Attempt to allocate a node ID for an empty node IP address"
 
 	// ...and their exceptions.
-	opCantBeFulfilled            = "Operation cannot be fulfilled on leases.coordination.k8s.io"        // cf. https://github.com/cilium/cilium/issues/16402
-	initLeaderElection           = "error initially creating leader election record: leases."           // cf. https://github.com/cilium/cilium/issues/16402#issuecomment-861544964
-	globalDataSupport            = "kernel doesn't support global data"                                 // cf. https://github.com/cilium/cilium/issues/16418
-	removeInexistentID           = "removing identity not added to the identity manager!"               // cf. https://github.com/cilium/cilium/issues/16419
-	failedToListCRDs             = "the server could not find the requested resource"                   // cf. https://github.com/cilium/cilium/issues/16425
-	retrieveResLock              = "retrieving resource lock kube-system/cilium-operator-resource-lock" // cf. https://github.com/cilium/cilium/issues/16402#issuecomment-871155492
-	failedToRelLockEmptyName     = "Failed to release lock: resource name may not be empty"             // cf. https://github.com/cilium/cilium/issues/16402#issuecomment-985819560
+	opCantBeFulfilled            = "Operation cannot be fulfilled on leases.coordination.k8s.io"        // cf. https://github.com/go-faster/cilium/issues/16402
+	initLeaderElection           = "error initially creating leader election record: leases."           // cf. https://github.com/go-faster/cilium/issues/16402#issuecomment-861544964
+	globalDataSupport            = "kernel doesn't support global data"                                 // cf. https://github.com/go-faster/cilium/issues/16418
+	removeInexistentID           = "removing identity not added to the identity manager!"               // cf. https://github.com/go-faster/cilium/issues/16419
+	failedToListCRDs             = "the server could not find the requested resource"                   // cf. https://github.com/go-faster/cilium/issues/16425
+	retrieveResLock              = "retrieving resource lock kube-system/cilium-operator-resource-lock" // cf. https://github.com/go-faster/cilium/issues/16402#issuecomment-871155492
+	failedToRelLockEmptyName     = "Failed to release lock: resource name may not be empty"             // cf. https://github.com/go-faster/cilium/issues/16402#issuecomment-985819560
 	failedToUpdateLockReqTimeout = "Failed to update lock: etcdserver: request timed out"
 
 	// HelmTemplate is the location of the Helm templates to install Cilium

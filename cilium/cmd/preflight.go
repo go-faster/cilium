@@ -12,10 +12,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cilium/cilium/pkg/fqdn"
-	"github.com/cilium/cilium/pkg/fqdn/matchpattern"
-	"github.com/cilium/cilium/pkg/option"
-	policyAPI "github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/fqdn"
+	"github.com/go-faster/cilium/pkg/fqdn/matchpattern"
+	"github.com/go-faster/cilium/pkg/option"
+	policyAPI "github.com/go-faster/cilium/pkg/policy/api"
 )
 
 const (

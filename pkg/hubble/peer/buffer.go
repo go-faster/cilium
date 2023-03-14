@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"io"
 
-	peerpb "github.com/cilium/cilium/api/v1/peer"
-	"github.com/cilium/cilium/pkg/lock"
+	peerpb "github.com/go-faster/cilium/api/v1/peer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type buffer struct {

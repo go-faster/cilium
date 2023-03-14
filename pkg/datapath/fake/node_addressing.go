@@ -6,8 +6,8 @@ package fake
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/datapath/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/datapath/types"
 )
 
 var (

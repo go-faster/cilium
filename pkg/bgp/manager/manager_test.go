@@ -16,8 +16,8 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/bgp/mock"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/bgp/mock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 const (

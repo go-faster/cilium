@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/fqdn/dns"
-	"github.com/cilium/cilium/pkg/fqdn/matchpattern"
+	"github.com/go-faster/cilium/pkg/fqdn/dns"
+	"github.com/go-faster/cilium/pkg/fqdn/matchpattern"
 )
 
 var (

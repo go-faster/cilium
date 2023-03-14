@@ -8,8 +8,8 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	k8sapi "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	"github.com/cilium/cilium/pkg/labels"
+	k8sapi "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // matches returns true if the entity matches the labels

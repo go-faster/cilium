@@ -5,8 +5,8 @@
 package ciliumenvoyconfig
 
 import (
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 const Subsys = "envoy-lb-controller"

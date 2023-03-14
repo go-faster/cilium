@@ -13,16 +13,16 @@ import (
 
 	"github.com/cilium/workerpool"
 
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slimlabels "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	slimmetav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodeaddr "github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slimlabels "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	slimmetav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodeaddr "github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

@@ -4,16 +4,16 @@
 package bgpv1
 
 import (
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	"github.com/cilium/cilium/pkg/bgpv1/gobgp"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slim_core_v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	"github.com/go-faster/cilium/pkg/bgpv1/gobgp"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slim_core_v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var Cell = cell.Module(

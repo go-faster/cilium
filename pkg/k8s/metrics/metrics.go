@@ -6,7 +6,7 @@ package metrics
 import (
 	"time"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 var (

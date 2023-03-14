@@ -6,17 +6,17 @@ package libcilium
 import (
 	"github.com/sirupsen/logrus"
 
-	_ "github.com/cilium/cilium/proxylib/cassandra"
-	_ "github.com/cilium/cilium/proxylib/kafka"
-	_ "github.com/cilium/cilium/proxylib/memcached"
-	_ "github.com/cilium/cilium/proxylib/r2d2"
-	_ "github.com/cilium/cilium/proxylib/testparsers"
+	_ "github.com/go-faster/cilium/proxylib/cassandra"
+	_ "github.com/go-faster/cilium/proxylib/kafka"
+	_ "github.com/go-faster/cilium/proxylib/memcached"
+	_ "github.com/go-faster/cilium/proxylib/r2d2"
+	_ "github.com/go-faster/cilium/proxylib/testparsers"
 
-	"github.com/cilium/cilium/pkg/flowdebug"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/proxylib/accesslog"
-	"github.com/cilium/cilium/proxylib/npds"
-	"github.com/cilium/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/proxylib/accesslog"
+	"github.com/go-faster/cilium/proxylib/npds"
+	"github.com/go-faster/cilium/proxylib/proxylib"
 )
 
 var (

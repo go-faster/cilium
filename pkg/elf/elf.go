@@ -14,7 +14,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 var (

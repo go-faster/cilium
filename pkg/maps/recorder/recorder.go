@@ -6,7 +6,7 @@ package recorder
 import (
 	"strings"
 
-	"github.com/cilium/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/bpf"
 )
 
 const (

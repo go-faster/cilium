@@ -9,7 +9,7 @@ import (
 	"encoding/gob"
 	"io"
 
-	"github.com/cilium/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/byteorder"
 )
 
 // Below constants are based on the ones from <linux/perf_event.h>.

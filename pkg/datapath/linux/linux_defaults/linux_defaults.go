@@ -85,7 +85,7 @@ const (
 	// RulePriorityEgress is the v2 of the priority of the rule used for egress
 	// routing of endpoints. This priority is after the local table priority.
 	//
-	// Because of https://github.com/cilium/cilium/issues/14336, we must use a
+	// Because of https://github.com/go-faster/cilium/issues/14336, we must use a
 	// new priority value to disambiguate which rules are still under the old
 	// scheme.
 	RulePriorityEgressv2 = 111

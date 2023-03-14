@@ -6,7 +6,7 @@ package auth
 import (
 	"time"
 
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 // nullAuthHandler implements an authHandler for auth type null by just authenticate every request.

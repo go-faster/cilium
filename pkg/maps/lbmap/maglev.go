@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/ebpf"
-	"github.com/cilium/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
 )
 
 const (

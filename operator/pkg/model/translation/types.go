@@ -6,8 +6,8 @@ package translation
 import (
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/cilium/cilium/operator/pkg/model"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/operator/pkg/model"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
 )
 
 // Translator is the interface to take the model and generate required CiliumEnvoyConfig,

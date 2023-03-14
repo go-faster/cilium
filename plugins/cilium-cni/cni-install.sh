@@ -24,7 +24,7 @@ esac
 
 ENABLE_DEBUG=false
 CNI_EXCLUSIVE=true
-LOG_FILE="/var/run/cilium/cilium-cni.log"
+LOG_FILE="/var/run/go-faster/cilium-cni.log"
 
 while test $# -gt 0; do
   case "$1" in

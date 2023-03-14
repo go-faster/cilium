@@ -12,9 +12,9 @@ import (
 	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	"github.com/go-faster/cilium/pkg/defaults"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var _ = SkipDescribeIf(func() bool {

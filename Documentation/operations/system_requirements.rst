@@ -16,13 +16,13 @@ requirements below. Most modern Linux distributions already do.
 Summary
 =======
 
-When running Cilium using the container image ``cilium/cilium``, the host
+When running Cilium using the container image ``go-faster/cilium``, the host
 system must meet these requirements:
 
 - `Linux kernel`_ >= 4.19.57 or equivalent (e.g., 4.18 on RHEL8)
 
 When running Cilium as a native process on your host (i.e. **not** running the
-``cilium/cilium`` container image) these additional requirements must be met:
+``go-faster/cilium`` container image) these additional requirements must be met:
 
 - `clang+LLVM`_ >= 10.0
 - iproute2_ with eBPF templating patches [#iproute2_foot]_
@@ -308,7 +308,7 @@ clang+LLVM
 
 
 .. note:: This requirement is only needed if you run ``cilium-agent`` natively.
-          If you are using the Cilium container image ``cilium/cilium``,
+          If you are using the Cilium container image ``go-faster/cilium``,
           clang+LLVM is included in the container image.
 
 LLVM is the compiler suite that Cilium uses to generate eBPF bytecode programs
@@ -325,7 +325,7 @@ iproute2
 ========
 
 .. note:: iproute2 is only needed if you run ``cilium-agent`` directly on the
-          host machine. iproute2 is included in the ``cilium/cilium`` container
+          host machine. iproute2 is included in the ``go-faster/cilium`` container
           image.
 
 iproute2_ is a low level tool used to configure various networking related

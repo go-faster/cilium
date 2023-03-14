@@ -10,10 +10,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/defaults"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	"github.com/cilium/cilium/pkg/option"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/defaults"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 func init() {

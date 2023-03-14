@@ -6,7 +6,7 @@ package k8s
 import (
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/annotation"
 )
 
 func (s *K8sSuite) TestPrepareRemoveNodeAnnotationsPayload(c *C) {

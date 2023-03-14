@@ -10,7 +10,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model"
 )
 
 func Test_getService(t *testing.T) {

@@ -11,13 +11,13 @@ import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/comparator"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	k8sCiliumUtils "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/utils"
-	slimv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/comparator"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	k8sCiliumUtils "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/utils"
+	slimv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // +genclient

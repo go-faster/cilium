@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cilium/cilium/pkg/endpoint/regeneration"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/endpoint/regeneration"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 // TriggerPolicyUpdates triggers the policy update trigger.

@@ -11,9 +11,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/yaml"
 	"k8s.io/client-go/kubernetes/fake"
 
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_fake "github.com/cilium/cilium/pkg/k8s/slim/k8s/client/clientset/versioned/fake"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_fake "github.com/go-faster/cilium/pkg/k8s/slim/k8s/client/clientset/versioned/fake"
 )
 
 //

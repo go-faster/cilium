@@ -17,7 +17,7 @@ import (
 	etcdAPI "go.etcd.io/etcd/client/v3"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/checker"
 )
 
 type EtcdSuite struct {

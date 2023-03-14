@@ -12,7 +12,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 // Hook up gocheck into the "go test" runner.

@@ -85,7 +85,7 @@ export KUBE_MASTER_URL="https://192.168.56.11:6443"
 echo "Running upstream services conformance tests"
 # We currently skip the following tests:
 # - HostPort validates that there is no conflict between pods with same hostPort but different hostIP and protocol
-#   - https://github.com/cilium/cilium/issues/21060
+#   - https://github.com/go-faster/cilium/issues/21060
 ${HOME}/go/bin/kubetest --provider=local --test \
   --test_args="--ginkgo.focus=HostPort.*\[Conformance\].* --ginkgo.skip=(HostPort.validates.that.there.is.no.conflict.between.pods.with.same.hostPort.but.different.hostIP.and.protocol) --e2e-verify-service-account=false --host ${KUBE_MASTER_URL}"
 ${HOME}/go/bin/kubetest --provider=local --test \
@@ -94,13 +94,13 @@ ${HOME}/go/bin/kubetest --provider=local --test \
 # We currently skip the following tests:
 # - NetworkPolicy between server and client using SCTP
 #   - Service translation is not yet supported, and the tests rely on Services.
-#   - More info at https://github.com/cilium/cilium/issues/5719
+#   - More info at https://github.com/go-faster/cilium/issues/5719
 # - should allow egress access to server in CIDR block and
 # - should ensure an IP overlapping both IPBlock.CIDR and IPBlock.Except is allowed and
 # - should enforce except clause while egress access to server in CIDR block
 #   - TL;DR Cilium does not allow to specify pod CIDRs as part of the policy
 #     because it conflicts with the pod's security identity.
-#   - More info at https://github.com/cilium/cilium/issues/9209
+#   - More info at https://github.com/go-faster/cilium/issues/9209
 echo "Running upstream NetworkPolicy tests"
 ${HOME}/go/bin/kubetest --provider=local --test \
   --test_args="--ginkgo.focus=Net.*ol.* --e2e-verify-service-account=false --host ${KUBE_MASTER_URL} --ginkgo.skip=(should.allow.egress.access.to.server.in.CIDR.block)|(should.enforce.except.clause.while.egress.access.to.server.in.CIDR.block)|(should.ensure.an.IP.overlapping.both.IPBlock.CIDR.and.IPBlock.Except.is.allowed)|(Feature:SCTPConnectivity)"

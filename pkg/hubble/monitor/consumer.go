@@ -9,11 +9,11 @@ import (
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	monitorConsumer "github.com/cilium/cilium/pkg/monitor/agent/consumer"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	monitorConsumer "github.com/go-faster/cilium/pkg/monitor/agent/consumer"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // Observer is the receiver of MonitorEvents

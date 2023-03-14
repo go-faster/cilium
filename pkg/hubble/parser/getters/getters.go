@@ -8,11 +8,11 @@ import (
 
 	"k8s.io/client-go/tools/cache"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	cgroupManager "github.com/cilium/cilium/pkg/cgroups/manager"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/ipcache"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	cgroupManager "github.com/go-faster/cilium/pkg/cgroups/manager"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/ipcache"
 )
 
 // DNSGetter ...

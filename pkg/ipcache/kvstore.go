@@ -16,15 +16,15 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
-	"github.com/cilium/cilium/pkg/types"
-	"github.com/cilium/cilium/pkg/u8proto"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 const (

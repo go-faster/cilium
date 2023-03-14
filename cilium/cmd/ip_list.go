@@ -11,14 +11,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	ipApi "github.com/cilium/cilium/api/v1/client/policy"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	pkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/identity"
-	ipcachetypes "github.com/cilium/cilium/pkg/ipcache/types"
-	"github.com/cilium/cilium/pkg/labels"
+	ipApi "github.com/go-faster/cilium/api/v1/client/policy"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	pkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/identity"
+	ipcachetypes "github.com/go-faster/cilium/pkg/ipcache/types"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 var ipListCmd = &cobra.Command{

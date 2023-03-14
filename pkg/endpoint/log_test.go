@@ -13,10 +13,10 @@ import (
 	"github.com/sirupsen/logrus"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
 )
 
 func (s *EndpointSuite) TestPolicyLog(c *C) {

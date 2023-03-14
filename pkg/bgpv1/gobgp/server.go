@@ -12,8 +12,8 @@ import (
 	"github.com/osrg/gobgp/v3/pkg/server"
 	apb "google.golang.org/protobuf/types/known/anypb"
 
-	v2alpha1api "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	"github.com/cilium/cilium/pkg/k8s/resource"
+	v2alpha1api "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
 )
 
 var (

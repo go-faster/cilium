@@ -6,8 +6,8 @@ package policy
 import (
 	"fmt"
 
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	policyapi "github.com/cilium/cilium/pkg/policy/api"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	policyapi "github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // ruleSlice is a wrapper around a slice of *rule, which allows for functions

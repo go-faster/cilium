@@ -8,15 +8,15 @@ import (
 
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/api/v1/models"
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/k8s"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	lb "github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/api/v1/models"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/k8s"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	lb "github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 type lrpConfigType = int

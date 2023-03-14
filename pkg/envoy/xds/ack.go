@@ -9,9 +9,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // ProxyError wraps the error and the detail received from the proxy in to a new type

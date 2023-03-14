@@ -10,10 +10,10 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func Test(t *testing.T) {

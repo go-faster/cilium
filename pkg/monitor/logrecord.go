@@ -10,7 +10,7 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 // LogRecordNotify is a proxy access log notification

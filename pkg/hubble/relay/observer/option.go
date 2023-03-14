@@ -10,11 +10,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	"github.com/cilium/cilium/pkg/hubble/relay/defaults"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	"github.com/go-faster/cilium/pkg/hubble/relay/defaults"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 type observerClientBuilder interface {

@@ -27,7 +27,7 @@ Create the branch
        git push
 
 #. Protect the branch using the GitHub UI to disallow direct push and require
-   merging via PRs with proper reviews. `Direct link <https://github.com/cilium/cilium/settings/branches>`_
+   merging via PRs with proper reviews. `Direct link <https://github.com/go-faster/cilium/settings/branches>`_
 
 #. Update the contents of the ``CODEOWNERS`` file to reduce code reviews to
    essential approvals:
@@ -61,13 +61,13 @@ Create the branch
        the new branch.
 
 #. Create a new project named "X.Y.Z" to automatically track the backports
-   for that particular release. `Direct Link: <https://github.com/cilium/cilium/projects/new>`_
+   for that particular release. `Direct Link: <https://github.com/go-faster/cilium/projects/new>`_
 
 #. Copy the following files from the previous release ``vX.Y-1``
    change the contents to be relevant for the release ``vX.Y``. For
    ``.github/maintainers-little-helper.yaml``, set the ``project:`` to be the
    generated link created by the previous step. The link should be something
-   like: ``https://github.com/cilium/cilium/projects/NNN``.
+   like: ``https://github.com/go-faster/cilium/projects/NNN``.
 
    ::
 

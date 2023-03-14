@@ -27,12 +27,12 @@ Let's verify a Cilium image's signature using the ``cosign verify`` command:
 .. code-block:: shell-session
 
     $ TAG=v1.13.0
-    $ cosign verify --certificate-github-workflow-repository cilium/cilium \
+    $ cosign verify --certificate-github-workflow-repository go-faster/cilium \
     --certificate-oidc-issuer https://token.actions.githubusercontent.com \
     --certificate-github-workflow-name "Image Release Build" \
     --certificate-github-workflow-ref refs/tags/${TAG} \
-    --certificate-identity "https://github.com/cilium/cilium/.github/workflows/build-images-releases.yaml@refs/tags/${TAG}" \
-    "quay.io/cilium/cilium:${TAG}" | jq
+    --certificate-identity "https://github.com/go-faster/cilium/.github/workflows/build-images-releases.yaml@refs/tags/${TAG}" \
+    "quay.io/go-faster/cilium:${TAG}" | jq
     
 
 .. note::
@@ -54,4 +54,4 @@ Let's verify a Cilium image's signature using the ``cosign verify`` command:
     
 
 .. _`Keyless Signatures`: https://docs.sigstore.dev/cosign/keyless/
-.. _`Cilium workflows`: https://github.com/cilium/cilium/tree/master/.github/workflows
+.. _`Cilium workflows`: https://github.com/go-faster/cilium/tree/master/.github/workflows

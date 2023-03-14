@@ -8,7 +8,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity"
 )
 
 type DummyEndpoint struct {

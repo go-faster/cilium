@@ -19,7 +19,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // NewPutRecorderIDParams creates a new PutRecorderIDParams object

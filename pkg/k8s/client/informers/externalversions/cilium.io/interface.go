@@ -6,9 +6,9 @@
 package cilium
 
 import (
-	v2 "github.com/cilium/cilium/pkg/k8s/client/informers/externalversions/cilium.io/v2"
-	v2alpha1 "github.com/cilium/cilium/pkg/k8s/client/informers/externalversions/cilium.io/v2alpha1"
-	internalinterfaces "github.com/cilium/cilium/pkg/k8s/client/informers/externalversions/internalinterfaces"
+	v2 "github.com/go-faster/cilium/pkg/k8s/client/informers/externalversions/cilium.io/v2"
+	v2alpha1 "github.com/go-faster/cilium/pkg/k8s/client/informers/externalversions/cilium.io/v2alpha1"
+	internalinterfaces "github.com/go-faster/cilium/pkg/k8s/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

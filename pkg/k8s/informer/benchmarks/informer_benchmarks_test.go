@@ -19,9 +19,9 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/cilium/cilium/pkg/annotation"
-	"github.com/cilium/cilium/pkg/k8s"
-	"github.com/cilium/cilium/pkg/k8s/informer"
+	"github.com/go-faster/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
 )
 
 func Test(t *testing.T) {
@@ -220,42 +220,42 @@ var nodeSampleJSON = `{
         "images": [
             {
                 "names": [
-                    "quay.io/cilium/cilium-dev@sha256:53e005e8ae3649412cfb5b5538916bc6c9f66c408ee6a76273e964a285cb28aa",
-                    "quay.io/cilium/cilium-dev:scale-test-2019-03-13"
+                    "quay.io/go-faster/cilium-dev@sha256:53e005e8ae3649412cfb5b5538916bc6c9f66c408ee6a76273e964a285cb28aa",
+                    "quay.io/go-faster/cilium-dev:scale-test-2019-03-13"
                 ],
                 "sizeBytes": 618888533
             },
             {
                 "names": [
-                    "quay.io/cilium/cilium@sha256:9f41fc120b2c8cf5006220bcea7ee17c573cb13f0d32b0578ea83690f6412b6e",
-                    "quay.io/cilium/cilium:latest"
+                    "quay.io/go-faster/cilium@sha256:9f41fc120b2c8cf5006220bcea7ee17c573cb13f0d32b0578ea83690f6412b6e",
+                    "quay.io/go-faster/cilium:latest"
                 ],
                 "sizeBytes": 618884013
             },
             {
                 "names": [
-                    "quay.io/cilium/cilium-dev@sha256:41b2bc225d90a52cbf04f030fd4e4bb8235e00262e08643963dd887090d17b96",
-                    "quay.io/cilium/cilium-dev:scale-test-2019-03-12"
+                    "quay.io/go-faster/cilium-dev@sha256:41b2bc225d90a52cbf04f030fd4e4bb8235e00262e08643963dd887090d17b96",
+                    "quay.io/go-faster/cilium-dev:scale-test-2019-03-12"
                 ],
                 "sizeBytes": 618855547
             },
             {
                 "names": [
-                    "cilium/cilium@sha256:bb8a0507c1850f856d7c3e1ab27fa8246d666dcf5bab9040ced3d6513e730b02",
-                    "cilium/cilium:latest"
+                    "go-faster/cilium@sha256:bb8a0507c1850f856d7c3e1ab27fa8246d666dcf5bab9040ced3d6513e730b02",
+                    "go-faster/cilium:latest"
                 ],
                 "sizeBytes": 618841491
             },
             {
                 "names": [
-                    "cilium/cilium@sha256:2d0ea8c2eee882c7005d5645f349f58bca57fcd8e2e682a517c400ccd045f9c2"
+                    "go-faster/cilium@sha256:2d0ea8c2eee882c7005d5645f349f58bca57fcd8e2e682a517c400ccd045f9c2"
                 ],
                 "sizeBytes": 618821939
             },
             {
                 "names": [
-                    "cilium/cilium-dev@sha256:c55141a813d30123c34372b87d75c3b8ff4eaf955ff0531f93ec2a8fbd2d6dff",
-                    "cilium/cilium-dev:tgraf-scale-fixes2"
+                    "go-faster/cilium-dev@sha256:c55141a813d30123c34372b87d75c3b8ff4eaf955ff0531f93ec2a8fbd2d6dff",
+                    "go-faster/cilium-dev:tgraf-scale-fixes2"
                 ],
                 "sizeBytes": 618670939
             },
@@ -340,8 +340,8 @@ var nodeSampleJSON = `{
             },
             {
                 "names": [
-                    "quay.io/cilium/cilium-dev@sha256:d8bb81b46f9e10e40ca106bc6a9ac0f3365e5310bbb5bfba1f52d1d8c8b64740",
-                    "quay.io/cilium/cilium-dev:vetcd-v3.3.11-hf1-aanm"
+                    "quay.io/go-faster/cilium-dev@sha256:d8bb81b46f9e10e40ca106bc6a9ac0f3365e5310bbb5bfba1f52d1d8c8b64740",
+                    "quay.io/go-faster/cilium-dev:vetcd-v3.3.11-hf1-aanm"
                 ],
                 "sizeBytes": 64108258
             },

@@ -1,7 +1,7 @@
 debug:
   enabled: true
 image:
-  override: "localhost:5000/cilium/cilium-dev:local"
+  override: "localhost:5000/go-faster/cilium-dev:local"
 operator:
   image:
     override: "localhost:5000/cilium/operator-generic:local"

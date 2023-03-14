@@ -11,7 +11,7 @@ import (
 	"github.com/cilium/ipam/service/ipallocator"
 	"golang.org/x/exp/slices"
 
-	cilium_api_v2alpha1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	cilium_api_v2alpha1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
 )
 
 type rangesStore struct {

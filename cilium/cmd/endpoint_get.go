@@ -11,10 +11,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	endpointApi "github.com/cilium/cilium/api/v1/client/endpoint"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/command"
+	endpointApi "github.com/go-faster/cilium/api/v1/client/endpoint"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 var lbls []string

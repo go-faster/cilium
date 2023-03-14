@@ -8,12 +8,12 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/api/v1/models"
-	alibabaCloudTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	azureTypes "github.com/cilium/cilium/pkg/azure/types"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/node/addressing"
+	"github.com/go-faster/cilium/api/v1/models"
+	alibabaCloudTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	azureTypes "github.com/go-faster/cilium/pkg/azure/types"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/node/addressing"
 )
 
 // +genclient

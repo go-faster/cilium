@@ -8,9 +8,9 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/nat"
-	"github.com/cilium/cilium/pkg/tuple"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/nat"
+	"github.com/go-faster/cilium/pkg/tuple"
 )
 
 // NOTE: the function does NOT copy addr fields, so it's not safe to

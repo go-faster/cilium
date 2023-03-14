@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	"github.com/go-faster/cilium/pkg/lock"
 
 	k8sRuntime "k8s.io/apimachinery/pkg/runtime"
 )

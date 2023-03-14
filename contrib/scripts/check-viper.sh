@@ -23,7 +23,7 @@ if grep -r --exclude-dir={.git,_build,vendor,contrib} -i --include \*.go "String
 fi
 
 # viper.GetIntSlice
-# Related Cilium issue https://github.com/cilium/cilium/issues/20173 and companion PR https://github.com/cilium/cilium/pull/20282
+# Related Cilium issue https://github.com/go-faster/cilium/issues/20173 and companion PR https://github.com/go-faster/cilium/pull/20282
 if grep -E -r --exclude-dir={.git,_build,vendor,contrib} -i --include \*.go "(viper|[vV]p).GetIntSlice" .; then
   echo "Found viper.GetIntSlice(key) usage. Please use a flags.StringSlice type and vp.GetStringSlice(key) instead";
   exit 1

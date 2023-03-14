@@ -9,12 +9,12 @@ import (
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	"github.com/cilium/cilium/pkg/backoff"
-	peerTypes "github.com/cilium/cilium/pkg/hubble/peer/types"
-	"github.com/cilium/cilium/pkg/hubble/relay/defaults"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/backoff"
+	peerTypes "github.com/go-faster/cilium/pkg/hubble/peer/types"
+	"github.com/go-faster/cilium/pkg/hubble/relay/defaults"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // defaultOptions is the reference point for default values.

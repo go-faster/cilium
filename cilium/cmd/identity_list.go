@@ -11,14 +11,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	identityApi "github.com/cilium/cilium/api/v1/client/policy"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	pkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/identity/identitymanager"
-	"github.com/cilium/cilium/pkg/labels"
+	identityApi "github.com/go-faster/cilium/api/v1/client/policy"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	pkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/identity/identitymanager"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // identityListCmd represents the identity_list command

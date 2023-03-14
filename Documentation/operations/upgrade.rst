@@ -142,7 +142,7 @@ Step 1: Upgrade to latest patch version
 When upgrading from one minor release to another minor release, for example
 1.x to 1.y, it is recommended to upgrade to the latest patch release for a
 Cilium release series first. The latest patch releases for each supported
-version of Cilium are `here <https://github.com/cilium/cilium#stable-releases>`_.
+version of Cilium are `here <https://github.com/go-faster/cilium#stable-releases>`_.
 Upgrading to the latest patch release ensures the most seamless experience if a
 rollback is required following the minor release upgrade. The upgrade guides
 for previous versions can be found for each minor version at the bottom left
@@ -583,7 +583,7 @@ Example migration
 
   .. code-block:: shell-session
 
-        cilium preflight migrate-identity --k8s-kubeconfig-path /var/lib/cilium/cilium.kubeconfig --kvstore etcd --kvstore-opt etcd.config=/var/lib/cilium/etcd-config.yml
+        cilium preflight migrate-identity --k8s-kubeconfig-path /var/lib/go-faster/cilium.kubeconfig --kvstore etcd --kvstore-opt etcd.config=/var/lib/cilium/etcd-config.yml
 
 Once the migration is complete, confirm the endpoint identities match by listing the endpoints stored in CRDs and in etcd:
 

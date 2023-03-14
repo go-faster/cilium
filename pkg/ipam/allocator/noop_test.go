@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func (e *AllocatorSuite) TestNoOpAllocator(c *check.C) {

@@ -14,10 +14,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 func TestExporter(t *testing.T) {

@@ -8,15 +8,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cilium/cilium/pkg/allocator"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/idpool"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/kvstore"
-	kvstoreallocator "github.com/cilium/cilium/pkg/kvstore/allocator"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/allocator"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	kvstoreallocator "github.com/go-faster/cilium/pkg/kvstore/allocator"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // keyPathFromLockPath returns the path of the given key that contains a lease

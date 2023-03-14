@@ -113,8 +113,8 @@ CiliumEventType from which the flow originated
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| type | [int32](#int32) |  | type of event the flow originated from, i.e. github.com/cilium/cilium/pkg/monitor/api.MessageType* |
-| sub_type | [int32](#int32) |  | sub_type may indicate more details depending on type, e.g. - github.com/cilium/cilium/pkg/monitor/api.Trace* - github.com/cilium/cilium/pkg/monitor/api.Drop* - github.com/cilium/cilium/pkg/monitor/api.DbgCapture* |
+| type | [int32](#int32) |  | type of event the flow originated from, i.e. github.com/go-faster/cilium/pkg/monitor/api.MessageType* |
+| sub_type | [int32](#int32) |  | sub_type may indicate more details depending on type, e.g. - github.com/go-faster/cilium/pkg/monitor/api.Trace* - github.com/go-faster/cilium/pkg/monitor/api.Drop* - github.com/go-faster/cilium/pkg/monitor/api.DbgCapture* |
 
 
 
@@ -125,7 +125,7 @@ CiliumEventType from which the flow originated
 
 ### DNS
 DNS flow. This is basically directly mapped from Cilium&#39;s LogRecordDNS:
-    https://github.com/cilium/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L264
+    https://github.com/go-faster/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L264
 
 
 | Field | Type | Label | Description |
@@ -134,7 +134,7 @@ DNS flow. This is basically directly mapped from Cilium&#39;s LogRecordDNS:
 | ips | [string](#string) | repeated | List of IP addresses in the DNS response. |
 | ttl | [uint32](#uint32) |  | TTL in the DNS response. |
 | cnames | [string](#string) | repeated | List of CNames in the DNS response. |
-| observation_source | [string](#string) |  | Corresponds to DNSDataSource defined in: https://github.com/cilium/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L253 |
+| observation_source | [string](#string) |  | Corresponds to DNSDataSource defined in: https://github.com/go-faster/cilium/blob/04f3889d627774f79e56d14ddbc165b3169e2d01/pkg/proxy/accesslog/record.go#L253 |
 | rcode | [uint32](#uint32) |  | Return code of the DNS request defined in: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-6 |
 | qtypes | [string](#string) | repeated | String representation of qtypes defined in: https://tools.ietf.org/html/rfc1035#section-3.2.3 |
 | rrtypes | [string](#string) | repeated | String representation of rrtypes defined in: https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4 |
@@ -246,9 +246,9 @@ EventTypeFilter is a filter describing a particular event type
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| type | [int32](#int32) |  | type is the primary flow type as defined by: github.com/cilium/cilium/pkg/monitor/api.MessageType* |
+| type | [int32](#int32) |  | type is the primary flow type as defined by: github.com/go-faster/cilium/pkg/monitor/api.MessageType* |
 | match_sub_type | [bool](#bool) |  | match_sub_type is set to true when matching on the sub_type should be done. This flag is required as 0 is a valid sub_type. |
-| sub_type | [int32](#int32) |  | sub_type is the secondary type, e.g. - github.com/cilium/cilium/pkg/monitor/api.Trace* |
+| sub_type | [int32](#int32) |  | sub_type is the secondary type, e.g. - github.com/go-faster/cilium/pkg/monitor/api.Trace* |
 
 
 
@@ -282,7 +282,7 @@ EventTypeFilter is a filter describing a particular event type
 | source_service | [Service](#flow-Service) |  | source_service contains the service name of the source |
 | destination_service | [Service](#flow-Service) |  | destination_service contains the service name of the destination |
 | traffic_direction | [TrafficDirection](#flow-TrafficDirection) |  | traffic_direction of the connection, e.g. ingress or egress |
-| policy_match_type | [uint32](#uint32) |  | policy_match_type is only applicable to the cilium event type PolicyVerdict https://github.com/cilium/cilium/blob/e831859b5cc336c6d964a6d35bbd34d1840e21b9/pkg/monitor/datapath_policy.go#L50 |
+| policy_match_type | [uint32](#uint32) |  | policy_match_type is only applicable to the cilium event type PolicyVerdict https://github.com/go-faster/cilium/blob/e831859b5cc336c6d964a6d35bbd34d1840e21b9/pkg/monitor/datapath_policy.go#L50 |
 | trace_observation_point | [TraceObservationPoint](#flow-TraceObservationPoint) |  | Only applicable to cilium trace notifications, blank for other types. |
 | drop_reason_desc | [DropReason](#flow-DropReason) |  | only applicable to Verdict = DROPPED. |
 | is_reply | [google.protobuf.BoolValue](#google-protobuf-BoolValue) |  | is_reply indicates that this was a packet (L4) or message (L7) in the reply direction. May be absent (in which case it is unknown whether it is a reply or not). |
@@ -349,7 +349,7 @@ multiple fields are set, then all fields must match for the filter to match.
 
 ### HTTP
 L7 information for HTTP flows. It corresponds to Cilium&#39;s accesslog.LogRecordHTTP type.
-  https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L206
+  https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L206
 
 
 | Field | Type | Label | Description |
@@ -424,7 +424,7 @@ L7 information for HTTP flows. It corresponds to Cilium&#39;s accesslog.LogRecor
 | source | [string](#string) |  |  |
 | destination | [string](#string) |  |  |
 | ipVersion | [IPVersion](#flow-IPVersion) |  |  |
-| encrypted | [bool](#bool) |  | This field indicates whether the TraceReasonEncryptMask is set or not. https://github.com/cilium/cilium/blob/ba0ed147bd5bb342f67b1794c2ad13c6e99d5236/pkg/monitor/datapath_trace.go#L27 |
+| encrypted | [bool](#bool) |  | This field indicates whether the TraceReasonEncryptMask is set or not. https://github.com/go-faster/cilium/blob/ba0ed147bd5bb342f67b1794c2ad13c6e99d5236/pkg/monitor/datapath_trace.go#L27 |
 
 
 
@@ -457,7 +457,7 @@ L7 information for HTTP flows. It corresponds to Cilium&#39;s accesslog.LogRecor
 
 ### Kafka
 L7 information for Kafka flows. It corresponds to Cilium&#39;s accesslog.LogRecordKafka type.
-  https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L229
+  https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L229
 
 
 | Field | Type | Label | Description |
@@ -496,7 +496,7 @@ L7 information for Kafka flows. It corresponds to Cilium&#39;s accesslog.LogReco
 
 ### Layer7
 Message for L7 flow, which roughly corresponds to Cilium&#39;s accesslog LogRecord:
-  https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L141
+  https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L141
 
 
 | Field | Type | Label | Description |
@@ -1004,7 +1004,7 @@ EventType are constants are based on the ones from &lt;linux/perf_event.h&gt;.
 
 ### L7FlowType
 This enum corresponds to Cilium&#39;s L7 accesslog FlowType:
-  https://github.com/cilium/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L26
+  https://github.com/go-faster/cilium/blob/728c79e427438ab6f8d9375b62fccd6fed4ace3a/pkg/proxy/accesslog/record.go#L26
 
 | Name | Number | Description |
 | ---- | ------ | ----------- |

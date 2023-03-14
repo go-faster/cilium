@@ -7,7 +7,7 @@
 // consolidate all the event handling from various subsystems into one place.
 package subscriber
 
-import "github.com/cilium/cilium/pkg/lock"
+import "github.com/go-faster/cilium/pkg/lock"
 
 type list struct {
 	lock.RWMutex

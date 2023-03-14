@@ -16,15 +16,15 @@ import (
 	ec2_types "github.com/aws/aws-sdk-go-v2/service/ec2/types"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/api/helpers"
-	"github.com/cilium/cilium/pkg/aws/endpoints"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/aws/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipPkg "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/ipam/option"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	"github.com/cilium/cilium/pkg/spanstat"
+	"github.com/go-faster/cilium/pkg/api/helpers"
+	"github.com/go-faster/cilium/pkg/aws/endpoints"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/aws/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipPkg "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ipam/option"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/spanstat"
 )
 
 // Client represents an EC2 API client

@@ -6,7 +6,7 @@ package datapath
 import (
 	"net"
 
-	"github.com/cilium/cilium/api/v1/models"
+	"github.com/go-faster/cilium/api/v1/models"
 )
 
 // WireguardAgent manages the Wireguard peers

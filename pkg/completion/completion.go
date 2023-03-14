@@ -7,7 +7,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // WaitGroup waits for a collection of Completions to complete.

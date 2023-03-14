@@ -10,9 +10,9 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/common"
-	"github.com/cilium/cilium/pkg/maps/srv6map"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/common"
+	"github.com/go-faster/cilium/pkg/maps/srv6map"
 
 	"github.com/spf13/cobra"
 )

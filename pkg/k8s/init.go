@@ -13,16 +13,16 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	k8sLabels "k8s.io/apimachinery/pkg/labels"
 
-	"github.com/cilium/cilium/pkg/backoff"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sConst "github.com/cilium/cilium/pkg/k8s/constants"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/node"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/backoff"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sConst "github.com/go-faster/cilium/pkg/k8s/constants"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/node"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 const (

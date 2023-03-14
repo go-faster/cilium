@@ -6,10 +6,10 @@ package types
 import (
 	"os"
 
-	"github.com/cilium/cilium/pkg/defaults"
-	k8sConsts "github.com/cilium/cilium/pkg/k8s/constants"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/defaults"
+	k8sConsts "github.com/go-faster/cilium/pkg/k8s/constants"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

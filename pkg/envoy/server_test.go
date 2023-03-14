@@ -10,17 +10,17 @@ import (
 	envoy_type_matcher "github.com/cilium/proxy/go/envoy/type/matcher/v3"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/policy/api/kafka"
-	"github.com/cilium/cilium/pkg/proxy/logger"
-	"github.com/cilium/cilium/pkg/proxy/logger/test"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/policy/api/kafka"
+	"github.com/go-faster/cilium/pkg/proxy/logger"
+	"github.com/go-faster/cilium/pkg/proxy/logger/test"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 type ServerSuite struct{}

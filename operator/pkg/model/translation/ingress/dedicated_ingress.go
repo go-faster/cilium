@@ -10,11 +10,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/cilium/cilium/operator/pkg/model"
-	"github.com/cilium/cilium/operator/pkg/model/translation"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	slim_networkingv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model/translation"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	slim_networkingv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 const (
@@ -139,7 +139,7 @@ func getEndpoints(resource model.FullyQualifiedResource) *corev1.Endpoints {
 			{
 				// This dummy endpoint is required as agent refuses to push service entry
 				// to the lb map when the service has no backends.
-				// Related github issue https://github.com/cilium/cilium/issues/19262
+				// Related github issue https://github.com/go-faster/cilium/issues/19262
 				Addresses: []corev1.EndpointAddress{{IP: "192.192.192.192"}}, // dummy
 				Ports:     []corev1.EndpointPort{{Port: 9999}},               //dummy
 			},

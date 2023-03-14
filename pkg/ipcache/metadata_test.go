@@ -12,11 +12,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/source"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/source"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
 )
 
 var (

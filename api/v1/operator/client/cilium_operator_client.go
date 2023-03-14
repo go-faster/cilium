@@ -13,8 +13,8 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/cilium/cilium/api/v1/operator/client/metrics"
-	"github.com/cilium/cilium/api/v1/operator/client/operator"
+	"github.com/go-faster/cilium/api/v1/operator/client/metrics"
+	"github.com/go-faster/cilium/api/v1/operator/client/operator"
 )
 
 // Default cilium operator HTTP client.

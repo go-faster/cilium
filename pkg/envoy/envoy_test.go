@@ -14,14 +14,14 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/envoy/xds"
-	"github.com/cilium/cilium/pkg/flowdebug"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/envoy/xds"
+	"github.com/go-faster/cilium/pkg/flowdebug"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
 )
 
 // Hook up gocheck into the "go test" runner.

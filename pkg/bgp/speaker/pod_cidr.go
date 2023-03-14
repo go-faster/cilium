@@ -11,7 +11,7 @@ import (
 	metallbbgp "go.universe.tf/metallb/pkg/bgp"
 	metallbspr "go.universe.tf/metallb/pkg/speaker"
 
-	"github.com/cilium/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/cidr"
 )
 
 var (

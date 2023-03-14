@@ -8,12 +8,12 @@ source "${DIR}/../backporting/common.sh"
 
 CONTAINER_ENGINE=${CONTAINER_ENGINE:-docker}
 
-repo="cilium/cilium"
+repo="go-faster/cilium"
 
 usage() {
     logecho "usage: $0 <RUN-URL> [VERSION] [GH-USERNAME]"
     logecho "RUN-URL      GitHub URL with the RUN for the release images"
-    logecho "             example: https://github.com/cilium/cilium/actions/runs/600920964"
+    logecho "             example: https://github.com/go-faster/cilium/actions/runs/600920964"
     logecho "VERSION      Target version (X.Y.Z) (default: read from VERSION file)"
     logecho "GH-USERNAME  GitHub username for authentication (default: autodetect)"
     logecho "GITHUB_TOKEN environment variable set with the scope public:repo"

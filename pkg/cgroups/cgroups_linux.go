@@ -11,7 +11,7 @@ import (
 
 	"github.com/vishvananda/netlink/nl"
 
-	"github.com/cilium/cilium/pkg/mountinfo"
+	"github.com/go-faster/cilium/pkg/mountinfo"
 )
 
 // mountCgroup mounts the Cgroup v2 filesystem into the desired cgroupRoot directory.

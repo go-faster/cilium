@@ -13,11 +13,11 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (

@@ -10,13 +10,13 @@ import (
 	. "gopkg.in/check.v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/pkg/annotation"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/cidr"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/node/addressing"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/annotation"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/node/addressing"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 // Hook up gocheck into the "go test" runner.

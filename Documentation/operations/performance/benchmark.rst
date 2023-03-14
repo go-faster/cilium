@@ -339,7 +339,7 @@ How to reproduce
 ================
 
 To ease reproducibility, this report is paired with a set of scripts that can
-be found in `cilium/cilium-perf-networking <https://github.com/cilium/cilium-perf-networking>`_.
+be found in `go-faster/cilium-perf-networking <https://github.com/go-faster/cilium-perf-networking>`_.
 All scripts in this document refer to this repository. Specifically, we use
 `Terraform <https://www.terraform.io/>`_ and `Ansible
 <https://www.ansible.com/>`_ to setup the environment and execute benchmarks.
@@ -351,7 +351,7 @@ Download the Cilium performance evaluation scripts:
 
 .. code-block:: shell-session
 
-  $ git clone https://github.com/cilium/cilium-perf-networking.git
+  $ git clone https://github.com/go-faster/cilium-perf-networking.git
   $ cd cilium-perf-networking
 
 Packet Servers

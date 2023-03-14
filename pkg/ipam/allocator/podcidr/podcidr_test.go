@@ -11,20 +11,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cilium/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
+	"github.com/go-faster/cilium/pkg/ipam/allocator/clusterpool/cidralloc"
 
 	. "gopkg.in/check.v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/controller"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/controller"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 func Test(t *testing.T) {

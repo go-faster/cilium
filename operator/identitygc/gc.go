@@ -10,16 +10,16 @@ import (
 	"github.com/cilium/workerpool"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/allocator"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	ciliumV2 "github.com/cilium/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/rate"
+	"github.com/go-faster/cilium/pkg/allocator"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	ciliumV2 "github.com/go-faster/cilium/pkg/k8s/client/clientset/versioned/typed/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/rate"
 )
 
 // params contains all the dependencies for the identity-gc.

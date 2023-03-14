@@ -8,7 +8,7 @@
 package main
 
 import (
-	"github.com/cilium/cilium/daemon/cmd"
+	"github.com/go-faster/cilium/daemon/cmd"
 )
 
 func main() {

@@ -46,7 +46,7 @@ To ensure the SBOM is tamper-proof, its signature can be verified using the
 
 .. code-block:: shell-session
 
-    $ COSIGN_EXPERIMENTAL=1 cosign verify --certificate-github-workflow-repository cilium/cilium --certificate-oidc-issuer https://token.actions.githubusercontent.com --attachment sbom <Image URL> | jq
+    $ COSIGN_EXPERIMENTAL=1 cosign verify --certificate-github-workflow-repository go-faster/cilium --certificate-oidc-issuer https://token.actions.githubusercontent.com --attachment sbom <Image URL> | jq
 
 It can be validated that the image was signed using Github Actions in the Cilium
 repository from the ``Issuer`` and ``Subject`` fields of the output.

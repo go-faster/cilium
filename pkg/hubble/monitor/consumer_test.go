@@ -11,10 +11,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/monitor/api"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/monitor/api"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 type fakeObserver struct {

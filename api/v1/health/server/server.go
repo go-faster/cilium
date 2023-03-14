@@ -25,8 +25,8 @@ import (
 	"golang.org/x/net/netutil"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/api/v1/health/server/restapi"
-	"github.com/cilium/cilium/pkg/api"
+	"github.com/go-faster/cilium/api/v1/health/server/restapi"
+	"github.com/go-faster/cilium/pkg/api"
 )
 
 const (

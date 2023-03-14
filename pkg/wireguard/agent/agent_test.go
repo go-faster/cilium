@@ -12,11 +12,11 @@ import (
 	"golang.zx2c4.com/wireguard/wgctrl/wgtypes"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/cidr"
-	iputil "github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/ipcache"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/cidr"
+	iputil "github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 type AgentSuite struct{}

@@ -19,16 +19,16 @@ import (
 	"github.com/onsi/gomega/format"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/test/config"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
-	"github.com/cilium/cilium/test/logger"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/test/config"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
+	"github.com/go-faster/cilium/test/logger"
 
 	// These packages are where Ginkgo test specs live. They are declared as blank
 	// (_) global variables and are pulled in using package import side effects.
-	_ "github.com/cilium/cilium/test/k8s"
-	_ "github.com/cilium/cilium/test/runtime"
+	_ "github.com/go-faster/cilium/test/k8s"
+	_ "github.com/go-faster/cilium/test/runtime"
 )
 
 var (

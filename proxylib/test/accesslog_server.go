@@ -17,8 +17,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 type AccessLogServer struct {

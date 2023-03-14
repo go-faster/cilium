@@ -25,7 +25,7 @@ usage() {
     echo -e ""
     echo -e "examples:"
     echo -e "\tdownload boxes ubuntu and ubuntu-next from vagrant_box_defaults.rb:"
-    echo -e "\t\$ add_vagrant_box.sh \$HOME/go/src/github.com/cilium/cilium/vagrant_box_defaults.rb"
+    echo -e "\t\$ add_vagrant_box.sh \$HOME/go/src/github.com/go-faster/cilium/vagrant_box_defaults.rb"
     echo -e "\tdownload latest version for ubuntu-dev and ubuntu-next:"
     echo -e "\t\$ add_vagrant_box.sh -l -b ubuntu-dev -b ubuntu-next"
     echo -e "\tsame as above, downloading into /tmp/foo and using aria2c:"

@@ -11,8 +11,8 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	cmtypes "github.com/cilium/cilium/pkg/clustermesh/types"
-	"github.com/cilium/cilium/pkg/testutils"
+	cmtypes "github.com/go-faster/cilium/pkg/clustermesh/types"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 type TunnelMapTestSuite struct{}

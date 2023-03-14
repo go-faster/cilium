@@ -16,6 +16,6 @@ Based on https://github.com/jondot/fattyproject/blob/master/gofat and adjusted t
         1.1M
         948K
         920K
-        importmap github.com/c9s/goprocinfo/linux=github.com/cilium/cilium/vendor/github.com/c9s/goprocinfo/linux
+        importmap github.com/c9s/goprocinfo/linux=github.com/go-faster/cilium/vendor/github.com/c9s/goprocinfo/linux
         912K
         importmap golang_org/x/crypto/chacha20poly1305=vendor/golang_org/x/crypto/chacha20poly1305

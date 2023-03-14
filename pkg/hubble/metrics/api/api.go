@@ -12,10 +12,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.uber.org/multierr"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 const (

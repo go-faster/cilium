@@ -17,28 +17,28 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/datapath/fake"
-	"github.com/cilium/cilium/pkg/endpoint/regeneration"
-	"github.com/cilium/cilium/pkg/eventqueue"
-	"github.com/cilium/cilium/pkg/fqdn/restore"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/cache"
-	ciliumio "github.com/cilium/cilium/pkg/k8s/apis/cilium.io"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/labels"
-	"github.com/cilium/cilium/pkg/labelsfilter"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/metrics"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/option"
-	fakeConfig "github.com/cilium/cilium/pkg/option/fake"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/policy/api"
-	testidentity "github.com/cilium/cilium/pkg/testutils/identity"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/datapath/fake"
+	"github.com/go-faster/cilium/pkg/endpoint/regeneration"
+	"github.com/go-faster/cilium/pkg/eventqueue"
+	"github.com/go-faster/cilium/pkg/fqdn/restore"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/cache"
+	ciliumio "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/labelsfilter"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/metrics"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/option"
+	fakeConfig "github.com/go-faster/cilium/pkg/option/fake"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	testidentity "github.com/go-faster/cilium/pkg/testutils/identity"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 // Hook up gocheck into the "go test" runner.
@@ -636,7 +636,7 @@ func (n *EndpointDeadlockEvent) Handle(ifc chan interface{}) {
 }
 
 // This unit test is a bit weird - see
-// https://github.com/cilium/cilium/pull/8687 .
+// https://github.com/go-faster/cilium/pull/8687 .
 func (s *EndpointSuite) TestEndpointEventQueueDeadlockUponStop(c *C) {
 	// Need to modify global configuration (hooray!), change back when test is
 	// done.

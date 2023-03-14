@@ -12,10 +12,10 @@ kind create cluster --config=kind-cluster.yaml
 helm repo add cilium https://helm.cilium.io/
 
 # docker pull the image and load in kind
-docker pull cilium/cilium:<cilium version>
-kind load docker-image cilium/cilium:<cilium version>
+docker pull go-faster/cilium:<cilium version>
+kind load docker-image go-faster/cilium:<cilium version>
 
-helm install cilium cilium/cilium --version <cilium version> \
+helm install cilium go-faster/cilium --version <cilium version> \
    --namespace kube-system \
    --set vtep.enabled=true \
    --set vtep.endpoint="172.18.0.1" \

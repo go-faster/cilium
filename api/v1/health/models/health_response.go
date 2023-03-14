@@ -11,7 +11,7 @@ package models
 import (
 	"context"
 
-	ciliumModels "github.com/cilium/cilium/api/v1/models"
+	ciliumModels "github.com/go-faster/cilium/api/v1/models"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"

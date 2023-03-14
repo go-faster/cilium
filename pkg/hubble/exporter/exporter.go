@@ -11,11 +11,11 @@ import (
 	"github.com/cilium/lumberjack/v2"
 	"github.com/sirupsen/logrus"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/hubble/exporter/exporteroption"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/hubble/exporter/exporteroption"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // exporter is an implementation of OnDecodedEvent interface that writes Hubble events to a file.

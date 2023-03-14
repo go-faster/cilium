@@ -49,11 +49,11 @@ GO_INSTALLED_MAJOR_AND_MINOR_VERSION := $(shell $(GO) version | sed 's/go versio
 GO_CONTAINER := $(CONTAINER_ENGINE) run --rm -v $(CURDIR):$(CURDIR) -w $(CURDIR) golang:$(GO_VERSION)
 GOIMPORTS_VERSION ?= v0.1.12
 
-TEST_LDFLAGS=-ldflags "-X github.com/cilium/cilium/pkg/kvstore.consulDummyAddress=https://consul:8443 \
-	-X github.com/cilium/cilium/pkg/kvstore.etcdDummyAddress=http://etcd:4002 \
-	-X github.com/cilium/cilium/pkg/datapath.DatapathSHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+TEST_LDFLAGS=-ldflags "-X github.com/go-faster/cilium/pkg/kvstore.consulDummyAddress=https://consul:8443 \
+	-X github.com/go-faster/cilium/pkg/kvstore.etcdDummyAddress=http://etcd:4002 \
+	-X github.com/go-faster/cilium/pkg/datapath.DatapathSHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
-TEST_UNITTEST_LDFLAGS=-ldflags "-X github.com/cilium/cilium/pkg/datapath.DatapathSHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+TEST_UNITTEST_LDFLAGS=-ldflags "-X github.com/go-faster/cilium/pkg/datapath.DatapathSHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 define generate_k8s_api
 	cd "./vendor/k8s.io/code-generator" && \
@@ -72,12 +72,12 @@ define generate_deepequal
 endef
 
 define generate_k8s_api_all
-	$(call generate_k8s_api,all,github.com/cilium/cilium/pkg/k8s/client,$(1),$(2))
+	$(call generate_k8s_api,all,github.com/go-faster/cilium/pkg/k8s/client,$(1),$(2))
 	$(call generate_deepequal,"$(call join-with-comma,$(foreach pkg,$(2),$(1)/$(subst ",,$(subst :,/,$(pkg)))))")
 endef
 
 define generate_k8s_api_deepcopy_deepequal
-	$(call generate_k8s_api,deepcopy,github.com/cilium/cilium/pkg/k8s/client,$(1),$(2))
+	$(call generate_k8s_api,deepcopy,github.com/go-faster/cilium/pkg/k8s/client,$(1),$(2))
 	@# Explanation for the 'subst' below:
 	@#   $(subst ",,$(subst :,/,$(pkg))) - replace all ':' with '/' and replace
 	@#    all '"' with '' from $pkg
@@ -89,7 +89,7 @@ define generate_k8s_api_deepcopy_deepequal
 endef
 
 define generate_k8s_api_deepcopy_deepequal_client
-	$(call generate_k8s_api,deepcopy$(comma)client,github.com/cilium/cilium/pkg/k8s/slim/k8s/$(1),$(2),$(3))
+	$(call generate_k8s_api,deepcopy$(comma)client,github.com/go-faster/cilium/pkg/k8s/slim/k8s/$(1),$(2),$(3))
 	$(call generate_deepequal,"$(call join-with-comma,$(foreach pkg,$(3),$(2)/$(subst ",,$(subst :,/,$(pkg)))))")
 endef
 
@@ -104,7 +104,7 @@ define generate_k8s_protobuf
                                 -k8s.io/apimachinery/pkg/runtime,$\
                                 -k8s.io/apimachinery/pkg/apis/meta/v1,$\
                                 -k8s.io/apimachinery/pkg/apis/meta/v1beta1'\
-		--drop-embedded-fields="github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1.TypeMeta" \
+		--drop-embedded-fields="github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1.TypeMeta" \
 		--proto-import="$(PWD)" \
 		--proto-import="$(PWD)/vendor" \
 		--proto-import="$(PWD)/tools/protobuf" \
@@ -163,7 +163,7 @@ endif
 
 generate-cov: ## Generate HTML coverage report at coverage-all.html.
 	# Remove generated code from coverage
-	$(QUIET) grep -Ev '(^github.com/cilium/cilium/api/v1)|(generated.deepcopy.go)|(^github.com/cilium/cilium/pkg/k8s/client/)' \
+	$(QUIET) grep -Ev '(^github.com/go-faster/cilium/api/v1)|(generated.deepcopy.go)|(^github.com/go-faster/cilium/pkg/k8s/client/)' \
 		coverage.out > coverage.out.tmp
 	$(QUIET)$(GO) tool cover -html=coverage.out.tmp -o=coverage-all.html
 	$(QUIET) rm coverage.out.tmp
@@ -197,7 +197,7 @@ cscope.files: ## Generate cscope.files with the list of all files to generate ct
 	@go list -f "{{ \$$p := .ImportPath }} \
 		{{- range .GoFiles }}{{ printf \"%s/%s\n\" \$$p . }}{{ end }} \
 		{{- range .TestGoFiles }}{{ printf \"%s/%s\n\" \$$p . }}{{ end }}" ./... \
-		| sed 's#github.com/cilium/cilium/##g' | sort | uniq > cscope.files
+		| sed 's#github.com/go-faster/cilium/##g' | sort | uniq > cscope.files
 
 	@echo "$(BPF_SRCFILES)" | sed 's/ /\n/g' | sort >> cscope.files
 
@@ -321,28 +321,28 @@ generate-k8s-api: ## Generate Cilium k8s API client, deepcopy and deepequal Go s
 	$(ASSERT_CILIUM_MODULE)
 
 	$(call generate_k8s_protobuf,$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1beta1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/util/intstr$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1$(comma)$\
-	github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1)
-	$(call generate_k8s_api_deepcopy_deepequal_client,client,github.com/cilium/cilium/pkg/k8s/slim/k8s/api,"$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1beta1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/util/intstr$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1$(comma)$\
+	github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/apiextensions/v1)
+	$(call generate_k8s_api_deepcopy_deepequal_client,client,github.com/go-faster/cilium/pkg/k8s/slim/k8s/api,"$\
 	discovery:v1beta1\
 	discovery:v1\
 	networking:v1\
 	core:v1")
-	$(call generate_k8s_api_deepcopy_deepequal_client,apiextensions-client,github.com/cilium/cilium/pkg/k8s/slim/k8s/apis,"$\
+	$(call generate_k8s_api_deepcopy_deepequal_client,apiextensions-client,github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis,"$\
 	apiextensions:v1")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg/k8s/slim/k8s/apis,"$\
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis,"$\
 	util:intstr\
 	meta:v1\
 	meta:v1beta1")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg/k8s/slim/k8s,"$\
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg/k8s/slim/k8s,"$\
 	apis:labels")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg,"$\
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg,"$\
 	aws:types\
 	azure:types\
 	ipam:types\
@@ -371,12 +371,12 @@ generate-k8s-api: ## Generate Cilium k8s API client, deepcopy and deepequal Go s
 	node:types\
 	policy:api\
 	service:store")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg/policy,"api:kafka")
-	$(call generate_k8s_api_all,github.com/cilium/cilium/pkg/k8s/apis,"cilium.io:v2 cilium.io:v2alpha1")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg/aws,"eni:types")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/pkg/alibabacloud,"eni:types")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium/api,"v1:models")
-	$(call generate_k8s_api_deepcopy_deepequal,github.com/cilium/cilium,"$\
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg/policy,"api:kafka")
+	$(call generate_k8s_api_all,github.com/go-faster/cilium/pkg/k8s/apis,"cilium.io:v2 cilium.io:v2alpha1")
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg/aws,"eni:types")
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/pkg/alibabacloud,"eni:types")
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium/api,"v1:models")
+	$(call generate_k8s_api_deepcopy_deepequal,github.com/go-faster/cilium,"$\
 	pkg:bpf\
 	pkg:k8s\
 	pkg:labels\
@@ -495,11 +495,11 @@ kind-image: ## Build cilium and operator images and import them into kind.
 kind-install-cilium: kind-ready ## Install a local Cilium version into the cluster.
 	@echo "  INSTALL cilium"
 	# cilium-cli doesn't support idempotent installs, so we uninstall and
-	# reinstall here. https://github.com/cilium/cilium-cli/issues/205
+	# reinstall here. https://github.com/go-faster/cilium-cli/issues/205
 	-cilium uninstall >/dev/null
 	# cilium-cli's --wait flag doesn't work, so we just force it to run
 	# in the background instead and wait for the resources to be available.
-	# https://github.com/cilium/cilium-cli/issues/1070
+	# https://github.com/go-faster/cilium-cli/issues/1070
 	cilium install \
 		--chart-directory=$(ROOT_DIR)/install/kubernetes/cilium \
 		--helm-values=$(ROOT_DIR)/contrib/testing/kind-values.yaml \

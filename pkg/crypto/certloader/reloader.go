@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // FileReloader is a set of TLS configuration files including custom CAs, and a

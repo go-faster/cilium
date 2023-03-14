@@ -8,11 +8,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/k8s"
-	cilium_v2a1 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
-	k8sUtils "github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/k8s"
+	cilium_v2a1 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2alpha1"
+	k8sUtils "github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 type cesSubscriber struct {

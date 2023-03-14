@@ -6,9 +6,9 @@ package policy
 import (
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/policy/api"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 func (ds *PolicyTestSuite) TestGenerateL7RulesByParser(c *C) {

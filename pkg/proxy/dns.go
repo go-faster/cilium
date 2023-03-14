@@ -6,12 +6,12 @@ package proxy
 import (
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/fqdn/proxy"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/policy"
-	"github.com/cilium/cilium/pkg/proxy/logger"
-	"github.com/cilium/cilium/pkg/revert"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/fqdn/proxy"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/proxy/logger"
+	"github.com/go-faster/cilium/pkg/revert"
 )
 
 var (

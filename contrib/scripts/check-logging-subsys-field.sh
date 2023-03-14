@@ -24,8 +24,8 @@ if grep -IPRns '(?!.*LogSubsys)log[ ]*= logging\.DefaultLogger.*' \
     echo "properly configured entry instance:"
     echo
     echo -e "\timport ("
-    echo -e "\t\t\"github.com/cilium/cilium/pkg/logging\""
-    echo -e "\t\t\"github.com/cilium/cilium/pkg/logging/logfields\""
+    echo -e "\t\t\"github.com/go-faster/cilium/pkg/logging\""
+    echo -e "\t\t\"github.com/go-faster/cilium/pkg/logging/logfields\""
     echo -e "\t)"
     echo
     echo -e "\tvar log = logging.DefaultLogger.WithField(logfields.LogSubsys, \"my-subsystem\")"

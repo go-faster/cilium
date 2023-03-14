@@ -8,9 +8,9 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 const (
@@ -56,14 +56,14 @@ func neighMapsGet() (*bpf.Map, *bpf.Map) {
 
 // Key4 is the IPv4 for the IP-to-MAC address mappings.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Key4 struct {
 	ipv4 types.IPv4
 }
 
 // Key6 is the IPv6 for the IP-to-MAC address mappings.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type Key6 struct {
 	ipv6 types.IPv6
 }
@@ -73,7 +73,7 @@ const SizeofNeighKey6 = int(unsafe.Sizeof(Key6{}))
 
 // Value is the MAC address for the IP-to-MAC address mappings.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type Value struct {
 	macaddr types.MACAddr
 	pad     uint16

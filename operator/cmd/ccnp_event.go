@@ -10,18 +10,18 @@ import (
 
 	"k8s.io/client-go/tools/cache"
 
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/k8s"
-	cilium_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/k8s/watchers/resources"
-	"github.com/cilium/cilium/pkg/kvstore/store"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/policy/groups"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/k8s"
+	cilium_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/resources"
+	"github.com/go-faster/cilium/pkg/kvstore/store"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/policy/groups"
 )
 
 func k8sEventMetric(scope, action string) {
@@ -73,7 +73,7 @@ func enableCCNPWatcher(ctx context.Context, wg *sync.WaitGroup, clientset k8sCli
 				if cnp := k8s.ObjToSlimCNP(obj); cnp != nil {
 					// We need to deepcopy this structure because we are writing
 					// fields.
-					// See https://github.com/cilium/cilium/blob/27fee207f5422c95479422162e9ea0d2f2b6c770/pkg/policy/api/ingress.go#L112-L134
+					// See https://github.com/go-faster/cilium/blob/27fee207f5422c95479422162e9ea0d2f2b6c770/pkg/policy/api/ingress.go#L112-L134
 					cnpCpy := cnp.DeepCopy()
 
 					groups.AddDerivativeCCNPIfNeeded(clientset, cnpCpy.CiliumNetworkPolicy)
@@ -92,7 +92,7 @@ func enableCCNPWatcher(ctx context.Context, wg *sync.WaitGroup, clientset k8sCli
 
 						// We need to deepcopy this structure because we are writing
 						// fields.
-						// See https://github.com/cilium/cilium/blob/27fee207f5422c95479422162e9ea0d2f2b6c770/pkg/policy/api/ingress.go#L112-L134
+						// See https://github.com/go-faster/cilium/blob/27fee207f5422c95479422162e9ea0d2f2b6c770/pkg/policy/api/ingress.go#L112-L134
 						newCNPCpy := newCNP.DeepCopy()
 						oldCNPCpy := oldCNP.DeepCopy()
 

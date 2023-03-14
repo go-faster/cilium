@@ -6,8 +6,8 @@ package service
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/loadbalancer"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/loadbalancer"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // AcquireID acquires a service ID

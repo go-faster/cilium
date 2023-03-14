@@ -122,7 +122,7 @@ One-time Setup
    .. code-block:: shell-session
 
       $ git remote add johndoe git@github.com:johndoe/cilium.git
-      $ git remote add upstream https://github.com/cilium/cilium.git
+      $ git remote add upstream https://github.com/go-faster/cilium.git
 
 #. Skip this step if you have created a setup using the pre-defined Dockerfile.
    This guide makes use of several tools to automate the backporting process.
@@ -171,7 +171,7 @@ Creating the Backports Branch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Check whether there are any `outstanding backport PRs for the target branch
-   <https://github.com/cilium/cilium/pulls?q=is%3Aopen+is%3Apr+label%3Akind%2Fbackports>`__.
+   <https://github.com/go-faster/cilium/pulls?q=is%3Aopen+is%3Apr+label%3Akind%2Fbackports>`__.
    If there are already backports for that branch, create a thread in the
    #launchpad channel in Slack and reach out to the author to coordinate
    triage, review and merge of the existing PR into the target branch.

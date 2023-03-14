@@ -269,4 +269,4 @@ Roles
 
   .. code-block:: rst
 
-    See `this GitHub issue <https://github.com/cilium/cilium/issues/1234>`__.
+    See `this GitHub issue <https://github.com/go-faster/cilium/issues/1234>`__.

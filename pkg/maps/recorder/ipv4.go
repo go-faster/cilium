@@ -9,11 +9,11 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/types"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 type CaptureWcard4 struct {

@@ -8,7 +8,7 @@ import "google/protobuf/duration.proto";
 
 package recorder;
 
-option go_package = "github.com/cilium/cilium/api/v1/recorder";
+option go_package = "github.com/go-faster/cilium/api/v1/recorder";
 
 // Recorder implements the Hubble module for capturing network packets
 service Recorder {

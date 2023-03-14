@@ -6,8 +6,8 @@ package cmd
 import (
 	"github.com/go-openapi/runtime/middleware"
 
-	. "github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/pkg/datapath"
+	. "github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/pkg/datapath"
 )
 
 type getNodeIDHandler struct {

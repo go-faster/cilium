@@ -14,7 +14,7 @@ import (
 	"github.com/coreos/go-systemd/v22/dbus"
 	"github.com/spf13/pflag"
 
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 // This tool attempts to write a sysctl config file to the sysctl config directory with the highest precedence so

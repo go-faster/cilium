@@ -6,9 +6,9 @@ package logger
 import (
 	"net"
 
-	"github.com/cilium/cilium/pkg/fqdn/restore"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/proxy/accesslog"
+	"github.com/go-faster/cilium/pkg/fqdn/restore"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/proxy/accesslog"
 )
 
 // EndpointInfoSource returns information about an endpoint being proxied.

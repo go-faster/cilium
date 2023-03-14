@@ -13,8 +13,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var _ = SkipDescribeIf(
@@ -84,7 +84,7 @@ var _ = SkipDescribeIf(
 						"bgp.enabled":                 "true",
 						"bgp.announce.loadbalancerIP": "true",
 
-						"debug.verbose":        "datapath", // https://github.com/cilium/cilium/issues/16399
+						"debug.verbose":        "datapath", // https://github.com/go-faster/cilium/issues/16399
 						"tunnel":               "disabled",
 						"autoDirectNodeRoutes": "true",
 					})

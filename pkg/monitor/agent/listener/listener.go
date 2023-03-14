@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/monitor/payload"
+	"github.com/go-faster/cilium/pkg/monitor/payload"
 )
 
 // Version is the version of a node-monitor listener client. There are

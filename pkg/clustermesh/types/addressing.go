@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/cidr"
-	ippkg "github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/cidr"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
 )
 
 //

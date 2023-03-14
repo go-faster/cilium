@@ -6,7 +6,7 @@ package types
 import (
 	"strings"
 
-	"github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 const (

@@ -11,12 +11,12 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/exp/maps"
 
-	"github.com/cilium/cilium/pkg/cgroups"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	nodetypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/cgroups"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	nodetypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 var (

@@ -9,12 +9,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	eniTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	"github.com/cilium/cilium/pkg/alibabacloud/types"
-	"github.com/cilium/cilium/pkg/ipam"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/lock"
+	eniTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	"github.com/go-faster/cilium/pkg/alibabacloud/types"
+	"github.com/go-faster/cilium/pkg/ipam"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // AlibabaCloudAPI is the API surface used of the ECS API

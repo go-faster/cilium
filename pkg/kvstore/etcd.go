@@ -25,16 +25,16 @@ import (
 	"golang.org/x/time/rate"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cilium/cilium/pkg/backoff"
-	"github.com/cilium/cilium/pkg/contexthelpers"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/rand"
-	"github.com/cilium/cilium/pkg/spanstat"
-	"github.com/cilium/cilium/pkg/versioncheck"
+	"github.com/go-faster/cilium/pkg/backoff"
+	"github.com/go-faster/cilium/pkg/contexthelpers"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/rand"
+	"github.com/go-faster/cilium/pkg/spanstat"
+	"github.com/go-faster/cilium/pkg/versioncheck"
 )
 
 const (

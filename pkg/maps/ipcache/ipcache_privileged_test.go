@@ -10,11 +10,11 @@ import (
 
 	"github.com/cilium/ebpf/rlimit"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/testutils"
-	"github.com/cilium/cilium/pkg/version"
-	"github.com/cilium/cilium/pkg/versioncheck"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/version"
+	"github.com/go-faster/cilium/pkg/versioncheck"
 )
 
 // Hook up gocheck into the "go test" runner.

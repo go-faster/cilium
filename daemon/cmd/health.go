@@ -9,14 +9,14 @@ import (
 	"path/filepath"
 	"time"
 
-	health "github.com/cilium/cilium/cilium-health/launch"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/endpoint"
-	"github.com/cilium/cilium/pkg/health/defaults"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/pidfile"
+	health "github.com/go-faster/cilium/cilium-health/launch"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/endpoint"
+	"github.com/go-faster/cilium/pkg/health/defaults"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/pidfile"
 )
 
 func (d *Daemon) initHealth(cleaner *daemonCleanup) {

@@ -10,9 +10,9 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/mac"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const (
@@ -119,7 +119,7 @@ func (in *pad4uint32) DeepCopyInto(out *pad4uint32) {
 //
 // Must be in sync with struct endpoint_info in <bpf/lib/common.h>
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type EndpointInfo struct {
 	IfIndex uint32 `align:"ifindex"`
 	Unused  uint16 `align:"unused"`
@@ -136,7 +136,7 @@ type EndpointInfo struct {
 func (v *EndpointInfo) GetValuePtr() unsafe.Pointer { return unsafe.Pointer(v) }
 
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type EndpointKey struct {
 	bpf.EndpointKey
 }

@@ -11,10 +11,10 @@ import (
 	cilium "github.com/cilium/proxy/go/cilium/api"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/inctimer"
-	"github.com/cilium/cilium/proxylib/proxylib"
-	"github.com/cilium/cilium/proxylib/test"
-	_ "github.com/cilium/cilium/proxylib/testparsers"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	"github.com/go-faster/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/proxylib/test"
+	_ "github.com/go-faster/cilium/proxylib/testparsers"
 )
 
 const debug = false

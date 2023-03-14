@@ -13,7 +13,7 @@ root_dir="$(git rev-parse --show-toplevel)"
 
 cd "${root_dir}"
 
-image="quay.io/cilium/cilium-runtime"
+image="quay.io/go-faster/cilium-runtime"
 
 # shellcheck disable=SC2207
 used_by=($(git grep -l CILIUM_RUNTIME_IMAGE= images/*/Dockerfile))

@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cilium/cilium/pkg/container"
+	"github.com/go-faster/cilium/pkg/container"
 )
 
 func TestEventsSubscribe(t *testing.T) {

@@ -99,7 +99,7 @@ metadata:
 spec:
   containers:
   - name: cilium-builder
-    image: quay.io/cilium/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
+    image: quay.io/go-faster/cilium-builder:ebf5c20e77dbbdb0ee8d99268612671b8b79e9f8@sha256:f6aa813d8dbb3c6b3e4708e4d345d0272be2f9c118dbb6f2bb3cd6841fdd0e34
     workingDir: /cilium
     command: ["sleep"]
     args:
@@ -117,7 +117,7 @@ spec:
       type: DirectoryOrCreate
     name: bpf-maps
   - hostPath:
-      path: /home/vagrant/go/src/github.com/cilium/cilium
+      path: /home/vagrant/go/src/github.com/go-faster/cilium
       type: Directory
     name: cilium-src
   # We need the following toleration overwrite because the pod is used with

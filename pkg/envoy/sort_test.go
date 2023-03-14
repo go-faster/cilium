@@ -10,7 +10,7 @@ import (
 	envoy_type_matcher "github.com/cilium/proxy/go/envoy/type/matcher/v3"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/checker"
 )
 
 type SortSuite struct{}

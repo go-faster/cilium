@@ -8,7 +8,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/option"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/tidwall/gjson"

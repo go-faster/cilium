@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cilium/cilium/bugtool/cmd"
+	"github.com/go-faster/cilium/bugtool/cmd"
 )
 
 func main() {

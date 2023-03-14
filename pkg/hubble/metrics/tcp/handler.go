@@ -8,8 +8,8 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
 )
 
 type tcpHandler struct {

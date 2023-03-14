@@ -17,17 +17,17 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	flowpb "github.com/cilium/cilium/api/v1/flow"
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	v1 "github.com/cilium/cilium/pkg/hubble/api/v1"
-	"github.com/cilium/cilium/pkg/hubble/build"
-	"github.com/cilium/cilium/pkg/hubble/container"
-	"github.com/cilium/cilium/pkg/hubble/filters"
-	"github.com/cilium/cilium/pkg/hubble/observer/observeroption"
-	observerTypes "github.com/cilium/cilium/pkg/hubble/observer/types"
-	"github.com/cilium/cilium/pkg/hubble/parser"
-	parserErrors "github.com/cilium/cilium/pkg/hubble/parser/errors"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	flowpb "github.com/go-faster/cilium/api/v1/flow"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	v1 "github.com/go-faster/cilium/pkg/hubble/api/v1"
+	"github.com/go-faster/cilium/pkg/hubble/build"
+	"github.com/go-faster/cilium/pkg/hubble/container"
+	"github.com/go-faster/cilium/pkg/hubble/filters"
+	"github.com/go-faster/cilium/pkg/hubble/observer/observeroption"
+	observerTypes "github.com/go-faster/cilium/pkg/hubble/observer/types"
+	"github.com/go-faster/cilium/pkg/hubble/parser"
+	parserErrors "github.com/go-faster/cilium/pkg/hubble/parser/errors"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 // DefaultOptions to include in the server. Other packages may extend this

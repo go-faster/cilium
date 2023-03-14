@@ -16,12 +16,12 @@ import (
 	k8sTesting "k8s.io/client-go/testing"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/k8s"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	pkgOption "github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/k8s"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	pkgOption "github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 func Test(t *testing.T) {

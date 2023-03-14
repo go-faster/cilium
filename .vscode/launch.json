@@ -21,7 +21,7 @@
 			"showLog": true,
 			"trace": "log",
 			"logOutput": "rpc",
-			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/cilium/cilium"}],
+			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/go-faster/cilium"}],
 		},
 		{
 			"name": "Attach to kind-worker-1",
@@ -33,7 +33,7 @@
 			"showLog": true,
 			"trace": "log",
 			"logOutput": "rpc",
-			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/cilium/cilium"}],
+			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/go-faster/cilium"}],
 		},
 		{
 			"name": "Attach to kind-worker-2",
@@ -45,7 +45,7 @@
 			"showLog": true,
 			"trace": "log",
 			"logOutput": "rpc",
-			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/cilium/cilium"}],
+			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/go-faster/cilium"}],
 		},
 		{
 			"name": "Attach to Cilium Operator",
@@ -57,7 +57,7 @@
 			"showLog": true,
 			"trace": "log",
 			"logOutput": "rpc",
-			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/cilium/cilium"}],
+			"substitutePath": [{"from": "${workspaceFolder}", "to": "/go/src/github.com/go-faster/cilium"}],
 		}
 	]
 }

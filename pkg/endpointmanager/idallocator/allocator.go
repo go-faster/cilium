@@ -6,7 +6,7 @@ package idallocator
 import (
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/idpool"
 )
 
 const (

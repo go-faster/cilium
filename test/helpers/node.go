@@ -16,7 +16,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/ssh"
 
-	ginkgoext "github.com/cilium/cilium/test/ginkgo-ext"
+	ginkgoext "github.com/go-faster/cilium/test/ginkgo-ext"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/tuple"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/tuple"
 )
 
 // mapType is a type of connection tracking map.
@@ -147,7 +147,7 @@ type CtKey interface {
 
 // CtKey4 is needed to provide CtEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type CtKey4 struct {
 	tuple.TupleKey4
 }
@@ -228,7 +228,7 @@ func (k *CtKey4) GetTupleKey() tuple.TupleKey {
 
 // CtKey4Global is needed to provide CtEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type CtKey4Global struct {
 	tuple.TupleKey4Global
 }
@@ -317,7 +317,7 @@ func (k *CtKey4Global) GetTupleKey() tuple.TupleKey {
 
 // CtKey6 is needed to provide CtEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type CtKey6 struct {
 	tuple.TupleKey6
 }
@@ -396,7 +396,7 @@ func (k *CtKey6) GetTupleKey() tuple.TupleKey {
 
 // CtKey6Global is needed to provide CtEntry type to Lookup values
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type CtKey6Global struct {
 	tuple.TupleKey6Global
 }
@@ -487,7 +487,7 @@ func (k *CtKey6Global) GetTupleKey() tuple.TupleKey {
 
 // CtEntry represents an entry in the connection tracking table.
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type CtEntry struct {
 	RxPackets uint64 `align:"rx_packets"`
 	RxBytes   uint64 `align:"$union0"`

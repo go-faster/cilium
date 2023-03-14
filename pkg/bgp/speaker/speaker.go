@@ -16,16 +16,16 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/bgp/fence"
-	"github.com/cilium/cilium/pkg/k8s"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_discover_v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
-	slim_discover_v1beta1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
-	"github.com/cilium/cilium/pkg/k8s/watchers/subscriber"
-	"github.com/cilium/cilium/pkg/lock"
-	nodetypes "github.com/cilium/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/bgp/fence"
+	"github.com/go-faster/cilium/pkg/k8s"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_discover_v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1"
+	slim_discover_v1beta1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/discovery/v1beta1"
+	"github.com/go-faster/cilium/pkg/k8s/watchers/subscriber"
+	"github.com/go-faster/cilium/pkg/lock"
+	nodetypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 var (
@@ -356,7 +356,7 @@ func (s *MetalLBSpeaker) RegisterSvcCache(cache endpointsGetter) {
 	s.endpointsGetter = cache
 }
 
-// endpointsGetter abstracts the github.com/cilium/cilium/pkg/k8s.ServiceCache
+// endpointsGetter abstracts the github.com/go-faster/cilium/pkg/k8s.ServiceCache
 // object. The cache holds all services and endpoints (backends) from the K8s
 // watchers.
 type endpointsGetter interface {
@@ -495,7 +495,7 @@ func nodePodCIDRs(node *v1.Node) *[]string {
 	}
 	podCIDRs := make([]string, 0, len(node.Spec.PodCIDRs))
 	// this bit of code extracts the pod cidr block the node will
-	// use per: https://github.com//cilium/cilium/blob/8cb6ca42179a0e325131a4c95b14291799d22e5c/vendor/k8s.io/api/core/v1/types.go#L4600
+	// use per: https://github.com//go-faster/cilium/blob/8cb6ca42179a0e325131a4c95b14291799d22e5c/vendor/k8s.io/api/core/v1/types.go#L4600
 	// read the above comments to understand this access pattern.
 	if pc := node.Spec.PodCIDR; pc != "" {
 		if len(node.Spec.PodCIDRs) > 0 && pc != node.Spec.PodCIDRs[0] {

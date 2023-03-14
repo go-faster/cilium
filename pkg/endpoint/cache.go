@@ -9,9 +9,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/mac"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // epInfoCache describes the set of lxcmap entries necessary to describe an Endpoint

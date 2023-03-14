@@ -9,9 +9,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/maps/lxcmap"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/maps/lxcmap"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const (

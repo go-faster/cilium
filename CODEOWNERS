@@ -98,9 +98,9 @@
 # related processes. For the full codeowners for individual repositories, see
 # the CODEOWNERS file in the corresponding repository.
 #
-# - @cilium/cilium-cli-maintainers
-# - @cilium/cilium-maintainers
-# - @cilium/cilium-packer-ci-build-maintainers
+# - @go-faster/cilium-cli-maintainers
+# - @go-faster/cilium-maintainers
+# - @go-faster/cilium-packer-ci-build-maintainers
 # - @cilium/ebpf-lib-maintainers
 # - @cilium/hubble-maintainers
 # - @cilium/image-tools-maintainers

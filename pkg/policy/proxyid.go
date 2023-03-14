@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cilium/cilium/pkg/policy/trafficdirection"
-	"github.com/cilium/cilium/pkg/u8proto"
+	"github.com/go-faster/cilium/pkg/policy/trafficdirection"
+	"github.com/go-faster/cilium/pkg/u8proto"
 )
 
 // ProxyID returns a unique string to identify a proxy mapping.

@@ -13,14 +13,14 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
-	ces "github.com/cilium/cilium/operator/pkg/ciliumendpointslice"
-	"github.com/cilium/cilium/pkg/k8s"
-	cilium_api_v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/informer"
-	"github.com/cilium/cilium/pkg/k8s/utils"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
+	ces "github.com/go-faster/cilium/operator/pkg/ciliumendpointslice"
+	"github.com/go-faster/cilium/pkg/k8s"
+	cilium_api_v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/informer"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 const identityIndex = "identity"

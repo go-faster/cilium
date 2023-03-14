@@ -15,17 +15,17 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/cilium/cilium/api/v1/server/restapi"
-	"github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/api/v1/server/restapi/endpoint"
-	"github.com/cilium/cilium/api/v1/server/restapi/ipam"
-	"github.com/cilium/cilium/api/v1/server/restapi/metrics"
-	"github.com/cilium/cilium/api/v1/server/restapi/policy"
-	"github.com/cilium/cilium/api/v1/server/restapi/prefilter"
-	"github.com/cilium/cilium/api/v1/server/restapi/service"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/logging"
-	ciliumMetrics "github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/api/v1/server/restapi"
+	"github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/api/v1/server/restapi/endpoint"
+	"github.com/go-faster/cilium/api/v1/server/restapi/ipam"
+	"github.com/go-faster/cilium/api/v1/server/restapi/metrics"
+	"github.com/go-faster/cilium/api/v1/server/restapi/policy"
+	"github.com/go-faster/cilium/api/v1/server/restapi/prefilter"
+	"github.com/go-faster/cilium/api/v1/server/restapi/service"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/logging"
+	ciliumMetrics "github.com/go-faster/cilium/pkg/metrics"
 )
 
 //go:generate swagger generate server --target ../../v1 --name CiliumAPI --spec ../openapi.yaml --api-package restapi --server-package server --principal interface{} --default-scheme unix

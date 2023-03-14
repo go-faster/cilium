@@ -14,7 +14,7 @@ root_dir="$(git rev-parse --show-toplevel)"
 
 cd "${root_dir}"
 
-image="quay.io/cilium/cilium-builder"
+image="quay.io/go-faster/cilium-builder"
 
 image_tag="$(WITHOUT_SUFFIX=1 "${script_dir}/make-image-tag.sh" images/builder)"
 

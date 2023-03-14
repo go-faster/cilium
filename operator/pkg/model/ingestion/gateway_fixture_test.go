@@ -9,7 +9,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	"github.com/cilium/cilium/operator/pkg/model"
+	"github.com/go-faster/cilium/operator/pkg/model"
 )
 
 // Gateway API Conformance test resources

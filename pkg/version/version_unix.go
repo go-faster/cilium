@@ -13,7 +13,7 @@ import (
 	"github.com/blang/semver/v4"
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/versioncheck"
+	"github.com/go-faster/cilium/pkg/versioncheck"
 )
 
 func parseKernelVersion(ver string) (semver.Version, error) {

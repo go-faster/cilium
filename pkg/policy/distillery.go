@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	identityPkg "github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/identity/identitymanager"
-	"github.com/cilium/cilium/pkg/lock"
+	identityPkg "github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/identity/identitymanager"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // SelectorPolicy represents a cached selectorPolicy, previously resolved from

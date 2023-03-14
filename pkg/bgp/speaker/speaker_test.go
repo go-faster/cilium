@@ -16,11 +16,11 @@ import (
 	metallbspr "go.universe.tf/metallb/pkg/speaker"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/cilium/cilium/pkg/bgp/fence"
-	"github.com/cilium/cilium/pkg/bgp/mock"
-	"github.com/cilium/cilium/pkg/k8s"
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/bgp/fence"
+	"github.com/go-faster/cilium/pkg/bgp/mock"
+	"github.com/go-faster/cilium/pkg/k8s"
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 const (

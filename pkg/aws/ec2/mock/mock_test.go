@@ -12,10 +12,10 @@ import (
 	"github.com/cilium/ipam/cidrset"
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/aws/types"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/ip"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	"github.com/go-faster/cilium/pkg/aws/types"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/ip"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 func Test(t *testing.T) {

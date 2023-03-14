@@ -4,8 +4,8 @@
 package flannel
 
 import (
-	chainingapi "github.com/cilium/cilium/plugins/cilium-cni/chaining/api"
-	genericveth "github.com/cilium/cilium/plugins/cilium-cni/chaining/generic-veth"
+	chainingapi "github.com/go-faster/cilium/plugins/cilium-cni/chaining/api"
+	genericveth "github.com/go-faster/cilium/plugins/cilium-cni/chaining/generic-veth"
 )
 
 func init() {

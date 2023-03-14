@@ -14,10 +14,10 @@ import (
 	grpcStatus "google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	relaypb "github.com/cilium/cilium/api/v1/relay"
-	"github.com/cilium/cilium/pkg/hubble/build"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	relaypb "github.com/go-faster/cilium/api/v1/relay"
+	"github.com/go-faster/cilium/pkg/hubble/build"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
 )
 
 // numUnavailableNodesReportMax represents the maximum number of unavailable

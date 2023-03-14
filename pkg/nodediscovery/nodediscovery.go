@@ -15,36 +15,36 @@ import (
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	alibabaCloudTypes "github.com/cilium/cilium/pkg/alibabacloud/eni/types"
-	alibabaCloudMetadata "github.com/cilium/cilium/pkg/alibabacloud/metadata"
-	"github.com/cilium/cilium/pkg/annotation"
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/aws/metadata"
-	azureTypes "github.com/cilium/cilium/pkg/azure/types"
-	"github.com/cilium/cilium/pkg/cidr"
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/datapath"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/ipam"
-	ipamOption "github.com/cilium/cilium/pkg/ipam/option"
-	"github.com/cilium/cilium/pkg/k8s"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/client"
-	k8sTypes "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/mtu"
-	"github.com/cilium/cilium/pkg/node"
-	"github.com/cilium/cilium/pkg/node/addressing"
-	nodemanager "github.com/cilium/cilium/pkg/node/manager"
-	nodestore "github.com/cilium/cilium/pkg/node/store"
-	"github.com/cilium/cilium/pkg/node/types"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
-	"github.com/cilium/cilium/pkg/option"
-	"github.com/cilium/cilium/pkg/source"
-	cnitypes "github.com/cilium/cilium/plugins/cilium-cni/types"
+	alibabaCloudTypes "github.com/go-faster/cilium/pkg/alibabacloud/eni/types"
+	alibabaCloudMetadata "github.com/go-faster/cilium/pkg/alibabacloud/metadata"
+	"github.com/go-faster/cilium/pkg/annotation"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/aws/metadata"
+	azureTypes "github.com/go-faster/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/cidr"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/datapath"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/ipam"
+	ipamOption "github.com/go-faster/cilium/pkg/ipam/option"
+	"github.com/go-faster/cilium/pkg/k8s"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/client"
+	k8sTypes "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/mtu"
+	"github.com/go-faster/cilium/pkg/node"
+	"github.com/go-faster/cilium/pkg/node/addressing"
+	nodemanager "github.com/go-faster/cilium/pkg/node/manager"
+	nodestore "github.com/go-faster/cilium/pkg/node/store"
+	"github.com/go-faster/cilium/pkg/node/types"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
+	"github.com/go-faster/cilium/pkg/option"
+	"github.com/go-faster/cilium/pkg/source"
+	cnitypes "github.com/go-faster/cilium/plugins/cilium-cni/types"
 )
 
 const (
@@ -211,8 +211,8 @@ func (n *NodeDiscovery) StartDiscovery() {
 }
 
 // WaitForLocalNodeInit blocks until StartDiscovery() has been called.  This is used to block until
-// Node's local IP addresses have been allocated, see https://github.com/cilium/cilium/pull/14299
-// and https://github.com/cilium/cilium/pull/14670.
+// Node's local IP addresses have been allocated, see https://github.com/go-faster/cilium/pull/14299
+// and https://github.com/go-faster/cilium/pull/14670.
 func (n *NodeDiscovery) WaitForLocalNodeInit() {
 	<-n.localStateInitialized
 }
@@ -418,7 +418,7 @@ func (n *NodeDiscovery) mutateNodeResource(nodeResource *ciliumv2.CiliumNode) er
 	// Note that we can rely on the OwnerReference to be set on the CiliumNode
 	// as this was added in sufficiently earlier versions of Cilium (v1.6).
 	// Source:
-	// https://github.com/cilium/cilium/commit/5c365f2c6d7930dcda0b8f0d5e6b826a64022a4f
+	// https://github.com/go-faster/cilium/commit/5c365f2c6d7930dcda0b8f0d5e6b826a64022a4f
 	k8sNode, err := n.k8sGetters.GetK8sNode(
 		context.TODO(),
 		nodeTypes.GetName(),

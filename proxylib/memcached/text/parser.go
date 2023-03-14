@@ -12,8 +12,8 @@ import (
 	cilium "github.com/cilium/proxy/go/cilium/api"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/proxylib/memcached/meta"
-	"github.com/cilium/cilium/proxylib/proxylib"
+	"github.com/go-faster/cilium/proxylib/memcached/meta"
+	"github.com/go-faster/cilium/proxylib/proxylib"
 )
 
 // ParserFactory implements proxylib.ParserFactory

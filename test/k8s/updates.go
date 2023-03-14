@@ -12,9 +12,9 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	"github.com/cilium/cilium/pkg/versioncheck"
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	"github.com/go-faster/cilium/pkg/versioncheck"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 var (
@@ -33,7 +33,7 @@ var _ = Describe("K8sUpdates", func() {
 	// `clean-cilium-state: "true"` option that we have in configmap
 	// 2 - install cilium `cilium:v${LATEST_STABLE}`
 	// 3 - make endpoints talk with each other with policy
-	// 4 - upgrade cilium to `k8s1:5000/cilium/cilium-dev:latest`
+	// 4 - upgrade cilium to `k8s1:5000/go-faster/cilium-dev:latest`
 	// 5 - make endpoints talk with each other with policy
 	// 6 - downgrade cilium to `cilium:v${LATEST_STABLE}`
 	// 7 - make endpoints talk with each other with policy
@@ -88,7 +88,7 @@ var _ = Describe("K8sUpdates", func() {
 		cmd := kubectl.Exec(fmt.Sprintf("mkdir -p %s && "+
 			"cd %s && "+
 			"rm -rf * && "+
-			"wget https://github.com/cilium/cilium/archive/refs/heads/%s.zip &&"+
+			"wget https://github.com/go-faster/cilium/archive/refs/heads/%s.zip &&"+
 			"unzip %s.zip",
 			versionPath,
 			versionPath,
@@ -230,7 +230,7 @@ func InstallAndValidateCiliumUpgrades(kubectl *helpers.Kubectl, oldHelmChartVers
 		cleanupCiliumState(filepath.Join(kubectl.BasePath(), helpers.HelmTemplate), newHelmChartVersion, "", newImageVersion, "")
 
 		By("Cleaning Cilium state (%s)", oldImageVersion)
-		cleanupCiliumState(stableChartPath, oldHelmChartVersion, "quay.io/cilium/cilium-ci", oldImageVersion, "")
+		cleanupCiliumState(stableChartPath, oldHelmChartVersion, "quay.io/go-faster/cilium-ci", oldImageVersion, "")
 
 		By("Deploying Cilium %s", oldHelmChartVersion)
 
@@ -239,7 +239,7 @@ func InstallAndValidateCiliumUpgrades(kubectl *helpers.Kubectl, oldHelmChartVers
 			"operator.image.tag":                     oldImageVersion,
 			"hubble.relay.image.tag":                 oldImageVersion,
 			"clustermesh.apiserver.image.tag":        oldImageVersion,
-			"image.repository":                       "quay.io/cilium/cilium-ci",
+			"image.repository":                       "quay.io/go-faster/cilium-ci",
 			"operator.image.repository":              "quay.io/cilium/operator",
 			"hubble.relay.image.repository":          "quay.io/cilium/hubble-relay-ci",
 			"clustermesh.apiserver.image.repository": "quay.io/cilium/clustermesh-apiserver-ci",

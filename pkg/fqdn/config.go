@@ -9,8 +9,8 @@ import (
 	"net/netip"
 	"sync"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // Config is a simple configuration structure to set how pkg/fqdn subcomponents

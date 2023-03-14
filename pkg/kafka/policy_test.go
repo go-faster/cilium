@@ -10,7 +10,7 @@ import (
 	"github.com/cilium/kafka/proto"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/policy/api/kafka"
+	"github.com/go-faster/cilium/pkg/policy/api/kafka"
 )
 
 // Hook up gocheck into the "go test" runner.

@@ -13,12 +13,12 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	observerpb "github.com/cilium/cilium/api/v1/observer"
-	relaypb "github.com/cilium/cilium/api/v1/relay"
-	poolTypes "github.com/cilium/cilium/pkg/hubble/relay/pool/types"
-	"github.com/cilium/cilium/pkg/hubble/relay/queue"
-	"github.com/cilium/cilium/pkg/inctimer"
-	nodeTypes "github.com/cilium/cilium/pkg/node/types"
+	observerpb "github.com/go-faster/cilium/api/v1/observer"
+	relaypb "github.com/go-faster/cilium/api/v1/relay"
+	poolTypes "github.com/go-faster/cilium/pkg/hubble/relay/pool/types"
+	"github.com/go-faster/cilium/pkg/hubble/relay/queue"
+	"github.com/go-faster/cilium/pkg/inctimer"
+	nodeTypes "github.com/go-faster/cilium/pkg/node/types"
 )
 
 func isAvailable(conn poolTypes.ClientConn) bool {

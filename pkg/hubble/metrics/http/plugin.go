@@ -4,7 +4,7 @@
 package http
 
 import (
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
 )
 
 type httpPlugin struct{}

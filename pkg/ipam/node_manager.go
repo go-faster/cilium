@@ -14,13 +14,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/cilium/cilium/pkg/backoff"
-	"github.com/cilium/cilium/pkg/controller"
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/trigger"
+	"github.com/go-faster/cilium/pkg/backoff"
+	"github.com/go-faster/cilium/pkg/controller"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/trigger"
 )
 
 // CiliumNodeGetterUpdater defines the interface used to interact with the k8s

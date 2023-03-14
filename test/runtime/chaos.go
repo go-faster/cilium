@@ -8,9 +8,9 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
-	"github.com/cilium/cilium/test/helpers/constants"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
+	"github.com/go-faster/cilium/test/helpers/constants"
 )
 
 var _ = Describe("RuntimeAgentChaos", func() {

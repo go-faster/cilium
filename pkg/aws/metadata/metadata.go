@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/feature/ec2/imds"
 
-	"github.com/cilium/cilium/pkg/safeio"
+	"github.com/go-faster/cilium/pkg/safeio"
 )
 
 func newClient() (*imds.Client, error) {

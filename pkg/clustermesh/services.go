@@ -7,11 +7,11 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/kvstore/store"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/metrics"
-	serviceStore "github.com/cilium/cilium/pkg/service/store"
+	"github.com/go-faster/cilium/pkg/kvstore/store"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/metrics"
+	serviceStore "github.com/go-faster/cilium/pkg/service/store"
 )
 
 // ServiceMerger is the interface to be implemented by the owner of local

@@ -12,13 +12,13 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/maps/ctmap"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
-	"github.com/cilium/cilium/pkg/tuple"
-	"github.com/cilium/cilium/pkg/types"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/maps/ctmap"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
+	"github.com/go-faster/cilium/pkg/tuple"
+	"github.com/go-faster/cilium/pkg/types"
 )
 
 func Test(t *testing.T) { TestingT(t) }

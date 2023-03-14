@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cilium/cilium/pkg/cgroups"
+	"github.com/go-faster/cilium/pkg/cgroups"
 )
 
 func main() {

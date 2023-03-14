@@ -9,9 +9,9 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slim_core_v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_labels "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/labels"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slim_core_v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_labels "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/labels"
 )
 
 type serviceStore struct {

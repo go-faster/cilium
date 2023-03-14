@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/ebpf"
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/policy"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/policy"
 )
 
 const (
@@ -126,7 +126,7 @@ func (m *Map) IterateWithCallback(cb IterateCallback) error {
 //
 // Must be in sync with struct auth_key in <bpf/lib/common.h>
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapKey
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapKey
 type AuthKey struct {
 	LocalIdentity  uint32 `align:"local_sec_label"`
 	RemoteIdentity uint32 `align:"remote_sec_label"`
@@ -156,7 +156,7 @@ func newAuthKey(localIdentity identity.NumericIdentity, remoteIdentity identity.
 //
 // Must be in sync with struct auth_info in <bpf/lib/common.h>
 // +k8s:deepcopy-gen=true
-// +k8s:deepcopy-gen:interfaces=github.com/cilium/cilium/pkg/bpf.MapValue
+// +k8s:deepcopy-gen:interfaces=github.com/go-faster/cilium/pkg/bpf.MapValue
 type AuthInfo struct {
 	Expiration uint64 `align:"expiration"`
 }

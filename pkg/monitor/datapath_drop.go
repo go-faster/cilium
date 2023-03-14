@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cilium/cilium/pkg/identity"
-	"github.com/cilium/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/identity"
+	"github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 const (

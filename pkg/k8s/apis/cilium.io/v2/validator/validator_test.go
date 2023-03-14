@@ -11,7 +11,7 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cilium/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/checker"
 )
 
 func Test(t *testing.T) {

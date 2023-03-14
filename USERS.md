@@ -199,7 +199,7 @@ Users (Alphabetically)
     * N: F5 Inc
       D: F5 helps customers with Cilium VXLAN tunnel integration with BIG-IP
       U: Networking
-      L: https://github.com/f5devcentral/f5-ci-docs/blob/master/docs/cilium/cilium-bigip-info.rst
+      L: https://github.com/f5devcentral/f5-ci-docs/blob/master/docs/go-faster/cilium-bigip-info.rst
       Q: @vincentmli
 
     * N: Giant Swarm

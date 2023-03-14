@@ -9,11 +9,11 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	"github.com/cilium/cilium/pkg/byteorder"
-	"github.com/cilium/cilium/pkg/hubble/parser/getters"
-	"github.com/cilium/cilium/pkg/monitor"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/monitor/payload"
+	"github.com/go-faster/cilium/pkg/byteorder"
+	"github.com/go-faster/cilium/pkg/hubble/parser/getters"
+	"github.com/go-faster/cilium/pkg/monitor"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/monitor/payload"
 )
 
 // Verbosity levels for formatting output.
@@ -129,7 +129,7 @@ func (m *MonitorFormatter) traceSockEvents(prefix string, data []byte) {
 		fmt.Printf("Error while parsing socket trace notification message: %s\n", err)
 	}
 	// Currently only printed with the debug option. Extend it to info and json.
-	// GH issue: https://github.com/cilium/cilium/issues/21510
+	// GH issue: https://github.com/go-faster/cilium/issues/21510
 	if m.Verbosity == DEBUG {
 		tn.DumpDebug(prefix)
 	}

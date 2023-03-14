@@ -15,19 +15,19 @@ import (
 	"github.com/sirupsen/logrus"
 	"k8s.io/client-go/util/workqueue"
 
-	pb "github.com/cilium/cilium/api/v1/flow"
-	"github.com/cilium/cilium/pkg/hubble/metrics/api"
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/dns"               // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/drop"              // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/flow"              // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/flows-to-world"    // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/http"              // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/icmp"              // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/kafka"             // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/policy"            // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/port-distribution" // invoke init
-	_ "github.com/cilium/cilium/pkg/hubble/metrics/tcp"               // invoke init
-	slim_corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	"github.com/go-faster/cilium/pkg/hubble/metrics/api"
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/dns"               // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/drop"              // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/flow"              // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/flows-to-world"    // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/http"              // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/icmp"              // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/kafka"             // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/policy"            // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/port-distribution" // invoke init
+	_ "github.com/go-faster/cilium/pkg/hubble/metrics/tcp"               // invoke init
+	slim_corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
 )
 
 type PodDeletionHandler struct {

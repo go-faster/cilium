@@ -10,11 +10,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	daemonApi "github.com/cilium/cilium/api/v1/client/daemon"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	pkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/command"
+	daemonApi "github.com/go-faster/cilium/api/v1/client/daemon"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	pkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/command"
 )
 
 var nodeIDListCmd = &cobra.Command{

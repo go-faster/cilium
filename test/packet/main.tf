@@ -63,7 +63,7 @@ resource "metal_device" "test" {
         inline = [
             "sudo chmod 755 /provision/*.sh",
             "sudo /provision/install.sh",
-            "go get -u github.com/cilium/cilium || true"
+            "go get -u github.com/go-faster/cilium || true"
         ]
     }
 }

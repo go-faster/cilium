@@ -10,10 +10,10 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/maps/metricsmap"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
-	"github.com/cilium/cilium/pkg/testutils/mockmaps"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/maps/metricsmap"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
+	"github.com/go-faster/cilium/pkg/testutils/mockmaps"
 )
 
 type BPFMetricsMapSuite struct{}

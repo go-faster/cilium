@@ -12,10 +12,10 @@ import (
 	dto "github.com/prometheus/client_model/go"
 	controllerRuntimeMetrics "sigs.k8s.io/controller-runtime/pkg/metrics"
 
-	"github.com/cilium/cilium/api/v1/operator/models"
-	operatorOption "github.com/cilium/cilium/operator/option"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/api/v1/operator/models"
+	operatorOption "github.com/go-faster/cilium/operator/option"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

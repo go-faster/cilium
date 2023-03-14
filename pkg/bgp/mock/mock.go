@@ -10,7 +10,7 @@ import (
 	metallbspr "go.universe.tf/metallb/pkg/speaker"
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/cilium/cilium/pkg/k8s"
+	"github.com/go-faster/cilium/pkg/k8s"
 )
 
 // MockMetalLBSpeaker implements the speaker.Speaker interface by delegating to

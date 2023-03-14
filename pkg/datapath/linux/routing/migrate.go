@@ -8,8 +8,8 @@ import (
 
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/pkg/datapath/linux/linux_defaults"
-	"github.com/cilium/cilium/pkg/revert"
+	"github.com/go-faster/cilium/pkg/datapath/linux/linux_defaults"
+	"github.com/go-faster/cilium/pkg/revert"
 )
 
 // MigrateENIDatapath migrates the egress rules inside the Linux routing policy
@@ -37,7 +37,7 @@ import (
 // Concretely, this function should be invoked before exposing the Cilium API
 // and health initialization logic because we want to ensure that no workloads
 // are scheduled while this modification is taking place. This migration is
-// related to a bug (https://github.com/cilium/cilium/issues/14336) where an
+// related to a bug (https://github.com/go-faster/cilium/issues/14336) where an
 // ENI has an ifindex that equals the main routing table number (253-255),
 // causing the rules and routes to be created using the wrong table ID, which
 // could end up blackholing most traffic on the node.

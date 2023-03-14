@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cilium/cilium/pkg/idpool"
-	"github.com/cilium/cilium/pkg/kvstore"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/idpool"
+	"github.com/go-faster/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // backendOpTimeout is the time allowed for operations sent to backends in

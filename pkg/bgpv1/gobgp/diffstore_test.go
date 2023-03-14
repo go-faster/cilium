@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cilium/cilium/pkg/bgpv1/agent"
-	"github.com/cilium/cilium/pkg/hive"
-	"github.com/cilium/cilium/pkg/hive/cell"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	slimv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	v1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
-	slim_fake "github.com/cilium/cilium/pkg/k8s/slim/k8s/client/clientset/versioned/fake"
-	"github.com/cilium/cilium/pkg/k8s/utils"
+	"github.com/go-faster/cilium/pkg/bgpv1/agent"
+	"github.com/go-faster/cilium/pkg/hive"
+	"github.com/go-faster/cilium/pkg/hive/cell"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	slimv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	v1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	slim_fake "github.com/go-faster/cilium/pkg/k8s/slim/k8s/client/clientset/versioned/fake"
+	"github.com/go-faster/cilium/pkg/k8s/utils"
 )
 
 type DiffStoreFixture struct {

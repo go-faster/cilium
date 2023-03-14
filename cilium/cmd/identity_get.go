@@ -10,11 +10,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	identityApi "github.com/cilium/cilium/api/v1/client/policy"
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	"github.com/cilium/cilium/pkg/command"
-	"github.com/cilium/cilium/pkg/labels"
+	identityApi "github.com/go-faster/cilium/api/v1/client/policy"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	"github.com/go-faster/cilium/pkg/command"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 var (

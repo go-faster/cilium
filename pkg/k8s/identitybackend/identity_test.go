@@ -13,14 +13,14 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
-	"github.com/cilium/cilium/pkg/allocator"
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/identity/key"
-	"github.com/cilium/cilium/pkg/idpool"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	k8sClient "github.com/cilium/cilium/pkg/k8s/client"
-	"github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1/validation"
-	"github.com/cilium/cilium/pkg/labels"
+	"github.com/go-faster/cilium/pkg/allocator"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/identity/key"
+	"github.com/go-faster/cilium/pkg/idpool"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	k8sClient "github.com/go-faster/cilium/pkg/k8s/client"
+	"github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1/validation"
+	"github.com/go-faster/cilium/pkg/labels"
 )
 
 // Hook up gocheck into the "go test" runner.

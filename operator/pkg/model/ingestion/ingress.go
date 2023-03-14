@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cilium/cilium/operator/pkg/ingress/annotations"
-	"github.com/cilium/cilium/operator/pkg/model"
-	corev1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1"
-	slim_networkingv1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/api/networking/v1"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/operator/pkg/ingress/annotations"
+	"github.com/go-faster/cilium/operator/pkg/model"
+	corev1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/core/v1"
+	slim_networkingv1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/api/networking/v1"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 // Ingress translates an Ingress resource to a HTTPListener.

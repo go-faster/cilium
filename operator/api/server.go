@@ -14,11 +14,11 @@ import (
 	"github.com/go-openapi/runtime"
 	"golang.org/x/sys/unix"
 
-	operatorApi "github.com/cilium/cilium/api/v1/operator/server"
-	"github.com/cilium/cilium/api/v1/operator/server/restapi"
-	"github.com/cilium/cilium/api/v1/operator/server/restapi/operator"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	operatorApi "github.com/go-faster/cilium/api/v1/operator/server"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi"
+	"github.com/go-faster/cilium/api/v1/operator/server/restapi/operator"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 var (

@@ -9,7 +9,7 @@
 package v1
 
 import (
-	metav1 "github.com/cilium/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
+	metav1 "github.com/go-faster/cilium/pkg/k8s/slim/k8s/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 )
 

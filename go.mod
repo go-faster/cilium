@@ -1,4 +1,4 @@
-module github.com/cilium/cilium
+module github.com/go-faster/cilium
 
 go 1.20
 

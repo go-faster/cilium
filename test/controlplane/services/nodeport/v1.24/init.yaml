@@ -87,8 +87,8 @@ items:
     images:
     - names:
       - docker.io/library/import-2022-09-13@sha256:ede905eca3e1479f0017c8baf0d1e752745aa7ea4eaa0c6a8f6b86945cc9f8d4
-      - quay.io/cilium/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
-      - quay.io/cilium/cilium:v1.12.1
+      - quay.io/go-faster/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
+      - quay.io/go-faster/cilium:v1.12.1
       sizeBytes: 459801943
     - names:
       - docker.io/library/import-2022-09-01@sha256:d6e7206df3996420ee00b7f0aaa232e02a8d3cbb5e187c6eef820c91dfcefbc1
@@ -220,8 +220,8 @@ items:
     images:
     - names:
       - docker.io/library/import-2022-09-13@sha256:ede905eca3e1479f0017c8baf0d1e752745aa7ea4eaa0c6a8f6b86945cc9f8d4
-      - quay.io/cilium/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
-      - quay.io/cilium/cilium:v1.12.1
+      - quay.io/go-faster/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
+      - quay.io/go-faster/cilium:v1.12.1
       sizeBytes: 459801943
     - names:
       - docker.io/library/import-2022-09-01@sha256:d6e7206df3996420ee00b7f0aaa232e02a8d3cbb5e187c6eef820c91dfcefbc1
@@ -353,8 +353,8 @@ items:
     images:
     - names:
       - docker.io/library/import-2022-09-13@sha256:ede905eca3e1479f0017c8baf0d1e752745aa7ea4eaa0c6a8f6b86945cc9f8d4
-      - quay.io/cilium/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
-      - quay.io/cilium/cilium:v1.12.1
+      - quay.io/go-faster/cilium@sha256:ea2db1ee21b88127b5c18a96ad155c25485d0815a667ef77c2b7c7f31cab601b
+      - quay.io/go-faster/cilium:v1.12.1
       sizeBytes: 459801943
     - names:
       - docker.io/library/import-2022-09-01@sha256:d6e7206df3996420ee00b7f0aaa232e02a8d3cbb5e187c6eef820c91dfcefbc1

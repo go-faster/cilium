@@ -6,8 +6,8 @@ package server
 import (
 	"github.com/go-openapi/runtime/middleware"
 
-	. "github.com/cilium/cilium/api/v1/health/server/restapi/connectivity"
-	"github.com/cilium/cilium/pkg/api"
+	. "github.com/go-faster/cilium/api/v1/health/server/restapi/connectivity"
+	"github.com/go-faster/cilium/pkg/api"
 )
 
 type getStatusCache struct {

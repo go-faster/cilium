@@ -12,8 +12,8 @@ import (
 
 	. "github.com/onsi/gomega"
 
-	. "github.com/cilium/cilium/test/ginkgo-ext"
-	"github.com/cilium/cilium/test/helpers"
+	. "github.com/go-faster/cilium/test/ginkgo-ext"
+	"github.com/go-faster/cilium/test/helpers"
 )
 
 // The 5.4 CI job is intended to catch BPF complexity regressions and as such

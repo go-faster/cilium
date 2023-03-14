@@ -10,13 +10,13 @@ import (
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/cilium/cilium/operator/metrics"
-	"github.com/cilium/cilium/operator/watchers"
-	"github.com/cilium/cilium/pkg/controller"
-	v2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/k8s/identitybackend"
-	"github.com/cilium/cilium/pkg/k8s/resource"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/operator/metrics"
+	"github.com/go-faster/cilium/operator/watchers"
+	"github.com/go-faster/cilium/pkg/controller"
+	v2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/k8s/identitybackend"
+	"github.com/go-faster/cilium/pkg/k8s/resource"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 func (igc *GC) startCRDModeGC(ctx context.Context) error {

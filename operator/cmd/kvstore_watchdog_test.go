@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cilium/cilium/pkg/kvstore"
+	"github.com/go-faster/cilium/pkg/kvstore"
 )
 
 func Test_getOldestLeases(t *testing.T) {

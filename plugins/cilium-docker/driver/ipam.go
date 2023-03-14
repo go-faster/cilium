@@ -10,8 +10,8 @@ import (
 
 	"github.com/docker/libnetwork/ipams/remote/api"
 
-	"github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 )
 
 const (

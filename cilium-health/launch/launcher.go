@@ -8,16 +8,16 @@ import (
 	"os"
 	"time"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/api"
-	ciliumPkg "github.com/cilium/cilium/pkg/client"
-	"github.com/cilium/cilium/pkg/health/client"
-	"github.com/cilium/cilium/pkg/health/defaults"
-	"github.com/cilium/cilium/pkg/health/server"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/logging"
-	"github.com/cilium/cilium/pkg/logging/logfields"
-	"github.com/cilium/cilium/pkg/option"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/api"
+	ciliumPkg "github.com/go-faster/cilium/pkg/client"
+	"github.com/go-faster/cilium/pkg/health/client"
+	"github.com/go-faster/cilium/pkg/health/defaults"
+	"github.com/go-faster/cilium/pkg/health/server"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/logging"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
+	"github.com/go-faster/cilium/pkg/option"
 )
 
 // CiliumHealth launches and polls the cilium-health daemon

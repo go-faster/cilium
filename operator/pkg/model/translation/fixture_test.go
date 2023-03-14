@@ -3,7 +3,7 @@
 
 package translation
 
-import "github.com/cilium/cilium/operator/pkg/model"
+import "github.com/go-faster/cilium/operator/pkg/model"
 
 // The test fixtures are coming from Conformance Suite for Ingress API.
 // https://github.com/kubernetes-sigs/ingress-controller-conformance/tree/master/features

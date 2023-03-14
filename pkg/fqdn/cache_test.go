@@ -15,10 +15,10 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/defaults"
-	"github.com/cilium/cilium/pkg/fqdn/re"
-	ippkg "github.com/cilium/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
+	ippkg "github.com/go-faster/cilium/pkg/ip"
 )
 
 type DNSCacheTestSuite struct{}

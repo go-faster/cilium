@@ -4,7 +4,7 @@
 package defaults
 
 import (
-	daemon "github.com/cilium/cilium/pkg/defaults"
+	daemon "github.com/go-faster/cilium/pkg/defaults"
 )
 
 const (

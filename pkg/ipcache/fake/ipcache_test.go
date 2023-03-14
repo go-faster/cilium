@@ -10,9 +10,9 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/checker"
-	"github.com/cilium/cilium/pkg/ipcache"
-	"github.com/cilium/cilium/pkg/source"
+	"github.com/go-faster/cilium/pkg/checker"
+	"github.com/go-faster/cilium/pkg/ipcache"
+	"github.com/go-faster/cilium/pkg/source"
 )
 
 func Test(t *testing.T) {

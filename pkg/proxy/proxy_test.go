@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
 
 	. "gopkg.in/check.v1"
 )

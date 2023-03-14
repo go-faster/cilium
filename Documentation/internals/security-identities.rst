@@ -27,7 +27,7 @@ Security identities span over several ranges, depending on the context:
 Cluster-local identities (1) range from ``1`` to ``2^16 - 1``. The lowest
 values, from ``1`` to ``255``, correspond to the reserved identity range.  See
 the `internal code documentation
-<https://pkg.go.dev/github.com/cilium/cilium/pkg/identity#NumericIdentity>`__
+<https://pkg.go.dev/github.com/go-faster/cilium/pkg/identity#NumericIdentity>`__
 for details.
 
 For ClusterMesh (2), 8 bits are used as the ``cluster-id`` which identifies the

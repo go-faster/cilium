@@ -13,11 +13,11 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/cilium/cilium/api/v1/models"
-	restapi "github.com/cilium/cilium/api/v1/server/restapi/daemon"
-	"github.com/cilium/cilium/pkg/bpf"
-	"github.com/cilium/cilium/pkg/ebpf"
-	"github.com/cilium/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/api/v1/models"
+	restapi "github.com/go-faster/cilium/api/v1/server/restapi/daemon"
+	"github.com/go-faster/cilium/pkg/bpf"
+	"github.com/go-faster/cilium/pkg/ebpf"
+	"github.com/go-faster/cilium/pkg/metrics"
 )
 
 type eventsDumper interface {

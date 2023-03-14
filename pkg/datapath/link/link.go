@@ -12,9 +12,9 @@ import (
 
 	"github.com/vishvananda/netlink"
 
-	"github.com/cilium/cilium/pkg/controller"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/mac"
+	"github.com/go-faster/cilium/pkg/controller"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/mac"
 )
 
 var (

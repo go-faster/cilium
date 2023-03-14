@@ -4,7 +4,7 @@
 package types
 
 import (
-	ipamTypes "github.com/cilium/cilium/pkg/ipam/types"
+	ipamTypes "github.com/go-faster/cilium/pkg/ipam/types"
 )
 
 // SecurityGroup is the representation of an AWS Security Group

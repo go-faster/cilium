@@ -6,7 +6,7 @@ package ipam
 import (
 	"gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/azure/types"
+	"github.com/go-faster/cilium/pkg/azure/types"
 )
 
 func (e *IPAMSuite) TestGetMaximumAllocatableIPv4(c *check.C) {

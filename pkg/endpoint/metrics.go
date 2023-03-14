@@ -8,11 +8,11 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/cilium/cilium/api/v1/models"
-	loaderMetrics "github.com/cilium/cilium/pkg/datapath/loader/metrics"
-	"github.com/cilium/cilium/pkg/lock"
-	"github.com/cilium/cilium/pkg/metrics"
-	"github.com/cilium/cilium/pkg/spanstat"
+	"github.com/go-faster/cilium/api/v1/models"
+	loaderMetrics "github.com/go-faster/cilium/pkg/datapath/loader/metrics"
+	"github.com/go-faster/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/metrics"
+	"github.com/go-faster/cilium/pkg/spanstat"
 )
 
 var endpointPolicyStatus endpointPolicyStatusMap

@@ -6,7 +6,7 @@ package stream
 import (
 	"context"
 
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // Just creates an observable with a single item.

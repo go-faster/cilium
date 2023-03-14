@@ -8,8 +8,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/cilium/cilium/pkg/datapath/loader/metrics"
-	"github.com/cilium/cilium/pkg/lock"
+	"github.com/go-faster/cilium/pkg/datapath/loader/metrics"
+	"github.com/go-faster/cilium/pkg/lock"
 )
 
 // Loader is an interface to abstract out loading of datapath programs.

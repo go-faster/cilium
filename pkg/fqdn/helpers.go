@@ -9,11 +9,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/cilium/cilium/pkg/fqdn/dns"
-	"github.com/cilium/cilium/pkg/fqdn/matchpattern"
-	"github.com/cilium/cilium/pkg/fqdn/re"
-	"github.com/cilium/cilium/pkg/ip"
-	"github.com/cilium/cilium/pkg/policy/api"
+	"github.com/go-faster/cilium/pkg/fqdn/dns"
+	"github.com/go-faster/cilium/pkg/fqdn/matchpattern"
+	"github.com/go-faster/cilium/pkg/fqdn/re"
+	"github.com/go-faster/cilium/pkg/ip"
+	"github.com/go-faster/cilium/pkg/policy/api"
 )
 
 // MapSelectorsToIPsLocked iterates through a set of FQDNSelectors and evalutes

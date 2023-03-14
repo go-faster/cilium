@@ -6,7 +6,7 @@
 
 # CILIUM_SRC is the environment variable pointing to Cilium's source code, if
 # it does not exist we default it to GoPath.
-SRC=${CILIUM_SRC:-$GOPATH/src/github.com/cilium/cilium}
+SRC=${CILIUM_SRC:-$GOPATH/src/github.com/go-faster/cilium}
 
 # build and push the cilium dev agent image to a local repository at 
 # localhost:5000
@@ -68,7 +68,7 @@ cilium-helm-install(){
         helm template cilium ./cilium \
           --namespace kube-system \
           --set debug.enabled=true \
-          --set image.repository=localhost:5000/cilium/cilium-dev \
+          --set image.repository=localhost:5000/go-faster/cilium-dev \
           --set image.tag=$CILIUM_CI_TAG \
           --set operator.image.repository=localhost:5000/cilium/operator \
           --set operator.image.suffix="" \

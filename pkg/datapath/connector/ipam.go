@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/cilium/cilium/api/v1/models"
-	"github.com/cilium/cilium/pkg/datapath/linux/route"
-	"github.com/cilium/cilium/pkg/defaults"
+	"github.com/go-faster/cilium/api/v1/models"
+	"github.com/go-faster/cilium/pkg/datapath/linux/route"
+	"github.com/go-faster/cilium/pkg/defaults"
 )
 
 // IPv6Gateway returns the IPv6 gateway address for endpoints.

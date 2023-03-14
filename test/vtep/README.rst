@@ -49,7 +49,7 @@ VTEP integration test steps, You can also run install.sh for following steps
    # Deploy kind cluster with one control plane node kind-cluster.yaml
    kind create cluster --config=kind-cluster.yaml
    # Deploy Cilium in KIND k8s control plane node VTEP support enabled
-   helm install cilium cilium/cilium --version <cilium version> \
+   helm install cilium go-faster/cilium --version <cilium version> \
          --namespace kube-system \
          --set vtep.enabled="true" \
          --set vtep.endpoint="172.18.0.1" \
@@ -57,8 +57,8 @@ VTEP integration test steps, You can also run install.sh for following steps
          --set vtep.mask="255.255.255.0" \
          --set vtep.mac="00:50:56:A0:7D:D8"
    # docker pull the image and load in kind
-   docker pull cilium/cilium:<version>
-   kind load docker-image cilium/cilium:<version>
+   docker pull go-faster/cilium:<version>
+   kind load docker-image go-faster/cilium:<version>
    # deploy busybox on kind control plaine node
    kubectl label node kind-control-plane  dedicated=master
    kubectl taint nodes --all node-role.kubernetes.io/master-

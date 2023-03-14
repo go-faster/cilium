@@ -4,8 +4,8 @@
 package v1
 
 import (
-	pb "github.com/cilium/cilium/api/v1/flow"
-	monitorAPI "github.com/cilium/cilium/pkg/monitor/api"
+	pb "github.com/go-faster/cilium/api/v1/flow"
+	monitorAPI "github.com/go-faster/cilium/pkg/monitor/api"
 )
 
 // FlowProtocol returns the protocol best describing the flow. If available,

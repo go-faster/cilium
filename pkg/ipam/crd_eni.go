@@ -9,11 +9,11 @@ import (
 	"net"
 	"time"
 
-	eniTypes "github.com/cilium/cilium/pkg/aws/eni/types"
-	"github.com/cilium/cilium/pkg/backoff"
-	"github.com/cilium/cilium/pkg/defaults"
-	ciliumv2 "github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2"
-	"github.com/cilium/cilium/pkg/logging/logfields"
+	eniTypes "github.com/go-faster/cilium/pkg/aws/eni/types"
+	"github.com/go-faster/cilium/pkg/backoff"
+	"github.com/go-faster/cilium/pkg/defaults"
+	ciliumv2 "github.com/go-faster/cilium/pkg/k8s/apis/cilium.io/v2"
+	"github.com/go-faster/cilium/pkg/logging/logfields"
 
 	"github.com/sirupsen/logrus"
 	"github.com/vishvananda/netlink"

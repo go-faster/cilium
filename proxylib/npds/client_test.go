@@ -16,10 +16,10 @@ import (
 	"github.com/sirupsen/logrus"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/completion"
-	"github.com/cilium/cilium/pkg/envoy"
-	testipcache "github.com/cilium/cilium/pkg/testutils/ipcache"
-	"github.com/cilium/cilium/proxylib/test"
+	"github.com/go-faster/cilium/pkg/completion"
+	"github.com/go-faster/cilium/pkg/envoy"
+	testipcache "github.com/go-faster/cilium/pkg/testutils/ipcache"
+	"github.com/go-faster/cilium/proxylib/test"
 )
 
 // Hook up gocheck into the "go test" runner.

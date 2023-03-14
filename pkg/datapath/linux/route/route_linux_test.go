@@ -13,7 +13,7 @@ import (
 	"golang.org/x/sys/unix"
 	. "gopkg.in/check.v1"
 
-	"github.com/cilium/cilium/pkg/testutils"
+	"github.com/go-faster/cilium/pkg/testutils"
 )
 
 type RouteSuitePrivileged struct{}
